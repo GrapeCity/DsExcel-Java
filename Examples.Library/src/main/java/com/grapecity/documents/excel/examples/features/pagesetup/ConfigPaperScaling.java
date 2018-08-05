@@ -1,0 +1,31 @@
+package com.grapecity.documents.excel.examples.features.pagesetup;
+
+import java.net.URL;
+
+import com.grapecity.documents.excel.IWorksheet;
+import com.grapecity.documents.excel.Workbook;
+import com.grapecity.documents.excel.examples.ExampleBase;
+
+public class ConfigPaperScaling extends ExampleBase {
+
+    @Override
+    public void execute(Workbook workbook) {
+
+        URL url = ClassLoader.getSystemResource("xlsx/PageSetup Demo.xlsx");
+        String filePath = url.getPath().substring(1).replaceAll("%20", " ");
+        workbook.open(filePath);
+        IWorksheet worksheet = workbook.getWorksheets().get(0);
+
+        //Set paper scaling
+        //Method 1: Set percent scale 
+        worksheet.getPageSetup().setIsPercentScale(true);
+        worksheet.getPageSetup().setZoom(150);
+
+        //Or Method 2: Fit to page's wide & tall
+        //worksheet.getPageSetup().setIsPercentScale(false);
+        //worksheet.getPageSetup().setFitToPagesWide(3);
+        //worksheet.getPageSetup().setFitToPagesTall(4);
+
+    }
+
+}

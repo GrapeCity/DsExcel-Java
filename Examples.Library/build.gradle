@@ -1,0 +1,34 @@
+
+repositories {
+    mavenCentral()
+    maven{url "https://oss.sonatype.org/content/repositories/snapshots"}
+}
+
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+
+
+jar {
+    baseName = 'gcexcel-examples'
+    manifest {
+        attributes "Main-Class": "com.grapecity.documents.excel.examples.Test"
+    }
+
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+    compile fileTree(dir: 'lib', include: ['*.jar'])
+    compile 'com.grapecity.documents:gcexcel:1.5.3-SNAPSHOT'
+}
+
+group 'com.grapecity.documents'
+version '1.0-SNAPSHOT'
+
