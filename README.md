@@ -7,6 +7,7 @@ This repository contains source project of Examples and Showcases of **GcExcel**
 
 | Directory    | Description    |
 | ------------- |-------------|
+| gcexcel-1.5.3-SNAPSHOT     | Contains GcExcel Java CTP jar package and java docs |
 | Examples.Library     | A collection of Java examples that help you learn and explore the API features |
 
 # Other Resources
