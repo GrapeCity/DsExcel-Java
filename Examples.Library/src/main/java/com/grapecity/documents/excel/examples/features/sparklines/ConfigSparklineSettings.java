@@ -4,10 +4,10 @@ import java.util.GregorianCalendar;
 
 import com.grapecity.documents.excel.ISparklineGroup;
 import com.grapecity.documents.excel.IWorksheet;
+import com.grapecity.documents.excel.SparkType;
+import com.grapecity.documents.excel.ThemeColor;
 import com.grapecity.documents.excel.Workbook;
 import com.grapecity.documents.excel.examples.ExampleBase;
-import com.grapecity.documents.excel.sparkline.SparkType;
-import com.grapecity.documents.excel.style.ThemeColor;
 
 public class ConfigSparklineSettings extends ExampleBase {
 

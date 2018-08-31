@@ -2,11 +2,11 @@ package com.grapecity.documents.excel.examples.features.charts.datapoint;
 
 import com.grapecity.documents.excel.IWorksheet;
 import com.grapecity.documents.excel.Workbook;
+import com.grapecity.documents.excel.drawing.ChartSplitType;
+import com.grapecity.documents.excel.drawing.ChartType;
 import com.grapecity.documents.excel.drawing.ISeries;
 import com.grapecity.documents.excel.drawing.IShape;
-import com.grapecity.documents.excel.drawing.chart.ChartSplitType;
-import com.grapecity.documents.excel.drawing.chart.ChartType;
-import com.grapecity.documents.excel.drawing.chart.RowCol;
+import com.grapecity.documents.excel.drawing.RowCol;
 import com.grapecity.documents.excel.examples.ExampleBase;
 
 public class ConfigSecondarySection extends ExampleBase {

@@ -1,11 +1,14 @@
 package com.grapecity.documents.excel.examples.excelreporting;
 
+import com.grapecity.documents.excel.BorderLineStyle;
 import com.grapecity.documents.excel.BordersIndex;
+import com.grapecity.documents.excel.Color;
 import com.grapecity.documents.excel.ConditionValueTypes;
 import com.grapecity.documents.excel.DataBarFillType;
 import com.grapecity.documents.excel.FontLanguageIndex;
 import com.grapecity.documents.excel.FormatConditionOperator;
 import com.grapecity.documents.excel.FormatConditionType;
+import com.grapecity.documents.excel.HorizontalAlignment;
 import com.grapecity.documents.excel.IDataBar;
 import com.grapecity.documents.excel.IFormatCondition;
 import com.grapecity.documents.excel.IIconSetCondition;
@@ -16,19 +19,16 @@ import com.grapecity.documents.excel.ITheme;
 import com.grapecity.documents.excel.IValidation;
 import com.grapecity.documents.excel.IWorksheet;
 import com.grapecity.documents.excel.IconSetType;
+import com.grapecity.documents.excel.TableStyleElementType;
 import com.grapecity.documents.excel.Theme;
+import com.grapecity.documents.excel.ThemeColor;
+import com.grapecity.documents.excel.ThemeFont;
 import com.grapecity.documents.excel.ValidationAlertStyle;
 import com.grapecity.documents.excel.ValidationOperator;
+import com.grapecity.documents.excel.ValidationType;
+import com.grapecity.documents.excel.VerticalAlignment;
 import com.grapecity.documents.excel.Workbook;
-import com.grapecity.documents.excel.condition.ValidationType;
 import com.grapecity.documents.excel.examples.ExampleBase;
-import com.grapecity.documents.excel.style.BorderLineStyle;
-import com.grapecity.documents.excel.style.HorizontalAlignment;
-import com.grapecity.documents.excel.style.TableStyleElementType;
-import com.grapecity.documents.excel.style.ThemeColor;
-import com.grapecity.documents.excel.style.ThemeFont;
-import com.grapecity.documents.excel.style.VerticalAlignment;
-import com.grapecity.documents.excel.style.color.Color;
 
 public class ToDoListWithProgressTracker extends ExampleBase {
 
@@ -167,7 +167,6 @@ public class ToDoListWithProgressTracker extends ExampleBase {
         table.setName("ToDoList");
         table.setTableStyle(style);
 
-        //TODO: range.setFormula error
         //Use table formula in table range.
         worksheet.getRange("F3").setFormula("=[@[START DATE]]+7");
         worksheet.getRange("F4").setFormula("=[@[START DATE]]+35");

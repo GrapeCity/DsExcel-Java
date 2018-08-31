@@ -1,10 +1,10 @@
 package com.grapecity.documents.excel.examples.features.rangeoperations;
 
+import com.grapecity.documents.excel.DeleteShiftDirection;
 import com.grapecity.documents.excel.IWorksheet;
+import com.grapecity.documents.excel.InsertShiftDirection;
 import com.grapecity.documents.excel.Workbook;
 import com.grapecity.documents.excel.examples.ExampleBase;
-import com.grapecity.documents.excel.workbook.DeleteShiftDirection;
-import com.grapecity.documents.excel.workbook.InsertShiftDirection;
 import com.grapecity.documents.excel.examples.ExampleBase;
 import com.grapecity.documents.excel.examples.ExampleBase;
 

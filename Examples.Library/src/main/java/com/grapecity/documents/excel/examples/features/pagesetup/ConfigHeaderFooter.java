@@ -12,10 +12,7 @@ public class ConfigHeaderFooter extends ExampleBase {
 
     @Override
     public void execute(Workbook workbook) {
-
-        URL url = ClassLoader.getSystemResource("xlsx/PageSetup Demo.xlsx");
-        String filePath = url.getPath().substring(1).replaceAll("%20", " ");
-        workbook.open(filePath);
+        workbook.open(this.getTemplateStream());
         IWorksheet worksheet = workbook.getWorksheets().get(0);
 
         //Set page headerfooter
@@ -32,6 +29,11 @@ public class ConfigHeaderFooter extends ExampleBase {
         //worksheet.getPageSetup().getCenterFooterPicture().setFilename("C:\\picture.png");
         //worksheet.PageSetup.CenterFooterPicture.Filename = @"C:\picture.png";
 
+    }
+
+    @Override
+    public String getTemplateName() {
+        return "PageSetup Demo.xlsx";
     }
 
 }

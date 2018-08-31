@@ -12,11 +12,7 @@ public class ConfigEvenPageHeaderFooter extends ExampleBase {
 
     @Override
     public void execute(Workbook workbook) {
-
-        URL url = ClassLoader.getSystemResource("xlsx/PageSetup Demo.xlsx");
-        String filePath = url.getPath().substring(1).replaceAll("%20", " ");
-        System.out.println(filePath);
-        workbook.open(filePath);
+        workbook.open(this.getTemplateStream());
         IWorksheet worksheet = workbook.getWorksheets().get(0);
 
         //Set even page headerfooter
@@ -32,4 +28,8 @@ public class ConfigEvenPageHeaderFooter extends ExampleBase {
 
     }
 
+    @Override
+    public String getTemplateName() {
+        return "PageSetup Demo.xlsx";
+    }
 }

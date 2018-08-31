@@ -2,22 +2,22 @@ package com.grapecity.documents.excel.examples.exceltemplates;
 
 import java.net.URL;
 
+import com.grapecity.documents.excel.Color;
 import com.grapecity.documents.excel.ITable;
 import com.grapecity.documents.excel.IWorksheet;
+import com.grapecity.documents.excel.ThemeColor;
 import com.grapecity.documents.excel.Workbook;
+import com.grapecity.documents.excel.drawing.AxisGroup;
+import com.grapecity.documents.excel.drawing.AxisType;
+import com.grapecity.documents.excel.drawing.ChartType;
+import com.grapecity.documents.excel.drawing.DisplayUnit;
+import com.grapecity.documents.excel.drawing.GradientStyle;
 import com.grapecity.documents.excel.drawing.IAxis;
 import com.grapecity.documents.excel.drawing.IChart;
 import com.grapecity.documents.excel.drawing.IPoint;
 import com.grapecity.documents.excel.drawing.ISeries;
-import com.grapecity.documents.excel.drawing.chart.AxisGroup;
-import com.grapecity.documents.excel.drawing.chart.AxisType;
-import com.grapecity.documents.excel.drawing.chart.ChartType;
-import com.grapecity.documents.excel.drawing.chart.DisplayUnit;
-import com.grapecity.documents.excel.drawing.chart.GradientStyle;
-import com.grapecity.documents.excel.drawing.chart.LineDashStyle;
+import com.grapecity.documents.excel.drawing.LineDashStyle;
 import com.grapecity.documents.excel.examples.ExampleBase;
-import com.grapecity.documents.excel.style.ThemeColor;
-import com.grapecity.documents.excel.style.color.Color;
 
 public class MonthlyBusinessBudget extends ExampleBase {
 

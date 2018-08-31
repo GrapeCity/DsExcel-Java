@@ -2,10 +2,10 @@ package com.grapecity.documents.excel.examples.features.filtering.datefiltering;
 
 import java.util.GregorianCalendar;
 
+import com.grapecity.documents.excel.AutoFilterOperator;
 import com.grapecity.documents.excel.IWorksheet;
 import com.grapecity.documents.excel.Workbook;
 import com.grapecity.documents.excel.examples.ExampleBase;
-import com.grapecity.documents.excel.filter.AutoFilterOperator;
 
 public class DateFilter extends ExampleBase {
 
@@ -13,7 +13,6 @@ public class DateFilter extends ExampleBase {
     public void execute(Workbook workbook) {
 
         IWorksheet worksheet = workbook.getWorksheets().get(0);
-        //TODO datetime uncompleted
         Object data = new Object[][]{
                 {"Name", "City", "Birthday", "Eye color", "Weight", "Height"},
                 {"Richard", "New York", new GregorianCalendar(1968, 5, 8), "Blue", 67, 165},

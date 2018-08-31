@@ -2,9 +2,9 @@ package com.grapecity.documents.excel.examples.features.formatting.alignment;
 
 import com.grapecity.documents.excel.IRange;
 import com.grapecity.documents.excel.IWorksheet;
+import com.grapecity.documents.excel.ReadingOrder;
 import com.grapecity.documents.excel.Workbook;
 import com.grapecity.documents.excel.examples.ExampleBase;
-import com.grapecity.documents.excel.style.ReadingOrder;
 
 public class TextOrientation extends ExampleBase {
 

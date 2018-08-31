@@ -4,13 +4,13 @@ import java.util.GregorianCalendar;
 
 import com.grapecity.documents.excel.IWorksheet;
 import com.grapecity.documents.excel.Workbook;
+import com.grapecity.documents.excel.drawing.AxisType;
+import com.grapecity.documents.excel.drawing.CategoryType;
+import com.grapecity.documents.excel.drawing.ChartType;
 import com.grapecity.documents.excel.drawing.IAxis;
 import com.grapecity.documents.excel.drawing.IShape;
-import com.grapecity.documents.excel.drawing.chart.AxisType;
-import com.grapecity.documents.excel.drawing.chart.CategoryType;
-import com.grapecity.documents.excel.drawing.chart.ChartType;
-import com.grapecity.documents.excel.drawing.chart.RowCol;
-import com.grapecity.documents.excel.drawing.chart.TickMark;
+import com.grapecity.documents.excel.drawing.RowCol;
+import com.grapecity.documents.excel.drawing.TickMark;
 import com.grapecity.documents.excel.examples.ExampleBase;
 
 public class Stock_OpenHighLowCloseStock extends ExampleBase {

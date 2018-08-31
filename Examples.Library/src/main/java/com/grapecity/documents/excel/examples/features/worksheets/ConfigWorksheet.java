@@ -1,10 +1,10 @@
 package com.grapecity.documents.excel.examples.features.worksheets;
 
+import com.grapecity.documents.excel.Color;
 import com.grapecity.documents.excel.IWorksheet;
+import com.grapecity.documents.excel.Visibility;
 import com.grapecity.documents.excel.Workbook;
 import com.grapecity.documents.excel.examples.ExampleBase;
-import com.grapecity.documents.excel.style.color.Color;
-import com.grapecity.documents.excel.workbook.Visibility;
 
 public class ConfigWorksheet extends ExampleBase {
 
@@ -20,9 +20,9 @@ public class ConfigWorksheet extends ExampleBase {
         worksheet.setStandardHeight(20);
         //Set worksheet default column width.
         worksheet.setStandardWidth(50);
-        //TODO SplitPanes uncompleted
+
         //Split worksheet to panes.
-        //worksheet.SplitPanes(worksheet.get("B3").getRow(), worksheet.get("B3").getColumn());
+        worksheet.splitPanes(worksheet.getRange("B3").getRow(), worksheet.getRange("B3").getColumn());
 
         IWorksheet worksheet1 = workbook.getWorksheets().add();
         //Hide worksheet.

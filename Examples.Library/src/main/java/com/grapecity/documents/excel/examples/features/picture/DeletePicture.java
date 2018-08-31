@@ -4,11 +4,11 @@ import java.io.IOException;
 import java.io.InputStream;
 
 import com.grapecity.documents.excel.IWorksheet;
+import com.grapecity.documents.excel.ThemeColor;
 import com.grapecity.documents.excel.Workbook;
 import com.grapecity.documents.excel.drawing.IShape;
 import com.grapecity.documents.excel.drawing.ImageType;
 import com.grapecity.documents.excel.examples.ExampleBase;
-import com.grapecity.documents.excel.style.ThemeColor;
 
 public class DeletePicture extends ExampleBase {
 

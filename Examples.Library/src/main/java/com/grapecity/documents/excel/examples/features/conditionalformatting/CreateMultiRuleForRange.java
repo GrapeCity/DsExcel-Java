@@ -8,9 +8,9 @@ import com.grapecity.documents.excel.IFormatCondition;
 import com.grapecity.documents.excel.IIconSetCondition;
 import com.grapecity.documents.excel.IWorksheet;
 import com.grapecity.documents.excel.IconSetType;
+import com.grapecity.documents.excel.ThemeColor;
 import com.grapecity.documents.excel.Workbook;
 import com.grapecity.documents.excel.examples.ExampleBase;
-import com.grapecity.documents.excel.style.ThemeColor;
 import com.grapecity.documents.excel.examples.ExampleBase;
 import com.grapecity.documents.excel.examples.ExampleBase;
 

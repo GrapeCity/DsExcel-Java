@@ -1,17 +1,17 @@
 package com.grapecity.documents.excel.examples.features.formatting;
 
+import com.grapecity.documents.excel.BorderLineStyle;
 import com.grapecity.documents.excel.BordersIndex;
+import com.grapecity.documents.excel.Color;
+import com.grapecity.documents.excel.HorizontalAlignment;
 import com.grapecity.documents.excel.IStyle;
 import com.grapecity.documents.excel.IWorksheet;
 import com.grapecity.documents.excel.Pattern;
+import com.grapecity.documents.excel.ThemeColor;
+import com.grapecity.documents.excel.UnderlineType;
+import com.grapecity.documents.excel.VerticalAlignment;
 import com.grapecity.documents.excel.Workbook;
 import com.grapecity.documents.excel.examples.ExampleBase;
-import com.grapecity.documents.excel.style.BorderLineStyle;
-import com.grapecity.documents.excel.style.HorizontalAlignment;
-import com.grapecity.documents.excel.style.ThemeColor;
-import com.grapecity.documents.excel.style.UnderlineType;
-import com.grapecity.documents.excel.style.VerticalAlignment;
-import com.grapecity.documents.excel.style.color.Color;
 
 public class CreateCustomStyle extends ExampleBase {
 

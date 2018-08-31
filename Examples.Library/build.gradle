@@ -26,7 +26,7 @@ targetCompatibility = 1.8
 
 dependencies {
     compile fileTree(dir: 'lib', include: ['*.jar'])
-    compile 'com.grapecity.documents:gcexcel:1.5.3-SNAPSHOT'
+    compile 'com.grapecity.documents:gcexcel:1.6.0-SNAPSHOT'
 }
 
 group 'com.grapecity.documents'

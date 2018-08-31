@@ -1,30 +1,30 @@
 package com.grapecity.documents.excel.examples.excelreporting;
 
+import com.grapecity.documents.excel.BorderLineStyle;
 import com.grapecity.documents.excel.BordersIndex;
+import com.grapecity.documents.excel.Color;
 import com.grapecity.documents.excel.FontLanguageIndex;
+import com.grapecity.documents.excel.HorizontalAlignment;
 import com.grapecity.documents.excel.IStyle;
 import com.grapecity.documents.excel.ITable;
 import com.grapecity.documents.excel.ITableStyle;
 import com.grapecity.documents.excel.ITheme;
 import com.grapecity.documents.excel.IWorksheet;
+import com.grapecity.documents.excel.TableStyleElementType;
 import com.grapecity.documents.excel.Theme;
+import com.grapecity.documents.excel.ThemeFont;
 import com.grapecity.documents.excel.Themes;
+import com.grapecity.documents.excel.VerticalAlignment;
 import com.grapecity.documents.excel.Workbook;
+import com.grapecity.documents.excel.drawing.AutoShapeType;
+import com.grapecity.documents.excel.drawing.ChartType;
+import com.grapecity.documents.excel.drawing.DataLabelPosition;
 import com.grapecity.documents.excel.drawing.IChartArea;
 import com.grapecity.documents.excel.drawing.ISeries;
 import com.grapecity.documents.excel.drawing.IShape;
-import com.grapecity.documents.excel.drawing.chart.AutoShapeType;
-import com.grapecity.documents.excel.drawing.chart.ChartType;
-import com.grapecity.documents.excel.drawing.chart.DataLabelPosition;
-import com.grapecity.documents.excel.drawing.chart.Placement;
-import com.grapecity.documents.excel.drawing.chart.SolidColorType;
+import com.grapecity.documents.excel.drawing.Placement;
+import com.grapecity.documents.excel.drawing.SolidColorType;
 import com.grapecity.documents.excel.examples.ExampleBase;
-import com.grapecity.documents.excel.style.BorderLineStyle;
-import com.grapecity.documents.excel.style.HorizontalAlignment;
-import com.grapecity.documents.excel.style.TableStyleElementType;
-import com.grapecity.documents.excel.style.ThemeFont;
-import com.grapecity.documents.excel.style.VerticalAlignment;
-import com.grapecity.documents.excel.style.color.Color;
 
 public class PersonalNetWorthCalculator extends ExampleBase {
 

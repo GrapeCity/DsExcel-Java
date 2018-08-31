@@ -2,21 +2,21 @@ package com.grapecity.documents.excel.examples.features.slicer;
 
 import java.util.GregorianCalendar;
 
+import com.grapecity.documents.excel.Color;
 import com.grapecity.documents.excel.ISlicer;
 import com.grapecity.documents.excel.ISlicerCache;
 import com.grapecity.documents.excel.ITable;
 import com.grapecity.documents.excel.ITableStyle;
 import com.grapecity.documents.excel.IWorksheet;
+import com.grapecity.documents.excel.TableStyleElementType;
 import com.grapecity.documents.excel.Workbook;
 import com.grapecity.documents.excel.examples.ExampleBase;
-import com.grapecity.documents.excel.style.TableStyleElementType;
-import com.grapecity.documents.excel.style.color.Color;
 
 public class SlicerCopy extends ExampleBase {
 
     @Override
     public void execute(Workbook workbook) {
-        //TODO slicer copy
+
         Object sourceData = new Object[][]{
                 {"Order ID", "Product", "Category", "Amount", "Date", "Country"},
                 {1, "Carrots", "Vegetables", 4270, new GregorianCalendar(2018, 0, 6), "United States"},

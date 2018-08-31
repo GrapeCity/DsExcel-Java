@@ -2,6 +2,7 @@ package com.grapecity.documents.excel.examples.features.slicer;
 
 import java.util.GregorianCalendar;
 
+import com.grapecity.documents.excel.ConsolidationFunction;
 import com.grapecity.documents.excel.IPivotCache;
 import com.grapecity.documents.excel.IPivotField;
 import com.grapecity.documents.excel.IPivotTable;
@@ -11,13 +12,12 @@ import com.grapecity.documents.excel.IWorksheet;
 import com.grapecity.documents.excel.PivotFieldOrientation;
 import com.grapecity.documents.excel.Workbook;
 import com.grapecity.documents.excel.examples.ExampleBase;
-import com.grapecity.documents.excel.pivot.ConsolidationFunction;
 
 public class AddSlicersForPivotTable extends ExampleBase {
 
     @Override
     public void execute(Workbook workbook) {
-        //TODO pivotable bug
+
         Object sourceData = new Object[][]{
                 {"Order ID", "Product", "Category", "Amount", "Date", "Country"},
                 {1, "Carrots", "Vegetables", 4270, new GregorianCalendar(2018, 0, 6), "United States"},

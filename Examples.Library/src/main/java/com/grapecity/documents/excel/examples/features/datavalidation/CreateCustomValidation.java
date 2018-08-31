@@ -1,12 +1,12 @@
 package com.grapecity.documents.excel.examples.features.datavalidation;
 
+import com.grapecity.documents.excel.Color;
 import com.grapecity.documents.excel.IWorksheet;
 import com.grapecity.documents.excel.ValidationAlertStyle;
 import com.grapecity.documents.excel.ValidationOperator;
+import com.grapecity.documents.excel.ValidationType;
 import com.grapecity.documents.excel.Workbook;
-import com.grapecity.documents.excel.condition.ValidationType;
 import com.grapecity.documents.excel.examples.ExampleBase;
-import com.grapecity.documents.excel.style.color.Color;
 
 public class CreateCustomValidation extends ExampleBase {
 

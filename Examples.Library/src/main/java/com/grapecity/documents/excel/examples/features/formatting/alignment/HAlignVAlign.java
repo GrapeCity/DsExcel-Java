@@ -1,11 +1,11 @@
 package com.grapecity.documents.excel.examples.features.formatting.alignment;
 
+import com.grapecity.documents.excel.HorizontalAlignment;
 import com.grapecity.documents.excel.IRange;
 import com.grapecity.documents.excel.IWorksheet;
+import com.grapecity.documents.excel.VerticalAlignment;
 import com.grapecity.documents.excel.Workbook;
 import com.grapecity.documents.excel.examples.ExampleBase;
-import com.grapecity.documents.excel.style.HorizontalAlignment;
-import com.grapecity.documents.excel.style.VerticalAlignment;
 
 public class HAlignVAlign extends ExampleBase {
 

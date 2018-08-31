@@ -2,13 +2,13 @@ package com.grapecity.documents.excel.examples.features.sorting;
 
 import java.util.GregorianCalendar;
 
+import com.grapecity.documents.excel.Color;
 import com.grapecity.documents.excel.FontColorSortField;
 import com.grapecity.documents.excel.IWorksheet;
 import com.grapecity.documents.excel.SortOrder;
 import com.grapecity.documents.excel.SortOrientation;
 import com.grapecity.documents.excel.Workbook;
 import com.grapecity.documents.excel.examples.ExampleBase;
-import com.grapecity.documents.excel.style.color.Color;
 
 public class SortRangeByFontColor extends ExampleBase {
 

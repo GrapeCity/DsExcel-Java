@@ -13,7 +13,7 @@ public class SlicerCut extends ExampleBase {
 
     @Override
     public void execute(Workbook workbook) {
-        //TODO slicer cut
+
         Object sourceData = new Object[][]{
                 {"Order ID", "Product", "Category", "Amount", "Date", "Country"},
                 {1, "Carrots", "Vegetables", 4270, new GregorianCalendar(2018, 0, 6), "United States"},

@@ -1,28 +1,28 @@
 package com.grapecity.documents.excel.examples.excelreporting;
 
+import com.grapecity.documents.excel.BorderLineStyle;
 import com.grapecity.documents.excel.BordersIndex;
+import com.grapecity.documents.excel.Color;
 import com.grapecity.documents.excel.FontLanguageIndex;
+import com.grapecity.documents.excel.HorizontalAlignment;
 import com.grapecity.documents.excel.ISparklineGroup;
 import com.grapecity.documents.excel.IStyle;
 import com.grapecity.documents.excel.ITheme;
 import com.grapecity.documents.excel.IWorksheet;
+import com.grapecity.documents.excel.SparkType;
 import com.grapecity.documents.excel.Theme;
+import com.grapecity.documents.excel.ThemeColor;
+import com.grapecity.documents.excel.ThemeFont;
+import com.grapecity.documents.excel.VerticalAlignment;
 import com.grapecity.documents.excel.Workbook;
+import com.grapecity.documents.excel.drawing.AxisType;
+import com.grapecity.documents.excel.drawing.ChartType;
 import com.grapecity.documents.excel.drawing.IAxis;
 import com.grapecity.documents.excel.drawing.IChartTitle;
 import com.grapecity.documents.excel.drawing.ISeries;
 import com.grapecity.documents.excel.drawing.IShape;
-import com.grapecity.documents.excel.drawing.chart.AxisType;
-import com.grapecity.documents.excel.drawing.chart.ChartType;
-import com.grapecity.documents.excel.drawing.chart.LegendPosition;
+import com.grapecity.documents.excel.drawing.LegendPosition;
 import com.grapecity.documents.excel.examples.ExampleBase;
-import com.grapecity.documents.excel.sparkline.SparkType;
-import com.grapecity.documents.excel.style.BorderLineStyle;
-import com.grapecity.documents.excel.style.HorizontalAlignment;
-import com.grapecity.documents.excel.style.ThemeColor;
-import com.grapecity.documents.excel.style.ThemeFont;
-import com.grapecity.documents.excel.style.VerticalAlignment;
-import com.grapecity.documents.excel.style.color.Color;
 
 public class CustomerProfitabilityAnalysis extends ExampleBase {
 
@@ -30,37 +30,37 @@ public class CustomerProfitabilityAnalysis extends ExampleBase {
     public void execute(Workbook workbook) {
 
         Object data = new Object[][]{
-                {null, "[Segment Name]", "[Segment Name]", "[Segment Name]", "Overall"},
-                {"Customer Activity:", null, null, null, null},
-                {"Number of active customers—Beginning of period", 5, 8, 8, null},
-                {"Number of customers added", 2, 4, 4, null},
-                {"Number of customers lost/terminated", -1, -2, -2, null},
-                {"Number of active customers—End of period", null, null, null, null},
-                {null, null, null, null, null},
-                {"Profitability Analysis:", null, null, null, null},
-                {"Revenue per segment", 1500000, 1800000, 2500000, null},
-                {"Weighting", null, null, null, null},
-                {null, null, null, null, null},
-                {"Cost of sales:", null, null, null, null},
-                {"Ongoing service and support costs", 1000000, 1400000, 1400000, null},
-                {"Other direct customer costs", 200000, 100000, 100000, null},
-                {"Total cost of sales", null, null, null, null},
-                {"Gross margin", null, null, null, null},
-                {"Weighting", null, null, null, null},
-                {null, null, null, null, null},
-                {"Other costs:", null, null, null, null},
-                {"Customer acquisition", 105000, 120000, 235000, null},
-                {"Customer marketing", 150000, 125000, 275000, null},
-                {"Customer termination", 80000, 190000, 140000, null},
-                {"Total other customer costs", null, null, null, null},
-                {"Customer profit by segment", null, null, null, null},
-                {"Weighting", null, null, null, null},
-                {null, null, null, null, null},
-                {"Summary Metrics:", "[Segment Name]", "[Segment Name]", "[Segment Name]", "Trend"},
-                {"Average cost per acquired customer", null, null, null, null},
-                {"Average cost per terminated customer", null, null, null, null},
-                {"Average marketing cost per active customer", null, null, null, null},
-                {"Average profit (loss) per customer", null, null, null, null},
+            {null, "[Segment Name]", "[Segment Name]", "[Segment Name]", "Overall"},
+            {"Customer Activity:", null, null, null, null},
+            {"Number of active customers—Beginning of period", 5, 8, 8, null},
+            {"Number of customers added", 2, 4, 4, null},
+            {"Number of customers lost/terminated", -1, -2, -2, null},
+            {"Number of active customers—End of period", null, null, null, null},
+            {null, null, null, null, null},
+            {"Profitability Analysis:", null, null, null, null},
+            {"Revenue per segment", 1500000, 1800000, 2500000, null},
+            {"Weighting", null, null, null, null},
+            {null, null, null, null, null},
+            {"Cost of sales:", null, null, null, null},
+            {"Ongoing service and support costs", 1000000, 1400000, 1400000, null},
+            {"Other direct customer costs", 200000, 100000, 100000, null},
+            {"Total cost of sales", null, null, null, null},
+            {"Gross margin", null, null, null, null},
+            {"Weighting", null, null, null, null},
+            {null, null, null, null, null},
+            {"Other costs:", null, null, null, null},
+            {"Customer acquisition", 105000, 120000, 235000, null},
+            {"Customer marketing", 150000, 125000, 275000, null},
+            {"Customer termination", 80000, 190000, 140000, null},
+            {"Total other customer costs", null, null, null, null},
+            {"Customer profit by segment", null, null, null, null},
+            {"Weighting", null, null, null, null},
+            {null, null, null, null, null},
+            {"Summary Metrics:", "[Segment Name]", "[Segment Name]", "[Segment Name]", "Trend"},
+            {"Average cost per acquired customer", null, null, null, null},
+            {"Average cost per terminated customer", null, null, null, null},
+            {"Average marketing cost per active customer", null, null, null, null},
+            {"Average profit (loss) per customer", null, null, null, null},
         };
 
         IWorksheet worksheet = workbook.getWorksheets().get(0);
@@ -259,9 +259,9 @@ public class CustomerProfitabilityAnalysis extends ExampleBase {
 
         //create a new group of sparklines.
         ISparklineGroup sparklineGroup = worksheet.getRange("F34:F37").getSparklineGroups().add(SparkType.Line, "C34:E37");
-        //TODO sparklineGroup.getTintAndShade() not implement yet
-        //       sparklineGroup.getTintAndShade().setThemeColor(ThemeColor.Accent3);
-        //       sparklineGroup.getTintAndShade().setTintAndShade(-0.249977111117893);
+
+        sparklineGroup.getSeriesColor().setThemeColor(ThemeColor.Accent3);
+        sparklineGroup.getSeriesColor().setTintAndShade(-0.249977111117893);
         sparklineGroup.getPoints().getNegative().getColor().setThemeColor(ThemeColor.Accent4);
         sparklineGroup.getPoints().getMarkers().getColor().setThemeColor(ThemeColor.Accent4);
         sparklineGroup.getPoints().getMarkers().getColor().setTintAndShade(-0.249977111117893);

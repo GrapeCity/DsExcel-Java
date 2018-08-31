@@ -5,10 +5,10 @@ import java.io.InputStream;
 
 import com.grapecity.documents.excel.IWorksheet;
 import com.grapecity.documents.excel.Workbook;
+import com.grapecity.documents.excel.drawing.AutoShapeType;
 import com.grapecity.documents.excel.drawing.IShape;
 import com.grapecity.documents.excel.drawing.ImageType;
-import com.grapecity.documents.excel.drawing.chart.AutoShapeType;
-import com.grapecity.documents.excel.drawing.chart.PictureColorType;
+import com.grapecity.documents.excel.drawing.PictureColorType;
 import com.grapecity.documents.excel.examples.ExampleBase;
 
 public class ConfigShapeWithPictureFill extends ExampleBase {

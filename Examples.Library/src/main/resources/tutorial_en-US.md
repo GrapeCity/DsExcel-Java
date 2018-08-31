@@ -1,7 +1,7 @@
 ﻿
-# Getting started with Documents for Excel, a spreadsheet API
+# Getting started with Documents for Excel - Java Edition, a spreadsheet API
 
-In this tutorial, we create a real-life scenario with GrapeCity Documents for Excel to give you a fundamental understanding of what it can do. At the end of this tutorial, you will have a simple budget Excel file.
+In this tutorial, we create a real-life scenario with GcExcel Java to give you a fundamental understanding of what it can do. At the end of this tutorial, you will have a simple budget Excel file.
 
 ## Prepare
 
@@ -36,10 +36,7 @@ Open Main.java and import below namespaces.
 
 ```java
 import com.grapecity.documents.excel.*;
-import com.grapecity.documents.excel.style.*;
-import com.grapecity.documents.excel.style.color.*;
 import com.grapecity.documents.excel.drawing.*;
-import com.grapecity.documents.excel.drawing.chart.*;
 ```
 
 ## Create Workbook

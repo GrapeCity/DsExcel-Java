@@ -1,12 +1,12 @@
 package com.grapecity.documents.excel.examples.features.comments;
 
+import com.grapecity.documents.excel.Color;
 import com.grapecity.documents.excel.IComment;
 import com.grapecity.documents.excel.IWorksheet;
 import com.grapecity.documents.excel.Workbook;
-import com.grapecity.documents.excel.drawing.chart.LineDashStyle;
-import com.grapecity.documents.excel.drawing.chart.LineStyle;
+import com.grapecity.documents.excel.drawing.LineDashStyle;
+import com.grapecity.documents.excel.drawing.LineStyle;
 import com.grapecity.documents.excel.examples.ExampleBase;
-import com.grapecity.documents.excel.style.color.Color;
 
 public class ConfigCommentLayout extends ExampleBase {
 

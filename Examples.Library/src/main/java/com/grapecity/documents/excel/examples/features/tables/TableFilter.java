@@ -2,11 +2,11 @@ package com.grapecity.documents.excel.examples.features.tables;
 
 import java.util.GregorianCalendar;
 
+import com.grapecity.documents.excel.AutoFilterOperator;
 import com.grapecity.documents.excel.ITable;
 import com.grapecity.documents.excel.IWorksheet;
 import com.grapecity.documents.excel.Workbook;
 import com.grapecity.documents.excel.examples.ExampleBase;
-import com.grapecity.documents.excel.filter.AutoFilterOperator;
 
 public class TableFilter extends ExampleBase {
 

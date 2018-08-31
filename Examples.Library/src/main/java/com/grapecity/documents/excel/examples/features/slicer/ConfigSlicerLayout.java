@@ -7,7 +7,7 @@ import com.grapecity.documents.excel.ISlicerCache;
 import com.grapecity.documents.excel.ITable;
 import com.grapecity.documents.excel.IWorksheet;
 import com.grapecity.documents.excel.Workbook;
-import com.grapecity.documents.excel.drawing.chart.Placement;
+import com.grapecity.documents.excel.drawing.Placement;
 import com.grapecity.documents.excel.examples.ExampleBase;
 
 public class ConfigSlicerLayout extends ExampleBase {

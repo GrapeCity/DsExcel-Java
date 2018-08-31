@@ -1,11 +1,11 @@
 package com.grapecity.documents.excel.examples.features.formatting.fill;
 
+import com.grapecity.documents.excel.Color;
 import com.grapecity.documents.excel.ILinearGradient;
 import com.grapecity.documents.excel.IWorksheet;
 import com.grapecity.documents.excel.Pattern;
 import com.grapecity.documents.excel.Workbook;
 import com.grapecity.documents.excel.examples.ExampleBase;
-import com.grapecity.documents.excel.style.color.Color;
 
 public class LinearGradientFill extends ExampleBase {
 

@@ -2,12 +2,12 @@ package com.grapecity.documents.excel.examples.features.charts.axes;
 
 import com.grapecity.documents.excel.IWorksheet;
 import com.grapecity.documents.excel.Workbook;
+import com.grapecity.documents.excel.drawing.AxisType;
+import com.grapecity.documents.excel.drawing.ChartType;
 import com.grapecity.documents.excel.drawing.IAxis;
 import com.grapecity.documents.excel.drawing.IShape;
-import com.grapecity.documents.excel.drawing.chart.AxisType;
-import com.grapecity.documents.excel.drawing.chart.ChartType;
-import com.grapecity.documents.excel.drawing.chart.RowCol;
-import com.grapecity.documents.excel.drawing.chart.ScaleType;
+import com.grapecity.documents.excel.drawing.RowCol;
+import com.grapecity.documents.excel.drawing.ScaleType;
 import com.grapecity.documents.excel.examples.ExampleBase;
 
 public class SetAxisScaleType extends ExampleBase {

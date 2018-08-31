@@ -1,14 +1,14 @@
 package com.grapecity.documents.excel.examples.features.theme;
 
+import com.grapecity.documents.excel.Color;
 import com.grapecity.documents.excel.FontLanguageIndex;
 import com.grapecity.documents.excel.ITheme;
 import com.grapecity.documents.excel.IWorksheet;
 import com.grapecity.documents.excel.Theme;
+import com.grapecity.documents.excel.ThemeColor;
+import com.grapecity.documents.excel.ThemeFont;
 import com.grapecity.documents.excel.Workbook;
 import com.grapecity.documents.excel.examples.ExampleBase;
-import com.grapecity.documents.excel.style.ThemeColor;
-import com.grapecity.documents.excel.style.ThemeFont;
-import com.grapecity.documents.excel.style.color.Color;
 
 public class AddCustomThemes extends ExampleBase {
 

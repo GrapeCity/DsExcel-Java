@@ -8,11 +8,11 @@ public class ConfigureWorkbookView extends ExampleBase {
 
     @Override
     public void execute(Workbook workbook) {
+
         // Workbook view settings.
         IWorkbookView bookView = workbook.getBookView();
         bookView.setDisplayVerticalScrollBar(false);
-        //TODO DisplayWorkbookTabs uncompleted example
-        //bookView.setDisplayWorkbookTabs = true;
+        bookView.setDisplayWorkbookTabs(true);
         bookView.setTabRatio(0.5);
 
     }

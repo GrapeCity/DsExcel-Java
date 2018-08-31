@@ -2,13 +2,13 @@ package com.grapecity.documents.excel.examples.features.charts.chartgallery;
 
 import com.grapecity.documents.excel.IWorksheet;
 import com.grapecity.documents.excel.Workbook;
+import com.grapecity.documents.excel.drawing.AxisGroup;
+import com.grapecity.documents.excel.drawing.AxisType;
+import com.grapecity.documents.excel.drawing.ChartType;
 import com.grapecity.documents.excel.drawing.IAxis;
 import com.grapecity.documents.excel.drawing.ISeries;
 import com.grapecity.documents.excel.drawing.IShape;
-import com.grapecity.documents.excel.drawing.chart.AxisGroup;
-import com.grapecity.documents.excel.drawing.chart.AxisType;
-import com.grapecity.documents.excel.drawing.chart.ChartType;
-import com.grapecity.documents.excel.drawing.chart.RowCol;
+import com.grapecity.documents.excel.drawing.RowCol;
 import com.grapecity.documents.excel.examples.ExampleBase;
 
 public class CombinationChart2 extends ExampleBase {

@@ -17,10 +17,9 @@ public class PictureDuplicate extends ExampleBase {
 
         InputStream stream = ClassLoader.getSystemResourceAsStream("logo.png");
         try {
-
             //Create a shape in worksheet
             IShape picture = worksheet.getShapes().addPicture(stream, ImageType.PNG, 20, 20, 395, 60);
-            //TODO bug for duplicate
+
             //Duplicate picture
             IShape newPicture = picture.duplicate();
         } catch (IOException e) {

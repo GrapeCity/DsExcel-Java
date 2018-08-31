@@ -2,22 +2,22 @@ package com.grapecity.documents.excel.examples.exceltemplates;
 
 import java.net.URL;
 
+import com.grapecity.documents.excel.BorderLineStyle;
 import com.grapecity.documents.excel.BordersIndex;
 import com.grapecity.documents.excel.ITable;
 import com.grapecity.documents.excel.IWorksheet;
+import com.grapecity.documents.excel.ThemeColor;
+import com.grapecity.documents.excel.ThemeFont;
 import com.grapecity.documents.excel.Workbook;
+import com.grapecity.documents.excel.drawing.AutoShapeType;
+import com.grapecity.documents.excel.drawing.AxisType;
+import com.grapecity.documents.excel.drawing.ChartType;
 import com.grapecity.documents.excel.drawing.IAxis;
 import com.grapecity.documents.excel.drawing.ISeries;
 import com.grapecity.documents.excel.drawing.IShape;
-import com.grapecity.documents.excel.drawing.chart.AutoShapeType;
-import com.grapecity.documents.excel.drawing.chart.AxisType;
-import com.grapecity.documents.excel.drawing.chart.ChartType;
-import com.grapecity.documents.excel.drawing.chart.ITextRange;
-import com.grapecity.documents.excel.drawing.chart.SolidColorType;
+import com.grapecity.documents.excel.drawing.ITextRange;
+import com.grapecity.documents.excel.drawing.SolidColorType;
 import com.grapecity.documents.excel.examples.ExampleBase;
-import com.grapecity.documents.excel.style.BorderLineStyle;
-import com.grapecity.documents.excel.style.ThemeColor;
-import com.grapecity.documents.excel.style.ThemeFont;
 
 public class BloodSugarTracker extends ExampleBase {
 

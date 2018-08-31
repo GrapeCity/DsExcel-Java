@@ -14,7 +14,7 @@ public class CreatePivotTable extends ExampleBase {
 
     @Override
     public void execute(Workbook workbook) {
-        //TODO pivottable api uncompleted
+
         Object sourceData = new Object[][]{
                 {"Order ID", "Product", "Category", "Amount", "Date", "Country"},
                 {1, "Carrots", "Vegetables", 4270, new GregorianCalendar(2018, 0, 6), "United States"},

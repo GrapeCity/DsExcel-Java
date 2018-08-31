@@ -1,24 +1,24 @@
 package com.grapecity.documents.excel.examples;
 
+import com.grapecity.documents.excel.BorderLineStyle;
 import com.grapecity.documents.excel.BordersIndex;
+import com.grapecity.documents.excel.Color;
 import com.grapecity.documents.excel.ConditionValueTypes;
 import com.grapecity.documents.excel.DataBarFillType;
+import com.grapecity.documents.excel.HorizontalAlignment;
 import com.grapecity.documents.excel.IDataBar;
 import com.grapecity.documents.excel.IStyle;
 import com.grapecity.documents.excel.ITable;
 import com.grapecity.documents.excel.IWorksheet;
+import com.grapecity.documents.excel.VerticalAlignment;
 import com.grapecity.documents.excel.Workbook;
+import com.grapecity.documents.excel.drawing.AxisType;
+import com.grapecity.documents.excel.drawing.ChartType;
+import com.grapecity.documents.excel.drawing.DataLabelPosition;
 import com.grapecity.documents.excel.drawing.IAxis;
 import com.grapecity.documents.excel.drawing.ISeries;
 import com.grapecity.documents.excel.drawing.IShape;
-import com.grapecity.documents.excel.drawing.chart.AxisType;
-import com.grapecity.documents.excel.drawing.chart.ChartType;
-import com.grapecity.documents.excel.drawing.chart.DataLabelPosition;
 import com.grapecity.documents.excel.examples.ExampleBase;
-import com.grapecity.documents.excel.style.BorderLineStyle;
-import com.grapecity.documents.excel.style.HorizontalAlignment;
-import com.grapecity.documents.excel.style.VerticalAlignment;
-import com.grapecity.documents.excel.style.color.Color;
 
 import java.io.InputStream;
 
@@ -180,8 +180,6 @@ public class Tutorial extends ExampleBase {
         chartSeries.getDataLabels().getFont().getColor().setRGB(Color.getBlack());
         chartSeries.getDataLabels().setShowValue(true);
         chartSeries.getDataLabels().setPosition(DataLabelPosition.OutsideEnd);
-
-
     }
 
     @Override

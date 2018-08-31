@@ -2,10 +2,10 @@ package com.grapecity.documents.excel.examples.features.shape;
 
 import com.grapecity.documents.excel.IWorksheet;
 import com.grapecity.documents.excel.Workbook;
+import com.grapecity.documents.excel.drawing.AutoShapeType;
 import com.grapecity.documents.excel.drawing.IShape;
-import com.grapecity.documents.excel.drawing.chart.AutoShapeType;
-import com.grapecity.documents.excel.drawing.chart.PresetTexture;
-import com.grapecity.documents.excel.drawing.chart.TextureAlignment;
+import com.grapecity.documents.excel.drawing.PresetTexture;
+import com.grapecity.documents.excel.drawing.TextureAlignment;
 import com.grapecity.documents.excel.examples.ExampleBase;
 
 public class ConfigShapeWithTextureFill extends ExampleBase {

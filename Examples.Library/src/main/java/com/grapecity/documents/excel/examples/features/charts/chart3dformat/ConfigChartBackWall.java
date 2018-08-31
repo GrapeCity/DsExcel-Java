@@ -1,12 +1,12 @@
 package com.grapecity.documents.excel.examples.features.charts.chart3dformat;
 
+import com.grapecity.documents.excel.Color;
 import com.grapecity.documents.excel.IWorksheet;
 import com.grapecity.documents.excel.Workbook;
+import com.grapecity.documents.excel.drawing.ChartType;
 import com.grapecity.documents.excel.drawing.IShape;
-import com.grapecity.documents.excel.drawing.chart.ChartType;
-import com.grapecity.documents.excel.drawing.chart.RowCol;
+import com.grapecity.documents.excel.drawing.RowCol;
 import com.grapecity.documents.excel.examples.ExampleBase;
-import com.grapecity.documents.excel.style.color.Color;
 
 public class ConfigChartBackWall extends ExampleBase {
 

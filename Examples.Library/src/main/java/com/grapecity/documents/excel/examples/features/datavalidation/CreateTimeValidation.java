@@ -1,12 +1,12 @@
 package com.grapecity.documents.excel.examples.features.datavalidation;
 
+import com.grapecity.documents.excel.Color;
 import com.grapecity.documents.excel.IWorksheet;
 import com.grapecity.documents.excel.ValidationAlertStyle;
 import com.grapecity.documents.excel.ValidationOperator;
+import com.grapecity.documents.excel.ValidationType;
 import com.grapecity.documents.excel.Workbook;
-import com.grapecity.documents.excel.condition.ValidationType;
 import com.grapecity.documents.excel.examples.ExampleBase;
-import com.grapecity.documents.excel.style.color.Color;
 
 import java.util.GregorianCalendar;
 
@@ -16,7 +16,6 @@ public class CreateTimeValidation extends ExampleBase {
     public void execute(Workbook workbook) {
 
         IWorksheet worksheet = workbook.getWorksheets().get(0);
-        //TODO export bug
         worksheet.getRange("C2:E4").setValue(new Object[][]{
                 {new GregorianCalendar(1899, 11, 30, 13, 0, 0), new GregorianCalendar(1899, 11, 30, 13, 29, 59), new GregorianCalendar(1899, 11, 30, 13, 30, 0)},
                 {new GregorianCalendar(1899, 11, 30, 14, 0, 0), new GregorianCalendar(1899, 11, 30, 15, 0, 0), new GregorianCalendar(1899, 11, 30, 16, 30, 0)},

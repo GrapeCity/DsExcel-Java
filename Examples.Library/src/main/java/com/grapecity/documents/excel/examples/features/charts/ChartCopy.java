@@ -2,17 +2,17 @@ package com.grapecity.documents.excel.examples.features.charts;
 
 import com.grapecity.documents.excel.IWorksheet;
 import com.grapecity.documents.excel.Workbook;
+import com.grapecity.documents.excel.drawing.ChartType;
 import com.grapecity.documents.excel.drawing.IShape;
-import com.grapecity.documents.excel.drawing.chart.ChartType;
-import com.grapecity.documents.excel.drawing.chart.RowCol;
+import com.grapecity.documents.excel.drawing.RowCol;
 import com.grapecity.documents.excel.examples.ExampleBase;
 
 public class ChartCopy extends ExampleBase {
 
     @Override
     public void execute(Workbook workbook) {
+
         IWorksheet worksheet = workbook.getWorksheets().get(0);
-        //TODO copy uncompleted
         //Create chart, chart's range is Range["G1:M21"]
         IShape shape = worksheet.getShapes().addChart(ChartType.ColumnClustered, 300, 10, 300, 300);
         worksheet.getRange("A1:D6").setValue(new Object[][]{
@@ -27,7 +27,7 @@ public class ChartCopy extends ExampleBase {
         shape.getChart().getSeriesCollection().add(worksheet.getRange("A1:D6"), RowCol.Columns, true, true);
 
         //Range["G1:M21"] must contain chart's range, copy a new shape to Range["N1:T21"]
-        // worksheet.get("G1:M21").Copy(worksheet.get("N1"));
+        worksheet.getRange("G1:M21").copy(worksheet.getRange("N1"));
         //worksheet.Range["G1:M21"].Copy(worksheet.Range["N1:T21"]);
 
         //Cross sheet copy, copy a new chart to worksheet2's Range["N1:T21"]

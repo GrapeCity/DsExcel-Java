@@ -11,16 +11,16 @@ public class ExampleComparer implements Comparator<ExampleBase> {
         // root children orders
         _sortOrders.put("tutorial", "a");
         _sortOrders.put("features", "b");
-        _sortOrders.put("spreadSheetsViewer", "c");
-        _sortOrders.put("excelReporting", "d");
-        _sortOrders.put("excelTemplates", "e");
+        _sortOrders.put("spreadsheetsviewer", "c");
+        _sortOrders.put("excelreporting", "d");
+        _sortOrders.put("exceltemplates", "e");
 
         // Features children orders
-        _sortOrders.put("rangeOperations", "a");
+        _sortOrders.put("rangeoperations", "a");
         _sortOrders.put("formatting", "b");
         _sortOrders.put("tables", "c");
-        _sortOrders.put("conditionalFormatting", "d");
-        _sortOrders.put("dataValidation", "e");
+        _sortOrders.put("conditionalformatting", "d");
+        _sortOrders.put("datavalidation", "e");
         _sortOrders.put("formulas", "f");
         _sortOrders.put("grouping", "g");
         _sortOrders.put("filtering", "h");

@@ -2,13 +2,13 @@ package com.grapecity.documents.excel.examples.exceltemplates;
 
 import java.net.URL;
 
+import com.grapecity.documents.excel.BorderLineStyle;
 import com.grapecity.documents.excel.BordersIndex;
 import com.grapecity.documents.excel.IWorksheet;
+import com.grapecity.documents.excel.ThemeColor;
+import com.grapecity.documents.excel.ThemeFont;
 import com.grapecity.documents.excel.Workbook;
 import com.grapecity.documents.excel.examples.ExampleBase;
-import com.grapecity.documents.excel.style.BorderLineStyle;
-import com.grapecity.documents.excel.style.ThemeColor;
-import com.grapecity.documents.excel.style.ThemeFont;
 
 public class EventBudget extends ExampleBase {
 

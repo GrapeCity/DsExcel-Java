@@ -8,6 +8,7 @@ public class DirtyAndCalculation extends ExampleBase {
 
     @Override
     public void execute(Workbook workbook) {
+
         IWorksheet worksheet = workbook.getWorksheets().get(0);
         worksheet.getRange("A1").setValue(1);
         worksheet.getRange("A2").setFormula("=A1");
@@ -27,7 +28,7 @@ public class DirtyAndCalculation extends ExampleBase {
         //it returns 0 because of no cache value exist.
         Object value_A2_1 = worksheet.getRange("A2").getValue();
         Object value_A3_1 = worksheet.getRange("A3").getValue();
-        //TODO range.dirty range.calculate
+
         worksheet.getRange("A1").setValue(2);
         //enable calc engine.
         workbook.setEnableCalculation(true);

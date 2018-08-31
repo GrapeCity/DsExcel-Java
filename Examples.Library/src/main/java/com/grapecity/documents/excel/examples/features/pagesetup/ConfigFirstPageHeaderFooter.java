@@ -12,10 +12,7 @@ public class ConfigFirstPageHeaderFooter extends ExampleBase {
 
     @Override
     public void execute(Workbook workbook) {
-
-        URL url = ClassLoader.getSystemResource("xlsx/PageSetup Demo.xlsx");
-        String filePath = url.getPath().substring(1).replaceAll("%20", " ");
-        workbook.open(filePath);
+        workbook.open(this.getTemplateStream());
         IWorksheet worksheet = workbook.getWorksheets().get(0);
 
         //Set first page headerfooter
@@ -31,6 +28,12 @@ public class ConfigFirstPageHeaderFooter extends ExampleBase {
         worksheet.getPageSetup().getFirstPage().getLeftFooter().getPicture().setWidth(100);
         worksheet.getPageSetup().getFirstPage().getLeftFooter().getPicture().setHeight(13);
 
+    }
+
+
+    @Override
+    public String getTemplateName() {
+        return "PageSetup Demo.xlsx";
     }
 
 }

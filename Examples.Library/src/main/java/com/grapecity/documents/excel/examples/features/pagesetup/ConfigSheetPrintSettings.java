@@ -12,10 +12,7 @@ public class ConfigSheetPrintSettings extends ExampleBase {
 
     @Override
     public void execute(Workbook workbook) {
-
-        URL url = ClassLoader.getSystemResource("xlsx/PageSetup Demo.xlsx");
-        String filePath = url.getPath().substring(1).replaceAll("%20", " ");
-        workbook.open(filePath);
+        workbook.open(this.getTemplateStream());
         IWorksheet worksheet = workbook.getWorksheets().get(0);
 
         //Set sheet
@@ -27,4 +24,8 @@ public class ConfigSheetPrintSettings extends ExampleBase {
 
     }
 
+    @Override
+    public String getTemplateName() {
+        return "PageSetup Demo.xlsx";
+    }
 }

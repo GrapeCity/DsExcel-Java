@@ -1,14 +1,14 @@
 package com.grapecity.documents.excel.examples.features.tables;
 
+import com.grapecity.documents.excel.BorderLineStyle;
+import com.grapecity.documents.excel.Color;
 import com.grapecity.documents.excel.ITable;
 import com.grapecity.documents.excel.ITableStyle;
 import com.grapecity.documents.excel.IWorksheet;
+import com.grapecity.documents.excel.TableStyleElementType;
+import com.grapecity.documents.excel.ThemeColor;
 import com.grapecity.documents.excel.Workbook;
 import com.grapecity.documents.excel.examples.ExampleBase;
-import com.grapecity.documents.excel.style.BorderLineStyle;
-import com.grapecity.documents.excel.style.TableStyleElementType;
-import com.grapecity.documents.excel.style.ThemeColor;
-import com.grapecity.documents.excel.style.color.Color;
 
 public class AddCustomTableStyle extends ExampleBase {
 

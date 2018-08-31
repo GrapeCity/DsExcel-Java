@@ -1,12 +1,12 @@
 package com.grapecity.documents.excel.examples.features.formatting.borders;
 
+import com.grapecity.documents.excel.BorderLineStyle;
 import com.grapecity.documents.excel.BordersIndex;
+import com.grapecity.documents.excel.Color;
 import com.grapecity.documents.excel.IRange;
 import com.grapecity.documents.excel.IWorksheet;
 import com.grapecity.documents.excel.Workbook;
 import com.grapecity.documents.excel.examples.ExampleBase;
-import com.grapecity.documents.excel.style.BorderLineStyle;
-import com.grapecity.documents.excel.style.color.Color;
 
 public class AddBordersToCell extends ExampleBase {
 
