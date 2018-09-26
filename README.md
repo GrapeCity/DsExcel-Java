@@ -13,5 +13,5 @@ This repository contains source project of Examples and Showcases of **GcExcel**
 | Examples.Library     | A collection of Java examples that help you learn and explore the API features |
 
 # Other Resources
-* Demo Site:[http://demos.componentone.com/gcdocs/gcexceljava/](http://demos.componentone.com/gcdocs/gcexceljava/)
+* Demo Site: [http://demos.componentone.com/gcdocs/gcexceljava/](http://demos.componentone.com/gcdocs/gcexceljava/)
 * Maven Repo Address: [https://oss.sonatype.org/content/repositories/snapshots/com/grapecity/documents/gcexcel/](https://oss.sonatype.org/content/repositories/snapshots/com/grapecity/documents/gcexcel/)
