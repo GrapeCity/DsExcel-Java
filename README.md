@@ -3,7 +3,7 @@ GrapeCity introduces Documents for Excel (GcExcel) Java Edition, a high-speed, f
 
 With GcExcel, you can also load, edit, analyse, convert and save spreadsheets in Java applications with full support on Windows, MAC and Linux.
 
-This repository contains source project of Examples and Showcases of **GcExcel** to help you learn and write your own applications. 
+This repository contains source project of Examples and Showcases of GcExcel to help you learn and write your own applications. 
 
 | Directory    | Description    |
 | ------------- |-------------|
