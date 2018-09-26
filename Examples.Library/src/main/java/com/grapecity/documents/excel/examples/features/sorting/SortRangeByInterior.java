@@ -29,12 +29,12 @@ public class SortRangeByInterior extends ExampleBase {
         worksheet.getRange("A1:F7").setValue(data);
         worksheet.getRange("A:F").setColumnWidth(15);
 
-        worksheet.getRange("F2").getInterior().setColor(Color.getLightPink());
-        worksheet.getRange("F3").getInterior().setColor(Color.getLightGreen());
-        worksheet.getRange("F4").getInterior().setColor(Color.getLightPink());
-        worksheet.getRange("F5").getInterior().setColor(Color.getLightGreen());
-        worksheet.getRange("F6").getInterior().setColor(Color.getLightBlue());
-        worksheet.getRange("F7").getInterior().setColor(Color.getLightPink());
+        worksheet.getRange("F2").getInterior().setColor(Color.GetLightPink());
+        worksheet.getRange("F3").getInterior().setColor(Color.GetLightGreen());
+        worksheet.getRange("F4").getInterior().setColor(Color.GetLightPink());
+        worksheet.getRange("F5").getInterior().setColor(Color.GetLightGreen());
+        worksheet.getRange("F6").getInterior().setColor(Color.GetLightBlue());
+        worksheet.getRange("F7").getInterior().setColor(Color.GetLightPink());
 
         //"F4" will in the top.
         worksheet.getSort().getSortFields().add(new CellColorSortField(worksheet.getRange("F2:F7"), worksheet.getRange("F4").getDisplayFormat().getInterior(), SortOrder.Ascending));

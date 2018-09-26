@@ -1,16 +1,28 @@
 package com.grapecity.documents.excel.examples.features.customfunctions;
 
-import com.grapecity.documents.excel.*;
-import com.grapecity.documents.excel.examples.ExampleBase;
-
 import java.util.ArrayList;
 import java.util.List;
+
+import com.grapecity.documents.excel.CalcError;
+import com.grapecity.documents.excel.CalcReference;
+import com.grapecity.documents.excel.Color;
+import com.grapecity.documents.excel.CustomFunction;
+import com.grapecity.documents.excel.FormatConditionOperator;
+import com.grapecity.documents.excel.FormatConditionType;
+import com.grapecity.documents.excel.FunctionValueType;
+import com.grapecity.documents.excel.ICalcContext;
+import com.grapecity.documents.excel.IFormatCondition;
+import com.grapecity.documents.excel.IRange;
+import com.grapecity.documents.excel.IWorksheet;
+import com.grapecity.documents.excel.Parameter;
+import com.grapecity.documents.excel.Workbook;
+import com.grapecity.documents.excel.examples.ExampleBase;
 
 public class MyConditionalSumFunction extends ExampleBase {
 
     @Override
     public void execute(Workbook workbook) {
-        Workbook.addCustomFunction(new MyConditionalSumFunctionX());
+        Workbook.AddCustomFunction(new MyConditionalSumFunctionX());
         IWorksheet worksheet = workbook.getActiveSheet();
         worksheet.getRange("A1:A10").setValue(new Object[][] {
             {1 },
@@ -24,7 +36,7 @@ public class MyConditionalSumFunction extends ExampleBase {
             {9 },
             {10 }});
         IFormatCondition cellValueRule = (IFormatCondition)worksheet.getRange("A1:A10").getFormatConditions().add(FormatConditionType.CellValue, FormatConditionOperator.Greater, 5, null);
-        cellValueRule.getInterior().setColor(Color.getRed());
+        cellValueRule.getInterior().setColor(Color.GetRed());
 
         //Sum cells value which display format interior color are red.
         worksheet.getRange("C1").setFormula("=MyConditionalSum(A1:A10)");
@@ -99,7 +111,7 @@ public class MyConditionalSumFunction extends ExampleBase {
                         return list;
                     }
                 }
-
+            }
           */
     }
 
@@ -167,7 +179,7 @@ class MyConditionalSumFunctionX extends CustomFunction {
                 int colCount = range.getColumns().getCount();
                 for (int i = 0; i < rowCount; i++) {
                     for (int j = 0; j < colCount; j++) {
-                        if (range.getCells().get(i, j).getDisplayFormat().getInterior().getColor().equals(Color.getRed())) {
+                        if (range.getCells().get(i, j).getDisplayFormat().getInterior().getColor().equals(Color.GetRed())) {
                             list.add(range.getCells().get(i, j).getValue());
                         }
                     }

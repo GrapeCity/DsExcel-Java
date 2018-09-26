@@ -14,8 +14,8 @@ public class RectangularGradientFill extends ExampleBase {
 
         IWorksheet worksheet = workbook.getWorksheets().get(0);
         worksheet.getRange("A1").getInterior().setPattern(Pattern.RectangularGradient);
-        ((IRectangularGradient) worksheet.getRange("A1").getInterior().getGradient()).getColorStops().get(0).setColor(Color.getRed());
-        ((IRectangularGradient) worksheet.getRange("A1").getInterior().getGradient()).getColorStops().get(1).setColor(Color.getGreen());
+        ((IRectangularGradient) worksheet.getRange("A1").getInterior().getGradient()).getColorStops().get(0).setColor(Color.GetRed());
+        ((IRectangularGradient) worksheet.getRange("A1").getInterior().getGradient()).getColorStops().get(1).setColor(Color.GetGreen());
 
         ((IRectangularGradient) worksheet.getRange("A1").getInterior().getGradient()).setBottom(0.2);
         ((IRectangularGradient) worksheet.getRange("A1").getInterior().getGradient()).setRight(0.3);

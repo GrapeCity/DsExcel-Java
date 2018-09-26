@@ -29,8 +29,8 @@ public class ConfigChartAreaFormat extends ExampleBase {
         IChartArea chartarea = shape.getChart().getChartArea();
 
         //Format
-        chartarea.getFormat().getFill().getColor().setRGB(Color.getLightGray());
-        chartarea.getFormat().getLine().getColor().setRGB(Color.getMediumSeaGreen());
+        chartarea.getFormat().getFill().getColor().setRGB(Color.GetLightGray());
+        chartarea.getFormat().getLine().getColor().setRGB(Color.GetMediumSeaGreen());
         chartarea.getFormat().getLine().setWeight(1.5);
 
     }

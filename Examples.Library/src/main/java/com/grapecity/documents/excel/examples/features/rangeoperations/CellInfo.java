@@ -12,28 +12,28 @@ public class CellInfo extends ExampleBase {
 
         // cell's value B2
         String cell = com.grapecity.documents.excel.CellInfo.CellIndexToName(1, 1);
-        worksheet.getRange(cell).getInterior().setColor(Color.getLightBlue());
+        worksheet.getRange(cell).getInterior().setColor(Color.GetLightBlue());
 
         // rowIndex is 3 and columnIndex is 2
         int[] index = com.grapecity.documents.excel.CellInfo.CellNameToIndex("C4");
         int rowIndex = index[0];
         int columnIndex = index[1];
-        worksheet.getRange(rowIndex, columnIndex).getInterior().setColor(Color.getLightCoral());
+        worksheet.getRange(rowIndex, columnIndex).getInterior().setColor(Color.GetLightCoral());
 
         // column is D
         String column = com.grapecity.documents.excel.CellInfo.ColumnIndexToName(3);
-        worksheet.getRange(String.format("%s:%s", column, column)).getInterior().setColor(Color.getLightGreen());
+        worksheet.getRange(String.format("%s:%s", column, column)).getInterior().setColor(Color.GetLightGreen());
 
         // columnIndex is 4
         columnIndex = com.grapecity.documents.excel.CellInfo.ColumnNameToIndex("E");
-        worksheet.getColumns().get(columnIndex).getInterior().setColor(Color.getLightSalmon());
+        worksheet.getColumns().get(columnIndex).getInterior().setColor(Color.GetLightSalmon());
 
         // row is 3
         String row = com.grapecity.documents.excel.CellInfo.RowIndexToName(2);
-        worksheet.getRange(String.format("%s:%s", row, row)).getInterior().setColor(Color.getLightSteelBlue());
+        worksheet.getRange(String.format("%s:%s", row, row)).getInterior().setColor(Color.GetLightSteelBlue());
 
         // rowIndex is 4
         rowIndex = com.grapecity.documents.excel.CellInfo.RowNameToIndex("5");
-        worksheet.getRows().get(rowIndex).getInterior().setColor(Color.getLightSkyBlue());
+        worksheet.getRows().get(rowIndex).getInterior().setColor(Color.GetLightSkyBlue());
     }
 }

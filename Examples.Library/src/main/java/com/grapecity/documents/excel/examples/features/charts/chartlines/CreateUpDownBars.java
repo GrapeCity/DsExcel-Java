@@ -28,8 +28,8 @@ public class CreateUpDownBars extends ExampleBase {
 
         //config up down bars for line chart.
         shape.getChart().getLineGroups().get(0).setHasUpDownBars(true);
-        shape.getChart().getLineGroups().get(0).getUpBars().getFormat().getFill().getColor().setRGB(Color.FromRGB(199, 235, 217));
-        shape.getChart().getLineGroups().get(0).getDownBars().getFormat().getFill().getColor().setRGB(Color.getLightPink());
+        shape.getChart().getLineGroups().get(0).getUpBars().getFormat().getFill().getColor().setRGB(Color.FromArgb(199, 235, 217));
+        shape.getChart().getLineGroups().get(0).getDownBars().getFormat().getFill().getColor().setRGB(Color.GetLightPink());
 
     }
 

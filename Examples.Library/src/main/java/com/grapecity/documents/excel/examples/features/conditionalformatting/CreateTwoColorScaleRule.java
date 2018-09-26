@@ -34,11 +34,11 @@ public class CreateTwoColorScaleRule extends ExampleBase {
         IColorScale twoColorScaleRule = worksheet.getRange("E2:E7").getFormatConditions().addColorScale(ColorScaleType.TwoColorScale);
         twoColorScaleRule.getColorScaleCriteria().get(0).setType(ConditionValueTypes.Number);
         twoColorScaleRule.getColorScaleCriteria().get(0).setValue(62);
-        twoColorScaleRule.getColorScaleCriteria().get(0).getFormatColor().setColor(Color.getRed());
+        twoColorScaleRule.getColorScaleCriteria().get(0).getFormatColor().setColor(Color.GetRed());
 
         twoColorScaleRule.getColorScaleCriteria().get(1).setType(ConditionValueTypes.Number);
         twoColorScaleRule.getColorScaleCriteria().get(1).setValue(76);
-        twoColorScaleRule.getColorScaleCriteria().get(1).getFormatColor().setColor(Color.getGreen());
+        twoColorScaleRule.getColorScaleCriteria().get(1).getFormatColor().setColor(Color.GetGreen());
 
     }
 

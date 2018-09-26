@@ -51,18 +51,18 @@ public class BloodPressureTracker extends ExampleBase {
         //theme
         //create a custom theme.
         ITheme theme = new Theme("testTheme");
-        theme.getThemeColorScheme().get(ThemeColor.Light1).setRGB(Color.FromRGB(255, 255, 255));
-        theme.getThemeColorScheme().get(ThemeColor.Dark1).setRGB(Color.FromRGB(0, 0, 0));
-        theme.getThemeColorScheme().get(ThemeColor.Light2).setRGB(Color.FromRGB(222, 222, 212));
-        theme.getThemeColorScheme().get(ThemeColor.Dark2).setRGB(Color.FromRGB(30, 46, 47));
-        theme.getThemeColorScheme().get(ThemeColor.Accent1).setRGB(Color.FromRGB(233, 117, 90));
-        theme.getThemeColorScheme().get(ThemeColor.Accent2).setRGB(Color.FromRGB(122, 182, 186));
-        theme.getThemeColorScheme().get(ThemeColor.Accent3).setRGB(Color.FromRGB(125, 181, 135));
-        theme.getThemeColorScheme().get(ThemeColor.Accent4).setRGB(Color.FromRGB(230, 191, 94));
-        theme.getThemeColorScheme().get(ThemeColor.Accent5).setRGB(Color.FromRGB(230, 143, 77));
-        theme.getThemeColorScheme().get(ThemeColor.Accent6).setRGB(Color.FromRGB(194, 107, 112));
-        theme.getThemeColorScheme().get(ThemeColor.Hyperlink).setRGB(Color.FromRGB(122, 182, 186));
-        theme.getThemeColorScheme().get(ThemeColor.FollowedHyperlink).setRGB(Color.FromRGB(166, 140, 177));
+        theme.getThemeColorScheme().get(ThemeColor.Light1).setRGB(Color.FromArgb(255, 255, 255));
+        theme.getThemeColorScheme().get(ThemeColor.Dark1).setRGB(Color.FromArgb(0, 0, 0));
+        theme.getThemeColorScheme().get(ThemeColor.Light2).setRGB(Color.FromArgb(222, 222, 212));
+        theme.getThemeColorScheme().get(ThemeColor.Dark2).setRGB(Color.FromArgb(30, 46, 47));
+        theme.getThemeColorScheme().get(ThemeColor.Accent1).setRGB(Color.FromArgb(233, 117, 90));
+        theme.getThemeColorScheme().get(ThemeColor.Accent2).setRGB(Color.FromArgb(122, 182, 186));
+        theme.getThemeColorScheme().get(ThemeColor.Accent3).setRGB(Color.FromArgb(125, 181, 135));
+        theme.getThemeColorScheme().get(ThemeColor.Accent4).setRGB(Color.FromArgb(230, 191, 94));
+        theme.getThemeColorScheme().get(ThemeColor.Accent5).setRGB(Color.FromArgb(230, 143, 77));
+        theme.getThemeColorScheme().get(ThemeColor.Accent6).setRGB(Color.FromArgb(194, 107, 112));
+        theme.getThemeColorScheme().get(ThemeColor.Hyperlink).setRGB(Color.FromArgb(122, 182, 186));
+        theme.getThemeColorScheme().get(ThemeColor.FollowedHyperlink).setRGB(Color.FromArgb(166, 140, 177));
         theme.getThemeFontScheme().getMajor().get(FontLanguageIndex.Latin).setName("Gill Sans");
         theme.getThemeFontScheme().getMinor().get(FontLanguageIndex.Latin).setName("Gill Sans");
 
@@ -302,15 +302,15 @@ public class BloodPressureTracker extends ExampleBase {
         //set series fill to gradient fill.
         series_systolic.getFormat().getFill().twoColorGradient(GradientStyle.Horizontal, 1);
         series_systolic.getFormat().getFill().setGradientAngle(270);
-        series_systolic.getFormat().getFill().getGradientStops().get(0).getColor().setRGB(Color.FromRGB(255, 172, 175));
-        series_systolic.getFormat().getFill().getGradientStops().get(1).getColor().setRGB(Color.FromRGB(255, 227, 228));
+        series_systolic.getFormat().getFill().getGradientStops().get(0).getColor().setRGB(Color.FromArgb(255, 172, 175));
+        series_systolic.getFormat().getFill().getGradientStops().get(1).getColor().setRGB(Color.FromArgb(255, 227, 228));
         series_systolic.getFormat().getFill().getGradientStops().insert(0xFEC6C8, 0.35);
         series_systolic.getFormat().getLine().getColor().setObjectThemeColor(ThemeColor.Accent6);
 
         series_diatolic.getFormat().getFill().twoColorGradient(GradientStyle.Horizontal, 1);
         series_diatolic.getFormat().getFill().setGradientAngle(270);
-        series_diatolic.getFormat().getFill().getGradientStops().get(0).getColor().setRGB(Color.FromRGB(255, 192, 147));
-        series_diatolic.getFormat().getFill().getGradientStops().get(1).getColor().setRGB(Color.FromRGB(255, 227, 212));
+        series_diatolic.getFormat().getFill().getGradientStops().get(0).getColor().setRGB(Color.FromArgb(255, 192, 147));
+        series_diatolic.getFormat().getFill().getGradientStops().get(1).getColor().setRGB(Color.FromArgb(255, 227, 212));
         series_diatolic.getFormat().getFill().getGradientStops().insert(0xFFCBA9, 0.35);
         series_diatolic.getFormat().getLine().getColor().setObjectThemeColor(ThemeColor.Accent5);
 
@@ -404,8 +404,8 @@ public class BloodPressureTracker extends ExampleBase {
         //create conditional format for ranges.
         IFormatCondition condition1 = (IFormatCondition) worksheet.getRange("E37:E44").getFormatConditions().add(FormatConditionType.Expression, FormatConditionOperator.Between, "=E37>MaxSystolic", null);
         IFormatCondition condition2 = (IFormatCondition) worksheet.getRange("F37:F44").getFormatConditions().add(FormatConditionType.Expression, FormatConditionOperator.Between, "=F37>MaxDiastolic", null);
-        condition1.getInterior().setColor(Color.getRed());
-        condition2.getInterior().setColor(Color.getRed());
+        condition1.getInterior().setColor(Color.GetRed());
+        condition2.getInterior().setColor(Color.GetRed());
 
     }
 

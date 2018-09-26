@@ -21,10 +21,10 @@ public class ConfigurePrintTitles extends ExampleBase {
         sheet.getRange("A1:N50").setValue(data);
 
         sheet.getRange("A2:N4").setValue("TitleRows");
-        sheet.getRange("A2:N4").getInterior().setColor(Color.getGreen());
+        sheet.getRange("A2:N4").getInterior().setColor(Color.GetGreen());
 
         sheet.getRange("C1:E50").setValue("TitleColumns");
-        sheet.getRange("C1:E50").getInterior().setColor(Color.getYellow());
+        sheet.getRange("C1:E50").getInterior().setColor(Color.GetYellow());
 
         sheet.getPageSetup().setPrintHeadings(true);
 

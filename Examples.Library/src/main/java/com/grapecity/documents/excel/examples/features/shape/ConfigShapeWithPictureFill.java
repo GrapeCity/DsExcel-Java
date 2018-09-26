@@ -18,7 +18,7 @@ public class ConfigShapeWithPictureFill extends ExampleBase {
 
         IWorksheet worksheet = workbook.getWorksheets().get(0);
         IShape shape = worksheet.getShapes().addShape(AutoShapeType.Parallelogram, 20, 20, 200, 100);
-        InputStream stream = ClassLoader.getSystemResourceAsStream("logo.png");
+        InputStream stream = this.getResourceStream("logo.png");
 
         try {
             shape.getFill().userPicture(stream, ImageType.JPG);

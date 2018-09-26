@@ -30,9 +30,9 @@ public class ConfigMarkersFormat extends ExampleBase {
         ISeries series1 = shape.getChart().getSeriesCollection().get(0);
 
         //config line markers style
-        series1.getMarkerFormat().getFill().getColor().setRGB(Color.getCornflowerBlue());
+        series1.getMarkerFormat().getFill().getColor().setRGB(Color.GetCornflowerBlue());
         series1.getMarkerFormat().getLine().setStyle(LineStyle.ThickThin);
-        series1.getMarkerFormat().getLine().getColor().setRGB(Color.getLightGreen());
+        series1.getMarkerFormat().getLine().getColor().setRGB(Color.GetLightGreen());
         series1.getMarkerFormat().getLine().setWeight(3);
 
     }

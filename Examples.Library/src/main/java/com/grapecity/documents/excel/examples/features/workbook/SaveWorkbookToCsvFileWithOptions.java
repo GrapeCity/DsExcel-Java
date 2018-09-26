@@ -1,11 +1,11 @@
 package com.grapecity.documents.excel.examples.features.workbook;
 
+import java.util.GregorianCalendar;
+
 import com.grapecity.documents.excel.CsvSaveOptions;
 import com.grapecity.documents.excel.IWorksheet;
 import com.grapecity.documents.excel.Workbook;
 import com.grapecity.documents.excel.examples.ExampleBase;
-
-import java.util.GregorianCalendar;
 
 public class SaveWorkbookToCsvFileWithOptions extends ExampleBase {
 
@@ -36,12 +36,10 @@ public class SaveWorkbookToCsvFileWithOptions extends ExampleBase {
 
     }
 
-    @Override
-    public boolean getCanDownload() {
-
-        return true;
-
-    }
+	@Override
+	public boolean getCanDownload() {
+		return false;
+	}
 
     @Override
     public boolean getShowViewer() {
@@ -49,5 +47,4 @@ public class SaveWorkbookToCsvFileWithOptions extends ExampleBase {
         return false;
 
     }
-
 }

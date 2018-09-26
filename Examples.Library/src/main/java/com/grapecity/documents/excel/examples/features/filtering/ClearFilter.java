@@ -34,7 +34,6 @@ public class ClearFilter extends ExampleBase {
 
         // clear all filters
         worksheet.getAutoFilter().showAllData();
-        ;
 
         // another way to clear all filters, same as AutoFilter.ShowAllData()
         worksheet.showAllData();

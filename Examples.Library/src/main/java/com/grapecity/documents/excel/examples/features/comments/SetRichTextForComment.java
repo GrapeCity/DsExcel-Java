@@ -30,7 +30,7 @@ public class SetRichTextForComment extends ExampleBase {
 
         //config the third run of the paragraph's style. 
         commentC3.getShape().getTextFrame().getTextRange().getParagraphs().get(0).getRuns().get(3).getFont().setItalic(true);
-        commentC3.getShape().getTextFrame().getTextRange().getParagraphs().get(0).getRuns().get(3).getFont().getColor().setRGB(Color.getGreen());
+        commentC3.getShape().getTextFrame().getTextRange().getParagraphs().get(0).getRuns().get(3).getFont().getColor().setRGB(Color.GetGreen());
 
         //show comment.
         commentC3.setVisible(true);

@@ -56,9 +56,9 @@ public class AddCustomSlicerStyle extends ExampleBase {
         slicerStyle.getTableStyleElements().get(TableStyleElementType.WholeTable).getFont().setName("Arial");
         slicerStyle.getTableStyleElements().get(TableStyleElementType.WholeTable).getFont().setBold(false);
         slicerStyle.getTableStyleElements().get(TableStyleElementType.WholeTable).getFont().setItalic(false);
-        slicerStyle.getTableStyleElements().get(TableStyleElementType.WholeTable).getFont().setColor(Color.getWhite());
-        slicerStyle.getTableStyleElements().get(TableStyleElementType.WholeTable).getBorders().setColor(Color.getLightPink());
-        slicerStyle.getTableStyleElements().get(TableStyleElementType.WholeTable).getInterior().setColor(Color.getLightGreen());
+        slicerStyle.getTableStyleElements().get(TableStyleElementType.WholeTable).getFont().setColor(Color.GetWhite());
+        slicerStyle.getTableStyleElements().get(TableStyleElementType.WholeTable).getBorders().setColor(Color.GetLightPink());
+        slicerStyle.getTableStyleElements().get(TableStyleElementType.WholeTable).getInterior().setColor(Color.GetLightGreen());
 
         //set slicer style to custom style.
         slicer.setStyle(slicerStyle);

@@ -16,7 +16,7 @@ public class CutCopyRange extends ExampleBase {
         IWorksheet worksheet2 = workbook.getWorksheets().add();
 
         worksheet.getRange("B3:D12").setValue(5);
-        worksheet.getRange("B3:D12").getInterior().setColor(Color.getLightGreen());
+        worksheet.getRange("B3:D12").getInterior().setColor(Color.GetLightGreen());
 
         //Copy
         worksheet.getRange("B3:D12").copy(worksheet.getRange("E5"));
@@ -25,7 +25,7 @@ public class CutCopyRange extends ExampleBase {
         worksheet.getRange("B3:D12").cut(worksheet.getRange("I5:K14"));
 
         worksheet.getRange("I1:K2").setValue(2);
-        worksheet.getRange("I1:K2").getInterior().setColor(Color.getPink());
+        worksheet.getRange("I1:K2").getInterior().setColor(Color.GetPink());
 
         //cross sheet cut copy.
         worksheet.getRange("I1:K2").cut(worksheet2.getRange("H5"));

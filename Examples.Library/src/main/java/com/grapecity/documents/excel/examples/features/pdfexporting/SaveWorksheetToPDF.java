@@ -11,8 +11,8 @@ public class SaveWorksheetToPDF extends ExampleBase {
         //set style.
         sheet.getRange("A1").setValue("Sheet1");
         sheet.getRange("A1").getFont().setName("Wide Latin");
-        sheet.getRange("A1").getFont().setColor(Color.getRed());
-        sheet.getRange("A1").getInterior().setColor(Color.getGreen());
+        sheet.getRange("A1").getFont().setColor(Color.GetRed());
+        sheet.getRange("A1").getInterior().setColor(Color.GetGreen());
 
         //change the path to real export path when save.
         sheet.save("dest.pdf", SaveFileFormat.Pdf);

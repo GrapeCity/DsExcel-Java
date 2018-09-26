@@ -31,7 +31,7 @@ public class CreateExpressionRule extends ExampleBase {
 
         //expression rule, format weight greater than 68.
         IFormatCondition condition = (IFormatCondition) worksheet.getRange("E2:E7").getFormatConditions().add(FormatConditionType.Expression, FormatConditionOperator.None, "=E2>68", null);
-        condition.getInterior().setColor(Color.getLightPink());
+        condition.getInterior().setColor(Color.GetLightPink());
 
     }
 

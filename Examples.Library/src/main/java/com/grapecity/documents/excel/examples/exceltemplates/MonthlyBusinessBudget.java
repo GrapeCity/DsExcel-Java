@@ -57,7 +57,7 @@ public class MonthlyBusinessBudget extends ExampleBase {
 
         // give some formatting for the first point of series1
         IPoint point1 = series1.getPoints().get(0);
-        point1.getFormat().getLine().getColor().setRGB(Color.getBlack());
+        point1.getFormat().getLine().getColor().setRGB(Color.GetBlack());
         point1.getFormat().getLine().setWeight(2);
         point1.getFormat().getLine().setDashStyle(LineDashStyle.Dash);
 
@@ -65,7 +65,7 @@ public class MonthlyBusinessBudget extends ExampleBase {
         ISeries series2 = chart.getSeriesCollection().get(1);
         series2.setHasDataLabels(true);
         series2.getFormat().getFill().getColor().setObjectThemeColor(ThemeColor.Accent6);
-        series2.getDataLabels().getFont().getColor().setRGB(Color.getRed());
+        series2.getDataLabels().getFont().getColor().setRGB(Color.GetRed());
 
         // get the value axis
         IAxis value_axis = chart.getAxes().item(AxisType.Value, AxisGroup.Primary);

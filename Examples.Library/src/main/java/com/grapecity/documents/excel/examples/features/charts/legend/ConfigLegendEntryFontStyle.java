@@ -32,7 +32,7 @@ public class ConfigLegendEntryFontStyle extends ExampleBase {
         ILegend legend = shape.getChart().getLegend();
         //config legend entry font style
         ILegendEntry legendentry = legend.getLegendEntries().get(0);
-        legendentry.getFont().getColor().setRGB(Color.getRed());
+        legendentry.getFont().getColor().setRGB(Color.GetRed());
         legendentry.getFont().setSize(15);
     }
 

@@ -30,13 +30,6 @@ public class SaveWorkbookToCsvFile extends ExampleBase {
     }
 
     @Override
-    public boolean getCanDownload() {
-
-        return true;
-
-    }
-
-    @Override
     public boolean getShowViewer() {
 
         return false;

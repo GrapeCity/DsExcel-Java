@@ -17,7 +17,7 @@ public class SetShapeText extends ExampleBase {
         shape.setWidth(500);
         shape.setHeight(200);
 
-        shape.getTextFrame().getTextRange().getFont().getColor().setRGB(Color.FromRGB(0, 255, 0));
+        shape.getTextFrame().getTextRange().getFont().getColor().setRGB(Color.FromArgb(0, 255, 0));
         shape.getTextFrame().getTextRange().getFont().setBold(true);
         shape.getTextFrame().getTextRange().getFont().setItalic(true);
         shape.getTextFrame().getTextRange().getFont().setSize(20);

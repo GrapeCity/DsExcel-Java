@@ -18,19 +18,19 @@ public class AddingBordersToRange extends ExampleBase {
 
         //set left, top, right, bottom borders together.
         rangeB2_E6.getBorders().setLineStyle(BorderLineStyle.DashDot);
-        rangeB2_E6.getBorders().setColor(Color.getGreen());
+        rangeB2_E6.getBorders().setColor(Color.GetGreen());
 
         //set inside horizontal border.
         rangeB2_E6.getBorders().get(BordersIndex.InsideHorizontal).setLineStyle(BorderLineStyle.Dashed);
-        rangeB2_E6.getBorders().get(BordersIndex.InsideHorizontal).setColor(Color.getTomato());
+        rangeB2_E6.getBorders().get(BordersIndex.InsideHorizontal).setColor(Color.GetTomato());
 
         //set inside vertical border.
         rangeB2_E6.getBorders().get(BordersIndex.InsideVertical).setLineStyle(BorderLineStyle.Double);
-        rangeB2_E6.getBorders().get(BordersIndex.InsideVertical).setColor(Color.getBlue());
+        rangeB2_E6.getBorders().get(BordersIndex.InsideVertical).setColor(Color.GetBlue());
 
         //set top border individually.
         rangeB2_E6.getBorders().get(BordersIndex.EdgeTop).setLineStyle(BorderLineStyle.Medium);
-        rangeB2_E6.getBorders().get(BordersIndex.EdgeTop).setColor(Color.getRed());
+        rangeB2_E6.getBorders().get(BordersIndex.EdgeTop).setColor(Color.GetRed());
 
     }
 

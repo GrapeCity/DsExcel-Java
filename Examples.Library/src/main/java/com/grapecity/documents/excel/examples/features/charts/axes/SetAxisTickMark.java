@@ -30,7 +30,7 @@ public class SetAxisTickMark extends ExampleBase {
         shape.getChart().getSeriesCollection().add(worksheet.getRange("A1:D6"), RowCol.Columns, true, true);
 
         IAxis category_axis = shape.getChart().getAxes().item(AxisType.Category);
-        category_axis.getFormat().getLine().getColor().setRGB(Color.getGreen());
+        category_axis.getFormat().getLine().getColor().setRGB(Color.GetGreen());
         category_axis.getFormat().getLine().setWeight(1.5);
         category_axis.setMajorTickMark(TickMark.Inside);
         category_axis.setMinorTickMark(TickMark.Cross);

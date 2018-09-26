@@ -9,7 +9,7 @@ public class CreateNewWorkbook extends ExampleBase {
     public void execute(Workbook workbook) {
 
         //Create empty workbook, contains one worksheet default.
-        Workbook workbookNew = new Workbook();
+    	workbook = new Workbook();
 
     }
 

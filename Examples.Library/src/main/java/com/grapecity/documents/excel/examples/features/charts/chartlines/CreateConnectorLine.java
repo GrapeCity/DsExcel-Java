@@ -28,7 +28,7 @@ public class CreateConnectorLine extends ExampleBase {
 
         //connector line for pie of pie chart
         shape.getChart().getPieGroups().get(0).setHasSeriesLines(true);
-        shape.getChart().getPieGroups().get(0).getSeriesLines().getFormat().getLine().getColor().setRGB(Color.getOrange());
+        shape.getChart().getPieGroups().get(0).getSeriesLines().getFormat().getLine().getColor().setRGB(Color.GetOrange());
 
     }
 

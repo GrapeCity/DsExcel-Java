@@ -28,7 +28,7 @@ public class PersonalAddressBook extends ExampleBase {
             ITheme theme = new Theme("testTheme", Themes.GetOfficeTheme());
             theme.getThemeFontScheme().getMinor().get(FontLanguageIndex.Latin).setName("Trebuchet MS");
             workbook.setTheme(theme);
-            IStyle style_Normal = workbook.getStyles().get("Mormal");
+            IStyle style_Normal = workbook.getStyles().get("Normal");
             style_Normal.getFont().setThemeFont(ThemeFont.Minor);
         }
     }
@@ -72,7 +72,7 @@ public class PersonalAddressBook extends ExampleBase {
         workbook.setDefaultTableStyle("Personal Address Book");
 
         // Set WholeTable element style.
-        tableStyle.getTableStyleElements().get(TableStyleElementType.WholeTable).getBorders().setColor(Color.FromRGB(179, 35, 23));
+        tableStyle.getTableStyleElements().get(TableStyleElementType.WholeTable).getBorders().setColor(Color.FromArgb(179, 35, 23));
         tableStyle.getTableStyleElements().get(TableStyleElementType.WholeTable).getBorders().get(BordersIndex.EdgeLeft).setLineStyle(BorderLineStyle.Thin);
         tableStyle.getTableStyleElements().get(TableStyleElementType.WholeTable).getBorders().get(BordersIndex.EdgeRight).setLineStyle(BorderLineStyle.Thin);
         tableStyle.getTableStyleElements().get(TableStyleElementType.WholeTable).getBorders().get(BordersIndex.EdgeBottom).setLineStyle(BorderLineStyle.Thin);
@@ -83,7 +83,7 @@ public class PersonalAddressBook extends ExampleBase {
         tableStyle.getTableStyleElements().get(TableStyleElementType.FirstColumn).getFont().setBold(true);
 
         // Set SecondColumns element style.
-        tableStyle.getTableStyleElements().get(TableStyleElementType.HeaderRow).getBorders().setColor(Color.FromRGB(179, 35, 23));
+        tableStyle.getTableStyleElements().get(TableStyleElementType.HeaderRow).getBorders().setColor(Color.FromArgb(179, 35, 23));
         tableStyle.getTableStyleElements().get(TableStyleElementType.HeaderRow).getBorders().get(BordersIndex.EdgeTop).setLineStyle(BorderLineStyle.Thick);
         tableStyle.getTableStyleElements().get(TableStyleElementType.HeaderRow).getBorders().get(BordersIndex.EdgeBottom).setLineStyle(BorderLineStyle.Thick);
 
@@ -91,7 +91,7 @@ public class PersonalAddressBook extends ExampleBase {
         // Styles*****************************
         IStyle normalStyle = workbook.getStyles().get("Normal");
         normalStyle.getFont().setName("Arial");
-        normalStyle.getFont().setColor(Color.FromRGB(179, 35, 23));
+        normalStyle.getFont().setColor(Color.FromArgb(179, 35, 23));
         normalStyle.setHorizontalAlignment(HorizontalAlignment.Left);
         normalStyle.setIndentLevel(1);
         normalStyle.setVerticalAlignment(VerticalAlignment.Center);
@@ -104,13 +104,13 @@ public class PersonalAddressBook extends ExampleBase {
         titleStyle.getFont().setName("Arial");
         titleStyle.getFont().setBold(true);
         titleStyle.getFont().setSize(72);
-        titleStyle.getFont().setColor(Color.FromRGB(179, 35, 23));
+        titleStyle.getFont().setColor(Color.FromArgb(179, 35, 23));
 
         IStyle heading1Style = workbook.getStyles().get("Heading 1");
         heading1Style.setIncludeBorder(false);
         heading1Style.getFont().setName("Arial");
         heading1Style.getFont().setSize(18);
-        heading1Style.getFont().setColor(Color.FromRGB(179, 35, 23));
+        heading1Style.getFont().setColor(Color.FromArgb(179, 35, 23));
 
         IStyle dataStyle = workbook.getStyles().add("Data");
         dataStyle.setIncludeNumber(true);
@@ -123,7 +123,7 @@ public class PersonalAddressBook extends ExampleBase {
         // ****************************************Use
         // NamedStyle**************************
         worksheet.getSheetView().setDisplayGridlines(false);
-        worksheet.getRange("B2:L2").getInterior().setColor(Color.FromRGB(217, 217, 217));
+        worksheet.getRange("B2:L2").getInterior().setColor(Color.FromArgb(217, 217, 217));
         worksheet.getRange("B3:B4").getFont().setBold(true);
         worksheet.getRange("2:2").setHorizontalAlignment(HorizontalAlignment.Left);
 

@@ -28,8 +28,8 @@ public class ConfigChartWallStyle extends ExampleBase {
 
         //config back wall and side wall together.
         shape.getChart().getWalls().setThickness(5);
-        shape.getChart().getWalls().getFormat().getFill().getColor().setRGB(Color.getLightPink());
-        shape.getChart().getWalls().getFormat().getLine().getColor().setRGB(Color.getLightBlue());
+        shape.getChart().getWalls().getFormat().getFill().getColor().setRGB(Color.GetLightPink());
+        shape.getChart().getWalls().getFormat().getLine().getColor().setRGB(Color.GetLightBlue());
 
     }
 

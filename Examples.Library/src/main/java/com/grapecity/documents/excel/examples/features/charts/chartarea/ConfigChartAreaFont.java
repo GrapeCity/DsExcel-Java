@@ -29,7 +29,7 @@ public class ConfigChartAreaFont extends ExampleBase {
         IChartArea chartarea = shape.getChart().getChartArea();
 
         //Font
-        chartarea.getFont().getColor().setRGB(Color.getMediumSeaGreen());
+        chartarea.getFont().getColor().setRGB(Color.GetMediumSeaGreen());
         chartarea.getFont().setName("Times New Roman");
         chartarea.getFont().setSize(12);
         //rounded corners.

@@ -29,8 +29,8 @@ public class ConfigDataPointFormat extends ExampleBase {
         ISeries series1 = shape.getChart().getSeriesCollection().get(0);
 
         //set data point format
-        series1.getPoints().get(2).getFormat().getFill().getColor().setRGB(Color.FromRGB(0, 176, 240));
-        series1.getPoints().get(2).getFormat().getLine().getColor().setRGB(Color.getBlue());
+        series1.getPoints().get(2).getFormat().getFill().getColor().setRGB(Color.FromArgb(0, 176, 240));
+        series1.getPoints().get(2).getFormat().getLine().getColor().setRGB(Color.GetBlue());
         series1.getPoints().get(2).getFormat().getLine().setWeight(1.5);
 
     }

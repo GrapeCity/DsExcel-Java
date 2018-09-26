@@ -12,7 +12,7 @@ public class FontColor extends ExampleBase {
 
         IWorksheet worksheet = workbook.getWorksheets().get(0);
         worksheet.getRange("A1").setValue("font");
-        worksheet.getRange("A1").getFont().setColor(Color.getGreen());
+        worksheet.getRange("A1").getFont().setColor(Color.GetGreen());
     }
 
 }

@@ -419,5 +419,13 @@
   "incomestatement.name": "收入证明",
   "annualfinancialreport.name": "年度财务报告",
   "agingreport.name": "账龄分析报告",
-  "cellinfo.name": "使用CellInfo"
+  "cellinfo.name": "使用CellInfo",
+  "customfunctions.descrip":"## Custom Function\nGcExcel provides you with the ability to create your own custom functions, allowing you to easily create any custom arithmetic logic you may need.",
+  "customfunctions.name":"Custom Function",
+  "myaddfunction.name":	"MyAddFunction",
+  "myconcatenatefunction.name":"MyConcatenateFunction",
+  "myconditionalsumfunction.name":"MyConditionalSumFunction",
+  "myiserrorfunction.name":"MyIsErrorFunction",
+  "myismergedrangefunction.name":"MyIsMergedRangeFunction",
+  "mysumfunction.name":"MySumFunction"
 }

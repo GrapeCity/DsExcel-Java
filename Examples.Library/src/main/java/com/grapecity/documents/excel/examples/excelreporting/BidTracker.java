@@ -34,7 +34,7 @@ public class BidTracker extends ExampleBase {
             ITheme theme = new Theme("testTheme", Themes.GetOfficeTheme());
             theme.getThemeFontScheme().getMinor().get(FontLanguageIndex.Latin).setName("Trebuchet MS");
             workbook.setTheme(theme);
-            IStyle style_Normal = workbook.getStyles().get("Mormal");
+            IStyle style_Normal = workbook.getStyles().get("Normal");
             style_Normal.getFont().setThemeFont(ThemeFont.Minor);
         }
     }
@@ -84,8 +84,8 @@ public class BidTracker extends ExampleBase {
         workbook.setDefaultTableStyle("Bid Tracker");
 
         //Set WholeTable element style.
-        tableStyle.getTableStyleElements().get(TableStyleElementType.WholeTable).getFont().setColor(Color.FromRGB(89, 89, 89));
-        tableStyle.getTableStyleElements().get(TableStyleElementType.WholeTable).getBorders().setColor(Color.FromRGB(89, 89, 89));
+        tableStyle.getTableStyleElements().get(TableStyleElementType.WholeTable).getFont().setColor(Color.FromArgb(89, 89, 89));
+        tableStyle.getTableStyleElements().get(TableStyleElementType.WholeTable).getBorders().setColor(Color.FromArgb(89, 89, 89));
         tableStyle.getTableStyleElements().get(TableStyleElementType.WholeTable).getBorders().get(BordersIndex.EdgeLeft).setLineStyle(BorderLineStyle.Thin);
         tableStyle.getTableStyleElements().get(TableStyleElementType.WholeTable).getBorders().get(BordersIndex.EdgeRight).setLineStyle(BorderLineStyle.Thin);
         tableStyle.getTableStyleElements().get(TableStyleElementType.WholeTable).getBorders().get(BordersIndex.EdgeTop).setLineStyle(BorderLineStyle.Thin);
@@ -94,33 +94,33 @@ public class BidTracker extends ExampleBase {
         tableStyle.getTableStyleElements().get(TableStyleElementType.WholeTable).getBorders().get(BordersIndex.InsideHorizontal).setLineStyle(BorderLineStyle.Thin);
 
         //Set HeaderRow element style.
-        tableStyle.getTableStyleElements().get(TableStyleElementType.HeaderRow).getFont().setColor(Color.FromRGB(89, 89, 89));
+        tableStyle.getTableStyleElements().get(TableStyleElementType.HeaderRow).getFont().setColor(Color.FromArgb(89, 89, 89));
         tableStyle.getTableStyleElements().get(TableStyleElementType.HeaderRow).getBorders().get(BordersIndex.EdgeLeft).setLineStyle(BorderLineStyle.Thin);
         tableStyle.getTableStyleElements().get(TableStyleElementType.HeaderRow).getBorders().get(BordersIndex.EdgeRight).setLineStyle(BorderLineStyle.Thin);
         tableStyle.getTableStyleElements().get(TableStyleElementType.HeaderRow).getBorders().get(BordersIndex.EdgeTop).setLineStyle(BorderLineStyle.Thin);
         tableStyle.getTableStyleElements().get(TableStyleElementType.HeaderRow).getBorders().get(BordersIndex.EdgeBottom).setLineStyle(BorderLineStyle.Thin);
         tableStyle.getTableStyleElements().get(TableStyleElementType.HeaderRow).getBorders().get(BordersIndex.InsideVertical).setLineStyle(BorderLineStyle.Thin);
         tableStyle.getTableStyleElements().get(TableStyleElementType.HeaderRow).getBorders().get(BordersIndex.InsideHorizontal).setLineStyle(BorderLineStyle.Thin);
-        tableStyle.getTableStyleElements().get(TableStyleElementType.HeaderRow).getInterior().setColor(Color.FromRGB(131, 95, 1));
-        tableStyle.getTableStyleElements().get(TableStyleElementType.HeaderRow).getInterior().setPatternColor(Color.FromRGB(254, 184, 10));
+        tableStyle.getTableStyleElements().get(TableStyleElementType.HeaderRow).getInterior().setColor(Color.FromArgb(131, 95, 1));
+        tableStyle.getTableStyleElements().get(TableStyleElementType.HeaderRow).getInterior().setPatternColor(Color.FromArgb(254, 184, 10));
 
 
         //Set TotalRow element style.
-        tableStyle.getTableStyleElements().get(TableStyleElementType.TotalRow).getBorders().setColor(Color.getWhite());
+        tableStyle.getTableStyleElements().get(TableStyleElementType.TotalRow).getBorders().setColor(Color.GetWhite());
         tableStyle.getTableStyleElements().get(TableStyleElementType.TotalRow).getBorders().get(BordersIndex.EdgeLeft).setLineStyle(BorderLineStyle.Thin);
         tableStyle.getTableStyleElements().get(TableStyleElementType.TotalRow).getBorders().get(BordersIndex.EdgeRight).setLineStyle(BorderLineStyle.Thin);
         tableStyle.getTableStyleElements().get(TableStyleElementType.TotalRow).getBorders().get(BordersIndex.EdgeTop).setLineStyle(BorderLineStyle.Thin);
         tableStyle.getTableStyleElements().get(TableStyleElementType.TotalRow).getBorders().get(BordersIndex.EdgeBottom).setLineStyle(BorderLineStyle.Thin);
         tableStyle.getTableStyleElements().get(TableStyleElementType.TotalRow).getBorders().get(BordersIndex.InsideVertical).setLineStyle(BorderLineStyle.Thin);
         tableStyle.getTableStyleElements().get(TableStyleElementType.TotalRow).getBorders().get(BordersIndex.InsideHorizontal).setLineStyle(BorderLineStyle.Thin);
-        tableStyle.getTableStyleElements().get(TableStyleElementType.TotalRow).getInterior().setColor(Color.FromRGB(131, 95, 1));
+        tableStyle.getTableStyleElements().get(TableStyleElementType.TotalRow).getInterior().setColor(Color.FromArgb(131, 95, 1));
 
 
         //***********************************Set Named Styles*****************************
         IStyle titleStyle = workbook.getStyles().get("Title");
         titleStyle.getFont().setName("Trebuchet MS");
         titleStyle.getFont().setSize(36);
-        titleStyle.getFont().setColor(Color.FromRGB(56, 145, 167));
+        titleStyle.getFont().setColor(Color.FromArgb(56, 145, 167));
         titleStyle.setIncludeAlignment(true);
         titleStyle.setVerticalAlignment(VerticalAlignment.Center);
 
@@ -131,10 +131,10 @@ public class BidTracker extends ExampleBase {
         heading1Style.setVerticalAlignment(VerticalAlignment.Bottom);
         heading1Style.getBorders().get(BordersIndex.EdgeBottom).setLineStyle(BorderLineStyle.None);
         heading1Style.getFont().setSize(14);
-        heading1Style.getFont().setColor(Color.getWhite());
+        heading1Style.getFont().setColor(Color.GetWhite());
         heading1Style.getFont().setBold(false);
         heading1Style.setIncludePatterns(true);
-        heading1Style.getInterior().setColor(Color.FromRGB(131, 95, 1));
+        heading1Style.getInterior().setColor(Color.FromArgb(131, 95, 1));
         heading1Style.getFont().setName("Trebuchet MS");
 
 
@@ -166,7 +166,7 @@ public class BidTracker extends ExampleBase {
         normalStyle.setIndentLevel(1);
         normalStyle.setVerticalAlignment(VerticalAlignment.Center);
         normalStyle.setWrapText(true);
-        normalStyle.getFont().setColor(Color.FromRGB(89, 89, 89));
+        normalStyle.getFont().setColor(Color.FromArgb(89, 89, 89));
 
 
         IStyle currencyStyle = workbook.getStyles().get("Currency");
@@ -186,7 +186,7 @@ public class BidTracker extends ExampleBase {
         percentStyle.getFont().setName("Trebuchet MS");
         percentStyle.getFont().setSize(20);
         percentStyle.getFont().setBold(true);
-        percentStyle.getFont().setColor(Color.FromRGB(89, 89, 89));
+        percentStyle.getFont().setColor(Color.FromArgb(89, 89, 89));
         percentStyle.getFont().setName("Trebuchet MS");
 
 
@@ -207,14 +207,14 @@ public class BidTracker extends ExampleBase {
         dataBar.getMaxPoint().setValue(0);
 
         dataBar.setBarFillType(DataBarFillType.Gradient);
-        dataBar.getBarColor().setColor(Color.FromRGB(126, 194, 211));
+        dataBar.getBarColor().setColor(Color.FromArgb(126, 194, 211));
         dataBar.setDirection(DataBarDirection.Context);
 
-        dataBar.getAxisColor().setColor(Color.getBlack());
+        dataBar.getAxisColor().setColor(Color.GetBlack());
         dataBar.setAxisPosition(DataBarAxisPosition.Automatic);
 
         dataBar.getNegativeBarFormat().setColorType(DataBarNegativeColorType.Color);
-        dataBar.getNegativeBarFormat().getColor().setColor(Color.getRed());
+        dataBar.getNegativeBarFormat().getColor().setColor(Color.GetRed());
         dataBar.setShowValue(true);
 
 

@@ -31,7 +31,7 @@ public class AddCustomName extends ExampleBase {
         // judge if Range C6:C8 have formula.
         for (int i = 5; i <= 7; i++) {
             if (worksheet1.getRange(i, 2).getHasFormula()) {
-                worksheet1.getRange(i, 2).getInterior().setColor(Color.getLightBlue());
+                worksheet1.getRange(i, 2).getInterior().setColor(Color.GetLightBlue());
             }
         }
 
@@ -39,7 +39,7 @@ public class AddCustomName extends ExampleBase {
         worksheet2.getRange("A2").setFormula("=test3");
         // judge if Range A2 has formula.
         if (worksheet2.getRange("A2").getHasFormula()) {
-            worksheet2.getRange("A2").getInterior().setColor(Color.getLightBlue());
+            worksheet2.getRange("A2").getInterior().setColor(Color.GetLightBlue());
         }
 
         // set r1c1 formula.

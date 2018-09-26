@@ -41,7 +41,7 @@ public class CostAnalysisWithParetoChart extends ExampleBase {
 
         IWorksheet worksheet = workbook.getWorksheets().get(0);
         worksheet.setName("COST DATA and CHART");
-        worksheet.setTabColor(Color.FromRGB(63, 94, 101));
+        worksheet.setTabColor(Color.FromArgb(63, 94, 101));
         worksheet.getSheetView().setDisplayGridlines(false);
 
         //Set Value.
@@ -117,7 +117,7 @@ public class CostAnalysisWithParetoChart extends ExampleBase {
         //Set the chart's title format.
         shape.getChart().getChartTitle().setText("Cost Center");
         shape.getChart().getChartTitle().getFont().setThemeFont(ThemeFont.Minor);
-        shape.getChart().getChartTitle().getFont().getColor().setRGB(Color.FromRGB(89, 89, 89));
+        shape.getChart().getChartTitle().getFont().getColor().setRGB(Color.FromArgb(89, 89, 89));
         shape.getChart().getChartTitle().getFont().setSize(18);
 
         //Set the chart has no legend.
@@ -144,18 +144,18 @@ public class CostAnalysisWithParetoChart extends ExampleBase {
 
         //Create customize theme.
         ITheme theme = new Theme("test");
-        theme.getThemeColorScheme().get(ThemeColor.Dark1).setRGB(Color.FromRGB(0, 0, 0));
-        theme.getThemeColorScheme().get(ThemeColor.Light1).setRGB(Color.FromRGB(255, 255, 255));
-        theme.getThemeColorScheme().get(ThemeColor.Dark2).setRGB(Color.FromRGB(96, 89, 88));
-        theme.getThemeColorScheme().get(ThemeColor.Light2).setRGB(Color.FromRGB(241, 246, 246));
-        theme.getThemeColorScheme().get(ThemeColor.Accent1).setRGB(Color.FromRGB(63, 94, 101));
-        theme.getThemeColorScheme().get(ThemeColor.Accent2).setRGB(Color.FromRGB(224, 170, 83));
-        theme.getThemeColorScheme().get(ThemeColor.Accent3).setRGB(Color.FromRGB(179, 29, 66));
-        theme.getThemeColorScheme().get(ThemeColor.Accent4).setRGB(Color.FromRGB(162, 67, 162));
-        theme.getThemeColorScheme().get(ThemeColor.Accent5).setRGB(Color.FromRGB(120, 59, 101));
-        theme.getThemeColorScheme().get(ThemeColor.Accent6).setRGB(Color.FromRGB(55, 120, 169));
-        theme.getThemeColorScheme().get(ThemeColor.Hyperlink).setRGB(Color.FromRGB(71, 166, 181));
-        theme.getThemeColorScheme().get(ThemeColor.FollowedHyperlink).setRGB(Color.FromRGB(120, 59, 101));
+        theme.getThemeColorScheme().get(ThemeColor.Dark1).setRGB(Color.FromArgb(0, 0, 0));
+        theme.getThemeColorScheme().get(ThemeColor.Light1).setRGB(Color.FromArgb(255, 255, 255));
+        theme.getThemeColorScheme().get(ThemeColor.Dark2).setRGB(Color.FromArgb(96, 89, 88));
+        theme.getThemeColorScheme().get(ThemeColor.Light2).setRGB(Color.FromArgb(241, 246, 246));
+        theme.getThemeColorScheme().get(ThemeColor.Accent1).setRGB(Color.FromArgb(63, 94, 101));
+        theme.getThemeColorScheme().get(ThemeColor.Accent2).setRGB(Color.FromArgb(224, 170, 83));
+        theme.getThemeColorScheme().get(ThemeColor.Accent3).setRGB(Color.FromArgb(179, 29, 66));
+        theme.getThemeColorScheme().get(ThemeColor.Accent4).setRGB(Color.FromArgb(162, 67, 162));
+        theme.getThemeColorScheme().get(ThemeColor.Accent5).setRGB(Color.FromArgb(120, 59, 101));
+        theme.getThemeColorScheme().get(ThemeColor.Accent6).setRGB(Color.FromArgb(55, 120, 169));
+        theme.getThemeColorScheme().get(ThemeColor.Hyperlink).setRGB(Color.FromArgb(71, 166, 181));
+        theme.getThemeColorScheme().get(ThemeColor.FollowedHyperlink).setRGB(Color.FromArgb(120, 59, 101));
         theme.getThemeFontScheme().getMajor().get(FontLanguageIndex.Latin).setName("Constantia");
         theme.getThemeFontScheme().getMinor().get(FontLanguageIndex.Latin).setName("Helvetica");
 

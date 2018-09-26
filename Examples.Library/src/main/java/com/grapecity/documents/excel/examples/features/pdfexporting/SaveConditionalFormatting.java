@@ -25,12 +25,12 @@ public class SaveConditionalFormatting extends ExampleBase {
         //Color scale
         IColorScale cf1 = sheet.getRange("B10:B19").getFormatConditions().addColorScale(ColorScaleType.ThreeColorScale);
         cf1.getColorScaleCriteria().get(0).setType(ConditionValueTypes.LowestValue);
-        cf1.getColorScaleCriteria().get(0).getFormatColor().setColor(Color.FromRGB(248, 105, 107));
+        cf1.getColorScaleCriteria().get(0).getFormatColor().setColor(Color.FromArgb(248, 105, 107));
         cf1.getColorScaleCriteria().get(1).setType(ConditionValueTypes.Percentile);
         cf1.getColorScaleCriteria().get(1).setValue(50);
-        cf1.getColorScaleCriteria().get(1).getFormatColor().setColor(Color.FromRGB(255, 235, 132));
+        cf1.getColorScaleCriteria().get(1).getFormatColor().setColor(Color.FromArgb(255, 235, 132));
         cf1.getColorScaleCriteria().get(2).setType(ConditionValueTypes.HighestValue);
-        cf1.getColorScaleCriteria().get(2).getFormatColor().setColor(Color.FromRGB(99, 190, 123));
+        cf1.getColorScaleCriteria().get(2).getFormatColor().setColor(Color.FromArgb(99, 190, 123));
 
         //Data bar
         sheet.getRange("C14").setValue(-5);
@@ -39,12 +39,12 @@ public class SaveConditionalFormatting extends ExampleBase {
         cf2.getMinPoint().setType(ConditionValueTypes.AutomaticMin);
         cf2.getMaxPoint().setType(ConditionValueTypes.AutomaticMax);
         cf2.setBarFillType(DataBarFillType.Gradient);
-        cf2.getBarColor().setColor(Color.FromRGB(0, 138, 239));
-        cf2.getBarBorder().getColor().setColor(Color.FromRGB(0, 138, 239));
-        cf2.getNegativeBarFormat().getColor().setColor(Color.FromRGB(255, 0, 0));
+        cf2.getBarColor().setColor(Color.FromArgb(0, 138, 239));
+        cf2.getBarBorder().getColor().setColor(Color.FromArgb(0, 138, 239));
+        cf2.getNegativeBarFormat().getColor().setColor(Color.FromArgb(255, 0, 0));
         cf2.getNegativeBarFormat().setBorderColorType(DataBarNegativeColorType.Color);
-        cf2.getNegativeBarFormat().getBorderColor().setColor(Color.FromRGB(255, 0, 0));
-        cf2.getAxisColor().setColor(Color.getBlack());
+        cf2.getNegativeBarFormat().getBorderColor().setColor(Color.FromArgb(255, 0, 0));
+        cf2.getAxisColor().setColor(Color.GetBlack());
         cf2.setAxisPosition(DataBarAxisPosition.Automatic);
 
         //Icon set

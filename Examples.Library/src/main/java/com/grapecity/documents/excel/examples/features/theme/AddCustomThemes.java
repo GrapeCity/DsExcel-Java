@@ -19,18 +19,18 @@ public class AddCustomThemes extends ExampleBase {
         // ITheme theme = new GrapeCity.Documents.Excel.Theme("testTheme",Themes.Badge);
 
         // Customize theme's color.
-        theme.getThemeColorScheme().get(ThemeColor.Light1).setRGB(Color.getAntiqueWhite());
-        theme.getThemeColorScheme().get(ThemeColor.Dark1).setRGB(Color.getAqua());
-        theme.getThemeColorScheme().get(ThemeColor.Light2).setRGB(Color.getBeige());
-        theme.getThemeColorScheme().get(ThemeColor.Dark2).setRGB(Color.getBlack());
-        theme.getThemeColorScheme().get(ThemeColor.Accent1).setRGB(Color.getCadetBlue());
-        theme.getThemeColorScheme().get(ThemeColor.Accent2).setRGB(Color.getChartreuse());
-        theme.getThemeColorScheme().get(ThemeColor.Accent3).setRGB(Color.getChocolate());
-        theme.getThemeColorScheme().get(ThemeColor.Accent4).setRGB(Color.getCoral());
-        theme.getThemeColorScheme().get(ThemeColor.Accent5).setRGB(Color.getCornflowerBlue());
-        theme.getThemeColorScheme().get(ThemeColor.Accent6).setRGB(Color.getCornsilk());
-        theme.getThemeColorScheme().get(ThemeColor.Hyperlink).setRGB(Color.getHoneydew());
-        theme.getThemeColorScheme().get(ThemeColor.FollowedHyperlink).setRGB(Color.getHotPink());
+        theme.getThemeColorScheme().get(ThemeColor.Light1).setRGB(Color.GetAntiqueWhite());
+        theme.getThemeColorScheme().get(ThemeColor.Dark1).setRGB(Color.GetAqua());
+        theme.getThemeColorScheme().get(ThemeColor.Light2).setRGB(Color.GetBeige());
+        theme.getThemeColorScheme().get(ThemeColor.Dark2).setRGB(Color.GetBlack());
+        theme.getThemeColorScheme().get(ThemeColor.Accent1).setRGB(Color.GetCadetBlue());
+        theme.getThemeColorScheme().get(ThemeColor.Accent2).setRGB(Color.GetChartreuse());
+        theme.getThemeColorScheme().get(ThemeColor.Accent3).setRGB(Color.GetChocolate());
+        theme.getThemeColorScheme().get(ThemeColor.Accent4).setRGB(Color.GetCoral());
+        theme.getThemeColorScheme().get(ThemeColor.Accent5).setRGB(Color.GetCornflowerBlue());
+        theme.getThemeColorScheme().get(ThemeColor.Accent6).setRGB(Color.GetCornsilk());
+        theme.getThemeColorScheme().get(ThemeColor.Hyperlink).setRGB(Color.GetHoneydew());
+        theme.getThemeColorScheme().get(ThemeColor.FollowedHyperlink).setRGB(Color.GetHotPink());
 
         // Customize theme's font.
         theme.getThemeFontScheme().getMajor().get(FontLanguageIndex.Latin).setName("Kristen ITC");

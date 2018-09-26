@@ -34,7 +34,7 @@ public class ConfigAxisTitle extends ExampleBase {
         category_axis.setHasTitle(true);
         category_axis.getAxisTitle().setText("CategoryAxisTitle");
         category_axis.getAxisTitle().getFont().setSize(18);
-        category_axis.getAxisTitle().getFont().getColor().setRGB(Color.getOrange());
+        category_axis.getAxisTitle().getFont().getColor().setRGB(Color.GetOrange());
 
     }
 

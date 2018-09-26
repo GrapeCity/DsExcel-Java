@@ -45,7 +45,7 @@ public class Stock_VolumeHighLowCloseStock extends ExampleBase {
         });
         shape.getChart().getSeriesCollection().add(worksheet.getRange("A1:E17"), RowCol.Columns);
         shape.getChart().getChartTitle().setText("Volume-High-Low-Close Stock Chart");
-        shape.getChart().getLineGroups().get(0).getHiLoLines().getFormat().getLine().getColor().setRGB(Color.getBlack());
+        shape.getChart().getLineGroups().get(0).getHiLoLines().getFormat().getLine().getColor().setRGB(Color.GetBlack());
         IAxis valueAxis = shape.getChart().getAxes().item(AxisType.Value);
         IAxis categoryAxis = shape.getChart().getAxes().item(AxisType.Category);
         IAxis valueSecondaryAxis = shape.getChart().getAxes().item(AxisType.Value, AxisGroup.Secondary);
@@ -63,7 +63,7 @@ public class Stock_VolumeHighLowCloseStock extends ExampleBase {
         valueSecondaryAxis.setMaximumScale(150);
         valueSecondaryAxis.setMajorUnit(30);
         //config marker style
-        series_close.getMarkerFormat().getFill().getColor().setRGB(Color.getOrange());
+        series_close.getMarkerFormat().getFill().getColor().setRGB(Color.GetOrange());
         series_close.setMarkerStyle(MarkerStyle.Square);
 	}
 	

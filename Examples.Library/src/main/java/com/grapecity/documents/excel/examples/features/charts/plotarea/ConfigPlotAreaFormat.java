@@ -28,8 +28,8 @@ public class ConfigPlotAreaFormat extends ExampleBase {
         shape.getChart().getSeriesCollection().add(worksheet.getRange("A1:D6"), RowCol.Columns, true, true);
 
         IPlotArea plotarea = shape.getChart().getPlotArea();
-        plotarea.getFormat().getFill().getColor().setRGB(Color.getLightGray());
-        plotarea.getFormat().getLine().getColor().setRGB(Color.getGray());
+        plotarea.getFormat().getFill().getColor().setRGB(Color.GetLightGray());
+        plotarea.getFormat().getLine().getColor().setRGB(Color.GetGray());
         plotarea.getFormat().getLine().setWeight(1);
 
     }

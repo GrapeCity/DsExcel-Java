@@ -31,8 +31,8 @@ public class ConfigChartTitleStyle extends ExampleBase {
         shape.getChart().getChartTitle().setText("MyChartTitle");
         shape.getChart().getChartTitle().getFont().setSize(15);
         shape.getChart().getChartTitle().getFont().setName("Bradley Hand ITC");
-        shape.getChart().getChartTitle().getFormat().getFill().getColor().setRGB(Color.getDarkOrange());
-        shape.getChart().getChartTitle().getFormat().getLine().getColor().setRGB(Color.getCornflowerBlue());
+        shape.getChart().getChartTitle().getFormat().getFill().getColor().setRGB(Color.GetDarkOrange());
+        shape.getChart().getChartTitle().getFormat().getLine().getColor().setRGB(Color.GetCornflowerBlue());
         shape.getChart().getChartTitle().getFormat().getLine().setWeight(1.5);
 
     }

@@ -27,14 +27,14 @@ public class AccessCellsRowsColumns extends ExampleBase {
         String row = range.getRows().get(1).toString();
 
         //set interior color for row range A6:B6.
-        range.getRows().get(1).getInterior().setColor(Color.getLightBlue());
+        range.getRows().get(1).getInterior().setColor(Color.GetLightBlue());
 
         //column count is 2 and range is B5:B7.
         int columnCount = range.getColumns().getCount();
         String column = range.getColumns().get(1).toString();
 
         //set values for column range B5:B7.
-        range.getColumns().get(1).getInterior().setColor(Color.getLightSkyBlue());
+        range.getColumns().get(1).getInterior().setColor(Color.GetLightSkyBlue());
 
         //entire rows are from row 5 to row 7
         String entirerow = range.getEntireRow().toString();

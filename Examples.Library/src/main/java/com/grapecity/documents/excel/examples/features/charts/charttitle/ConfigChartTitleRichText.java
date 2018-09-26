@@ -30,9 +30,9 @@ public class ConfigChartTitleRichText extends ExampleBase {
         shape.getChart().setHasTitle(true);
         shape.getChart().getChartTitle().getTextFrame().getTextRange().getParagraphs().add("ChartSubtitle");
         shape.getChart().getChartTitle().getTextFrame().getTextRange().getParagraphs().add("ChartTitle", 0);
-        shape.getChart().getChartTitle().getTextFrame().getTextRange().getParagraphs().get(0).getFont().getColor().setRGB(Color.getCornflowerBlue());
+        shape.getChart().getChartTitle().getTextFrame().getTextRange().getParagraphs().get(0).getFont().getColor().setRGB(Color.GetCornflowerBlue());
         shape.getChart().getChartTitle().getTextFrame().getTextRange().getParagraphs().get(0).getFont().setSize(15);
-        shape.getChart().getChartTitle().getTextFrame().getTextRange().getParagraphs().get(1).getFont().getColor().setRGB(Color.getOrange());
+        shape.getChart().getChartTitle().getTextFrame().getTextRange().getParagraphs().get(1).getFont().getColor().setRGB(Color.GetOrange());
         shape.getChart().getChartTitle().getTextFrame().getTextRange().getParagraphs().get(1).getFont().setSize(10);
 
     }

@@ -1,7 +1,6 @@
 package com.grapecity.documents.excel.examples.features.pagesetup;
 
 import java.io.InputStream;
-import java.net.URL;
 
 import com.grapecity.documents.excel.IWorksheet;
 import com.grapecity.documents.excel.Workbook;
@@ -23,7 +22,7 @@ public class ConfigFirstPageHeaderFooter extends ExampleBase {
 
         //Set first page headerfooter's graphic
         worksheet.getPageSetup().getFirstPage().getLeftFooter().setText("&G");
-        InputStream stream = ClassLoader.getSystemResourceAsStream("logo.png");
+        InputStream stream = this.getResourceStream("logo.png");
         worksheet.getPageSetup().getFirstPage().getLeftFooter().getPicture().setGraphicStream(stream, ImageType.PNG);
         worksheet.getPageSetup().getFirstPage().getLeftFooter().getPicture().setWidth(100);
         worksheet.getPageSetup().getFirstPage().getLeftFooter().getPicture().setHeight(13);

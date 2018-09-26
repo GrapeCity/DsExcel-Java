@@ -15,7 +15,7 @@ public class PictureCut extends ExampleBase {
     public void execute(Workbook workbook) {
         IWorksheet worksheet = workbook.getWorksheets().get(0);
 
-        InputStream stream = ClassLoader.getSystemResourceAsStream("logo.png");
+        InputStream stream = this.getResourceStream("logo.png");
         try {
 
             //Create a shape in worksheet, picture's range is getRange("A2:I6")

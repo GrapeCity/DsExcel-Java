@@ -1,9 +1,8 @@
-
-repositories {
-    mavenCentral()
-    maven{url "https://oss.sonatype.org/content/repositories/snapshots"}
+buildscript {
+    repositories {
+        mavenCentral()
+    }
 }
-
 
 apply plugin: 'java'
 apply plugin: 'eclipse'
@@ -15,10 +14,11 @@ jar {
     manifest {
         attributes "Main-Class": "com.grapecity.documents.excel.examples.Test"
     }
+}
 
-    from {
-        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
-    }
+
+repositories {
+    mavenCentral()
 }
 
 sourceCompatibility = 1.8
@@ -26,9 +26,5 @@ targetCompatibility = 1.8
 
 dependencies {
     compile fileTree(dir: 'lib', include: ['*.jar'])
-    compile 'com.grapecity.documents:gcexcel:1.6.0-SNAPSHOT'
 }
-
-group 'com.grapecity.documents'
-version '1.0-SNAPSHOT'
 

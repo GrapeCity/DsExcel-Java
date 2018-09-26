@@ -32,7 +32,7 @@ public class CreateCellValueRule extends ExampleBase {
 
         //weight between 66 and 70, set its interior color to light green.
         IFormatCondition condition = (IFormatCondition) worksheet.getRange("E2:E7").getFormatConditions().add(FormatConditionType.CellValue, FormatConditionOperator.Between, 66, 70);
-        condition.getInterior().setColor(Color.getLightGreen());
+        condition.getInterior().setColor(Color.GetLightGreen());
 
     }
 

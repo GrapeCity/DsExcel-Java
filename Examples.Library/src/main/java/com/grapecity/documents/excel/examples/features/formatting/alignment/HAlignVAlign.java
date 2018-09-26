@@ -30,6 +30,8 @@ public class HAlignVAlign extends ExampleBase {
         rangeA3.setValue("Left and bottom, indent");
         rangeA3.setIndentLevel(1);
 
+        worksheet.getRange("A1:A3").setColumnWidth(50);
+        worksheet.getRange("A1:A3").setRowHeight(30);
     }
 
 }

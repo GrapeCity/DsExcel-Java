@@ -33,7 +33,7 @@ public class CreateAverageRule extends ExampleBase {
         IAboveAverage averageCondition = worksheet.getRange("E2:E7").getFormatConditions().addAboveAverage();
         averageCondition.setAboveBelow(AboveBelow.BelowAverage);
         averageCondition.setNumStdDev(1);
-        averageCondition.getInterior().setColor(Color.getPink());
+        averageCondition.getInterior().setColor(Color.GetPink());
 
     }
 

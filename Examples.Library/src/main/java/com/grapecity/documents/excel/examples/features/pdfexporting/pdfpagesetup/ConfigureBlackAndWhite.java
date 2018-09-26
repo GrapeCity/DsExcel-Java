@@ -22,11 +22,11 @@ public class ConfigureBlackAndWhite extends ExampleBase {
 
         //Set text font color.
         sheet.getRange("A1:D4").setValue("Font");
-        sheet.getRange("A1:D4").getFont().setColor(Color.getRed());
+        sheet.getRange("A1:D4").getFont().setColor(Color.GetRed());
 
         //Set cell color
         sheet.getRange("A7:D10").setValue("Green");
-        sheet.getRange("A7:D10").getInterior().setColor(Color.getGreen());
+        sheet.getRange("A7:D10").getInterior().setColor(Color.GetGreen());
 
         //Set print black and white.
         sheet.getPageSetup().setBlackAndWhite(true);

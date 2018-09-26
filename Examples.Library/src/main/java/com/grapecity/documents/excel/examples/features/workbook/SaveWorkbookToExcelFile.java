@@ -1,12 +1,8 @@
 package com.grapecity.documents.excel.examples.features.workbook;
 
-import com.grapecity.documents.excel.ImportFlags;
 import com.grapecity.documents.excel.SaveFileFormat;
 import com.grapecity.documents.excel.Workbook;
-import com.grapecity.documents.excel.XlsxOpenOptions;
 import com.grapecity.documents.excel.examples.ExampleBase;
-
-import java.util.EnumSet;
 
 public class SaveWorkbookToExcelFile extends ExampleBase {
 

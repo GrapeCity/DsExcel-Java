@@ -1,13 +1,18 @@
 package com.grapecity.documents.excel.examples.features.customfunctions;
 
-import com.grapecity.documents.excel.*;
+import com.grapecity.documents.excel.CustomFunction;
+import com.grapecity.documents.excel.FunctionValueType;
+import com.grapecity.documents.excel.ICalcContext;
+import com.grapecity.documents.excel.IWorksheet;
+import com.grapecity.documents.excel.Parameter;
+import com.grapecity.documents.excel.Workbook;
 import com.grapecity.documents.excel.examples.ExampleBase;
 
 public class MyAddFunction extends ExampleBase {
 
     @Override
     public void execute(Workbook workbook) {
-        Workbook.addCustomFunction(new MyAddFunctionX());
+        Workbook.AddCustomFunction(new MyAddFunctionX());
         IWorksheet worksheet = workbook.getActiveSheet();
         worksheet.getRange("A1").setValue(1);
         worksheet.getRange("B1").setValue(2);

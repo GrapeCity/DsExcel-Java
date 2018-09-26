@@ -14,7 +14,7 @@ public class ConfigWorksheet extends ExampleBase {
         IWorksheet worksheet = workbook.getWorksheets().get(0);
 
         //Set worksheet tab color.
-        worksheet.setTabColor(Color.getGreen());
+        worksheet.setTabColor(Color.GetGreen());
 
         //Set worksheet default row height.
         worksheet.setStandardHeight(20);

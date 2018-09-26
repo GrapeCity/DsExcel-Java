@@ -28,8 +28,8 @@ public class ConfigChartFloorStyle extends ExampleBase {
 
         //config back wall individually.
         shape.getChart().getFloor().setThickness(5);
-        shape.getChart().getFloor().getFormat().getFill().getColor().setRGB(Color.getYellow());
-        shape.getChart().getFloor().getFormat().getLine().getColor().setRGB(Color.getRed());
+        shape.getChart().getFloor().getFormat().getFill().getColor().setRGB(Color.GetYellow());
+        shape.getChart().getFloor().getFormat().getLine().getColor().setRGB(Color.GetRed());
 
     }
 

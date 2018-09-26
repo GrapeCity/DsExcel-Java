@@ -17,7 +17,7 @@ public class ConfigureWorksheetView extends ExampleBase {
         IWorksheetView sheetView = worksheet.getSheetView();
         sheetView.setDisplayFormulas(false);
         sheetView.setDisplayRightToLeft(true);
-        sheetView.setGridlineColor(Color.getRed());
+        sheetView.setGridlineColor(Color.GetRed());
         sheetView.setZoom(200);
 
     }

@@ -15,7 +15,7 @@ public class ConfigShapeWithSolidFill extends ExampleBase {
         IWorksheet worksheet = workbook.getWorksheets().get(0);
         IShape shape = worksheet.getShapes().addShape(AutoShapeType.Parallelogram, 1, 1, 200, 100);
         shape.getFill().solid();
-        shape.getFill().getColor().setRGB(Color.getRed());
+        shape.getFill().getColor().setRGB(Color.GetRed());
 
     }
 

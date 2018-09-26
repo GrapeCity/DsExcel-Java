@@ -11,7 +11,7 @@ public class SolidFill extends ExampleBase {
     public void execute(Workbook workbook) {
 
         IWorksheet worksheet = workbook.getWorksheets().get(0);
-        worksheet.getRange("A2").getInterior().setColor(Color.getGreen());
+        worksheet.getRange("A2").getInterior().setColor(Color.GetGreen());
     }
 
 }

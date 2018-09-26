@@ -33,7 +33,7 @@ public class ConfigLegendPositionAndLayout extends ExampleBase {
         //position.
         legend.setPosition(LegendPosition.Left);
         //font.
-        legend.getFont().getColor().setRGB(Color.getRed());
+        legend.getFont().getColor().setRGB(Color.GetRed());
         legend.getFont().setItalic(true);
     }
 

@@ -38,7 +38,7 @@ public class MovieList extends ExampleBase {
             ITheme theme = new Theme("testTheme", Themes.GetOfficeTheme());
             theme.getThemeFontScheme().getMinor().get(FontLanguageIndex.Latin).setName("Trebuchet MS");
             workbook.setTheme(theme);
-            IStyle style_Normal = workbook.getStyles().get("Mormal");
+            IStyle style_Normal = workbook.getStyles().get("Normal");
             style_Normal.getFont().setThemeFont(ThemeFont.Minor);
         }
     }
@@ -85,15 +85,15 @@ public class MovieList extends ExampleBase {
         ITableStyle tableStyle = workbook.getTableStyles().add("Movie List");
         workbook.setDefaultTableStyle("Movie List");
 
-        tableStyle.getTableStyleElements().get(TableStyleElementType.WholeTable).getInterior().setColor(Color.getWhite());
+        tableStyle.getTableStyleElements().get(TableStyleElementType.WholeTable).getInterior().setColor(Color.GetWhite());
 
-        tableStyle.getTableStyleElements().get(TableStyleElementType.FirstRowStripe).getInterior().setColor(Color.FromRGB(38, 38, 38));
+        tableStyle.getTableStyleElements().get(TableStyleElementType.FirstRowStripe).getInterior().setColor(Color.FromArgb(38, 38, 38));
 
-        tableStyle.getTableStyleElements().get(TableStyleElementType.SecondRowStripe).getInterior().setColor(Color.getBlack());
+        tableStyle.getTableStyleElements().get(TableStyleElementType.SecondRowStripe).getInterior().setColor(Color.GetBlack());
 
-        tableStyle.getTableStyleElements().get(TableStyleElementType.HeaderRow).getFont().setColor(Color.getBlack());
-        tableStyle.getTableStyleElements().get(TableStyleElementType.HeaderRow).getBorders().setColor(Color.FromRGB(38, 38, 38));
-        tableStyle.getTableStyleElements().get(TableStyleElementType.HeaderRow).getInterior().setColor(Color.FromRGB(68, 217, 255));
+        tableStyle.getTableStyleElements().get(TableStyleElementType.HeaderRow).getFont().setColor(Color.GetBlack());
+        tableStyle.getTableStyleElements().get(TableStyleElementType.HeaderRow).getBorders().setColor(Color.FromArgb(38, 38, 38));
+        tableStyle.getTableStyleElements().get(TableStyleElementType.HeaderRow).getInterior().setColor(Color.FromArgb(68, 217, 255));
         tableStyle.getTableStyleElements().get(TableStyleElementType.HeaderRow).getBorders().get(BordersIndex.EdgeTop).setLineStyle(BorderLineStyle.Thick);
         tableStyle.getTableStyleElements().get(TableStyleElementType.HeaderRow).getBorders().get(BordersIndex.EdgeLeft).setLineStyle(BorderLineStyle.None);
         tableStyle.getTableStyleElements().get(TableStyleElementType.HeaderRow).getBorders().get(BordersIndex.EdgeRight).setLineStyle(BorderLineStyle.None);
@@ -111,12 +111,12 @@ public class MovieList extends ExampleBase {
         movieListBorderStyle.setIncludeFont(true);
         movieListBorderStyle.getFont().setName("Helvetica");
         movieListBorderStyle.getFont().setSize(11);
-        movieListBorderStyle.getFont().setColor(Color.getWhite());
+        movieListBorderStyle.getFont().setColor(Color.GetWhite());
         movieListBorderStyle.setIncludeBorder(true);
         movieListBorderStyle.getBorders().get(BordersIndex.EdgeBottom).setLineStyle(BorderLineStyle.Thick);
-        movieListBorderStyle.getBorders().get(BordersIndex.EdgeBottom).setColor(Color.FromRGB(38, 38, 38));
+        movieListBorderStyle.getBorders().get(BordersIndex.EdgeBottom).setColor(Color.FromArgb(38, 38, 38));
         movieListBorderStyle.setIncludePatterns(true);
-        movieListBorderStyle.getInterior().setColor(Color.FromRGB(238, 219, 78));
+        movieListBorderStyle.getInterior().setColor(Color.FromArgb(238, 219, 78));
 
         IStyle nOStyle = workbook.getStyles().add("NO.");
         nOStyle.setIncludeNumber(true);
@@ -126,10 +126,10 @@ public class MovieList extends ExampleBase {
         nOStyle.setIncludeFont(true);
         nOStyle.getFont().setName("Helvetica");
         nOStyle.getFont().setSize(11);
-        nOStyle.getFont().setColor(Color.getWhite());
+        nOStyle.getFont().setColor(Color.GetWhite());
         nOStyle.setIncludeBorder(true);
         nOStyle.setIncludePatterns(true);
-        nOStyle.getInterior().setColor(Color.FromRGB(38, 38, 38));
+        nOStyle.getInterior().setColor(Color.FromArgb(38, 38, 38));
 
         IStyle reviewStyle = workbook.getStyles().add("Review");
         reviewStyle.setIncludeNumber(true);
@@ -138,10 +138,10 @@ public class MovieList extends ExampleBase {
         reviewStyle.setIncludeFont(true);
         reviewStyle.getFont().setName("Helvetica");
         reviewStyle.getFont().setSize(11);
-        reviewStyle.getFont().setColor(Color.getWhite());
+        reviewStyle.getFont().setColor(Color.GetWhite());
         reviewStyle.setIncludeBorder(true);
         reviewStyle.setIncludePatterns(true);
-        reviewStyle.getInterior().setColor(Color.FromRGB(38, 38, 38));
+        reviewStyle.getInterior().setColor(Color.FromArgb(38, 38, 38));
 
         IStyle yearStyle = workbook.getStyles().add("Year");
         yearStyle.setIncludeNumber(true);
@@ -151,22 +151,22 @@ public class MovieList extends ExampleBase {
         yearStyle.setIncludeFont(true);
         yearStyle.getFont().setName("Helvetica");
         yearStyle.getFont().setSize(11);
-        yearStyle.getFont().setColor(Color.getWhite());
+        yearStyle.getFont().setColor(Color.GetWhite());
         yearStyle.setIncludeBorder(true);
         yearStyle.setIncludePatterns(true);
-        yearStyle.getInterior().setColor(Color.FromRGB(38, 38, 38));
+        yearStyle.getInterior().setColor(Color.FromArgb(38, 38, 38));
 
         IStyle heading1Style = workbook.getStyles().get("Heading 1");
         heading1Style.setIncludeAlignment(true);
         heading1Style.setVerticalAlignment(VerticalAlignment.Bottom);
         heading1Style.setIncludeBorder(true);
         heading1Style.getBorders().get(BordersIndex.EdgeBottom).setLineStyle(BorderLineStyle.Thick);
-        heading1Style.getBorders().get(BordersIndex.EdgeBottom).setColor(Color.FromRGB(68, 217, 255));
+        heading1Style.getBorders().get(BordersIndex.EdgeBottom).setColor(Color.FromArgb(68, 217, 255));
         heading1Style.setIncludeFont(true);
         heading1Style.getFont().setName("Helvetica");
         heading1Style.getFont().setBold(false);
         heading1Style.getFont().setSize(12);
-        heading1Style.getFont().setColor(Color.getBlack());
+        heading1Style.getFont().setColor(Color.GetBlack());
 
         IStyle normalStyle = workbook.getStyles().get("Normal");
         normalStyle.setIncludeNumber(true);
@@ -176,14 +176,14 @@ public class MovieList extends ExampleBase {
         normalStyle.setIncludeFont(true);
         normalStyle.getFont().setName("Helvetica");
         normalStyle.getFont().setSize(11);
-        normalStyle.getFont().setColor(Color.getWhite());
+        normalStyle.getFont().setColor(Color.GetWhite());
         normalStyle.setIncludePatterns(true);
-        normalStyle.getInterior().setColor(Color.FromRGB(38, 38, 38));
+        normalStyle.getInterior().setColor(Color.FromArgb(38, 38, 38));
 
 
         //-----------------------------Use NamedStyle--------------------------
         worksheet.getSheetView().setDisplayGridlines(false);
-        worksheet.setTabColor(Color.FromRGB(38, 38, 38));
+        worksheet.setTabColor(Color.FromArgb(38, 38, 38));
         table.setTableStyle(tableStyle);
 
         worksheet.getRange("A2:L2").setStyle(movieListBorderStyle);
@@ -197,10 +197,10 @@ public class MovieList extends ExampleBase {
 
         //-----------------------------Add Shapes------------------------------
         //Movie picture
-        InputStream stream = ClassLoader.getSystemResourceAsStream("movie.png");
+        InputStream stream = this.getResourceStream("movie.png");
 
         //Movie list picture
-        InputStream stream2 = ClassLoader.getSystemResourceAsStream("list.png");
+        InputStream stream2 = this.getResourceStream("list.png");
         try {
             IShape pictureShape = worksheet.getShapes().addPicture(stream, ImageType.PNG, 0, 1, worksheet.getRange("A:L").getWidth(), worksheet.getRange("1:1").getHeight() - 1.5);
             pictureShape.setPlacement(Placement.Move);
@@ -217,13 +217,13 @@ public class MovieList extends ExampleBase {
         roundedRectangular.setName("Rounded Rectangular Callout 7");
         roundedRectangular.setPlacement(Placement.Move);
         roundedRectangular.getTextFrame().getTextRange().getFont().setName("Helvetica");
-        roundedRectangular.getTextFrame().getTextRange().getFont().getColor().setRGB(Color.FromRGB(38, 38, 38));
+        roundedRectangular.getTextFrame().getTextRange().getFont().getColor().setRGB(Color.FromArgb(38, 38, 38));
 
         roundedRectangular.getFill().solid();
-        roundedRectangular.getFill().getColor().setRGB(Color.FromRGB(68, 217, 255));
+        roundedRectangular.getFill().getColor().setRGB(Color.FromArgb(68, 217, 255));
         roundedRectangular.getFill().setTransparency(0);
         roundedRectangular.getLine().solid();
-        roundedRectangular.getLine().getColor().setRGB(Color.FromRGB(0, 129, 162));
+        roundedRectangular.getLine().getColor().setRGB(Color.FromArgb(0, 129, 162));
         roundedRectangular.getLine().setWeight(2);
         roundedRectangular.getLine().setTransparency(0);
 
@@ -253,7 +253,7 @@ public class MovieList extends ExampleBase {
         IShape lineShape = worksheet.getShapes().addConnector(ConnectorType.Straight, 455.228f, 57.35f, 756.228f, 57.35f);
         lineShape.getLine().solid();
         lineShape.getLine().setWeight(3);
-        lineShape.getLine().getColor().setRGB(Color.FromRGB(38, 38, 38));
+        lineShape.getLine().getColor().setRGB(Color.FromArgb(38, 38, 38));
         lineShape.getLine().setDashStyle(LineDashStyle.SysDot);
 
     }

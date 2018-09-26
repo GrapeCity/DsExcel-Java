@@ -32,14 +32,14 @@ public class CreateThreeColorScaleRule extends ExampleBase {
         //three color scale.
         IColorScale threeColorScaleRule = worksheet.getRange("E2:E7").getFormatConditions().addColorScale(ColorScaleType.ThreeColorScale);
         threeColorScaleRule.getColorScaleCriteria().get(0).setType(ConditionValueTypes.LowestValue);
-        threeColorScaleRule.getColorScaleCriteria().get(0).getFormatColor().setColor(Color.getRed());
+        threeColorScaleRule.getColorScaleCriteria().get(0).getFormatColor().setColor(Color.GetRed());
 
         threeColorScaleRule.getColorScaleCriteria().get(1).setType(ConditionValueTypes.Percent);
         threeColorScaleRule.getColorScaleCriteria().get(1).setValue(30);
-        threeColorScaleRule.getColorScaleCriteria().get(1).getFormatColor().setColor(Color.getYellow());
+        threeColorScaleRule.getColorScaleCriteria().get(1).getFormatColor().setColor(Color.GetYellow());
 
         threeColorScaleRule.getColorScaleCriteria().get(2).setType(ConditionValueTypes.HighestValue);
-        threeColorScaleRule.getColorScaleCriteria().get(2).getFormatColor().setColor(Color.getGreen());
+        threeColorScaleRule.getColorScaleCriteria().get(2).getFormatColor().setColor(Color.GetGreen());
 
     }
 

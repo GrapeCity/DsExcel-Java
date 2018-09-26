@@ -32,7 +32,7 @@ public class CreateUniqueRule extends ExampleBase {
         IUniqueValues condition = worksheet.getRange("E2:E7").getFormatConditions().addUniqueValues();
         condition.setDupeUnique(DupeUnique.Unique);
         condition.getFont().setName("Arial");
-        condition.getInterior().setColor(Color.getPink());
+        condition.getInterior().setColor(Color.GetPink());
 
     }
 

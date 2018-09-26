@@ -14,8 +14,8 @@ public class LinearGradientFill extends ExampleBase {
 
         IWorksheet worksheet = workbook.getWorksheets().get(0);
         worksheet.getRange("A1").getInterior().setPattern(Pattern.LinearGradient);
-        ((ILinearGradient) worksheet.getRange("A1").getInterior().getGradient()).getColorStops().get(0).setColor(Color.getRed());
-        ((ILinearGradient) worksheet.getRange("A1").getInterior().getGradient()).getColorStops().get(1).setColor(Color.getYellow());
+        ((ILinearGradient) worksheet.getRange("A1").getInterior().getGradient()).getColorStops().get(0).setColor(Color.GetRed());
+        ((ILinearGradient) worksheet.getRange("A1").getInterior().getGradient()).getColorStops().get(1).setColor(Color.GetYellow());
 
         ((ILinearGradient) worksheet.getRange("A1").getInterior().getGradient()).setDegree(90);
 

@@ -28,7 +28,7 @@ public class CreateCustomValidation extends ExampleBase {
         for (int i = 1; i <= 2; i++) {
             if (worksheet.getRange(i, 0).getHasValidation()) {
                 //set the range[i, 0]'s interior color.
-                worksheet.getRange(i, 0).getInterior().setColor(Color.getLightBlue());
+                worksheet.getRange(i, 0).getInterior().setColor(Color.GetLightBlue());
             }
         }
 

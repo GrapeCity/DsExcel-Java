@@ -41,14 +41,14 @@ public class CreateDatabBarRule extends ExampleBase {
         dataBar.getMaxPoint().setValue(null);
 
         dataBar.setBarFillType(DataBarFillType.Gradient);
-        dataBar.getBarColor().setColor(Color.getGreen());
+        dataBar.getBarColor().setColor(Color.GetGreen());
         dataBar.setDirection(DataBarDirection.Context);
-        dataBar.getAxisColor().setColor(Color.getRed());
+        dataBar.getAxisColor().setColor(Color.GetRed());
         dataBar.setAxisPosition(DataBarAxisPosition.Automatic);
         dataBar.getNegativeBarFormat().setBorderColorType(DataBarNegativeColorType.Color);
-        dataBar.getNegativeBarFormat().getBorderColor().setColor(Color.getBlue());
+        dataBar.getNegativeBarFormat().getBorderColor().setColor(Color.GetBlue());
         dataBar.getNegativeBarFormat().setColorType(DataBarNegativeColorType.Color);
-        dataBar.getNegativeBarFormat().getColor().setColor(Color.getPink());
+        dataBar.getNegativeBarFormat().getColor().setColor(Color.GetPink());
         dataBar.setShowValue(false);
     }
 

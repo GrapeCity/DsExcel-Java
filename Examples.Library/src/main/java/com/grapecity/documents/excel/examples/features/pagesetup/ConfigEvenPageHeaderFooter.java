@@ -1,7 +1,6 @@
 package com.grapecity.documents.excel.examples.features.pagesetup;
 
 import java.io.InputStream;
-import java.net.URL;
 
 import com.grapecity.documents.excel.IWorksheet;
 import com.grapecity.documents.excel.Workbook;
@@ -23,7 +22,7 @@ public class ConfigEvenPageHeaderFooter extends ExampleBase {
 
         //Set even page headerfooter's graphic
         worksheet.getPageSetup().getEvenPage().getLeftFooter().setText("&G");
-        InputStream stream = ClassLoader.getSystemResourceAsStream("logo.png");
+        InputStream stream = this.getResourceStream("logo.png");
         worksheet.getPageSetup().getEvenPage().getLeftFooter().getPicture().setGraphicStream(stream, ImageType.PNG);
 
     }

@@ -1,5 +1,6 @@
 package com.grapecity.documents.excel.examples.features.filtering.datefiltering;
 
+import java.util.Date;
 import java.util.GregorianCalendar;
 
 import com.grapecity.documents.excel.AutoFilterOperator;
@@ -8,6 +9,12 @@ import com.grapecity.documents.excel.Workbook;
 import com.grapecity.documents.excel.examples.ExampleBase;
 
 public class DateFilter extends ExampleBase {
+
+    public static void main(String[] args){
+        Workbook workbook = new Workbook();
+        new DateFilter().execute(workbook);
+        workbook.save("/Users/jackshang/Documents/Work/Source/GcExcel/ds-excel-java/Source/Demos/ExamplesDemo/Examples.Library/src/main/java/com/grapecity/documents/excel/examples/features/filtering/datefiltering/dateFilter.xlsx");
+    }
 
     @Override
     public void execute(Workbook workbook) {
@@ -26,25 +33,10 @@ public class DateFilter extends ExampleBase {
         worksheet.getRange("A1:F7").setValue(data);
         worksheet.getRange("A:F").setColumnWidth(15);
 
-        String criteria1 = new GregorianCalendar(1972, 6, 3).toString();
-        String criteria2 = new GregorianCalendar(1993, 1, 15).toString();
+        String criteria1 = new GregorianCalendar(1972, 6, 3).getTime().toString();
+        String criteria2 = new GregorianCalendar(1993, 1, 15).getTime().toString();
         //filter date between 1972.7.3 and 1993.2.15
         worksheet.getRange("A1:F7").autoFilter(2, ">=" + criteria1, AutoFilterOperator.And, "<=" + criteria2);
-
-    }
-
-
-    @Override
-    public boolean getShowViewer() {
-
-        return false;
-
-    }
-
-    @Override
-    public boolean getShowScreenshot() {
-
-        return true;
 
     }
 

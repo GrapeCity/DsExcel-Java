@@ -30,13 +30,13 @@ public class ConfigDataLabelFormat extends ExampleBase {
         series1.getDataLabels().setShowSeriesName(true);
 
         //set series1's all data label's format.
-        series1.getDataLabels().getFormat().getFill().getColor().setRGB(Color.getPink());
-        series1.getDataLabels().getFormat().getLine().getColor().setRGB(Color.getGreen());
+        series1.getDataLabels().getFormat().getFill().getColor().setRGB(Color.GetPink());
+        series1.getDataLabels().getFormat().getLine().getColor().setRGB(Color.GetGreen());
         series1.getDataLabels().getFormat().getLine().setWeight(1);
 
         //set series1's specific data label's format.
-        series1.getDataLabels().get(2).getFormat().getFill().getColor().setRGB(Color.getLightGreen());
-        series1.getPoints().get(2).getDataLabel().getFormat().getLine().getColor().setRGB(Color.getGray());
+        series1.getDataLabels().get(2).getFormat().getFill().getColor().setRGB(Color.GetLightGreen());
+        series1.getPoints().get(2).getDataLabel().getFormat().getLine().getColor().setRGB(Color.GetGray());
         series1.getPoints().get(2).getDataLabel().getFormat().getLine().setWeight(2);
 
     }

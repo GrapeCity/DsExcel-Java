@@ -34,7 +34,7 @@ public class ConfigTickMarkLabel extends ExampleBase {
         //config tick label's format
         category_axis.setTickLabelPosition(TickLabelPosition.NextToAxis);
         category_axis.setTickLabelSpacing(2);
-        category_axis.getTickLabels().getFont().getColor().setRGB(Color.getDarkOrange());
+        category_axis.getTickLabels().getFont().getColor().setRGB(Color.GetDarkOrange());
         category_axis.getTickLabels().getFont().setSize(12);
         category_axis.getTickLabels().setNumberFormat("#,##0.00");
         value_axis.getTickLabels().setNumberFormat("#,##0;[Red]#,##0");

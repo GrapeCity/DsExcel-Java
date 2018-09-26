@@ -31,7 +31,7 @@ public class ConfigValueAxesFormat extends ExampleBase {
         IAxis value_axis = shape.getChart().getAxes().item(AxisType.Value);
 
         //set value axis's format.
-        value_axis.getFormat().getLine().getColor().setRGB(Color.FromRGB(91, 155, 213));
+        value_axis.getFormat().getLine().getColor().setRGB(Color.FromArgb(91, 155, 213));
         value_axis.getFormat().getLine().setWeight(2);
         value_axis.getFormat().getLine().setStyle(LineStyle.Single);
 

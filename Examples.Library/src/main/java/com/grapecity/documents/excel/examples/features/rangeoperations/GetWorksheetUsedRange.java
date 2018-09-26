@@ -20,7 +20,7 @@ public class GetWorksheetUsedRange extends ExampleBase {
 
         // set interior color for worksheet usedRange "H6:M10".
         IRange usedrange = worksheet.getUsedRange();
-        usedrange.getInterior().setColor(Color.getLightBlue());
+        usedrange.getInterior().setColor(Color.GetLightBlue());
     }
 
 }

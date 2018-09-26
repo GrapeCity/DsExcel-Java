@@ -34,7 +34,7 @@ public class UseDateAxis extends ExampleBase {
         worksheet.getRange("G7:J7").setValue(new Object[]{new GregorianCalendar(2011, 11, 16), new GregorianCalendar(2011, 11, 17), new GregorianCalendar(2011, 11, 18), new GregorianCalendar(2011, 11, 19)});
         worksheet.getRange("F3").getSparklineGroups().get(0).setDateRange("G7:J7");
         worksheet.getRange("F3").getSparklineGroups().get(0).getAxes().getHorizontal().getAxis().setVisible(true);
-        worksheet.getRange("F3").getSparklineGroups().get(0).getAxes().getHorizontal().getAxis().getColor().setColor(Color.getGreen());
+        worksheet.getRange("F3").getSparklineGroups().get(0).getAxes().getHorizontal().getAxis().getColor().setColor(Color.GetGreen());
 
     }
 

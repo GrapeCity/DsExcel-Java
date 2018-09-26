@@ -18,19 +18,19 @@ public class AddBordersToCell extends ExampleBase {
 
         //set left, top, right, bottom borders together.
         rangeB2.getBorders().setLineStyle(BorderLineStyle.DashDot);
-        rangeB2.getBorders().setColor(Color.getGreen());
+        rangeB2.getBorders().setColor(Color.GetGreen());
 
         //set top border individually.
         rangeB2.getBorders().get(BordersIndex.EdgeTop).setLineStyle(BorderLineStyle.Medium);
-        rangeB2.getBorders().get(BordersIndex.EdgeTop).setColor(Color.getRed());
+        rangeB2.getBorders().get(BordersIndex.EdgeTop).setColor(Color.GetRed());
 
         //set diagonal down border individually.
         rangeB2.getBorders().get(BordersIndex.DiagonalDown).setLineStyle(BorderLineStyle.Hair);
-        rangeB2.getBorders().get(BordersIndex.DiagonalDown).setColor(Color.getBlue());
+        rangeB2.getBorders().get(BordersIndex.DiagonalDown).setColor(Color.GetBlue());
 
         //set diagonal up border individually.
         rangeB2.getBorders().get(BordersIndex.DiagonalUp).setLineStyle(BorderLineStyle.Dotted);
-        rangeB2.getBorders().get(BordersIndex.DiagonalUp).setColor(Color.getBlue());
+        rangeB2.getBorders().get(BordersIndex.DiagonalUp).setColor(Color.GetBlue());
 
     }
 

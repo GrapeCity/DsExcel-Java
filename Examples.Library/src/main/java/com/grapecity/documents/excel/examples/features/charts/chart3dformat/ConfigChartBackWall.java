@@ -28,8 +28,8 @@ public class ConfigChartBackWall extends ExampleBase {
 
         //config chart floor
         shape.getChart().getBackWall().setThickness(5);
-        shape.getChart().getBackWall().getFormat().getFill().getColor().setRGB(Color.getLightGreen());
-        shape.getChart().getBackWall().getFormat().getLine().getColor().setRGB(Color.getLightBlue());
+        shape.getChart().getBackWall().getFormat().getFill().getColor().setRGB(Color.GetLightGreen());
+        shape.getChart().getBackWall().getFormat().getLine().getColor().setRGB(Color.GetLightBlue());
 
     }
 

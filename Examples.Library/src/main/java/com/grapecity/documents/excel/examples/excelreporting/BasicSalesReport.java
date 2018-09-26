@@ -30,18 +30,18 @@ public class BasicSalesReport extends ExampleBase {
 
         //create a custom theme.
         ITheme theme = new Theme("testTheme");
-        theme.getThemeColorScheme().get(ThemeColor.Light1).setRGB(Color.FromRGB(255, 255, 255));
-        theme.getThemeColorScheme().get(ThemeColor.Dark1).setRGB(Color.FromRGB(0, 0, 0));
-        theme.getThemeColorScheme().get(ThemeColor.Light2).setRGB(Color.FromRGB(255, 255, 255));
-        theme.getThemeColorScheme().get(ThemeColor.Dark2).setRGB(Color.FromRGB(0, 0, 0));
-        theme.getThemeColorScheme().get(ThemeColor.Accent1).setRGB(Color.FromRGB(140, 198, 63));
-        theme.getThemeColorScheme().get(ThemeColor.Accent2).setRGB(Color.FromRGB(242, 116, 45));
-        theme.getThemeColorScheme().get(ThemeColor.Accent3).setRGB(Color.FromRGB(106, 159, 207));
-        theme.getThemeColorScheme().get(ThemeColor.Accent4).setRGB(Color.FromRGB(242, 192, 45));
-        theme.getThemeColorScheme().get(ThemeColor.Accent5).setRGB(Color.FromRGB(146, 98, 174));
-        theme.getThemeColorScheme().get(ThemeColor.Accent6).setRGB(Color.FromRGB(121, 198, 199));
-        theme.getThemeColorScheme().get(ThemeColor.Hyperlink).setRGB(Color.FromRGB(106, 159, 207));
-        theme.getThemeColorScheme().get(ThemeColor.FollowedHyperlink).setRGB(Color.FromRGB(146, 98, 74));
+        theme.getThemeColorScheme().get(ThemeColor.Light1).setRGB(Color.FromArgb(255, 255, 255));
+        theme.getThemeColorScheme().get(ThemeColor.Dark1).setRGB(Color.FromArgb(0, 0, 0));
+        theme.getThemeColorScheme().get(ThemeColor.Light2).setRGB(Color.FromArgb(255, 255, 255));
+        theme.getThemeColorScheme().get(ThemeColor.Dark2).setRGB(Color.FromArgb(0, 0, 0));
+        theme.getThemeColorScheme().get(ThemeColor.Accent1).setRGB(Color.FromArgb(140, 198, 63));
+        theme.getThemeColorScheme().get(ThemeColor.Accent2).setRGB(Color.FromArgb(242, 116, 45));
+        theme.getThemeColorScheme().get(ThemeColor.Accent3).setRGB(Color.FromArgb(106, 159, 207));
+        theme.getThemeColorScheme().get(ThemeColor.Accent4).setRGB(Color.FromArgb(242, 192, 45));
+        theme.getThemeColorScheme().get(ThemeColor.Accent5).setRGB(Color.FromArgb(146, 98, 174));
+        theme.getThemeColorScheme().get(ThemeColor.Accent6).setRGB(Color.FromArgb(121, 198, 199));
+        theme.getThemeColorScheme().get(ThemeColor.Hyperlink).setRGB(Color.FromArgb(106, 159, 207));
+        theme.getThemeColorScheme().get(ThemeColor.FollowedHyperlink).setRGB(Color.FromArgb(146, 98, 74));
         theme.getThemeFontScheme().getMajor().get(FontLanguageIndex.Latin).setName("Garamond");
         theme.getThemeFontScheme().getMinor().get(FontLanguageIndex.Latin).setName("Garamond");
 
@@ -277,7 +277,7 @@ public class BasicSalesReport extends ExampleBase {
         //config shape's line and fill.
         shape.getLine().setDashStyle(LineDashStyle.Solid);
         shape.getLine().setWeight(4);
-        shape.getLine().getColor().setRGB(Color.FromRGB(89, 89, 89));
+        shape.getLine().getColor().setRGB(Color.FromArgb(89, 89, 89));
         shape.getFill().solid();
         shape.getFill().getColor().setColorType(SolidColorType.None);
 
@@ -411,7 +411,7 @@ public class BasicSalesReport extends ExampleBase {
         IShape shape2 = worksheet3.getShapes().addShape(AutoShapeType.RectangularCallout, 380, 65, 280, 50);
         shape2.getLine().setDashStyle(LineDashStyle.Solid);
         shape2.getLine().setWeight(4);
-        shape2.getLine().getColor().setRGB(Color.FromRGB(89, 89, 89));
+        shape2.getLine().getColor().setRGB(Color.FromArgb(89, 89, 89));
         shape2.getFill().solid();
         shape2.getFill().getColor().setColorType(SolidColorType.None);
 

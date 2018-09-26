@@ -26,9 +26,9 @@ public class FilterByAutomaticFontColor extends ExampleBase {
 
         worksheet.getRange("A1:F7").setValue(data);
         worksheet.getRange("A:F").setColumnWidth(15);
-        worksheet.getRange("E2").getFont().setColor(Color.getGreen());
-        worksheet.getRange("E5").getFont().setColor(Color.getGreen());
-        worksheet.getRange("E6").getFont().setColor(Color.getRed());
+        worksheet.getRange("E2").getFont().setColor(Color.GetGreen());
+        worksheet.getRange("E5").getFont().setColor(Color.GetGreen());
+        worksheet.getRange("E6").getFont().setColor(Color.GetRed());
 
         //filter in the rows which font color is automatic color.
         worksheet.getRange("A1:F7").autoFilter(4, null, AutoFilterOperator.AutomaticFontColor);

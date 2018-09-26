@@ -33,7 +33,7 @@ public class CreateDateValidation extends ExampleBase {
             for (int j = 2; j <= 4; j++) {
                 if (worksheet.getRange(i, j).getHasValidation()) {
                     //set the range[i, j]'s interior color.
-                    worksheet.getRange(i, j).getInterior().setColor(Color.getLightBlue());
+                    worksheet.getRange(i, j).getInterior().setColor(Color.GetLightBlue());
                 }
             }
         }

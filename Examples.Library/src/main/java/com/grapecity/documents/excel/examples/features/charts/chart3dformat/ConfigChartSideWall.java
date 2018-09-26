@@ -28,8 +28,8 @@ public class ConfigChartSideWall extends ExampleBase {
 
         //config side wall individually.
         shape.getChart().getSideWall().setThickness(5);
-        shape.getChart().getSideWall().getFormat().getFill().getColor().setRGB(Color.getLightGreen());
-        shape.getChart().getSideWall().getFormat().getLine().getColor().setRGB(Color.getLightBlue());
+        shape.getChart().getSideWall().getFormat().getFill().getColor().setRGB(Color.GetLightGreen());
+        shape.getChart().getSideWall().getFormat().getLine().getColor().setRGB(Color.GetLightBlue());
 
     }
 

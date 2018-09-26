@@ -27,7 +27,7 @@ public class CreateDropLine extends ExampleBase {
         shape.getChart().getSeriesCollection().add(worksheet.getRange("A1:D6"), RowCol.Columns, true, true);
 
         shape.getChart().getLineGroups().get(0).setHasDropLines(true);
-        shape.getChart().getLineGroups().get(0).getDropLines().getFormat().getLine().getColor().setRGB(Color.getLightPink());
+        shape.getChart().getLineGroups().get(0).getDropLines().getFormat().getLine().getColor().setRGB(Color.GetLightPink());
         shape.getChart().getLineGroups().get(0).getDropLines().getFormat().getLine().setWeight(3);
     }
 

@@ -33,7 +33,7 @@ public class UseArrayFormula extends ExampleBase {
         if (worksheet.getRange("O9").getHasArray()) {
             //set O9's entire array's interior color.
             IRange currentarray = worksheet.getRange("O9").getCurrentArray();
-            currentarray.getInterior().setColor(Color.getGreen());
+            currentarray.getInterior().setColor(Color.GetGreen());
         }
     }
 

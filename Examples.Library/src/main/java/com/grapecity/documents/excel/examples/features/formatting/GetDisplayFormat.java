@@ -19,12 +19,12 @@ public class GetDisplayFormat extends ExampleBase {
         Color color_A1 = worksheet.getRange("A1").getDisplayFormat().getInterior().getColor();
 
         //Range A1's displaying color will be cell style, yellow.
-        worksheet.getRange("A1").getInterior().setColor(Color.getYellow());
+        worksheet.getRange("A1").getInterior().setColor(Color.GetYellow());
         Color color_A1_1 = worksheet.getRange("A1").getDisplayFormat().getInterior().getColor();
 
         //Range A1's displaying color will be conditional format style, green.
         IFormatCondition condition = (IFormatCondition) worksheet.getRange("A1").getFormatConditions().add(FormatConditionType.NoBlanksCondition);
-        condition.getInterior().setColor(Color.getGreen());
+        condition.getInterior().setColor(Color.GetGreen());
         Color color_A1_2 = worksheet.getRange("A1").getDisplayFormat().getInterior().getColor();
 
     }

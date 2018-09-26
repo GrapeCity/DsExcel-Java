@@ -22,11 +22,11 @@ public class GetFeatureRelatedUsedRange extends ExampleBase {
                 {1, 2},
                 {"aaa", "bbb"}
         });
-        worksheet.getRange("A2:C3").getInterior().setColor(Color.getGreen());
+        worksheet.getRange("A2:C3").getInterior().setColor(Color.GetGreen());
 
         //style used range is A2:C3.
         IRange usedRange_style = worksheet.getUsedRange(EnumSet.of(UsedRangeType.Style));
-        usedRange_style.getInterior().setColor(Color.getLightBlue());
+        usedRange_style.getInterior().setColor(Color.GetLightBlue());
 
     }
 

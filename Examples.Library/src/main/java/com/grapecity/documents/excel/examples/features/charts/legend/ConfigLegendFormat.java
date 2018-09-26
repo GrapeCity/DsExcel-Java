@@ -33,8 +33,8 @@ public class ConfigLegendFormat extends ExampleBase {
         legend.getFont().setSize(12);
         legend.getFont().setName("Cooper Black");
         //config legend format
-        legend.getFormat().getFill().getColor().setRGB(Color.getLightGray());
-        legend.getFormat().getLine().getColor().setRGB(Color.getGray());
+        legend.getFormat().getFill().getColor().setRGB(Color.GetLightGray());
+        legend.getFormat().getLine().getColor().setRGB(Color.GetGray());
 
     }
 

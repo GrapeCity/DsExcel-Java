@@ -33,9 +33,9 @@ public class AccessTableRanges extends ExampleBase {
         worksheet.getTables().get(0).setShowTotals(true);
 
         // set each range's interior color.
-        worksheet.getTables().get(0).getHeaderRange().getInterior().setColor(Color.getGreen());
-        worksheet.getTables().get(0).getDataRange().getInterior().setColor(Color.getPink());
-        worksheet.getTables().get(0).getTotalsRange().getInterior().setColor(Color.getLightGray());
+        worksheet.getTables().get(0).getHeaderRange().getInterior().setColor(Color.GetGreen());
+        worksheet.getTables().get(0).getDataRange().getInterior().setColor(Color.GetPink());
+        worksheet.getTables().get(0).getTotalsRange().getInterior().setColor(Color.GetLightGray());
 
     }
 

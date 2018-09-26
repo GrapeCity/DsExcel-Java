@@ -160,16 +160,16 @@ heading1Style.setVerticalAlignment(VerticalAlignment.Center);
 heading1Style.getFont().setName("Century Gothic");
 heading1Style.getFont().setBold(true);
 heading1Style.getFont().setSize(11);
-heading1Style.getFont().setColor(Color.getWhite());
+heading1Style.getFont().setColor(Color.GetWhite());
 heading1Style.setIncludeBorder(false);
 heading1Style.setIncludePatterns(true);
-heading1Style.getInterior().setColor(Color.FromRGB(32, 61, 64));
+heading1Style.getInterior().setColor(Color.FromArgb(32, 61, 64));
 
 IStyle percentStyle = workbook.getStyles().get("Percent");
 percentStyle.setIncludeAlignment(true);
 percentStyle.setHorizontalAlignment(HorizontalAlignment.Center);
 percentStyle.setIncludeFont(true);
-percentStyle.getFont().setColor(Color.FromRGB(32, 61, 64));
+percentStyle.getFont().setColor(Color.FromArgb(32, 61, 64));
 percentStyle.getFont().setName("Century Gothic");
 percentStyle.getFont().setBold(true);
 percentStyle.getFont().setSize(14);
@@ -180,18 +180,18 @@ worksheet.getRange("B2, B9, E2, E5").setStyle(heading1Style);
 worksheet.getRange("G3").setStyle(percentStyle);
 
 worksheet.getRange("E6:G6").getBorders().get(BordersIndex.EdgeBottom).setLineStyle(BorderLineStyle.Medium);
-worksheet.getRange("E6:G6").getBorders().get(BordersIndex.EdgeBottom).setColor(Color.FromRGB(32, 61, 64));
+worksheet.getRange("E6:G6").getBorders().get(BordersIndex.EdgeBottom).setColor(Color.FromArgb(32, 61, 64));
 worksheet.getRange("E7:G7").getBorders().get(BordersIndex.EdgeBottom).setLineStyle(BorderLineStyle.Medium);
-worksheet.getRange("E7:G7").getBorders().get(BordersIndex.EdgeBottom).setColor(Color.FromRGB(32, 61, 64));
+worksheet.getRange("E7:G7").getBorders().get(BordersIndex.EdgeBottom).setColor(Color.FromArgb(32, 61, 64));
 
-worksheet.getRange("E9:G9").getInterior().setColor(Color.FromRGB(32, 61, 64));
+worksheet.getRange("E9:G9").getInterior().setColor(Color.FromArgb(32, 61, 64));
 worksheet.getRange("E9:G9").setHorizontalAlignment(HorizontalAlignment.Left);
 worksheet.getRange("E9:G9").setVerticalAlignment(VerticalAlignment.Center);
 worksheet.getRange("E9:G9").getFont().setName("Century Gothic");
 worksheet.getRange("E9:G9").getFont().setBold(true);
 worksheet.getRange("E9:G9").getFont().setSize(11);
-worksheet.getRange("E9:G9").getFont().setColor(Color.getWhite());
-worksheet.getRange("E3:F3").getBorders().setColor(Color.FromRGB(32, 61, 64));
+worksheet.getRange("E9:G9").getFont().setColor(Color.GetWhite());
+worksheet.getRange("E3:F3").getBorders().setColor(Color.FromArgb(32, 61, 64));
 ```
 
 
@@ -206,7 +206,7 @@ dataBar.getMinPoint().setValue(1);
 dataBar.getMaxPoint().setType(ConditionValueTypes.Number);
 dataBar.getMaxPoint().setValue("=TotalMonthlyIncome");
 dataBar.setBarFillType(DataBarFillType.Gradient);
-dataBar.getBarColor().setColor(Color.getRed());
+dataBar.getBarColor().setColor(Color.GetRed());
 dataBar.setShowValue(false);
 ```
 
@@ -221,23 +221,23 @@ shape.getChart().getColumnGroups().get(0).setOverlap(0);
 shape.getChart().getColumnGroups().get(0).setGapWidth(37);
 
 IAxis category_axis = shape.getChart().getAxes().item(AxisType.Category);
-category_axis.getFormat().getLine().getColor().setRGB(Color.getBlack());
+category_axis.getFormat().getLine().getColor().setRGB(Color.GetBlack());
 category_axis.getTickLabels().getFont().setSize(11);
-category_axis.getTickLabels().getFont().getColor().setRGB(Color.getBlack());
+category_axis.getTickLabels().getFont().getColor().setRGB(Color.GetBlack());
 
 IAxis series_axis = shape.getChart().getAxes().item(AxisType.Value);
 series_axis.getFormat().getLine().setWeight(1);
-series_axis.getFormat().getLine().getColor().setRGB(Color.getBlack());
+series_axis.getFormat().getLine().getColor().setRGB(Color.GetBlack());
 series_axis.getTickLabels().setNumberFormat("$###0");
 series_axis.getTickLabels().getFont().setSize(11);
-series_axis.getTickLabels().getFont().getColor().setRGB(Color.getBlack());
+series_axis.getTickLabels().getFont().getColor().setRGB(Color.GetBlack());
 
 ISeries chartSeries = shape.getChart().getSeriesCollection().newSeries();
 chartSeries.setFormula("=SERIES(\"Simple Budget\",{\"Income\",\"Expenses\"},'Sheet1'!$G$6:$G$7,1)");
-chartSeries.getPoints().get(0).getFormat().getFill().getColor().setRGB(Color.FromRGB(176, 21, 19));
-chartSeries.getPoints().get(1).getFormat().getFill().getColor().setRGB(Color.FromRGB(234, 99, 18));
+chartSeries.getPoints().get(0).getFormat().getFill().getColor().setRGB(Color.FromArgb(176, 21, 19));
+chartSeries.getPoints().get(1).getFormat().getFill().getColor().setRGB(Color.FromArgb(234, 99, 18));
 chartSeries.getDataLabels().getFont().setSize(11);
-chartSeries.getDataLabels().getFont().getColor().setRGB(Color.getBlack());
+chartSeries.getDataLabels().getFont().getColor().setRGB(Color.GetBlack());
 chartSeries.getDataLabels().setShowValue(true);
 chartSeries.getDataLabels().setPosition(DataLabelPosition.OutsideEnd);
 ```
@@ -247,7 +247,7 @@ chartSeries.getDataLabels().setPosition(DataLabelPosition.OutsideEnd);
 Save it to an Excel file named "SimpleBudget.xlsx."
 
 ```java
-workbook.Save("SimpleBudget.xlsx");
+workbook.save("SimpleBudget.xlsx");
 ```
 
-You can download and view the saved [SimpleBudget.xlsx](api/examples/xlsx/com.grapecity.documents.excel.examples.Tutorial?fileName=SimpleBudget). If you prefer to download the [Tutorial Source Project](gcexcel-tutorial.zip) and run the code yourself.
+You can download and view the saved [SimpleBudget.xlsx](http://10.41.1.18:8080/gcexcel-examples-api-server/api/examples/xlsx/com.grapecity.documents.excel.examples.Tutorial?fileName=SimpleBudget). If you prefer to download the [Tutorial Source Project](gcexcel-tutorial.zip) and run the code yourself.

@@ -1,7 +1,5 @@
 package com.grapecity.documents.excel.examples.features.workbook;
 
-import java.net.URL;
-
 import com.grapecity.documents.excel.OpenFileFormat;
 import com.grapecity.documents.excel.Workbook;
 import com.grapecity.documents.excel.examples.ExampleBase;

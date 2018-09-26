@@ -29,12 +29,12 @@ public class SortRangeByFontColor extends ExampleBase {
         worksheet.getRange("A1:F7").setValue(data);
         worksheet.getRange("A:F").setColumnWidth(15);
 
-        worksheet.getRange("F2").getFont().setColor(Color.getRed());
-        worksheet.getRange("F3").getFont().setColor(Color.getGainsboro());
-        worksheet.getRange("F4").getFont().setColor(Color.getGreen());
-        worksheet.getRange("F5").getFont().setColor(Color.getGainsboro());
-        worksheet.getRange("F6").getFont().setColor(Color.getGainsboro());
-        worksheet.getRange("F7").getFont().setColor(Color.getGainsboro());
+        worksheet.getRange("F2").getFont().setColor(Color.GetRed());
+        worksheet.getRange("F3").getFont().setColor(Color.GetGainsboro());
+        worksheet.getRange("F4").getFont().setColor(Color.GetGreen());
+        worksheet.getRange("F5").getFont().setColor(Color.GetGainsboro());
+        worksheet.getRange("F6").getFont().setColor(Color.GetGainsboro());
+        worksheet.getRange("F7").getFont().setColor(Color.GetGainsboro());
 
         //The font colors which are same to "F7" cell's color will in the top.
         worksheet.getSort().getSortFields().add(new FontColorSortField(worksheet.getRange("F2:F7"), worksheet.getRange("F7").getFont().getColor(), SortOrder.Ascending));

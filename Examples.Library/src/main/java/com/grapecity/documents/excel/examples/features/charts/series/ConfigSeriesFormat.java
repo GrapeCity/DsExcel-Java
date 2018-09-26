@@ -28,8 +28,8 @@ public class ConfigSeriesFormat extends ExampleBase {
         shape.getChart().getSeriesCollection().add(worksheet.getRange("A1:D6"), RowCol.Columns, true, true);
         ISeries series1 = shape.getChart().getSeriesCollection().get(0);
         //set series format.
-        series1.getFormat().getFill().getColor().setRGB(Color.getMediumSeaGreen());
-        series1.getFormat().getLine().getColor().setRGB(Color.getGreen());
+        series1.getFormat().getFill().getColor().setRGB(Color.GetMediumSeaGreen());
+        series1.getFormat().getLine().getColor().setRGB(Color.GetGreen());
         series1.getFormat().getLine().setWeight(1.5);
 
     }

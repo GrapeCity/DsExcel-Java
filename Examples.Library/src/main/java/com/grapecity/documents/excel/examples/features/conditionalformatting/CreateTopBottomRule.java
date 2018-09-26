@@ -34,7 +34,7 @@ public class CreateTopBottomRule extends ExampleBase {
         condition.setTopBottom(TopBottom.Top);
         condition.setRank(50);
         condition.setPercent(true);
-        condition.getInterior().setColor(Color.getRed());
+        condition.getInterior().setColor(Color.GetRed());
 
     }
 

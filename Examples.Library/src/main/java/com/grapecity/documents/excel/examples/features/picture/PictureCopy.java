@@ -15,7 +15,7 @@ public class PictureCopy extends ExampleBase {
     public void execute(Workbook workbook) {
         IWorksheet worksheet = workbook.getWorksheets().get(0);
 
-        InputStream stream = ClassLoader.getSystemResourceAsStream("logo.png");
+        InputStream stream = this.getResourceStream("logo.png");
         try {
             //Create a shape in worksheet, picture's range is Range("A2:I6")
             IShape picture = worksheet.getShapes().addPicture(stream, ImageType.PNG, 20, 20, 395, 60);

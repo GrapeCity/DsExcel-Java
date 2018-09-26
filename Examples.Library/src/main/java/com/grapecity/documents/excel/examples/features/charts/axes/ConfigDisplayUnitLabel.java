@@ -33,9 +33,9 @@ public class ConfigDisplayUnitLabel extends ExampleBase {
         value_axis.setDisplayUnit(DisplayUnit.Custom);
         value_axis.setDisplayUnitCustom(100);
         value_axis.setHasDisplayUnitLabel(true);
-        value_axis.getDisplayUnitLabel().getFont().getColor().setRGB(Color.getCornflowerBlue());
-        value_axis.getDisplayUnitLabel().getFormat().getFill().getColor().setRGB(Color.getOrange());
-        value_axis.getDisplayUnitLabel().getFormat().getLine().getColor().setRGB(Color.getCornflowerBlue());
+        value_axis.getDisplayUnitLabel().getFont().getColor().setRGB(Color.GetCornflowerBlue());
+        value_axis.getDisplayUnitLabel().getFormat().getFill().getColor().setRGB(Color.GetOrange());
+        value_axis.getDisplayUnitLabel().getFormat().getLine().getColor().setRGB(Color.GetCornflowerBlue());
 
     }
 

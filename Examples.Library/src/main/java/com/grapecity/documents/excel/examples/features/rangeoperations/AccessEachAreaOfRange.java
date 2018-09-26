@@ -17,15 +17,15 @@ public class AccessEachAreaOfRange extends ExampleBase {
 
         // set interior color for area1 A5:B7.
         IRange area1 = worksheet.getRange("A5:B7, C3, H5:N6").getAreas().getArea(0);
-        area1.getInterior().setColor(Color.getPink());
+        area1.getInterior().setColor(Color.GetPink());
 
         // set interior color for area2 C3.
         IRange area2 = worksheet.getRange("A5:B7, C3, H5:N6").getAreas().getArea(1);
-        area2.getInterior().setColor(Color.getLightGreen());
+        area2.getInterior().setColor(Color.GetLightGreen());
 
         // set interior color for area3 H5:N6.
         IRange area3 = worksheet.getRange("A5:B7, C3, H5:N6").getAreas().getArea(2);
-        area3.getInterior().setColor(Color.getLightBlue());
+        area3.getInterior().setColor(Color.GetLightBlue());
 
     }
 

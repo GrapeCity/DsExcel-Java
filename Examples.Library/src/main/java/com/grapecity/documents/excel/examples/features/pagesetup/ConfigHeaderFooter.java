@@ -1,7 +1,6 @@
 package com.grapecity.documents.excel.examples.features.pagesetup;
 
 import java.io.InputStream;
-import java.net.URL;
 
 import com.grapecity.documents.excel.IWorksheet;
 import com.grapecity.documents.excel.Workbook;
@@ -21,7 +20,7 @@ public class ConfigHeaderFooter extends ExampleBase {
 
         //Set page headerfooter's graphic
         worksheet.getPageSetup().setCenterFooter("&G");
-        InputStream stream = ClassLoader.getSystemResourceAsStream("logo.png");
+        InputStream stream = this.getResourceStream("logo.png");
         worksheet.getPageSetup().getCenterFooterPicture().setGraphicStream(stream, ImageType.PNG);
 
         //If you have picture resources locally, you can also set graphic in this way.

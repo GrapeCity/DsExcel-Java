@@ -33,7 +33,7 @@ public class ConfigCategoryAxesFormat extends ExampleBase {
 
         //set category axis's format.
         category_axis.getFormat().getFill().getColor().setObjectThemeColor(ThemeColor.Accent1);
-        category_axis.getFormat().getLine().getColor().setRGB(Color.getLightSkyBlue());
+        category_axis.getFormat().getLine().getColor().setRGB(Color.GetLightSkyBlue());
         category_axis.getFormat().getLine().setWeight(3);
         category_axis.getFormat().getLine().setStyle(LineStyle.Single);
 

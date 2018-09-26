@@ -46,7 +46,7 @@ public class ToDoListWithProgressTracker extends ExampleBase {
 
         IWorksheet worksheet = workbook.getWorksheets().get(0);
         worksheet.setName("To-Do List");
-        worksheet.setTabColor(Color.FromRGB(148, 112, 135));
+        worksheet.setTabColor(Color.FromArgb(148, 112, 135));
         worksheet.getSheetView().setDisplayGridlines(false);
 
         //Set Value.
@@ -253,18 +253,18 @@ public class ToDoListWithProgressTracker extends ExampleBase {
 
         //Create customize theme.
         ITheme theme = new Theme("test");
-        theme.getThemeColorScheme().get(ThemeColor.Dark1).setRGB(Color.FromRGB(0, 0, 0));
-        theme.getThemeColorScheme().get(ThemeColor.Light1).setRGB(Color.FromRGB(255, 255, 255));
-        theme.getThemeColorScheme().get(ThemeColor.Dark2).setRGB(Color.FromRGB(37, 28, 34));
-        theme.getThemeColorScheme().get(ThemeColor.Light2).setRGB(Color.FromRGB(240, 248, 246));
-        theme.getThemeColorScheme().get(ThemeColor.Accent1).setRGB(Color.FromRGB(148, 112, 135));
-        theme.getThemeColorScheme().get(ThemeColor.Accent2).setRGB(Color.FromRGB(71, 166, 181));
-        theme.getThemeColorScheme().get(ThemeColor.Accent3).setRGB(Color.FromRGB(234, 194, 53));
-        theme.getThemeColorScheme().get(ThemeColor.Accent4).setRGB(Color.FromRGB(107, 192, 129));
-        theme.getThemeColorScheme().get(ThemeColor.Accent5).setRGB(Color.FromRGB(233, 115, 61));
-        theme.getThemeColorScheme().get(ThemeColor.Accent6).setRGB(Color.FromRGB(251, 147, 59));
-        theme.getThemeColorScheme().get(ThemeColor.Hyperlink).setRGB(Color.FromRGB(71, 166, 181));
-        theme.getThemeColorScheme().get(ThemeColor.FollowedHyperlink).setRGB(Color.FromRGB(148, 112, 135));
+        theme.getThemeColorScheme().get(ThemeColor.Dark1).setRGB(Color.FromArgb(0, 0, 0));
+        theme.getThemeColorScheme().get(ThemeColor.Light1).setRGB(Color.FromArgb(255, 255, 255));
+        theme.getThemeColorScheme().get(ThemeColor.Dark2).setRGB(Color.FromArgb(37, 28, 34));
+        theme.getThemeColorScheme().get(ThemeColor.Light2).setRGB(Color.FromArgb(240, 248, 246));
+        theme.getThemeColorScheme().get(ThemeColor.Accent1).setRGB(Color.FromArgb(148, 112, 135));
+        theme.getThemeColorScheme().get(ThemeColor.Accent2).setRGB(Color.FromArgb(71, 166, 181));
+        theme.getThemeColorScheme().get(ThemeColor.Accent3).setRGB(Color.FromArgb(234, 194, 53));
+        theme.getThemeColorScheme().get(ThemeColor.Accent4).setRGB(Color.FromArgb(107, 192, 129));
+        theme.getThemeColorScheme().get(ThemeColor.Accent5).setRGB(Color.FromArgb(233, 115, 61));
+        theme.getThemeColorScheme().get(ThemeColor.Accent6).setRGB(Color.FromArgb(251, 147, 59));
+        theme.getThemeColorScheme().get(ThemeColor.Hyperlink).setRGB(Color.FromArgb(71, 166, 181));
+        theme.getThemeColorScheme().get(ThemeColor.FollowedHyperlink).setRGB(Color.FromArgb(148, 112, 135));
         theme.getThemeFontScheme().getMajor().get(FontLanguageIndex.Latin).setName("Helvetica Neue");
         theme.getThemeFontScheme().getMinor().get(FontLanguageIndex.Latin).setName("Bookman Old Style");
 

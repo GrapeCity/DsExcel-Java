@@ -111,13 +111,7 @@ public class ExampleBase {
 
     public String getScreenshotBase64() {
         String id = this.getID();
-        String rootPackage = ExampleBase.class.getPackage().getName();
-        String[] names = id.substring(rootPackage.length() + 1).split("\\.");
-        String resourceName = "GrapeCity.Documents.Spread.Examples";
-        for (int i = 0; i < names.length; i++) {
-            String nameWithPower = names[i].substring(0, 1).toUpperCase() + names[i].substring(1);
-            resourceName += "." + nameWithPower;
-        }
+        String resourceName = id.toLowerCase().replace("com.grapecity.documents.excel.examples.features.", "");
         InputStream inputStream = this.getResourceStream(String.format("Screenshots/%s.png", resourceName));
         return "data:image/png;base64," + this.inputStreamToBase64String(inputStream);
     }

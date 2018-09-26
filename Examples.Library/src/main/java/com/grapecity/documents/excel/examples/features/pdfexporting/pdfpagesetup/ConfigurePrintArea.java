@@ -20,7 +20,7 @@ public class ConfigurePrintArea extends ExampleBase {
         //Set data.
         sheet.getRange("A1:N50").setValue(data);
         sheet.getRange("C10:H20").setValue("PrintArea");
-        sheet.getRange("C10:H20").getInterior().setColor(Color.getYellow());
+        sheet.getRange("C10:H20").getInterior().setColor(Color.GetYellow());
         sheet.getPageSetup().setPrintHeadings(true);
 
         //Set print area.

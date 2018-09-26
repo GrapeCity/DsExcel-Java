@@ -65,7 +65,7 @@ public class CustomerProfitabilityAnalysis extends ExampleBase {
 
         IWorksheet worksheet = workbook.getWorksheets().get(0);
         worksheet.setName("Customer Profitability");
-        worksheet.setTabColor(Color.FromRGB(131, 172, 121));
+        worksheet.setTabColor(Color.FromArgb(131, 172, 121));
         worksheet.getSheetView().setDisplayGridlines(false);
 
         //Set Value.
@@ -328,18 +328,18 @@ public class CustomerProfitabilityAnalysis extends ExampleBase {
 
         //Create customize theme.
         ITheme theme = new Theme("test");
-        theme.getThemeColorScheme().get(ThemeColor.Dark1).setRGB(Color.FromRGB(0, 0, 0));
-        theme.getThemeColorScheme().get(ThemeColor.Light1).setRGB(Color.FromRGB(255, 255, 255));
-        theme.getThemeColorScheme().get(ThemeColor.Dark2).setRGB(Color.FromRGB(77, 70, 70));
-        theme.getThemeColorScheme().get(ThemeColor.Light2).setRGB(Color.FromRGB(255, 251, 239));
-        theme.getThemeColorScheme().get(ThemeColor.Accent1).setRGB(Color.FromRGB(255, 225, 132));
-        theme.getThemeColorScheme().get(ThemeColor.Accent2).setRGB(Color.FromRGB(102, 173, 166));
-        theme.getThemeColorScheme().get(ThemeColor.Accent3).setRGB(Color.FromRGB(131, 172, 121));
-        theme.getThemeColorScheme().get(ThemeColor.Accent4).setRGB(Color.FromRGB(254, 191, 102));
-        theme.getThemeColorScheme().get(ThemeColor.Accent5).setRGB(Color.FromRGB(219, 112, 87));
-        theme.getThemeColorScheme().get(ThemeColor.Accent6).setRGB(Color.FromRGB(165, 115, 137));
-        theme.getThemeColorScheme().get(ThemeColor.Hyperlink).setRGB(Color.FromRGB(102, 173, 166));
-        theme.getThemeColorScheme().get(ThemeColor.FollowedHyperlink).setRGB(Color.FromRGB(165, 115, 137));
+        theme.getThemeColorScheme().get(ThemeColor.Dark1).setRGB(Color.FromArgb(0, 0, 0));
+        theme.getThemeColorScheme().get(ThemeColor.Light1).setRGB(Color.FromArgb(255, 255, 255));
+        theme.getThemeColorScheme().get(ThemeColor.Dark2).setRGB(Color.FromArgb(77, 70, 70));
+        theme.getThemeColorScheme().get(ThemeColor.Light2).setRGB(Color.FromArgb(255, 251, 239));
+        theme.getThemeColorScheme().get(ThemeColor.Accent1).setRGB(Color.FromArgb(255, 225, 132));
+        theme.getThemeColorScheme().get(ThemeColor.Accent2).setRGB(Color.FromArgb(102, 173, 166));
+        theme.getThemeColorScheme().get(ThemeColor.Accent3).setRGB(Color.FromArgb(131, 172, 121));
+        theme.getThemeColorScheme().get(ThemeColor.Accent4).setRGB(Color.FromArgb(254, 191, 102));
+        theme.getThemeColorScheme().get(ThemeColor.Accent5).setRGB(Color.FromArgb(219, 112, 87));
+        theme.getThemeColorScheme().get(ThemeColor.Accent6).setRGB(Color.FromArgb(165, 115, 137));
+        theme.getThemeColorScheme().get(ThemeColor.Hyperlink).setRGB(Color.FromArgb(102, 173, 166));
+        theme.getThemeColorScheme().get(ThemeColor.FollowedHyperlink).setRGB(Color.FromArgb(165, 115, 137));
         theme.getThemeFontScheme().getMajor().get(FontLanguageIndex.Latin).setName("Marion");
         theme.getThemeFontScheme().getMinor().get(FontLanguageIndex.Latin).setName("Marion");
 

@@ -36,7 +36,7 @@ public class PersonalNetWorthCalculator extends ExampleBase {
             ITheme theme = new Theme("testTheme", Themes.GetOfficeTheme());
             theme.getThemeFontScheme().getMinor().get(FontLanguageIndex.Latin).setName("Trebuchet MS");
             workbook.setTheme(theme);
-            IStyle style_Normal = workbook.getStyles().get("Mormal");
+            IStyle style_Normal = workbook.getStyles().get("Normal");
             style_Normal.getFont().setThemeFont(ThemeFont.Minor);
         }
     }
@@ -130,8 +130,8 @@ public class PersonalNetWorthCalculator extends ExampleBase {
         //---------------------------Set Table Style---------------------------
         ITableStyle assetsTableStyle = workbook.getTableStyles().add("Assets");
         workbook.setDefaultTableStyle("Assets");
-        assetsTableStyle.getTableStyleElements().get(TableStyleElementType.WholeTable).getFont().setColor(Color.FromRGB(64, 64, 64));
-        assetsTableStyle.getTableStyleElements().get(TableStyleElementType.WholeTable).getBorders().setColor(Color.FromRGB(128, 128, 128));
+        assetsTableStyle.getTableStyleElements().get(TableStyleElementType.WholeTable).getFont().setColor(Color.FromArgb(64, 64, 64));
+        assetsTableStyle.getTableStyleElements().get(TableStyleElementType.WholeTable).getBorders().setColor(Color.FromArgb(128, 128, 128));
         assetsTableStyle.getTableStyleElements().get(TableStyleElementType.WholeTable).getBorders().get(BordersIndex.InsideHorizontal).setLineStyle(BorderLineStyle.Dotted);
         assetsTableStyle.getTableStyleElements().get(TableStyleElementType.WholeTable).getBorders().get(BordersIndex.EdgeBottom).setLineStyle(BorderLineStyle.Thin);
         assetsTableStyle.getTableStyleElements().get(TableStyleElementType.WholeTable).getBorders().get(BordersIndex.EdgeTop).setLineStyle(BorderLineStyle.None);
@@ -139,19 +139,19 @@ public class PersonalNetWorthCalculator extends ExampleBase {
         assetsTableStyle.getTableStyleElements().get(TableStyleElementType.WholeTable).getBorders().get(BordersIndex.EdgeRight).setLineStyle(BorderLineStyle.None);
         assetsTableStyle.getTableStyleElements().get(TableStyleElementType.WholeTable).getBorders().get(BordersIndex.InsideVertical).setLineStyle(BorderLineStyle.None);
 
-        assetsTableStyle.getTableStyleElements().get(TableStyleElementType.SecondRowStripe).getInterior().setColor(Color.getWhite());
+        assetsTableStyle.getTableStyleElements().get(TableStyleElementType.SecondRowStripe).getInterior().setColor(Color.GetWhite());
         assetsTableStyle.getTableStyleElements().get(TableStyleElementType.SecondRowStripe).setStripeSize(1);
 
         assetsTableStyle.getTableStyleElements().get(TableStyleElementType.LastColumn).getFont().setBold(true);
-        assetsTableStyle.getTableStyleElements().get(TableStyleElementType.LastColumn).getFont().setColor(Color.FromRGB(61, 125, 137));
-        assetsTableStyle.getTableStyleElements().get(TableStyleElementType.LastColumn).getInterior().setColor(Color.getWhite());
+        assetsTableStyle.getTableStyleElements().get(TableStyleElementType.LastColumn).getFont().setColor(Color.FromArgb(61, 125, 137));
+        assetsTableStyle.getTableStyleElements().get(TableStyleElementType.LastColumn).getInterior().setColor(Color.GetWhite());
 
-        assetsTableStyle.getTableStyleElements().get(TableStyleElementType.HeaderRow).getInterior().setColor(Color.FromRGB(61, 125, 137));
+        assetsTableStyle.getTableStyleElements().get(TableStyleElementType.HeaderRow).getInterior().setColor(Color.FromArgb(61, 125, 137));
 
 
         ITableStyle debtsTableStyle = workbook.getTableStyles().add("Debts");
-        debtsTableStyle.getTableStyleElements().get(TableStyleElementType.WholeTable).getFont().setColor(Color.FromRGB(64, 64, 64));
-        debtsTableStyle.getTableStyleElements().get(TableStyleElementType.WholeTable).getBorders().setColor(Color.FromRGB(128, 128, 128));
+        debtsTableStyle.getTableStyleElements().get(TableStyleElementType.WholeTable).getFont().setColor(Color.FromArgb(64, 64, 64));
+        debtsTableStyle.getTableStyleElements().get(TableStyleElementType.WholeTable).getBorders().setColor(Color.FromArgb(128, 128, 128));
         debtsTableStyle.getTableStyleElements().get(TableStyleElementType.WholeTable).getBorders().get(BordersIndex.InsideHorizontal).setLineStyle(BorderLineStyle.Dotted);
         debtsTableStyle.getTableStyleElements().get(TableStyleElementType.WholeTable).getBorders().get(BordersIndex.EdgeBottom).setLineStyle(BorderLineStyle.Thin);
         debtsTableStyle.getTableStyleElements().get(TableStyleElementType.WholeTable).getBorders().get(BordersIndex.EdgeTop).setLineStyle(BorderLineStyle.None);
@@ -159,23 +159,23 @@ public class PersonalNetWorthCalculator extends ExampleBase {
         debtsTableStyle.getTableStyleElements().get(TableStyleElementType.WholeTable).getBorders().get(BordersIndex.EdgeRight).setLineStyle(BorderLineStyle.None);
         debtsTableStyle.getTableStyleElements().get(TableStyleElementType.WholeTable).getBorders().get(BordersIndex.InsideVertical).setLineStyle(BorderLineStyle.None);
 
-        debtsTableStyle.getTableStyleElements().get(TableStyleElementType.SecondRowStripe).getInterior().setColor(Color.getWhite());
+        debtsTableStyle.getTableStyleElements().get(TableStyleElementType.SecondRowStripe).getInterior().setColor(Color.GetWhite());
         debtsTableStyle.getTableStyleElements().get(TableStyleElementType.SecondRowStripe).setStripeSize(1);
 
         debtsTableStyle.getTableStyleElements().get(TableStyleElementType.LastColumn).getFont().setBold(true);
-        debtsTableStyle.getTableStyleElements().get(TableStyleElementType.LastColumn).getFont().setColor(Color.FromRGB(146, 75, 12));
-        debtsTableStyle.getTableStyleElements().get(TableStyleElementType.LastColumn).getInterior().setColor(Color.getWhite());
+        debtsTableStyle.getTableStyleElements().get(TableStyleElementType.LastColumn).getFont().setColor(Color.FromArgb(146, 75, 12));
+        debtsTableStyle.getTableStyleElements().get(TableStyleElementType.LastColumn).getInterior().setColor(Color.GetWhite());
 
-        debtsTableStyle.getTableStyleElements().get(TableStyleElementType.HeaderRow).getInterior().setColor(Color.FromRGB(218, 113, 18));
+        debtsTableStyle.getTableStyleElements().get(TableStyleElementType.HeaderRow).getInterior().setColor(Color.FromArgb(218, 113, 18));
 
 
         //----------------------------Set Named Styles-------------------------
         IStyle normalStyle = workbook.getStyles().get("Normal");
         normalStyle.getFont().setName("Century Gothic");
         normalStyle.getFont().setSize(12);
-        normalStyle.getFont().setColor(Color.FromRGB(64, 64, 64));
-        normalStyle.getInterior().setColor(Color.FromRGB(243, 243, 236));
-        normalStyle.getInterior().setPatternColor(Color.FromRGB(243, 243, 236));
+        normalStyle.getFont().setColor(Color.FromArgb(64, 64, 64));
+        normalStyle.getInterior().setColor(Color.FromArgb(243, 243, 236));
+        normalStyle.getInterior().setPatternColor(Color.FromArgb(243, 243, 236));
         normalStyle.setHorizontalAlignment(HorizontalAlignment.Left);
         normalStyle.setIndentLevel(1);
         normalStyle.setVerticalAlignment(VerticalAlignment.Center);
@@ -187,9 +187,9 @@ public class PersonalNetWorthCalculator extends ExampleBase {
         titleStyle.setWrapText(true);
         titleStyle.getFont().setName("Century Gothic");
         titleStyle.getFont().setSize(66);
-        titleStyle.getFont().setColor(Color.FromRGB(64, 64, 64));
+        titleStyle.getFont().setColor(Color.FromArgb(64, 64, 64));
         titleStyle.setIncludePatterns(true);
-        titleStyle.getInterior().setColor(Color.FromRGB(243, 243, 236));
+        titleStyle.getInterior().setColor(Color.FromArgb(243, 243, 236));
 
         IStyle heading1Style = workbook.getStyles().get("Heading 1");
         heading1Style.setIncludeAlignment(true);
@@ -199,10 +199,10 @@ public class PersonalNetWorthCalculator extends ExampleBase {
         heading1Style.getFont().setName("Century Gothic");
         heading1Style.getFont().setBold(false);
         heading1Style.getFont().setSize(16);
-        heading1Style.getFont().setColor(Color.FromRGB(64, 64, 64));
+        heading1Style.getFont().setColor(Color.FromArgb(64, 64, 64));
         heading1Style.setIncludeBorder(false);
         heading1Style.setIncludePatterns(true);
-        heading1Style.getInterior().setColor(Color.FromRGB(243, 243, 236));
+        heading1Style.getInterior().setColor(Color.FromArgb(243, 243, 236));
 
         IStyle heading2Style = workbook.getStyles().get("Heading 2");
         heading2Style.setIncludeNumber(true);
@@ -213,10 +213,10 @@ public class PersonalNetWorthCalculator extends ExampleBase {
         heading2Style.setVerticalAlignment(VerticalAlignment.Center);
         heading2Style.getFont().setName("Century Gothic");
         heading2Style.getFont().setSize(16);
-        heading2Style.getFont().setColor(Color.FromRGB(64, 64, 64));
+        heading2Style.getFont().setColor(Color.FromArgb(64, 64, 64));
         heading2Style.setIncludeBorder(false);
         heading2Style.setIncludePatterns(true);
-        heading2Style.getInterior().setColor(Color.FromRGB(243, 243, 236));
+        heading2Style.getInterior().setColor(Color.FromArgb(243, 243, 236));
 
         IStyle heading3Style = workbook.getStyles().get("Heading 3");
         heading3Style.setIncludeAlignment(true);
@@ -226,14 +226,14 @@ public class PersonalNetWorthCalculator extends ExampleBase {
         heading3Style.getFont().setName("Century Gothic");
         heading3Style.getFont().setBold(false);
         heading3Style.getFont().setSize(27);
-        heading3Style.getFont().setColor(Color.FromRGB(64, 64, 64));
+        heading3Style.getFont().setColor(Color.FromArgb(64, 64, 64));
         heading3Style.setIncludePatterns(true);
-        heading3Style.getInterior().setColor(Color.FromRGB(243, 243, 236));
+        heading3Style.getInterior().setColor(Color.FromArgb(243, 243, 236));
 
         IStyle heading4Style = workbook.getStyles().get("Heading 4");
         heading4Style.getFont().setName("Century Gothic");
         heading4Style.getFont().setSize(16);
-        heading4Style.getFont().setColor(Color.getWhite());
+        heading4Style.getFont().setColor(Color.GetWhite());
         heading4Style.getFont().setBold(false);
 
         IStyle currencyStyle = workbook.getStyles().get("Currency");
@@ -257,31 +257,31 @@ public class PersonalNetWorthCalculator extends ExampleBase {
         worksheet.getRange("C2:C4").setStyle(heading2Style);
         worksheet.getRange("B9:D9").setStyle(heading4Style);
         worksheet.getRange("D10:D30").setStyle(currencyStyle);
-        worksheet.getRange("D10:D30").getFont().setColor(Color.FromRGB(61, 125, 137));
+        worksheet.getRange("D10:D30").getFont().setColor(Color.FromArgb(61, 125, 137));
 
         worksheet.getRange("B34:C34").setStyle(heading4Style);
         worksheet.getRange("C35:C44").setStyle(currencyStyle);
-        worksheet.getRange("C35:C44").getFont().setColor(Color.FromRGB(218, 113, 18));
+        worksheet.getRange("C35:C44").getFont().setColor(Color.FromArgb(218, 113, 18));
         worksheet.getRange("B1").setStyle(titleStyle);
         worksheet.getRange("B8").setStyle(heading3Style);
         worksheet.getRange("B33").setStyle(heading3Style);
 
         worksheet.getRange("B3:C3").getBorders().get(BordersIndex.EdgeTop).setLineStyle(BorderLineStyle.Hair);
-        worksheet.getRange("B3:C3").getBorders().get(BordersIndex.EdgeTop).setColor(Color.FromRGB(128, 128, 128));
+        worksheet.getRange("B3:C3").getBorders().get(BordersIndex.EdgeTop).setColor(Color.FromArgb(128, 128, 128));
         worksheet.getRange("B3:C3").getBorders().get(BordersIndex.EdgeBottom).setLineStyle(BorderLineStyle.Hair);
-        worksheet.getRange("B3:C3").getBorders().get(BordersIndex.EdgeBottom).setColor(Color.FromRGB(128, 128, 128));
+        worksheet.getRange("B3:C3").getBorders().get(BordersIndex.EdgeBottom).setColor(Color.FromArgb(128, 128, 128));
 
 
         //--------------------------------Add Shape--------------------------------
         IShape recShape1 = worksheet.getShapes().addShape(AutoShapeType.Rectangle, 17.81, 282.75, 20.963, 21.75);
         recShape1.getLine().getColor().setColorType(SolidColorType.None);
-        recShape1.getFill().getColor().setRGB(Color.FromRGB(60, 126, 138));
+        recShape1.getFill().getColor().setRGB(Color.FromArgb(60, 126, 138));
         IShape recShape2 = worksheet.getShapes().addShape(AutoShapeType.Rectangle, 17.81, 312.75, 20.963, 21.75);
         recShape2.getLine().getColor().setColorType(SolidColorType.None);
-        recShape2.getFill().getColor().setRGB(Color.FromRGB(218, 118, 13));
+        recShape2.getFill().getColor().setRGB(Color.FromArgb(218, 118, 13));
         IShape recShape3 = worksheet.getShapes().addShape(AutoShapeType.Rectangle, 17.81, 342.75, 20.963, 21.75);
         recShape3.getLine().getColor().setColorType(SolidColorType.None);
-        recShape3.getFill().getColor().setRGB(Color.FromRGB(84, 138, 57));
+        recShape3.getFill().getColor().setRGB(Color.FromArgb(84, 138, 57));
 
         IShape pieShape = worksheet.getShapes().addChart(ChartType.Pie, 442.5, 26.25, 346, 350.25);
         pieShape.getChart().setHasLegend(false);
@@ -300,14 +300,14 @@ public class PersonalNetWorthCalculator extends ExampleBase {
         chartSeries.getDataLabels().getFont().setName("Century Gothic");
         chartSeries.getDataLabels().getFont().setSize(20);
         chartSeries.getDataLabels().getFont().setBold(true);
-        chartSeries.getDataLabels().getFont().getColor().setRGB(Color.getWhite());
+        chartSeries.getDataLabels().getFont().getColor().setRGB(Color.GetWhite());
         chartSeries.getDataLabels().setShowValue(false);
         chartSeries.getDataLabels().setShowPercentage(true);
         chartSeries.getDataLabels().setPosition(DataLabelPosition.Center);
 
-        chartSeries.getPoints().get(0).getFormat().getFill().getColor().setRGB(Color.FromRGB(60, 126, 138));
-        chartSeries.getPoints().get(1).getFormat().getFill().getColor().setRGB(Color.FromRGB(218, 118, 13));
-        chartSeries.getPoints().get(2).getFormat().getFill().getColor().setRGB(Color.FromRGB(84, 138, 57));
+        chartSeries.getPoints().get(0).getFormat().getFill().getColor().setRGB(Color.FromArgb(60, 126, 138));
+        chartSeries.getPoints().get(1).getFormat().getFill().getColor().setRGB(Color.FromArgb(218, 118, 13));
+        chartSeries.getPoints().get(2).getFormat().getFill().getColor().setRGB(Color.FromArgb(84, 138, 57));
         chartSeries.setExplosion(1);
 
 

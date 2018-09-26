@@ -16,11 +16,11 @@ public class ConfigCommentLayout extends ExampleBase {
         IWorksheet worksheet = workbook.getWorksheets().get(0);
 
         IComment commentC3 = worksheet.getRange("C3").addComment("Range C3's comment.");
-        commentC3.getShape().getLine().getColor().setRGB(Color.getLightGreen());
+        commentC3.getShape().getLine().getColor().setRGB(Color.GetLightGreen());
         commentC3.getShape().getLine().setWeight(3);
         commentC3.getShape().getLine().setStyle(LineStyle.ThickThin);
         commentC3.getShape().getLine().setDashStyle(LineDashStyle.Solid);
-        commentC3.getShape().getFill().getColor().setRGB(Color.getPink());
+        commentC3.getShape().getFill().getColor().setRGB(Color.GetPink());
         commentC3.getShape().setWidth(100);
         commentC3.getShape().setHeight(200);
         commentC3.getShape().getTextFrame().getTextRange().getFont().setBold(true);

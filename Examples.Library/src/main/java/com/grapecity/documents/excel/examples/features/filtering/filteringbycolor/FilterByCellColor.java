@@ -26,9 +26,9 @@ public class FilterByCellColor extends ExampleBase {
 
         worksheet.getRange("A1:F7").setValue(data);
         worksheet.getRange("A:F").setColumnWidth(15);
-        worksheet.getRange("E2").getInterior().setColor(Color.getGreen());
-        worksheet.getRange("E5").getInterior().setColor(Color.getGreen());
-        worksheet.getRange("E6").getInterior().setColor(Color.getRed());
+        worksheet.getRange("E2").getInterior().setColor(Color.GetGreen());
+        worksheet.getRange("E5").getInterior().setColor(Color.GetGreen());
+        worksheet.getRange("E6").getInterior().setColor(Color.GetRed());
 
         //filter in the rows which cell color is green.
         worksheet.getRange("A1:F7").autoFilter(4, worksheet.getRange("E2").getInterior().getColor(), AutoFilterOperator.CellColor);

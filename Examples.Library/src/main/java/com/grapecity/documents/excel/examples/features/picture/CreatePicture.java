@@ -15,8 +15,8 @@ public class CreatePicture extends ExampleBase {
     public void execute(Workbook workbook) {
 
         IWorksheet worksheet = workbook.getWorksheets().get(0);
-
-        InputStream stream = ClassLoader.getSystemResourceAsStream("logo.png");
+        
+        InputStream stream = this.getResourceStream("logo.png");
         try {
             IShape picture = worksheet.getShapes().addPicture(stream, ImageType.PNG, 20, 20, 790, 120);
         } catch (IOException e) {

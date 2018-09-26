@@ -34,7 +34,7 @@ public class ApplyStyle extends ExampleBase {
         style.getBorders().get(BordersIndex.EdgeTop).setLineStyle(BorderLineStyle.Thick);
         style.getBorders().get(BordersIndex.EdgeRight).setLineStyle(BorderLineStyle.Double);
         style.getBorders().get(BordersIndex.EdgeBottom).setLineStyle(BorderLineStyle.Double);
-        style.getBorders().setColor(Color.FromRGB(0, 255, 0));
+        style.getBorders().setColor(Color.FromArgb(0, 255, 0));
 
         // Font
         style.getFont().setThemeColor(ThemeColor.Accent1);
@@ -65,7 +65,7 @@ public class ApplyStyle extends ExampleBase {
         // Fill
         style.getInterior().setColorIndex(5);
         style.getInterior().setPattern(Pattern.Down);
-        style.getInterior().setPatternColor(Color.FromRGB(0, 0, 255));
+        style.getInterior().setPatternColor(Color.FromArgb(0, 0, 255));
 
         style.setIncludeAlignment(false);
         style.setIncludeBorder(true);
@@ -78,7 +78,7 @@ public class ApplyStyle extends ExampleBase {
         // Set range's style to custom name style.
         worksheet.getRange("A2").setValue("My test style");
         worksheet.getRange("A2").setStyle(worksheet.getWorkbook().getStyles().get("testStyle"));
-
+        worksheet.getRange("A2").setColumnWidth(20);
     }
 
 }

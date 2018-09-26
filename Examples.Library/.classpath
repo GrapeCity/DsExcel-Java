@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="bin/main" path="src/main/java">
+		<attributes>
+			<attribute name="gradle_scope" value="main"/>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="bin/main" path="src/main/resources">
+		<attributes>
+			<attribute name="gradle_scope" value="main"/>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8/"/>
+	<classpathentry kind="con" path="org.eclipse.buildship.core.gradleclasspathcontainer"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Model.Axis"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Model.CE.Functions"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Model.CE.Parser"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Model.Comments"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Model.Condition"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Model.ConditionalFormat"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Model.Core"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Model.Data"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Model.DataValidation"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Model.Drawing"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Model.Drawing.Chart"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Model.Formula"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Model.IO.Json"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Model.IO.OpenXML"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Model.Pivot"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Model.Platform"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Model.Resource"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Model.Shell"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Model.Shell.Drawing"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Model.Shell.Intermediate"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Model.Slicer"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Model.SortFilter"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Model.SparkLine"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Model.Style"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Model.Style.Color"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Model.Style.Format"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Model.Style.Format.New"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Model.Table"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Model.Utils"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Model.Workbook"/>
+	<classpathentry kind="output" path="bin/default"/>
+</classpath>

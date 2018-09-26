@@ -13,7 +13,7 @@ public class PatternFill extends ExampleBase {
 
         IWorksheet worksheet = workbook.getWorksheets().get(0);
         worksheet.getRange("A1").getInterior().setPattern(Pattern.LightDown);
-        worksheet.getRange("A1").getInterior().setColor(Color.getPink());
+        worksheet.getRange("A1").getInterior().setColor(Color.GetPink());
         worksheet.getRange("A1").getInterior().setPatternColorIndex(5);
 
     }

@@ -17,7 +17,7 @@ public class DeletePicture extends ExampleBase {
 
         IWorksheet worksheet = workbook.getWorksheets().get(0);
 
-        InputStream stream = ClassLoader.getSystemResourceAsStream("logo.png");
+        InputStream stream = this.getResourceStream("logo.png");
         try {
             IShape picture = worksheet.getShapes().addPicture(stream, ImageType.PNG, 20, 20, 100, 100);
 

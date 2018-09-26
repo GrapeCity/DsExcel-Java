@@ -27,7 +27,7 @@ public class CreateSeriesLine extends ExampleBase {
         shape.getChart().getSeriesCollection().add(worksheet.getRange("A1:D6"), RowCol.Columns, true, true);
 
         shape.getChart().getColumnGroups().get(0).setHasSeriesLines(true);
-        shape.getChart().getColumnGroups().get(0).getSeriesLines().getFormat().getLine().getColor().setRGB(Color.getLightPink());
+        shape.getChart().getColumnGroups().get(0).getSeriesLines().getFormat().getLine().getColor().setRGB(Color.GetLightPink());
         shape.getChart().getColumnGroups().get(0).getSeriesLines().getFormat().getLine().setWeight(3);
 
     }

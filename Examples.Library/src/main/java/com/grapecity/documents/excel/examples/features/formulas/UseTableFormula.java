@@ -33,7 +33,7 @@ public class UseTableFormula extends ExampleBase {
         //judge if Range F2:I2 have formula.
         for (int i = 5; i <= 8; i++) {
             if (worksheet.getRange(1, i).getHasFormula()) {
-                worksheet.getRange(1, i).getInterior().setColor(Color.getLightBlue());
+                worksheet.getRange(1, i).getInterior().setColor(Color.GetLightBlue());
             }
         }
     }

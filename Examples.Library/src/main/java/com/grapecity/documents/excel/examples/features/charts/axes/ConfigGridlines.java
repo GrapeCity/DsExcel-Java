@@ -32,9 +32,9 @@ public class ConfigGridlines extends ExampleBase {
         IAxis value_axis = shape.getChart().getAxes().item(AxisType.Value);
         value_axis.setHasMajorGridlines(true);
         value_axis.setHasMinorGridlines(true);
-        value_axis.getMajorGridlines().getFormat().getLine().getColor().setRGB(Color.getGray());
+        value_axis.getMajorGridlines().getFormat().getLine().getColor().setRGB(Color.GetGray());
         value_axis.getMajorGridlines().getFormat().getLine().setWeight(1);
-        value_axis.getMinorGridlines().getFormat().getLine().getColor().setRGB(Color.getLightGray());
+        value_axis.getMinorGridlines().getFormat().getLine().getColor().setRGB(Color.GetLightGray());
         value_axis.getMinorGridlines().getFormat().getLine().setWeight(0.75);
         value_axis.setMajorUnit(40);
         value_axis.setMinorUnit(8);
