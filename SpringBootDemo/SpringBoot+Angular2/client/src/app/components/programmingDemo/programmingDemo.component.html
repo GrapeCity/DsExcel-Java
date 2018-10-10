@@ -1,0 +1,21 @@
+<div className='spread-page'>
+    <h1>Programming Demo</h1>
+    <p>This example demonstrates how to programme with <strong>GcExcel</strong> to generate a complete spreadsheet model at server side, you can find all of source code in the SpreadServicesController.cs, we use <strong>Spread.Sheets</strong> as client side viewer. </p>
+    <ul>
+        <li>You can first program with <strong>GcExcel</strong> at server side.</li>
+        <li><strong>GcExcel</strong> then inoke <strong>ToJson</strong> and transport the ssjson to client side.</li>
+        <li>In browser, <strong>Spread.Sheets</strong> will invoke <strong>fromJSON</strong> with the ssjson from server.</li>
+        <li>Then, you can view the result in <strong>Spread.Sheets</strong> or download it as excel file.</li>
+    </ul>
+    <br />
+    <div className='btn-group'>
+        <select className='btn btn-default btn-md' type="string" [(ngModel)]="selectedValue" (ngModelChange)="onChange($event)">
+            <option *ngFor="let option of options" [ngValue]="option.value">{{option.label}}</option>
+        </select>
+        <button className='btn btn-default btn-md' (click)=exportExcel($event)>Export Excel</button>
+    </div>
+    <gc-spread-sheets (workbookInitialized)="getSpread($event)">
+        <gc-worksheet [rowCount]="100">
+        </gc-worksheet>
+    </gc-spread-sheets>
+</div>

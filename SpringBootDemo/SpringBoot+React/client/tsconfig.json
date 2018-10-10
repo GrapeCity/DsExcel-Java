@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "./dist/",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "module": "commonjs",
+    "target": "es6",
+    "jsx": "react",    
+    "types": [
+      "node"
+    ],
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es6",
+      "dom"
+    ],
+    "paths": {
+      "history": [
+        "./node_modules/@types/history/index"
+      ],
+      "react": [
+        "./node_modules/@types/react/index"
+      ]
+    }
+  },
+  "exclude": [
+    "bin",
+    "node_modules"
+  ]
+}

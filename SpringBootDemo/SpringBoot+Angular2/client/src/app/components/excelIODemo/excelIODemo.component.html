@@ -1,0 +1,20 @@
+<div className='spread-page'>
+    <h1>Excel Input&Output Demo</h1>
+    <p>This example demonstrates how to use <strong>GcExcel</strong> as server-side spreadsheet model, and use <strong>Spread.Sheets</strong> as the front-end side viewer and editor. </p>
+    <ul>
+        <li><strong>GcExcel</strong> can import an excel file and export to ssjson format, then transport the ssjson to client-side.</li>
+        <li><strong>Spread.Sheets</strong> at client-side can receive and load the ssjson from server-side.</li>
+        <li>You can view the content of excel file through <strong>Spread.Sheets</strong>.</li>
+        <li>You can also make some changes to the content, and send the whole document as ssjson to <strong>GcExcel</strong> at server-side.</li>
+        <li><strong>GcExcel</strong> at server-side then load the ssjson and then save to excel file, you can download the modified excel file.</li>
+    </ul>
+    <br />
+    <div className='btn-group'>
+        <input className='btn btn-default btn-md' type='file' title='Import Excel' (change)="importExcel($event)" value='Choose an excel file' />
+        <button className='btn btn-default btn-md' (click)=exportExcel($event)>Export Excel</button>
+    </div>
+    <gc-spread-sheets (workbookInitialized)="getSpread($event)">
+        <gc-worksheet [rowCount]="100" >
+        </gc-worksheet>
+    </gc-spread-sheets>
+</div>

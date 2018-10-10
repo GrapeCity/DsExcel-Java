@@ -1,0 +1,20 @@
+<div className='spread-page'>
+    <h1>Excel Template Demo</h1>
+    <p>This example demonstrates how to use <strong>GcExcel</strong> as server spreadsheet model, and use <strong>Spread.Sheets</strong> as client side viewer or editor: </p>
+    <ul>
+        <li><strong>GcExcel</strong> will first open an excel file existing on server.</li>
+        <li><strong>GcExcel</strong> then inoke <strong>ToJson</strong> and transport the ssjson to client side.</li>
+        <li>In browser, <strong>Spread.Sheets</strong> will invoke <strong>fromJSON</strong> with the ssjson from server.</li>
+        <li>Then, you can see the content of the excel template in <strong>Spread.Sheets</strong>.</li>
+        <li>At same time, you can fill or edit data on the template through <strong>Spread.Sheets</strong>.</li>
+        <li>At last, you can download to view the changes in excel file.</li>
+    </ul>
+    <br />
+    <div className='btn-group'>
+        <button className='btn btn-default btn-md'  (click)=exportExcel($event)>Export Excel</button>
+    </div>
+    <gc-spread-sheets (workbookInitialized)="getSpread($event)">
+        <gc-worksheet [rowCount]="100">
+        </gc-worksheet>
+    </gc-spread-sheets>
+</div>
