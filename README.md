@@ -25,7 +25,7 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * Null pointer exception is thrown on saving to PDF, if the font used is null.
 * GcExcel throws exception on loading ssjson file with null values.
 * Merged range in table couldn't be rendered to pdf.
-* After loading ssjson, some hidden rows are still rendered to pdf
+* The hidden rows are still rendered to pdf after loading ssjson file.
 
 
 # Other Resources
