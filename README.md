@@ -10,9 +10,23 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | gcexcel-1.5.3-SNAPSHOT     | Contains GcExcel Java CTP jar package and its dependency packages |
 | gcexcel-1.6.0-SNAPSHOT     | Contains GcExcel Java CTP jar package and its dependency packages |
 | gcexcel-2.0.0     | Contains GcExcel Java 2.0.0 jar package and its dependency packages |
+| gcexcel-2.0.1     | Contains GcExcel Java 2.0.1 jar package and its dependency packages |
 | Examples.Library     | A collection of Java examples that help you learn and explore the API features |
 | SpringBootDemo/SpringBoot+React     | A source project that demonstrates how to use GcExcel Java with SpringBoot + React + Spread.Sheets|
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use GcExcel with SpringBoot + Angular2 + Spread.Sheets|
+
+# Release Notes
+## 2.0.1
+### Enhancements
+* Improved the performance of Workbook.fromJson method, when json file contains lot of styles.
+* PDFBox now can be installed automatically for all versions of eclipse maven plugin.
+### Bug fixed
+* Exception thrown when Workbook opens the stream returned by HttpServletRequest.getInputStream().
+* Null pointer exception is thrown on saving to PDF, if the font used is null.
+* GcExcel throws exception on loading ssjson file with null values.
+* Merged range in table couldn't be rendered to pdf.
+* After loading ssjson, some hidden rows are still rendered to pdf
+
 
 # Other Resources
 * Demo Site: [http://demos.componentone.com/gcdocs/gcexceljava/](http://demos.componentone.com/gcdocs/gcexceljava/)
