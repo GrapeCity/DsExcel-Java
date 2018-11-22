@@ -38,6 +38,6 @@ dependencies {
 	}
 	
 	//dependencies of GcExcel
-	compile('com.grapecity.documents:gcexcel:2.0.0')
+	compile('com.grapecity.documents:gcexcel:2.0.1')
 	//compile fileTree(dir: 'libs', include: ['*.jar'])
 }
