@@ -40,3 +40,10 @@ dependencies {
 	//dependencies of GcExcel
 	compile('com.grapecity.documents:gcexcel:2.0.1')
 }
+
+task clientBuild(type: GradleBuild){
+	buildFile = "./client/build.gradle"
+	tasks = ['webpack']
+}
+
+processResources.dependsOn 'clientBuild'

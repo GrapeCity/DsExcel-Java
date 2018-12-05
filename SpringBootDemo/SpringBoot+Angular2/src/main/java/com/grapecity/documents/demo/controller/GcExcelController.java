@@ -58,7 +58,7 @@ public class GcExcelController {
 		Workbook workbook = new Workbook();
 
 		try {
-			workbook.open(this.convertStream(request.getInputStream()));
+			workbook.open(request.getInputStream());
 		}
 		catch (IOException e) {
 			// TODO Auto-generated catch block
@@ -68,32 +68,6 @@ public class GcExcelController {
 		return workbook.toJson();
 	}
 	
-	/**
-	 * This is a workaround method for gcexcel v2.0.0. 
-	 * HttpServletRequest.getInputStream() returns a stream instance of CoyoteInputStream.
-	 * It causes exception when directly opened by Workbook.
-	 * 
-	 * This bug will be fixed in next release.
-	 * @param requestStream
-	 * @return
-	 * @throws IOException
-	 */
-	private InputStream convertStream(InputStream requestStream) throws IOException {
-		ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
-		
-		byte[] buffer = new byte[8 * 1024];
-		int bytesRead;
-		while ((bytesRead = requestStream.read(buffer)) != -1) {
-			outputStream.write(buffer, 0, bytesRead);
-		}
-		
-		outputStream.flush();
-		InputStream result = new ByteArrayInputStream(outputStream.toByteArray());
-		
-		outputStream.close();
-		return result;
-	}
-
 	@RequestMapping(value = "/save")
 	public void save(HttpServletRequest request, HttpServletResponse response) {
 		Workbook workbook = new Workbook();
