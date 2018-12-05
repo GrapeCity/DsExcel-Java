@@ -28,7 +28,6 @@ repositories {
 	mavenCentral()
 }
 
-
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
 	
@@ -41,3 +40,10 @@ dependencies {
 	compile('com.grapecity.documents:gcexcel:2.0.1')
 	//compile fileTree(dir: 'libs', include: ['*.jar'])
 }
+
+task clientBuild(type: GradleBuild){
+	buildFile = "./client/build.gradle"
+	tasks = ['webpack']
+}
+
+processResources.dependsOn 'clientBuild'

@@ -1,0 +1,13 @@
+plugins {
+  id "com.moowork.node" version "1.2.0"
+}
+
+node {
+    version = '8.12.0'
+    download = false
+}
+
+task webpack(type: NodeTask, dependsOn: 'npmInstall') {
+    script = project.file('./node_modules/webpack/bin/webpack.js')
+    args = ['--config', "./webpack.config.js"]
+}
