@@ -16,6 +16,23 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use GcExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 # Release Notes
+## 2.1.0
+### New Features
+* The performance of workbook.fromJson() method has been enhanced when the JSON file contains multiple styles.
+* Users can now import and export spreadsheets that contain macros. While these will not be executed, the macros will now be preserved when saving.
+* The support for loading and saving GrapeCity SpreadJS JSON files with shapes have been added.
+* Users can now set rich text format in the cells by applying different styles to the textual information entered in the cell.
+* While working with custom named styles, users can now modify an existing style and add it to the Styles collection.
+* Users can now export Excel files with vertical text to PDF.
+* Now, users can insert any background image to the worksheet including their organization logo, custom watermark or a wallpaper of their choice without any issues.
+* PDFBox can now be installed automatically for all versions of Eclipse Maven plugin.
+* Extensive support for the new Date Time API that has been introduced recently with JDK 8 has been provided.
+* The pivot table has been enhanced in order to support the date field group in Excel 2016.
+* Some overloads have been added for Open and Save methods to avoid passing file format.
+### Bug fixed
+* The Workbook.calculate() method now evaluates the cell values correctly.
+* While saving an Excel file to open XML format, the logical value of the cell is now calculated without any errors.
+
 ## 2.0.1
 ### Enhancements
 * Improved the performance of Workbook.fromJson method, when json file contains lot of styles.
