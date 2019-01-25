@@ -8,11 +8,16 @@ public class ImportCsvFileToWorkbook extends ExampleBase {
 
     @Override
     public void execute(Workbook workbook) {
-        workbook.open(this.getTemplateStream(), OpenFileFormat.Csv);
+        workbook.open(this.getResourceStream("xlsx/Information.csv"), OpenFileFormat.Csv);
     }
 
     @Override
     public String getTemplateName() {
         return "Information.csv";
+    }
+
+    @Override
+    public String[] getResources() {
+        return new String[]{"xlsx/Information.csv"};
     }
 }

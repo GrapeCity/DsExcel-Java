@@ -29,7 +29,7 @@ public class SaveWorkbookToCsvFileWithOptions extends ExampleBase {
 
         //Save csv options
         CsvSaveOptions options = new CsvSaveOptions();
-        options.setSeparatorString("-");
+        options.setColumnSeparator("-");
 
         //Change the path to real export path when save.
         workbook.save("dest.csv", options);

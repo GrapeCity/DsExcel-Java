@@ -36,4 +36,9 @@ public class DeletePicture extends ExampleBase {
 
     }
 
+    @Override
+    public String[] getResources() {
+        return new String[]{"logo.png"};
+    }
+
 }

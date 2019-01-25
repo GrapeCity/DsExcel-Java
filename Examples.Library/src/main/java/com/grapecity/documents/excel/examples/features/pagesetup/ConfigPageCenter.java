@@ -10,7 +10,7 @@ public class ConfigPageCenter extends ExampleBase {
 
     @Override
     public void execute(Workbook workbook) {
-        workbook.open(this.getTemplateStream());
+        workbook.open(this.getResourceStream("xlsx/PageSetup Demo.xlsx"));
         IWorksheet worksheet = workbook.getWorksheets().get(0);
 
         //Set center, default is false.
@@ -22,5 +22,10 @@ public class ConfigPageCenter extends ExampleBase {
     @Override
     public String getTemplateName() {
         return "PageSetup Demo.xlsx";
+    }
+
+    @Override
+    public String[] getResources() {
+        return new String[] {"xlsx/PageSetup Demo.xlsx"};
     }
 }

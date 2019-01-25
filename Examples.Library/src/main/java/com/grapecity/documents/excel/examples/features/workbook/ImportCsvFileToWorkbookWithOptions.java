@@ -11,7 +11,7 @@ public class ImportCsvFileToWorkbookWithOptions extends ExampleBase {
     public void execute(Workbook workbook) { //Open csv with more settings.
 
         CsvOpenOptions options = new CsvOpenOptions();
-        options.setSeparatorString("-");
+        options.setColumnSeparator("-");
 
         //Change the path to the real file path when open.
         workbook.open("source.csv", options);

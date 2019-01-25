@@ -25,7 +25,7 @@ public class BloodSugarTracker extends ExampleBase {
     public void execute(Workbook workbook) {
 
         //Load template file Blood sugar tracker.xlsx from resource
-        workbook.open(this.getTemplateStream());
+        workbook.open(this.getResourceStream("xlsx/Blood sugar tracker.xlsx"));
 
         IWorksheet worksheet = workbook.getActiveSheet();
 
@@ -126,17 +126,14 @@ public class BloodSugarTracker extends ExampleBase {
     }
 
     @Override
-    public boolean getHasTemplate() {
-
-        return true;
-
-    }
-
-    @Override
     public boolean getShowViewer() {
 
         return false;
 
     }
 
+    @Override
+    public String[] getResources() {
+        return new String[]{"xlsx/Blood sugar tracker.xlsx"};
+    }
 }

@@ -11,7 +11,7 @@ public class ConfigFirstPageHeaderFooter extends ExampleBase {
 
     @Override
     public void execute(Workbook workbook) {
-        workbook.open(this.getTemplateStream());
+        workbook.open(this.getResourceStream("xlsx/PageSetup Demo.xlsx"));
         IWorksheet worksheet = workbook.getWorksheets().get(0);
 
         //Set first page headerfooter
@@ -33,6 +33,11 @@ public class ConfigFirstPageHeaderFooter extends ExampleBase {
     @Override
     public String getTemplateName() {
         return "PageSetup Demo.xlsx";
+    }
+
+    @Override
+    public String[] getResources() {
+        return new String[]{"logo.png", "xlsx/PageSetup Demo.xlsx"};
     }
 
 }

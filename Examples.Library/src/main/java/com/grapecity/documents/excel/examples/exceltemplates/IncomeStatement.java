@@ -12,7 +12,7 @@ public class IncomeStatement extends ExampleBase {
     public void execute(Workbook workbook) {
 
         //Load template file Income statement.xlsx from resource
-        workbook.open(this.getTemplateStream());
+        workbook.open(this.getResourceStream("xlsx/Financial KPIs.xlsx"));
 
         IWorksheet worksheet = workbook.getActiveSheet();
 
@@ -67,17 +67,16 @@ public class IncomeStatement extends ExampleBase {
     }
 
     @Override
-    public boolean getHasTemplate() {
-
-        return true;
-
-    }
-
-    @Override
     public boolean getShowViewer() {
 
         return false;
 
     }
+
+    @Override
+    public String[] getResources() {
+        return new String[] {"xlsx/Financial KPIs.xlsx"};
+    }
+
 
 }

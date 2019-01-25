@@ -10,7 +10,7 @@ public class ConvertExcelToPDF extends ExampleBase {
     @Override
     public void execute(Workbook workbook) {
         //Open an excel file
-        InputStream fileStream = this.getTemplateStream();
+        InputStream fileStream = this.getResourceStream("xlsx/Employee absence schedule.xlsx");
         workbook.open(fileStream);
     }
 
@@ -29,4 +29,8 @@ public class ConvertExcelToPDF extends ExampleBase {
         return false;
     }
 
+    @Override
+    public String[] getResources() {
+        return new String[] {"xlsx/Employee absence schedule.xlsx"};
+    }
 }

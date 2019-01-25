@@ -165,6 +165,10 @@ public class ExampleBase {
         return ResourceUtil.getResourceStream(resource);
     }
 
+    public String[] getResources(){
+        return null;
+    }
+
 
     private String inputStreamToBase64String(InputStream inputStream) {
         try {

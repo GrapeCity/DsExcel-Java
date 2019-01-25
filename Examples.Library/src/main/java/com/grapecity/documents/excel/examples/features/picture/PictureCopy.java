@@ -32,4 +32,9 @@ public class PictureCopy extends ExampleBase {
         }
 
     }
+
+    @Override
+    public String[] getResources() {
+        return new String[]{"logo.png"};
+    }
 }

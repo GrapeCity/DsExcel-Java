@@ -28,13 +28,6 @@ public class ShapeCopy extends ExampleBase {
     @Override
     public boolean getShowViewer() {
 
-        return false;
-
-    }
-
-    @Override
-    public boolean getShowScreenshot() {
-
         return true;
 
     }

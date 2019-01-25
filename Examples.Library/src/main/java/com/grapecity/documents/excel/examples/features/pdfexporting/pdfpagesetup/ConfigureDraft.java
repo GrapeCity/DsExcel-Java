@@ -45,4 +45,9 @@ public class ConfigureDraft extends ExampleBase {
     public boolean getShowViewer() {
         return false;
     }
+
+    @Override
+    public String[] getResources() {
+        return new String[]{"logo.png"};
+    }
 }

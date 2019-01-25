@@ -25,7 +25,7 @@ public class MonthlyBusinessBudget extends ExampleBase {
     public void execute(Workbook workbook) {
 
         //Load template file Monthly business budget.xlsx from resource
-        workbook.open(this.getTemplateStream());
+        workbook.open(this.getResourceStream("xlsx/Monthly business budget.xlsx"));
 
         IWorksheet worksheet = workbook.getActiveSheet();
 
@@ -86,17 +86,14 @@ public class MonthlyBusinessBudget extends ExampleBase {
     }
 
     @Override
-    public boolean getHasTemplate() {
-
-        return true;
-
-    }
-
-    @Override
     public boolean getShowViewer() {
 
         return false;
 
     }
 
+    @Override
+    public String[] getResources() {
+        return new String[] {"xlsx/Monthly business budget.xlsx"};
+    }
 }

@@ -23,13 +23,6 @@ public class ShapeDuplicate extends ExampleBase {
     @Override
     public boolean getShowViewer() {
 
-        return false;
-
-    }
-
-    @Override
-    public boolean getShowScreenshot() {
-
         return true;
 
     }

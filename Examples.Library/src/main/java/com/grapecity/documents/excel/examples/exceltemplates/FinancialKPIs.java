@@ -12,7 +12,7 @@ public class FinancialKPIs extends ExampleBase {
     public void execute(Workbook workbook) {
 
         //Load template file Financial KPIs.xlsx from resource
-        workbook.open(this.getTemplateStream());
+        workbook.open(this.getResourceStream("xlsx/Financial KPIs.xlsx"));
 
         IWorksheet worksheet = workbook.getActiveSheet();
 
@@ -91,16 +91,14 @@ public class FinancialKPIs extends ExampleBase {
     }
 
     @Override
-    public boolean getHasTemplate() {
-
-        return true;
-
-    }
-
-    @Override
     public boolean getShowViewer() {
 
         return false;
 
+    }
+
+    @Override
+    public String[] getResources() {
+        return new String[] {"xlsx/Financial KPIs.xlsx"};
     }
 }

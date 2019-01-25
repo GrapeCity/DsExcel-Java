@@ -16,7 +16,7 @@ public class EventBudget extends ExampleBase {
     public void execute(Workbook workbook) {
 
         //Load template file Event budget.xlsx from resource
-        workbook.open(this.getTemplateStream());
+        workbook.open(this.getResourceStream("xlsx/Event budget.xlsx"));
 
         IWorksheet worksheet = workbook.getActiveSheet();
 
@@ -55,17 +55,14 @@ public class EventBudget extends ExampleBase {
     }
 
     @Override
-    public boolean getHasTemplate() {
-
-        return true;
-
-    }
-
-    @Override
     public boolean getShowViewer() {
 
         return false;
 
     }
 
+    @Override
+    public String[] getResources() {
+        return new String[] {"xlsx/Event budget.xlsx"};
+    }
 }

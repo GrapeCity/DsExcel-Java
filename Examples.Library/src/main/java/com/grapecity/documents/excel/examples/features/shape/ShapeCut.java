@@ -27,13 +27,6 @@ public class ShapeCut extends ExampleBase {
     @Override
     public boolean getShowViewer() {
 
-        return false;
-
-    }
-
-    @Override
-    public boolean getShowScreenshot() {
-
         return true;
 
     }

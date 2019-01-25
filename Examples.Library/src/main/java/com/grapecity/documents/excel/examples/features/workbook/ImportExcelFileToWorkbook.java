@@ -10,7 +10,7 @@ public class ImportExcelFileToWorkbook extends ExampleBase {
     public void execute(Workbook workbook) {
 
         //Change the path to the real file path when open.
-        workbook.open("source.xlsx", OpenFileFormat.Xlsx);
+        workbook.open("source.xlsx");
     }
 
     @Override

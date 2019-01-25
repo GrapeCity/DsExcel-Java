@@ -265,4 +265,9 @@ public class MovieList extends ExampleBase {
         return false;
 
     }
+
+    @Override
+    public String[] getResources() {
+        return new String[]{"movie.png", "list.png"};
+    }
 }

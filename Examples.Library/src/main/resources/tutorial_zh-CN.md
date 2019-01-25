@@ -10,13 +10,13 @@
 
 3. 添加GcExcel Java依赖包:
 > **在Intellij IDEA 或 Eclipse中**
-> - 从[Maven Central Repository](https://mvnrepository.com/search?q=gcexcel)下载GcExcel jar包
-> - 将gcexcel-2.0.0.jar拷贝到现有工程目录下, 右键将jar包添加为依赖包
+> - 从[Maven](https://search.maven.org/artifact/com.grapecity.documents/gcexcel/)或者[Github](https://github.com/GrapeCity/GcExcel-Java)下载GcExcel jar包
+> - 将gcexcel-2.1.0.jar拷贝到现有工程目录下, 右键将jar包添加为依赖包
 >
 > **Gradle工程**
 > - 打开build.gradle，在dependencies代码块下添加下面代码
 > ```xml
-> compile("com.grapecity.documents:gcexcel:2.0.0")
+> compile("com.grapecity.documents:gcexcel:2.1.0")
 > ```
 >
 > **Maven工程**
@@ -25,7 +25,7 @@
 > <dependency>
 >    <groupId>com.grapecity.documents</groupId>
 >    <artifactId>gcexcel</artifactId>
->    <version>2.0.0</version>
+>    <version>2.1.0</version>
 > </dependency>
 > ``
 

@@ -42,4 +42,9 @@ public class ConfigureBlackAndWhite extends ExampleBase {
         return false;
     }
 
+    @Override
+    public String[] getResources() {
+        return new String[]{"logo.png"};
+    }
+
 }

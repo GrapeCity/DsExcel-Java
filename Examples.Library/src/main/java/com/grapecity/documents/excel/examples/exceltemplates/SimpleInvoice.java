@@ -12,7 +12,7 @@ public class SimpleInvoice extends ExampleBase {
     public void execute(Workbook workbook) {
 
         //Load template file Simple invoice.xlsx from resource
-        workbook.open(this.getTemplateStream());
+        workbook.open(this.getResourceStream("xlsx/Simple invoice.xlsx"));
 
         IWorksheet worksheet = workbook.getActiveSheet();
 
@@ -31,16 +31,13 @@ public class SimpleInvoice extends ExampleBase {
     }
 
     @Override
-    public boolean getHasTemplate() {
-
-        return true;
-
-    }
-
-    @Override
     public boolean getShowViewer() {
 
         return false;
+    }
 
+    @Override
+    public String[] getResources() {
+        return new String[] {"xlsx/Simple invoice.xlsx"};
     }
 }
