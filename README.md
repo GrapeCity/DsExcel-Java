@@ -7,11 +7,10 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 
 | Directory    | Description    |
 | ------------- |-------------|
-| gcexcel-1.5.3-SNAPSHOT     | Contains GcExcel Java CTP jar package and its dependency packages |
-| gcexcel-1.6.0-SNAPSHOT     | Contains GcExcel Java CTP jar package and its dependency packages |
 | gcexcel-2.0.0     | Contains GcExcel Java 2.0.0 jar package and its dependency packages |
 | gcexcel-2.0.1     | Contains GcExcel Java 2.0.1 jar package and its dependency packages |
 | gcexcel-2.1.0     | Contains GcExcel Java 2.1.0 jar package and its dependency packages |
+| gcexcel-2.1.1     | Contains GcExcel Java 2.1.0 jar package and its dependency packages |
 | Examples.Library     | A collection of Java examples that help you learn and explore the API features |
 | SpringBootDemo/SpringBoot+React     | A source project that demonstrates how to use GcExcel Java with SpringBoot + React + Spread.Sheets|
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use GcExcel with SpringBoot + Angular2 + Spread.Sheets|
