@@ -1,4 +1,4 @@
-﻿
+
 # Getting started with Documents for Excel - Java Edition, a spreadsheet API
 
 In this tutorial, we create a real-life scenario with GcExcel Java to give you a fundamental understanding of what it can do. At the end of this tutorial, you will have a simple budget Excel file.
@@ -12,12 +12,12 @@ In this tutorial, we create a real-life scenario with GcExcel Java to give you a
 3. Add dependency for GcExcel library:
 > **Intellij or Eclipse Console Application**
 > - Download gcexcel jar package from [Maven](https://search.maven.org/artifact/com.grapecity.documents/gcexcel/) or [Github](https://github.com/GrapeCity/GcExcel-Java)
-> - Copy gcexcel-2.1.0.jar into project library folder, and add it as a dependency library
+> - Copy gcexcel-2.1.1.jar into project library folder, and add it as a dependency library
 >
 > **Gradle Project**
 > - Open the build.gradle and append below script in in the dependencies block
 > ```xml
-> compile("com.grapecity.documents:gcexcel:2.1.0")
+> compile("com.grapecity.documents:gcexcel:2.1.2")
 > ```
 >
 > **Maven Project**
@@ -26,7 +26,7 @@ In this tutorial, we create a real-life scenario with GcExcel Java to give you a
 > <dependency>
 >    <groupId>com.grapecity.documents</groupId>
 >    <artifactId>gcexcel</artifactId>
->    <version>2.1.0</version>
+>    <version>2.1.2</version>
 > </dependency>
 > ```
 

@@ -1,4 +1,4 @@
-﻿# 介绍
+# 介绍
 
 在本教程中, 我们将会通过一个真实的使用场景，来让大家对Spread表格组件能够做什么有一个基础的了解，并且在教程的最后一步，你将会得到一个用Spread表格组件生成的Excel文件，这个文件可以用来分析你的月度收入和支出。
 
@@ -11,12 +11,12 @@
 3. 添加GcExcel Java依赖包:
 > **在Intellij IDEA 或 Eclipse中**
 > - 从[Maven](https://search.maven.org/artifact/com.grapecity.documents/gcexcel/)或者[Github](https://github.com/GrapeCity/GcExcel-Java)下载GcExcel jar包
-> - 将gcexcel-2.1.0.jar拷贝到现有工程目录下, 右键将jar包添加为依赖包
+> - 将gcexcel-2.1.1.jar拷贝到现有工程目录下, 右键将jar包添加为依赖包
 >
 > **Gradle工程**
 > - 打开build.gradle，在dependencies代码块下添加下面代码
 > ```xml
-> compile("com.grapecity.documents:gcexcel:2.1.0")
+> compile("com.grapecity.documents:gcexcel:2.1.2")
 > ```
 >
 > **Maven工程**
@@ -25,7 +25,7 @@
 > <dependency>
 >    <groupId>com.grapecity.documents</groupId>
 >    <artifactId>gcexcel</artifactId>
->    <version>2.1.0</version>
+>    <version>2.1.2</version>
 > </dependency>
 > ``
 
