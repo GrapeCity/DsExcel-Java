@@ -12,11 +12,19 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | gcexcel-2.1.0     | Contains GcExcel Java 2.1.0 jar package and its dependency packages |
 | gcexcel-2.1.1     | Contains GcExcel Java 2.1.1 jar package and its dependency packages |
 | gcexcel-2.1.2     | Contains GcExcel Java 2.1.2 jar package and its dependency packages |
+| gcexcel-2.1.3     | Contains GcExcel Java 2.1.3 jar package and its dependency packages |
 | Examples.Library     | A collection of Java examples that help you learn and explore the API features |
 | SpringBootDemo/SpringBoot+React     | A source project that demonstrates how to use GcExcel Java with SpringBoot + React + Spread.Sheets|
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use GcExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 # Release Notes
+## 2.1.3
+### Bug fixed
+* Image size specified in code does not apply on the image in the generated excel file (DOCXLS-787)
+* Setting formulas using @ symbol trims the column name.(DOCXLS-804)
+*  Data label's separator does not return correct value.(DOCXLS-830)
+*  Cell's value always return 0 when workbook.EnableCalculation is false.(DOCXLS-834)
+*  Improve the performance of lookup functions when looking up string values.
 ## 2.1.2
 ### Bug fixed
 * GcExcel is unable to load an Excel file consisting SUMPRODUCT formula.(DOCXLS-733)
