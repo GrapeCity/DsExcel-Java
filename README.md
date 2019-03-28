@@ -23,7 +23,7 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * Image size specified in code does not apply on the image in the generated excel file (DOCXLS-787)
 * Setting formulas using @ symbol trims the column name.(DOCXLS-804)
 *  Data label's separator does not return correct value.(DOCXLS-830)
-*  Cell's value always return 0 when workbook.EnableCalculation is false.(DOCXLS-834)
+*  Cell's value always return 0 when workbook.getEnableCalculation() is false.(DOCXLS-834)
 *  Improve the performance of lookup functions when looking up string values.
 ## 2.1.2
 ### Bug fixed
