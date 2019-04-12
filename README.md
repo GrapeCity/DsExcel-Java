@@ -18,6 +18,15 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use GcExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 # Release Notes
+## 2.1.4
+### Enhancements
+* Performance of exporting a single worksheet to PDF was improved significantly.
+* fromJson method  was improved when json contained table style and multiple named styles.
+* GcExcel now sets minimum value of Zoom factor to 10% when exporting spreadsheet to PDF, similar to MS Excel setting. 
+### Bug Fixed
+* The TintAndShade property does not work as expected if Color is set.(DOCXLS-872)
+* Cells containing SUBTOTAL formula do not return correct values.(DOCXLS-881)
+* InvalidFormulaException is thrown when opening Excel files saved by Open XML SDK.
 ## 2.1.3
 ### Bug fixed
 * Image size specified in code does not apply on the image in the generated excel file (DOCXLS-787)
