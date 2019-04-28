@@ -7,17 +7,21 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 
 | Directory    | Description    |
 | ------------- |-------------|
-| gcexcel-2.0.0     | Contains GcExcel Java 2.0.0 jar package and its dependency packages |
-| gcexcel-2.0.1     | Contains GcExcel Java 2.0.1 jar package and its dependency packages |
-| gcexcel-2.1.0     | Contains GcExcel Java 2.1.0 jar package and its dependency packages |
-| gcexcel-2.1.1     | Contains GcExcel Java 2.1.1 jar package and its dependency packages |
-| gcexcel-2.1.2     | Contains GcExcel Java 2.1.2 jar package and its dependency packages |
-| gcexcel-2.1.3     | Contains GcExcel Java 2.1.3 jar package and its dependency packages |
+| gcexcel-2     | Contains the latest GcExcel jar package and its dependency packages |
 | Examples.Library     | A collection of Java examples that help you learn and explore the API features |
 | SpringBootDemo/SpringBoot+React     | A source project that demonstrates how to use GcExcel Java with SpringBoot + React + Spread.Sheets|
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use GcExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 # Release Notes
+## 2.1.5
+### Bug Fixed
+* The column width, font size and picture's left position changes after JSON I/O with GcExcel.(DOCXLS-902)
+* The cell font changes after JSON I/O with GcExcel.(DOCXLS-921)
+* Visible property of secondary category axis returns incorrect value.(DOCXLS-849)
+* The major and minor units of value axis of stacked area chart return incorrect value.(DOCXLS-805)
+* The major and minor units of value axis for 100% stacked chart return incorrect value.(DOCXLS-800)
+* The data label's text returns incorrect value when Axis.DisplayUnit is set. (DOCXLS-768)
+* Exception is thrown on opening json file that contains invalid formula.(DOCXLS-948)
 ## 2.1.4
 ### Enhancements
 * Performance of exporting a single worksheet to PDF was improved significantly.
