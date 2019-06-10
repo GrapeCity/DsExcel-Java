@@ -22,7 +22,7 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * Customize the row/column/cell delemiter when loading or saving csv file.
 * Set the tail repeated rows and right repeated columns when saving to pdf.
 * Support for paste options during copy and paste ranges.
-* Support IRange.Find() and IRange.Replace() methods.
+* Support IRange.find() and IRange.replace() methods.
 * Show or hide different kinds of pivot table styles.
 * Support for exporting pivot table styles to pdf.
 * Support setting the number format for each pivot field.
@@ -33,7 +33,7 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * Save multiple workbooks to one pdf file.
 * Export specific pages from spreadsheet to pdf
 * Save multiple spreadsheet pages into one pdf page.
-* Support IRange.AutoFit method to fit rows/columns.
+* Support IRange.autoFit method to fit rows/columns.
 * Support IRange.FormulaArrayR1C1 property to get or set array formula in R1C1 format.
 * Support more import flags during open an Excel file.
 * OLEObject will be preserved after Excel I/O.
