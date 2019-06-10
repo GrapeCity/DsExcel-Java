@@ -7,12 +7,41 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 
 | Directory    | Description    |
 | ------------- |-------------|
-| gcexcel-2     | Contains the latest GcExcel jar package and its dependency packages |
+| gcexcel     | Contains the latest GcExcel jar package and its dependency packages |
 | Examples.Library     | A collection of Java examples that help you learn and explore the API features |
 | SpringBootDemo/SpringBoot+React     | A source project that demonstrates how to use GcExcel Java with SpringBoot + React + Spread.Sheets|
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use GcExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 # Release Notes
+## 2.2.0
+### New Features
+* Export Excel files with shapes to pdf.
+* Cut/copy ranges between different workbooks.
+* Copy/move worksheet between different workbooks.
+* Control whether to adjust page breaks after inserting/deleting rows/columns.
+* Customize the row/column/cell delemiter when loading or saving csv file.
+* Set the tail repeated rows and right repeated columns when saving to pdf.
+* Support for paste options during copy and paste ranges.
+* Support IRange.Find() and IRange.Replace() methods.
+* Show or hide different kinds of pivot table styles.
+* Support for exporting pivot table styles to pdf.
+* Support setting the number format for each pivot field.
+* Japanese ruby can now be preserved after Excel I/O.
+* Get and customize each page settings before saving to pdf file.
+* Render any sheet range inside a pdf file.
+* Keep rows/columns togother when saving to pdf.
+* Save multiple workbooks to one pdf file.
+* Export specific pages from spreadsheet to pdf
+* Save multiple spreadsheet pages into one pdf page.
+* Support IRange.AutoFit method to fit rows/columns.
+* Support IRange.FormulaArrayR1C1 property to get or set array formula in R1C1 format.
+* Support more import flags during open an Excel file.
+* OLEObject will be preserved after Excel I/O.
+* Support Shrink to fit, wrapped text while saving to pdf.
+### Bug fixed
+* GcExcel ignores 'ignore_empty' parameter in TEXTJOIN formula.(DOCXLS-970)
+* Large JSON file generated when using ToJson on a particular Workbook.(DOCXLS-968)
+* UsedRange.Value sets improper values to the range when Formula is set to Empty.(DOCXLS-956)
 ## 2.1.5
 ### Bug Fixed
 * The column width, font size and picture's left position changes after JSON I/O with GcExcel.(DOCXLS-902)
