@@ -13,6 +13,23 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use GcExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 # Release Notes
+## 2.2.1
+### Bug fixed
+* GcExcel throws exception when loading ssjon with invalid image source.(DOCXLS-1115)
+* Exception is thrown when opening an Excel with a lot of conditional formatting.(DOCXLS-1047)
+* Unable to export to PDF with a specified culture.(DOCXLS-1043)
+* The exported Excel file does not open correctly after loading ssjson.(DOCXLS-1076)
+* Redundant lines are rendered while exporting to PDF.(DOCXLS-1068)
+* SSJSON is not exported correctly if there are charts with duplicate names.(DOCXLS-1067)
+* PrintInfo.firstPageNumber in ssjson is always 1 even though it is not set for IWorksheet.PageSetup.(DOCXLS-1107)
+* Exception is thrown when opening certain Excel file.(DOCXLS-1104)
+* Exception is thrown when loading a ssjson containing font with line height.(DOCXLS-1110)
+* Leading apostrophe in a cell value is displayed as part of the cell text (not consistent with Excel behavior).(DOCXLS-1041)
+* Exception is thrown when loading ssjson with custom function.(DOCXLS-1044)
+* Copy behavior is inconsistent with Excel when the target range is larger than the source range.(DOCXLS-844)
+* Exception is thrown after opening certain Excel file and then export to ssjson.(DOCXLS-1116)
+* GcExcel can not export text with Simhei bold font.(DOCXLS-937).
+* Load ssjson with combobox cells and then export to Excel, the cell value of combobox cell is wrong in the exported Excel file.(DOCXLS-1106)
 ## 2.2.0
 ### New Features
 * Export Excel files with shapes to pdf.
