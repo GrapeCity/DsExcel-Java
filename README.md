@@ -13,6 +13,18 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use GcExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 # Release Notes
+## 2.2.2
+### Enhancements
+* Customer can overwrite current function implementation when registering a new custom function.(DOCXLS-1146)
+### Bug Fixed
+* Exception is thrown when exporting to json.(DOCXLS-1120)
+* Exception is thrown after adding a lot of hyperlinks then saving to Excel.(DOCXLS-1154)
+* Some text can not display completely in the exported pdf file.(DOCXLS-1156)
+* ArgumentOutOfRangeException is thrown on using Calculate method for a Workbook.(DOCXLS-1211)
+* If calculated result is too large(20+ digits) in the cell, the value acquired by GcExcel is horizontally reversed.(DOCXLS-1127)
+* There is a difference between the Excel display value and the Text value acquired by GcExcel.(DOCXLS-1128)
+* When a cell referenced by a formula is moved by "Cut" method, the formula is not automatically updated.(DOCXLS-1210)
+* The exported pdf and Excel file is corrupted when using GcExcel in multiple threading. (DOCXLS-1208)
 ## 2.2.1
 ### Bug fixed
 * GcExcel throws exception when loading ssjon with invalid image source.(DOCXLS-1115)
