@@ -13,6 +13,16 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use GcExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 # Release Notes
+## 2.2.3
+### Bug Fixed
+* Incorrect sparkine is rendered in the exported PDF file.(DOCXLS-1242)
+* InvalidFormulaException is thrown during loading ssjson.(DOCXLS-1266)
+* An error occurs while saving to PDF file.(DOCXLS-1303)
+* Out of memerory occurs while loading an Excel file.(DOCXLS-1279)
+* Stack overflow occurs while saving to PDF file.(DOCXLS-1315)
+* Exception is thrown while loading a xlsm file.(DOCXLS-1335)
+* Calculation results from GCExcel doesn't match the results from MSExcel.(DOCXLS-1322, DOCXLS-1323)
+* Cell Style is not correct after GcExcel toJSON and then SpreadJS fromJSON.(DOCXLS-1334)
 ## 2.2.2
 ### Enhancements
 * Customer can overwrite current function implementation when registering a new custom function.(DOCXLS-1146)
