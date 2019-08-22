@@ -13,6 +13,17 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use GcExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 # Release Notes
+## 2.2.4
+### Bug Fixed
+* IndexOutOfRange exception is thrown when the same XLSX file is opened with parallel threads.(DOCXLS-1368)
+* Exception is thrown after loading ssjson and then save to PDF file.(DOCXLS-1382)
+* Column width changed after loading ssjson.(DOCXLS-1371)
+* Unable to fill shape with picture through API.(DOCXLS-1376)
+* Exception is thrown after loading ssjson and then invoke SetColumnWidth.(DOCXLS-1378)
+* Some text can not be rendered completedly in the exported PDF file.(DOCXLS-1404)
+* Unable to set a picture fill for shape.(DOCXLS-1376)
+* Exception is thrown when saving a worksheet to PDF file two time.(DOCXLS-1415)
+* The calculation result of INDIRECT function is different with Excel.(DOCXLS-1335)
 ## 2.2.3
 ### Bug Fixed
 * Incorrect sparkine is rendered in the exported PDF file.(DOCXLS-1242)
