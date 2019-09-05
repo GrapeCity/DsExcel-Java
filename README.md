@@ -13,6 +13,15 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use GcExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 # Release Notes
+## 2.2.5
+### Bug Fixed
+* The picture name is changed after saving a workbook to json several times.(DOCXLS-1427)
+* Corrupted Excel file is generated after copying a range containing checkbox control.(DOCXLS-1446)
+* Cell border is lost in exported pdf file..(DOCXLS-1450)
+* The auto row height is incorrect in the exported pdf if there is a merged cell and wrap text is true.(DOCXLS-1429)
+* Exception is thrown when opening a Excel file with a table whose name contains '.'.(DOCXLS-1451)
+* The marker of data series is changed after saving and loading json.(DOCXLS-1444, DOCXLS-1273)
+* The  content should not be wrapped cell's value is a number.(DOCXLS-1430)
 ## 2.2.4
 ### Bug Fixed
 * IndexOutOfRange exception is thrown when the same XLSX file is opened with parallel threads.(DOCXLS-1368)
