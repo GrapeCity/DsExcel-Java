@@ -13,6 +13,14 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use GcExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 # Release Notes
+## 2.2.6
+### Enhancements
+* Improve the opening time of large spreasheet when it contains shape and auto-fit rows.
+* JP built-in named styles are supported.
+### Bug Fixed
+* The formula result is not precise which leads to the conditional checking failed.(DOCXLS-1453)
+* The location and size of shapes are incorrect after opening the saved Excel under JP culture.(DOCXLS-1361)
+* The content of exported pdf is incorrect.(DOCXLS-1315)
 ## 2.2.5
 ### Bug Fixed
 * The picture name is changed after saving a workbook to json several times.(DOCXLS-1427)
