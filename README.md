@@ -213,5 +213,6 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 
 
 # Other Resources
+* Product Home Site: [https://www.grapecity.com/documents-api-excel](https://www.grapecity.com/documents-api-excel)
 * Demo Site: [https://www.grapecity.com/documents-api-excel/demos/](https://www.grapecity.com/documents-api-excel/demos/)
 * Maven Repo Address: [https://search.maven.org/artifact/com.grapecity.documents/gcexcel//](https://search.maven.org/artifact/com.grapecity.documents/gcexcel/)
