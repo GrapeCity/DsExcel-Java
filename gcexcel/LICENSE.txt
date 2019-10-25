@@ -1,0 +1,22 @@
+This document applies to the third party software included with this package,
+or used to build some parts of it.
+
+---------------------------------------------------------------------------------
+For GrapeCity Documents Licensing, please see
+https://www.grapecity.com/licensing/documents-api
+
+---------------------------------------------------------------------------------
+Apache PDFBox
+Apache License 2.0 https://docs.oracle.com/cloud/latest/big-data-discovery-cloud/BDDLG/rl_apache_license_for_pdfbox.htm#BDDLG-reference_6DDE4598BD5D4987A1684E7C2FF7B423
+
+---------------------------------------------------------------------------------
+GlassFish javax.json
+Dual license consisting of the CDDL v1.1 and GPL v2 https://oss.oracle.com/licenses/CDDL+GPL-1.1
+
+---------------------------------------------------------------------------------
+Apache POI
+Apache License 2.0 https://poi.apache.org/legal.html
+
+---------------------------------------------------------------------------------
+
+See NOTICE.txt for applicable information about the third party software.

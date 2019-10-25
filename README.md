@@ -13,6 +13,36 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use GcExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 # Release Notes
+## 3.0.0
+### New Features
+* Templates support to generate Excel reports.
+* Support conversion of Excel spreadsheets having sharts to PDF.
+* Support conversion of Excel spreadsheets having slicers to PDF.
+* Support new Excel 2016 chart types.
+* Support security options when saving to PDF.
+* Support document properties when saving to PDF.
+* Protect workbook.
+* Support chart sheet.
+* Support shape with hyperlink.
+* Group/Ungroup shapes.
+* Calculate outline subtotal.
+* Get precedents and dependents of formula cell.
+* Add pivot table's grand totals and report layout options similar to Excel.
+* Support shape adjustment.
+* Support sheet background image to PDF.
+* Export Excel files with multiple images to PDF with reduced file size.
+* Support license workbook instance.
+* Rename pivot fields and Data Fields.
+* Support cell tags of GrapeCity SpreadJS.
+* Support cell types of GrapeCity SpreadJS.
+* Support best fit rows/columns feature of GrapeCity SpreadJS.
+### Bugs Fixed
+* Unable to set Icon  for IconCriteria.(DOCXLS-1531s)
+* "_xlfn" prefix added before IFNA formula while converting to JSON.(DOCXLS-1537)
+* The precision of calculated result is incorrect.(DOCXLS-1547)
+* Exception is thrown when setting cell value with localDateTime.now().(DOCXLS-7532)
+* Text is displayed incompletely in exported PDF document.(DOCXLS-1539)
+* DiagonalDown border is lost in exported json.(DOCXLS-1577)
 ## 2.2.6
 ### Enhancements
 * Improve the opening time of large spreasheet when it contains shape and auto-fit rows.
