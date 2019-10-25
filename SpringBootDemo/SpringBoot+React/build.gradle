@@ -37,7 +37,7 @@ dependencies {
 	}
 	
 	//dependencies of GcExcel
-	compile('com.grapecity.documents:gcexcel:2.1.2')
+	compile('com.grapecity.documents:gcexcel:3.0.0')
 	//compile fileTree(dir: 'libs', include: ['*.jar'])
 }
 
