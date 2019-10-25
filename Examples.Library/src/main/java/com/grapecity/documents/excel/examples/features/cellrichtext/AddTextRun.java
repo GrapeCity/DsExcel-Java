@@ -34,9 +34,4 @@ public class AddTextRun extends ExampleBase {
 
         b2.getEntireRow().setRowHeight(42);
     }
-
-    @Override
-    public boolean getIsNew() {
-        return true;
-    }
 }

@@ -16,7 +16,7 @@ public class FolderExample extends ExampleBase {
 
     @Override
     public String getID() {
-        return _namespace;
+        return _namespace.toLowerCase();
     }
 
     @Override
@@ -86,7 +86,10 @@ public class FolderExample extends ExampleBase {
     }
 
     private ExampleBase findExample(ExampleBase example, String id) {
-        if (example.getID().equals(id)) {
+        if(id == null){
+            return null;
+        }
+        if (example.getShortID().toLowerCase().equals(id.toLowerCase())) {
             return example;
         }
 

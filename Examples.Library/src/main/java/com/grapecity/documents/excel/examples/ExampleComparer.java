@@ -11,9 +11,9 @@ public class ExampleComparer implements Comparator<ExampleBase> {
         // root children orders
         _sortOrders.put("tutorial", "a");
         _sortOrders.put("features", "b");
-        _sortOrders.put("spreadsheetsviewer", "c");
-        _sortOrders.put("excelreporting", "d");
-        _sortOrders.put("exceltemplates", "e");
+        _sortOrders.put("showcase", "c");
+        _sortOrders.put("templates", "d");
+        _sortOrders.put("spreadsheetsviewer", "e");
 
         // Features children orders
         _sortOrders.put("rangeoperations", "a");
@@ -39,37 +39,37 @@ public class ExampleComparer implements Comparator<ExampleBase> {
     }
 
     @Override
-    public int compare(ExampleBase o1, ExampleBase o2) {
-        if (o1 instanceof Tutorial) {
+    public int compare(ExampleBase x, ExampleBase y) {
+        if (x instanceof Tutorial) {
             return -1;
-        } else if (o2 instanceof Tutorial) {
+        } else if (y instanceof Tutorial) {
             return 1;
         }
 
         String xSortKey;
-        if (_sortOrders.containsKey(o1.getShortID())) {
-            xSortKey = _sortOrders.get(o1.getShortID());
+        if (_sortOrders.containsKey(x.getShortID())) {
+            xSortKey = _sortOrders.get(x.getShortID());
         } else {
-            xSortKey = o1.getID();
+            xSortKey = x.getID();
 
         }
 
         String ySortKey;
-        if (_sortOrders.containsKey(o2.getShortID())) {
-            ySortKey = _sortOrders.get(o2.getShortID());
+        if (_sortOrders.containsKey(y.getShortID())) {
+            ySortKey = _sortOrders.get(y.getShortID());
         } else {
-            ySortKey = o2.getID();
+            ySortKey = y.getID();
 
         }
 
-        if (o1 instanceof FolderExample) {
-            if (o1 instanceof FolderExample) {
+        if (x instanceof FolderExample) {
+            if (y instanceof FolderExample) {
                 return xSortKey.compareTo(ySortKey);
             } else {
                 return -1;
             }
         } else {
-            if (o1 instanceof FolderExample) {
+            if (y instanceof FolderExample) {
                 return 1;
             } else {
                 return xSortKey.compareTo(ySortKey);

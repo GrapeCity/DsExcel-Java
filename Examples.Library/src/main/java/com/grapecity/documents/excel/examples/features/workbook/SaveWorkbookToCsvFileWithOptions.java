@@ -30,10 +30,11 @@ public class SaveWorkbookToCsvFileWithOptions extends ExampleBase {
         //Save csv options
         CsvSaveOptions options = new CsvSaveOptions();
         options.setColumnSeparator("-");
+        options.setRowSeparator("\r\n");
+        options.setCellSeparator('"');
 
         //Change the path to real export path when save.
         workbook.save("dest.csv", options);
-
     }
 
 	@Override
@@ -45,6 +46,6 @@ public class SaveWorkbookToCsvFileWithOptions extends ExampleBase {
     public boolean getShowViewer() {
 
         return false;
-
     }
+
 }

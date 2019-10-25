@@ -24,9 +24,4 @@ public class SetJava8DateValue extends ExampleBase {
         a1.setNumberFormat("m/d/yyyy h:mm");
         a1.setColumnWidth(20);
     }
-
-    @Override
-    public boolean getIsNew() {
-        return true;
-    }
 }

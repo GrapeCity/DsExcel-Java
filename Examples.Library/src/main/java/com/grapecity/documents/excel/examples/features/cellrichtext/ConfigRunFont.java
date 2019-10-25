@@ -41,9 +41,4 @@ public class ConfigRunFont extends ExampleBase {
         superRun3.getFont().setSuperscript(true);
         superRun3.getFont().setColor(Color.GetBlue());
     }
-
-    @Override
-    public boolean getIsNew() {
-        return true;
-    }
 }

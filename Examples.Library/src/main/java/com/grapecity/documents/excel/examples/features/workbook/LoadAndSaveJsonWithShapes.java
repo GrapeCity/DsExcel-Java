@@ -31,9 +31,4 @@ public class LoadAndSaveJsonWithShapes extends ExampleBase {
         // GcExcel can load json strig contains shapes now
         workbook.fromJson(jsonString);
     }
-
-    @Override
-    public boolean getIsNew() {
-        return true;
-    }
 }

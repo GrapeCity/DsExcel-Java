@@ -11,17 +11,21 @@ import java.util.Set;
 
 public class ResourceUtil {
     private static JSONObject _codeJson = null;
+    private static JSONObject _codeJson_kotlin = null;
     private static HashMap<String, JSONObject> _stringResources = new HashMap<String, JSONObject>();
 
     static {
         if (_codeJson == null) {
             InputStream jsonStream = getResourceStream("codeResource.json");
-//            InputStream stream1 = getResourceStream("xlsx/AgingReport.xlsx");
-//            String value = stream1.toString();
-//            InputStream stream2 = getResourceStream("xlsx/Event budget.xlsx");
-//            String value2 = stream2.toString();
             if (jsonStream != null) {
                 _codeJson = new JSONObject(inputStreamToString(jsonStream));
+            }
+        }
+
+        if (_codeJson_kotlin == null) {
+            InputStream jsonStream = getResourceStream("codeResource_kotlin.json");
+            if (jsonStream != null) {
+                _codeJson_kotlin = new JSONObject(inputStreamToString(jsonStream));
             }
         }
     }
@@ -36,6 +40,13 @@ public class ResourceUtil {
     public static String getCodeResource(String key) {
         if (_codeJson != null && _codeJson.has(key)) {
             return _codeJson.getString(key);
+        }
+        return null;
+    }
+
+    public static String getCodeResource_kotlin(String key) {
+        if (_codeJson_kotlin != null && _codeJson_kotlin.has(key)) {
+            return _codeJson_kotlin.getString(key);
         }
         return null;
     }

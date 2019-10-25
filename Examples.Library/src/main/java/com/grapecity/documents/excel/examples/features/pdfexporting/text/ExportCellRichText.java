@@ -50,9 +50,4 @@ public class ExportCellRichText extends ExampleBase {
     public boolean getShowViewer() {
         return false;
     }
-
-    @Override
-    public boolean getIsNew() {
-        return true;
-    }
 }

@@ -1,12 +1,12 @@
 package com.grapecity.documents.excel.examples;
 
 
-import com.grapecity.documents.excel.Workbook;
-
-import javax.sound.midi.SysexMessage;
-import javax.xml.bind.DatatypeConverter;
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
+
+import javax.xml.bind.DatatypeConverter;
+
+import com.grapecity.documents.excel.Workbook;
 
 public class ExampleBase {
 
@@ -30,6 +30,10 @@ public class ExampleBase {
         return this.getExampleCode();
     }
 
+    public String getCodeKotlin() {
+        return this.getExampleCode_kotlin();
+    }
+
     public boolean getCanDownload() {
         return true;
     }
@@ -47,6 +51,14 @@ public class ExampleBase {
     }
 
     public boolean getSavePdf() {
+        return false;
+    }
+    
+    public boolean getSavePageInfos() {
+        return false;
+    }
+    
+    public boolean getSaveAsImage() {
         return false;
     }
 
@@ -92,6 +104,12 @@ public class ExampleBase {
         this.execute(workbook);
         this.afterExecute(workbook, userAgents);
     }
+    
+    public void executeExample(ByteArrayOutputStream outputStream, Workbook workbook, String userAgents) {
+        this.beforeExecute(workbook, userAgents);
+        this.execute(workbook, outputStream);
+        this.afterExecute(workbook, userAgents);
+    }
 
     public void beforeExecute(Workbook workbook, String userAgents) {
 
@@ -100,10 +118,13 @@ public class ExampleBase {
     public void execute(Workbook workbook) {
 
     }
+    
+    public void execute(Workbook workbook, ByteArrayOutputStream outputStream) {
 
+    }
 
     public void afterExecute(Workbook workbook, String userAgents) {
-        if (getAgentIsMac(userAgents)) {
+        if (this.getAgentIsMac(userAgents)) {
             //TODO, it will throw exception for now
             //workbook.calculate(); // ensure that all cached values can be saved in excel file, so number can display the file correctly even if the formulas are not supported in number.
         }
@@ -121,17 +142,89 @@ public class ExampleBase {
         if (code != null && !code.isEmpty()) {
 //            code = code.replaceAll("[\r\n][^\r\n]\\s{8}", "\n");
 //            code = code.replaceAll("\\s{4}(.*)", "$1");
-            code = processCodeFormat(code);
+            code = this.processCodeFormat(code);
         }
 
-        String codePre = "  //create a new workbook" + System.lineSeparator() + "  Workbook workbook = new Workbook();";
+        String codePre = "";
+        if (this.getSavePageInfos()) {
+        	codePre =  "  //create to a pdf file stream" + System.lineSeparator() + "  FileOutputStream outputStream = null;" +
+        			   System.lineSeparator() + "  try {" + System.lineSeparator() + String.format("      outputStream = new FileOutputStream(\"%s.pdf\");", this.getShortID()) + 
+        			   System.lineSeparator() + "  } catch (FileNotFoundException e) {" + 
+        			   System.lineSeparator() + "      e.printStackTrace();" +
+        			   System.lineSeparator() + "  }" + System.lineSeparator();
+		}
+        else if (this.getSaveAsImage()) {
+        	codePre = "  //create to a png file stream" + System.lineSeparator() + "  FileOutputStream outputStream = null;" +
+     			   System.lineSeparator() + "  try {" + System.lineSeparator() + String.format("      outputStream = new FileOutputStream(\"%s.png\");", this.getShortID()) + 
+     			   System.lineSeparator() + "  } catch (FileNotFoundException e) {" + 
+     			   System.lineSeparator() + "      e.printStackTrace();" +
+     			   System.lineSeparator() + "  }" + System.lineSeparator();
+		}
+        
+        codePre += "  //create a new workbook" + System.lineSeparator() + "  Workbook workbook = new Workbook();"; 
+        
         String codePost = "";
-        if (this.getSavePdf()) {
-            codePost = "  //save to an pdf file" + System.lineSeparator() + String.format("  workbook.save(\"%s.pdf\", SaveFileFormat.Pdf);", this.getShortID());
+        if (this.getSavePageInfos() || this.getSaveAsImage()) {
+        	codePost = "  //close the file stream" + System.lineSeparator() + "  try {" + System.lineSeparator() +
+        			   "      outputStream.close();" + System.lineSeparator() +
+        			   "  } catch (IOException e) {" + System.lineSeparator() + 
+        			   "      e.printStackTrace();" + System.lineSeparator() +
+        			   "  }";
+		} else if (this.getSavePdf()) {
+            codePost = "  //save to an pdf file" + System.lineSeparator() + String.format("  workbook.save(\"%s.pdf\");", this.getShortID());
         } else if (this.getSaveCSV()) {
-            codePost = "  //save to an csv file" + System.lineSeparator() + String.format("  workbook.save(\"%s.csv\", SaveFileFormat.Csv);", this.getShortID());
+            codePost = "  //save to an csv file" + System.lineSeparator() + String.format("  workbook.save(\"%s.csv\");", this.getShortID());
         } else if (this.getCanDownload()) {
             codePost = "  //save to an excel file" + System.lineSeparator() + String.format("  workbook.save(\"%s.xlsx\");", this.getShortID());
+        }
+        code = codePre + code +  codePost;
+
+        return code;
+    }
+
+    private String getExampleCode_kotlin() {
+        String code = ResourceUtil.getCodeResource_kotlin(this.getID());
+        if (code != null && !code.isEmpty()) {
+            code = this.processCodeFormat(code);
+        }
+
+        String codePre = "";
+        if (this.getSavePageInfos()) {
+            codePre =  "  //create to a pdf file stream" + System.lineSeparator() + "  var outputStream: FileOutputStream? = null" +
+                System.lineSeparator() + "  try {" + System.lineSeparator() + String.format("      outputStream = FileOutputStream(\"%s.pdf\")", this.getShortID()) +
+                System.lineSeparator() + "  } catch (e: FileNotFoundException) {" +
+                System.lineSeparator() + "      e.printStackTrace()" +
+                System.lineSeparator() + "  }" + System.lineSeparator();
+        }
+        else if (this.getSaveAsImage()) {
+            codePre = "  //create to a png file stream" + System.lineSeparator() + "  var outputStream: FileOutputStream? = null" +
+                System.lineSeparator() + "  try {" + System.lineSeparator() + String.format("      outputStream = FileOutputStream(\"%s.png\")", this.getShortID()) +
+                System.lineSeparator() + "  } catch (e: FileNotFoundException) {" +
+                System.lineSeparator() + "      e.printStackTrace()" +
+                System.lineSeparator() + "  }" + System.lineSeparator();
+        }
+
+        codePre += "  //create a new workbook" + System.lineSeparator() + "  var workbook = Workbook()";
+
+        String codePost = "";
+        if (this.getSavePageInfos() || this.getSaveAsImage()) {
+            codePost = "  //close the file stream" + System.lineSeparator() + "  try {" + System.lineSeparator() +
+                "       if(outputStream != null){"+ System.lineSeparator() +
+                "           outputStream.close()" + System.lineSeparator() +
+                "       }" + System.lineSeparator() + System.lineSeparator() +
+                "  } catch (e: IOException) {" + System.lineSeparator() +
+                "      e.printStackTrace()" + System.lineSeparator() +
+                "  }";
+        } else if (this.getSavePdf()) {
+            codePost = "  //save to an pdf file" + System.lineSeparator() + String.format("  workbook.save(\"%s.pdf\")", this.getShortID());
+        } else if (this.getSaveCSV()) {
+            codePost = "  //save to an csv file" + System.lineSeparator() + String.format("  workbook.save(\"%s.csv\")", this.getShortID());
+        } else if (this.getCanDownload()) {
+            codePost = "  //save to an excel file" + System.lineSeparator() + String.format("  workbook.save(\"%s.xlsx\")", this.getShortID());
+        }
+
+        if(code == null){
+            code = "";
         }
         code = codePre + code +  codePost;
 
@@ -169,6 +262,9 @@ public class ExampleBase {
         return null;
     }
 
+    public String[] getRefs(){
+        return null;
+    }
 
     private String inputStreamToBase64String(InputStream inputStream) {
         try {

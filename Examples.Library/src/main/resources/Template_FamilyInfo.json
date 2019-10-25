@@ -1,0 +1,46 @@
+{
+	"student": [
+		{
+			"name": "Jane",
+			"address": "101, Halford Avenue, Fremont, CA",
+			"family": [
+				{
+					"father": {
+						"name": "Patrick James",
+						"occupation": "Surgeon"
+					},
+					"mother": {
+						"name": "Diana James",
+						"occupation": "Surgeon"
+					}
+				},
+				{
+					"father": {
+						"name": "father James",
+						"occupation": "doctor"
+					},
+					"mother": {
+						"name": "mother James",
+						"occupation": "teacher"
+					}
+				}
+			]
+		},
+		{
+			"name": "Mark",
+			"address": "101, Halford Avenue, Fremont, CA",
+			"family": [
+				{
+					"father": {
+						"name": "Jonathan Williams",
+						"occupation": "Product Engineer"
+					},
+					"mother": {
+						"name": "Joanna Williams",
+						"occupation": "Surgeon"
+					}
+				}
+			]
+		}
+	]
+}

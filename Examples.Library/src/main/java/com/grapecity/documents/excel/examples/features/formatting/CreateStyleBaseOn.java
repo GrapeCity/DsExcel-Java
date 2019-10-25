@@ -31,9 +31,4 @@ public class CreateStyleBaseOn extends ExampleBase {
         worksheet.getRange("B1").setStyle(workbook.getStyles().get("MyGood"));
         worksheet.getRange("B1").setValue("MyGood");
     }
-
-    @Override
-    public boolean getIsNew() {
-        return true;
-    }
 }

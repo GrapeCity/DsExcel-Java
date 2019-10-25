@@ -32,9 +32,4 @@ public class CharacterCellText extends ExampleBase {
         run4.getFont().setBold(true);
 
     }
-
-    @Override
-    public boolean getIsNew() {
-        return true;
-    }
 }

@@ -1,6 +1,6 @@
-# 介绍
+﻿# 介绍
 
-在本教程中, 我们将会通过一个真实的使用场景，来让大家对Spread表格组件能够做什么有一个基础的了解，并且在教程的最后一步，你将会得到一个用Spread表格组件生成的Excel文件，这个文件可以用来分析你的月度收入和支出。
+在本教程中, 我们将会通过一个真实的使用场景，来让大家对GcExcel能够做什么有一个基础的了解，并且在教程的最后一步，你将会得到一个用GcExcel生成的Excel文件，这个文件可以用来分析你的月度收入和支出。
 
 ## 准备
 
@@ -11,12 +11,12 @@
 3. 添加GcExcel Java依赖包:
 > **在Intellij IDEA 或 Eclipse中**
 > - 从[Maven](https://search.maven.org/artifact/com.grapecity.documents/gcexcel/)或者[Github](https://github.com/GrapeCity/GcExcel-Java)下载GcExcel jar包
-> - 将gcexcel-2.1.1.jar拷贝到现有工程目录下, 右键将jar包添加为依赖包
+> - 将gcexcel-3.0.0.jar拷贝到现有工程目录下, 右键将jar包添加为依赖包
 >
 > **Gradle工程**
 > - 打开build.gradle，在dependencies代码块下添加下面代码
 > ```xml
-> compile("com.grapecity.documents:gcexcel:2.1.2")
+> compile("com.grapecity.documents:gcexcel:3.0.0")
 > ```
 >
 > **Maven工程**
@@ -25,7 +25,7 @@
 > <dependency>
 >    <groupId>com.grapecity.documents</groupId>
 >    <artifactId>gcexcel</artifactId>
->    <version>2.1.2</version>
+>    <version>3.0.0</version>
 > </dependency>
 > ``
 
@@ -40,7 +40,7 @@ import com.grapecity.documents.excel.drawing.*;
 
 ## 创建工作簿
 
-通过Spread表格组件来生成一个Excel文件的第一步就是先创建一个工作簿实例。
+通过GcExcel来生成一个Excel文件的第一步就是先创建一个工作簿实例。
 
 ```java
 Workbook workbook = new Workbook();
@@ -49,7 +49,7 @@ IWorksheet worksheet = workbook.getWorksheets().get(0);
 
 ## 初始化数据
 
-在给**Spread表格组件**设置大量数据时, 需要先准备一个填充好的二维数组，然后将这个二维数组赋值给需要设置数据的区域。
+在给**GcExcel**设置大量数据时, 需要先准备一个填充好的二维数组，然后将这个二维数组赋值给需要设置数据的区域。
 
 ```java
 worksheet.getRange("B3:C7").setValue(new Object[][]{
@@ -196,7 +196,7 @@ worksheet.getRange("E3:F3").getBorders().setColor(Color.FromArgb(32, 61, 64));
 
 ## 添加条件格式
 
-Spread表格组件支持Excel所有类型的条件格式，在这里我们会创建一个渐变的数据条条件格式用以可视化地展示支出收入比，并将它设置为只显示数据条而不显示单元格的值。
+GcExcel支持Excel所有类型的条件格式，在这里我们会创建一个渐变的数据条条件格式用以可视化地展示支出收入比，并将它设置为只显示数据条而不显示单元格的值。
 
 ```java
 IDataBar dataBar = worksheet.getRange("E3").getFormatConditions().addDatabar();
@@ -249,4 +249,4 @@ chartSeries.getDataLabels().setPosition(DataLabelPosition.OutsideEnd);
 workbook.save("SimpleBudget.xlsx");
 ```
 
-此时，你可以下载并查看保存的[SimpleBudget.xlsx](http://server-ip:8080/gcexcel-examples-api-server/api/examples/xlsx/com.grapecity.documents.excel.examples.Tutorial?fileName=SimpleBudget). 同时，你也可以下载本教程的[源代码工程](gcexcel-tutorial.zip)并亲自运行它。
+此时，你可以下载并查看保存的[SimpleBudget.xlsx](api/examples/xlsx/com.grapecity.documents.excel.examples.Tutorial?fileName=SimpleBudget). 同时，你也可以下载本教程的[源代码工程](resources/gcexcel-tutorial.zip)并亲自运行它。
