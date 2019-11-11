@@ -16,7 +16,6 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 ## 3.0.0
 ### New Features
 * Templates support to generate Excel reports.
-* Support conversion of Excel spreadsheets having sharts to PDF.
 * Support conversion of Excel spreadsheets having slicers to PDF.
 * Support new Excel 2016 chart types.
 * Support security options when saving to PDF.
