@@ -43,6 +43,15 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * Exception is thrown when setting cell value with localDateTime.now().(DOCXLS-7532)
 * Text is displayed incompletely in exported PDF document.(DOCXLS-1539)
 * DiagonalDown border is lost in exported json.(DOCXLS-1577)
+## 2.2.7
+### Enhancements
+* Customer can detect if there is custom Icon for a cell in specified range.(DOCXLS-1555)
+### Bug Fixed
+* Null exception is thrown when opening Excel file.(DOCXLS-1377)
+* Unable to set Icon  for IconCriteria.(DOCXLS-1531)
+* "_xlfn" prefix is added before IFNA formula for ToJSON method.(DOCXLS-1537)
+* Characters display incompletely in the exported PDF.(DOCXLS-1539)
+* Diagonal down border is lost in the exported ssjson.(DOCXLS-1577)
 ## 2.2.6
 ### Enhancements
 * Improve the opening time of large spreasheet when it contains shape and auto-fit rows.
