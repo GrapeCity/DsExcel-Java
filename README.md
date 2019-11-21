@@ -13,6 +13,20 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use GcExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 # Release Notes
+## 3.0.1
+### Bugs Fixed
+* The font color is changed in SpreadJS after importing the ssjson exported by GCExcel.(DOCXLS-1729)
+* The hidden rows and columns are visible in SpreadJS after importing the ssjson exported by GCExcel.(DOCXLS-1729)
+* Shape name is changed after copying worksheet.(DOCXLS-1728)
+* GcExcel can not load some kind of ssjson correctly. (DOCXLS-1726)
+* Some rich text is overlapped after exporting to Pdf.(DOCXLS-1724)
+* Exception is thrown during exporting to pdf if the machine is German locale.(DOCXLS-1707) 
+* Import ssjson containing data validaiton style and then export,the validation style will be lost in the exported ssjson.(DOCXLS-1692)
+* Chart type is changed after importing xlsx file.(DOCXLS-1686)
+* Null reference exception is thrown after loading xlsx then exporting to Pdf.(DOCXLS-1684)
+* Some shapes are lost after importing ssjson.(DOCXLS-1656)
+* "_xlfn" prefix is added before Days formula after exporting to ssjson.(DOCXLS-1655)
+* Formula of conditional format is changed after copying a range.(DOCXLS-1636)
 ## 3.0.0
 ### New Features
 * Templates support to generate Excel reports.
