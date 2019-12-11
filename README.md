@@ -13,6 +13,11 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use GcExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 # Release Notes
+## 3.0.2
+### Bugs Fixed
+* Exception is thrown when importing ssjson that contains duplicated table names.(DOCXLS-1733)
+* Null reference exception is thrown when exporting to ssjson.(DOCXLS-1734)
+* Index out of range exception is thrown when exporting to pdf.(DOCXLS-1784)
 ## 3.0.1
 ### Bugs Fixed
 * The font color is changed in SpreadJS after importing the ssjson exported by GCExcel.(DOCXLS-1729)
