@@ -13,6 +13,21 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use GcExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 # Release Notes
+## 3.0.3
+### Bugs Fixed
+* Exception is thrown when importing xlsx file with certain conditional formatting.(DOCXLS-1844)
+* Hyperlink included in ssjson, does not display when exported to PDF. (DOCXLS-1858)
+* The column formula is not expanded after adding new rows in Table.(DOCXLS-1865)
+* Exception is thrown when importing ssjson with data validations.(DOCXLS-1860)
+* When the tag of the copied sheet is changed, the tag of the copy source is also changed.(DOCXLS-1862)
+* Exception is thrown when importing ssjson with grouping.(DOCXLS-1882)
+* Extra Border is drawn around an image in the header, when xlsx is printed.
+* Text styles are lost after copying worksheet and exporting to PDF.(DOCXLS-1814)
+* Formulas do not work in generated xlsx file from JSON.(DOCXLS-1847)
+* Unable to import specific xlsx file in GcExcel.(DOCXLS-1848)
+* Placement.MoveAndSize does not work after exporting to PDF.(DOCXLS-1856)
+* External link can not work in the exported PDF when the external file's name contains Chinese characters.(DOCXLS-1867)
+* Borders are lost in SpreadJS after importing ssjson generated from GcExcel.(DOCXLS-1885)
 ## 3.0.2
 ### Bugs Fixed
 * Exception is thrown when importing ssjson that contains duplicated table names.(DOCXLS-1733)
