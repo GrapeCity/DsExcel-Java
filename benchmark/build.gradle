@@ -1,0 +1,36 @@
+plugins {
+    id 'application'
+}
+
+group 'grapecity.documents.excel'
+
+mainClassName = 'Main'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    maven {
+        url "https://artifact.aspose.com/repo/"
+    }
+}
+
+dependencies {
+   // compile fileTree(dir: 'libs', include: ['*.jar'])
+	implementation 'com.grapecity.documents:gcexcel:3.0.3'
+
+    implementation 'org.apache.poi:poi-ooxml:4.1.1'
+    implementation 'org.apache.poi:poi-ooxml-schemas:4.1.1'
+    implementation 'org.apache.poi:poi:4.1.1'
+
+    implementation 'com.aspose:aspose-cells:19.12'
+
+}
+
+//run {
+//    if (project.hasProperty("appArgs")) {
+//        args Eval.me(appArgs)
+//    }
+//}
+
+applicationDefaultJvmArgs = ["-Xms4096m", "-Xmx8192m"]
