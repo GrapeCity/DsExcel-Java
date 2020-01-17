@@ -12,6 +12,20 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | SpringBootDemo/SpringBoot+React     | A source project that demonstrates how to use GcExcel Java with SpringBoot + React + Spread.Sheets|
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use GcExcel with SpringBoot + Angular2 + Spread.Sheets|
 
+---
+[GrapeCity Documents for Excel（Java）](https://www.grapecity.com.cn/developer/grapecitydocuments) 是葡萄城推出的一款文档 API 组件，适用于所有 Java 6.0 及以上标准的平台，以编码的方式，无需 Microsoft Excel 依赖 ，即可快速批量操作 Excel 文件，通过与纯前端表格控件 [SpreadJS](https://www.grapecity.com.cn/developer/spreadjs) 结合使用，可同时在 Web 端实现 Excel 类数据展示、Excel 功能和布局样式，以及后端 Excel 导入导出等业务场景，使您开发的应用程序具备快速创建、加载、编辑、导入/导出大型 Excel 文档的功能模块。
+
+超快速、低占用率、更轻量，使用 GrapeCity Documents 可极大节省应用程序在生成、加载、编辑和保存大型文档时所占用的内存和时间，帮助企业以更高效的方式处理各种文档，实现更多定制化选项。
+
+本仓库包含GcExcel Java的示例工程，以帮助您学习和编写自己的应用程序。
+
+| 目录    | 描述    |
+| ------------- |-------------|
+| gcexcel     | 包含最新的GcExcel以及所有依赖的jar包 |
+| Examples.Library     | 示例源码工程，帮助您学习和使用GcExcel Java的每一个API |
+| SpringBootDemo/SpringBoot+React     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用React+SpreadJS展示|
+| SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
+
 # Release Notes
 ## 3.0.4
 ### Bugs Fixed
@@ -266,4 +280,6 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 # Other Resources
 * Product Home Site: [https://www.grapecity.com/documents-api-excel](https://www.grapecity.com/documents-api-excel)
 * Demo Site: [https://www.grapecity.com/documents-api-excel/demos/](https://www.grapecity.com/documents-api-excel/demos/)
+* 中文主页: [https://www.grapecity.com.cn/developer/grapecitydocuments](https://www.grapecity.com.cn/developer/grapecitydocuments)
+* 中文示例站点: [https://demo.grapecity.com.cn/documents-api-excel-java/demos/](https://demo.grapecity.com.cn/documents-api-excel-java/demos/)
 * Maven Repo Address: [https://search.maven.org/artifact/com.grapecity.documents/gcexcel/](https://search.maven.org/artifact/com.grapecity.documents/gcexcel/)
