@@ -13,6 +13,15 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use GcExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 # Release Notes
+## 3.0.4
+### Bugs Fixed
+* Exception is thrown when importing ssjson with certain group settings.(DOCXLS-1998)
+* Exception is thrown when importing ssjson with some null values.(DOCXLS-1959)
+* Digital signature is lost when an Excel file is modified and saved through GcExcel.(DOCXLS-1988)
+* Memory leak occurs when using GcExcel in multiple threads.(DOCXLS-1950)
+* Group can not be expanded in SpreadJS after loading ssjson from GcExcel.(DOCXLS-1870)
+* Rich text can not be rendered correctly in the exported pdf.(DOCXLS-1906)
+* The return value of IRange.HasFomula is wong.(DOCXLS-1940)
 ## 3.0.3
 ### Bugs Fixed
 * Exception is thrown when importing xlsx file with certain conditional formatting.(DOCXLS-1844)
