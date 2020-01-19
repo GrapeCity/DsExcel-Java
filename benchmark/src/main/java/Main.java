@@ -30,69 +30,69 @@ public class Main {
         String scenarioLower = scenario.toLowerCase();
         if (scenarioLower.equals("double")) {
 
-            IWorksheet doublesSheet = createResutlSheet(resultBook,"double");
+            IWorksheet resultSheet = createResutlSheet(resultBook,"double");
 
             GcExcelBenchmark.TestSetRangeValues_Double(rowCount, colCount, setTime, getTime, saveTime, usedMem);
-            FillResult(doublesSheet, "gcexcel", setTime, getTime, saveTime, usedMem);
+            FillResult(resultSheet, "gcexcel", setTime, getTime, saveTime, usedMem);
 
             AsposeBenchmark.TestSetRangeValues_Double(rowCount, colCount, setTime, getTime, saveTime, usedMem);
-            FillResult(doublesSheet, "aspose", setTime, getTime, saveTime, usedMem);
+            FillResult(resultSheet, "aspose", setTime, getTime, saveTime, usedMem);
 
             POIBenchmark.TestSetRangeValues_Double(rowCount, colCount, setTime, getTime, saveTime, usedMem);
-            FillResult(doublesSheet, "poi", setTime, getTime, saveTime, usedMem);
+            FillResult(resultSheet, "poi", setTime, getTime, saveTime, usedMem);
 
         } else if (scenarioLower.equals("string")) {
-            IWorksheet doublesSheet = createResutlSheet(resultBook,"string");
+            IWorksheet resultSheet = createResutlSheet(resultBook,"string");
 
             GcExcelBenchmark.TestSetRangeValues_String(rowCount, colCount, setTime, getTime, saveTime, usedMem);
-            FillResult(doublesSheet, "gcexcel", setTime, getTime, saveTime, usedMem);
+            FillResult(resultSheet, "gcexcel", setTime, getTime, saveTime, usedMem);
 
             AsposeBenchmark.TestSetRangeValues_String(rowCount, colCount, setTime, getTime, saveTime, usedMem);
-            FillResult(doublesSheet, "aspose", setTime, getTime, saveTime, usedMem);
+            FillResult(resultSheet, "aspose", setTime, getTime, saveTime, usedMem);
 
             POIBenchmark.TestSetRangeValues_String(rowCount, colCount, setTime, getTime, saveTime, usedMem);
-            FillResult(doublesSheet, "poi", setTime, getTime, saveTime, usedMem);
+            FillResult(resultSheet, "poi", setTime, getTime, saveTime, usedMem);
 
         } else if (scenarioLower.equals("date")) {
-            IWorksheet doublesSheet = createResutlSheet(resultBook,"date");
+            IWorksheet resultSheet = createResutlSheet(resultBook,"date");
 
             GcExcelBenchmark.TestSetRangeValues_Date(rowCount, colCount, setTime, getTime, saveTime, usedMem);
-            FillResult(doublesSheet, "gcexcel", setTime, getTime, saveTime, usedMem);
+            FillResult(resultSheet, "gcexcel", setTime, getTime, saveTime, usedMem);
 
             AsposeBenchmark.TestSetRangeValues_Date(rowCount, colCount, setTime, getTime, saveTime, usedMem);
-            FillResult(doublesSheet, "aspose", setTime, getTime, saveTime, usedMem);
+            FillResult(resultSheet, "aspose", setTime, getTime, saveTime, usedMem);
 
             POIBenchmark.TestSetRangeValues_Date(rowCount, colCount, setTime, getTime, saveTime, usedMem);
-            FillResult(doublesSheet, "poi", setTime, getTime, saveTime, usedMem);
+            FillResult(resultSheet, "poi", setTime, getTime, saveTime, usedMem);
 
         } else if (scenarioLower.equals("bigfile")) {
-            IWorksheet doublesSheet = createResutlSheet2(resultBook,"big file");
+            IWorksheet resultSheet = createResutlSheet2(resultBook,"big file");
 
             RefObject<Double> openTime = new RefObject<>();
             RefObject<Double> calcTime = new RefObject<>();
 
             GcExcelBenchmark.TestBigExcelFile(rowCount, colCount, openTime, calcTime, saveTime, usedMem);
-            FillResult(doublesSheet, "gcexcel", openTime, calcTime, saveTime, usedMem);
+            FillResult(resultSheet, "gcexcel", openTime, calcTime, saveTime, usedMem);
 
             AsposeBenchmark.TestBigExcelFile(rowCount, colCount, setTime, getTime, saveTime, usedMem);
-            FillResult(doublesSheet, "aspose", openTime, calcTime, saveTime, usedMem);
+            FillResult(resultSheet, "aspose", openTime, calcTime, saveTime, usedMem);
 
             POIBenchmark.TestBigExcelFile(rowCount, colCount, openTime, calcTime, saveTime, usedMem);
-            FillResult(doublesSheet, "poi", openTime, calcTime, saveTime, usedMem);
+            FillResult(resultSheet, "poi", openTime, calcTime, saveTime, usedMem);
             
         }else if(scenario.equals("formula")){
-            IWorksheet doublesSheet = createResutlSheet3(resultBook,"formulas");
+            IWorksheet resultSheet = createResutlSheet3(resultBook,"formulas");
 
             // Aspose can only handle 20000*30 formulas, the time of saving Excel will be very long when the amount of formulas is bigger than 20000*30
             rowCount = 20000;
             GcExcelBenchmark.TestSetRangeFormulas(rowCount, colCount, setTime, getTime, saveTime, usedMem);
-            FillResult(doublesSheet, "gcexcel", setTime, getTime, saveTime, usedMem);
+            FillResult(resultSheet, "gcexcel", setTime, getTime, saveTime, usedMem);
 
             POIBenchmark.TestSetRangeFormulas(rowCount, colCount, setTime, getTime, saveTime, usedMem);
-            FillResult(doublesSheet, "aspose", setTime, getTime, saveTime, usedMem);
+            FillResult(resultSheet, "aspose", setTime, getTime, saveTime, usedMem);
 
             AsposeBenchmark.TestSetRangeFormulas(rowCount, colCount, setTime, getTime, saveTime, usedMem);
-            FillResult(doublesSheet, "poi", setTime, getTime, saveTime, usedMem);
+            FillResult(resultSheet, "poi", setTime, getTime, saveTime, usedMem);
         }
 
         resultBook.save("output/benchmarks.xlsx");
