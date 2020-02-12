@@ -74,7 +74,7 @@ public class Main {
             GcExcelBenchmark.TestBigExcelFile(rowCount, colCount, openTime, calcTime, saveTime, usedMem);
             FillResult(resultSheet, "gcexcel", openTime, calcTime, saveTime, usedMem);
 
-            AsposeBenchmark.TestBigExcelFile(rowCount, colCount, setTime, getTime, saveTime, usedMem);
+            AsposeBenchmark.TestBigExcelFile(rowCount, colCount, openTime, calcTime, saveTime, usedMem);
             FillResult(resultSheet, "aspose", openTime, calcTime, saveTime, usedMem);
 
             POIBenchmark.TestBigExcelFile(rowCount, colCount, openTime, calcTime, saveTime, usedMem);
