@@ -27,6 +27,36 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
 
 # Release Notes
+## 3.1.0
+### Added
+* Support for charts/images/conditional formatting in Templates.
+* Support exporting formulas in Templates.
+* Support global settings in Templates.
+* Support converting Excel objects(chart/shape) to image formats.
+* Support password protected workbook and worksheet.
+* Support adding Error Bars in Chart.
+* Support text angle of chart title/axis tick label/data label.
+* Support alignment of Shape's TextFrame.
+* Add image to specific range.
+* Support Gradient Fill Type enum in Shapes.
+* Support creating chart/shape/pictures with a custom name.
+* Enhanced Background image support for printing to PDF.
+* Get pagination info for printing to PDF.
+* Support Transparent Cell Background color in PDF.
+* Support worksheet JSON I/O.
+* Support Outline column to display hierarchical data in saved PDF.
+* Support data binding of Range, Table and Worksheet.
+* Return errors from JSON Import in GcExcel.
+### Fixed
+* Filtered data cannot be re-displayed after JSON(made by SJS) I/O in GcExcel.(DOCXLS-1646)
+* Exception occurs on loading specific ssjson.(DOCXLS-2158)
+* Exception may occur on exporting certain Excel sheets with charts to PDF (DOCXLS-2094)
+* Hiding fixed columns and rows causes incorrect display in Excel file.(DOCXLS-2020)
+* Pagination is inconsistent with SpreadJS when the form is exported to PDF.(DOCXLS-2159)
+* JSON file size is bigger when converted using GcExcel vs Online designer tool.(DOCXLS-1905)
+* The Value property value of the ComboBox cell is lost after JSON I/O.(DOCXLS-2029)
+* NullPointerException may occur on loading certain Excel file and saving it. (DOCXLS-2041)
+* Conditional formatting is lost if the rule references another sheet.(DOCXLS-2093)
 ## 3.0.4
 ### Bugs Fixed
 * Exception is thrown when importing ssjson with certain group settings.(DOCXLS-1998)
