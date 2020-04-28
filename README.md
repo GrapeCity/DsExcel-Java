@@ -27,6 +27,27 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
 
 # Release Notes
+## 3.1.2
+### Fixed
+* Exception is thrown when cutting tables.(DOCXLS-2288)
+* The line style in exported pdf is not same as it is in Excel.(DOCXLS-2297)
+* The default date format is not changed by culture.(DOCXLS-2318)
+* Exception occurs when copying a sheet from another workbook and saving the workbook.(DOCXLS-2334)
+* There are unexpected lines on top of cell in the exported pdf.(DOCXLS-2339)
+* The saved Excel file is corrupted.(DOCXLS-2345)
+* Some values in the exported Excel file are incorrect.(DOCXLS-2352)
+* It takes a long time to open an Excel with a lot of inline strings.(DOCXLS-2353)
+* The plot area's boundary is incorrect in the exported pdf.(DOCXLS-2356)
+* ToJson would take a very long time.(DOCXLS-2364)
+* The content is incorrect in the exported pdf.(DOCXLS-2365)
+* Font files will be kept opening event after saving pdf.(DOCXLS-2372)
+* RepeatSetting doesn't work if there is only one row on the last page.(DOCXLS-2376])
+* Picture is not clear after exporting to PDF.(DOCXLS-2384)
+* Column width changes in the exported Excel.(DOCXLS-2385)
+* The calculated result is incorrect.(DOCXLS-2387)
+* Exception is thrown during from json.(DOCXLS-2390)
+### Changed
+- General formatter is used when invalid number format was found during getting cell text, previous behavior is throwing exception.
 ## 3.1.1
 ### Fixed
 * Certain cell border lines do not render correctly when exporting to PDF.(DOCXLS-713)
