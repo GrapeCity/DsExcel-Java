@@ -27,9 +27,4 @@ public class ShapeGroup extends ExampleBase {
     public boolean getShowViewer() {
         return true;
     }
-
-    @Override
-    public boolean getIsNew() {
-        return true;
-    }
 }

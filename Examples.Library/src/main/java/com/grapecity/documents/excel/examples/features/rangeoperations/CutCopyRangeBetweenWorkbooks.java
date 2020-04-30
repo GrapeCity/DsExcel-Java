@@ -26,7 +26,7 @@ public class CutCopyRangeBetweenWorkbooks extends ExampleBase {
 
         //Copy content of active sheet from source workbook to the current sheet at A2
         source_workbook.getActiveSheet().getUsedRange(EnumSet.allOf(UsedRangeType.class)).copy(workbook.getActiveSheet().getRange("A2"),
-        		EnumSet.of(PasteType.Formulas, PasteType.Formats, PasteType.RowHeights, PasteType.ColumnWidths));
+                EnumSet.of(PasteType.Formulas, PasteType.Formats, PasteType.RowHeights, PasteType.ColumnWidths));
 
         workbook.getActiveSheet().getRange("C21").setValue("Cut content from the second sheet of source workbook");
         workbook.getActiveSheet().getRange("C21").getFont().setColor(Color.GetRed());
@@ -42,11 +42,11 @@ public class CutCopyRangeBetweenWorkbooks extends ExampleBase {
 
 	@Override
 	public String getTemplateName() {
-		return "Home inventory.xlsx";
+        return "Home inventory.xlsx";
 	}
 
 	@Override
 	public String[] getResources() {
-		return new String[] { "xlsx/Home inventory.xlsx" };
+        return new String[] { "xlsx/Home inventory.xlsx" };
 	}
 }

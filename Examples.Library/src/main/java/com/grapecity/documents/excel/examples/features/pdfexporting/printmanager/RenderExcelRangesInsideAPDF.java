@@ -18,14 +18,14 @@ public class RenderExcelRangesInsideAPDF extends ExampleBase {
 	public void execute(Workbook workbook, ByteArrayOutputStream outputStream) {
         workbook.open(this.getResourceStream("xlsx/FinancialReport.xlsx"));
         IWorksheet worksheet = workbook.getWorksheets().get(0);
-		
+        
         //Create a pdf document.
         PDDocument doc = null;
-		try {
-			doc = PDDocument.load(this.getResourceStream("Acme-Financial Report 2018.pdf"));
-		} catch (IOException e1) {
-			e1.printStackTrace();
-		}
+        try {
+        	doc = PDDocument.load(this.getResourceStream("Acme-Financial Report 2018.pdf"));
+        } catch (IOException e1) {
+        	e1.printStackTrace();
+        }
    
         //Create a PrintManager.
         PrintManager printManager = new PrintManager();
@@ -56,22 +56,22 @@ public class RenderExcelRangesInsideAPDF extends ExampleBase {
 
 	@Override
 	public boolean getSavePageInfos() {
-		return true;
+        return true;
 	}
 
 	@Override
 	public boolean getShowViewer() {
-		return false;
+        return false;
 	}
 
 	@Override
 	public String getTemplateName() {
-		return "FinancialReport.xlsx";
+        return "FinancialReport.xlsx";
 	}
 
 	@Override
 	public String[] getResources() {
-		return new String[] {  "xlsx/FinancialReport.xlsx", "Acme-Financial Report 2018.pdf" };
+        return new String[] {  "xlsx/FinancialReport.xlsx", "Acme-Financial Report 2018.pdf" };
 	}
 
 }

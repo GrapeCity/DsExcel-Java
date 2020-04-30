@@ -28,9 +28,4 @@ public class Precedents extends ExampleBase {
             item.getInterior().setColor(Color.GetPink());
         }
     }
-
-	@Override
-	public boolean getIsNew() {
-        return true;
-    }
 }

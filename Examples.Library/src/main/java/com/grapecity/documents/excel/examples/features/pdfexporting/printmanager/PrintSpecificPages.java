@@ -37,22 +37,22 @@ public class PrintSpecificPages extends ExampleBase {
 
 	@Override
 	public boolean getSavePageInfos() {
-		return true;
+        return true;
 	}
 
 	@Override
 	public boolean getShowViewer() {
-		return false;
+        return false;
 	}
 
 	@Override
 	public String getTemplateName() {
-		return "PrintSpecificPDFPages.xlsx";
+        return "PrintSpecificPDFPages.xlsx";
 	}
 
 	@Override
 	public String[] getResources() {
-		return new String[] { "xlsx/PrintSpecificPDFPages.xlsx" };
+        return new String[] { "xlsx/PrintSpecificPDFPages.xlsx" };
 	}
 
 }

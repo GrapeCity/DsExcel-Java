@@ -73,9 +73,4 @@ public class SetPivotFieldNameInPivotTable extends ExampleBase {
 
         return true;
     }
-
-    @Override
-    public boolean getIsNew() {
-        return true;
-    }
 }

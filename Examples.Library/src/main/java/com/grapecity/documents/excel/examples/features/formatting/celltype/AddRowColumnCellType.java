@@ -31,9 +31,4 @@ public class AddRowColumnCellType extends ExampleBase {
 
         worksheet.getRows().get(3).setCellType(buttonCellType);
     }
-
-	@Override
-	public boolean getIsNew() {
-        return true;
-    }
 }

@@ -58,11 +58,11 @@ public class DrawRangeInsideAPDF extends ExampleBase {
 
 	@Override
 	public boolean getSavePageInfos() {
-		return true;
+        return true;
 	}
 
 	@Override
 	public boolean getShowViewer() {
-		return false;
+        return false;
 	}
 }

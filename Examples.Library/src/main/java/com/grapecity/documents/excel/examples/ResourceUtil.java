@@ -70,7 +70,7 @@ public class ResourceUtil {
                     return getResourceForEnUS(key);
                 }
             }
-            return null;
+            return "";
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -88,7 +88,7 @@ public class ResourceUtil {
         if (enUSResource.has(key)) {
             return enUSResource.getString(key);
         }
-        return null;
+        return "";
     }
 
     public static InputStream getResourceStream(String resource) {

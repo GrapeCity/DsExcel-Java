@@ -16,7 +16,7 @@ public class CreateHyperlinks extends ExampleBase {
         worksheet.getRange("A1:B2").getHyperlinks().add(worksheet.getRange("A1"), "http://www.google.com/", null, "open google web site.", "Google");
 
         //add a hyperlink link to a range in this document.
-        worksheet.getRange("A3:B4").getHyperlinks().add(worksheet.getRange("A3"), null, "Sheet1!$C$3:$E$4", "Go to sheet1 C3:E4", null);
+        worksheet.getRange("A3:B4").getHyperlinks().add(worksheet.getRange("A3"), null, "Sheet1!$C$3:$E$4", "Go to sheet1 C3:E4", "Sheet1!$C$3:$E$4");
 
         //add a hyperlink link to email address.
         worksheet.getRange("A5:B6").getHyperlinks().add(worksheet.getRange("A5"), "mailto:us.sales@grapecity.com", null, "Send an email to sales", "Send an email to sales");

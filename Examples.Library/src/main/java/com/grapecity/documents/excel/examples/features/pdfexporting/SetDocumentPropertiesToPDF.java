@@ -48,16 +48,11 @@ public class SetDocumentPropertiesToPDF extends ExampleBase {
 
     @Override
 	public boolean getSavePageInfos() {
-		return true;
+        return true;
 	}
 	
     @Override
     public boolean getShowViewer() {
         return false;
     }
-
-	@Override
-	public boolean getIsNew() {
-		return true;
-	}
 }

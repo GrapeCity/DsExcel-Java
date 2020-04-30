@@ -17,7 +17,7 @@ public class AddUserShapes extends ExampleBase {
 	public void execute(Workbook workbook) {
 
         IWorksheet worksheet = workbook.getWorksheets().get(0);
-		
+        
         worksheet.getRange("A1:C10").setValue(new Object[][]{
             {"Task", "Worker 1", "Worker 2"},
             {"Task 1", 7, 10},
@@ -40,10 +40,10 @@ public class AddUserShapes extends ExampleBase {
         //Add a bussiness logo in the line chart area
         InputStream stream = this.getResourceStream("logo.png");
         try {
-			shape.getChart().addPicture(stream, ImageType.PNG, 170, 10, 60, 10);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+        	shape.getChart().addPicture(stream, ImageType.PNG, 170, 10, 60, 10);
+        } catch (IOException e) {
+        	e.printStackTrace();
+        }
 
         //Add shapes in the line chart area 
         IShape userShape1 = shape.getChart().addShape(AutoShapeType.Rectangle, 30, 45, 60, 20);
@@ -69,11 +69,6 @@ public class AddUserShapes extends ExampleBase {
 	
 	@Override
 	public boolean getShowScreenshot() {
-		return true;
-	}
-
-	@Override
-	public boolean getIsNew() {
-		return true;
+        return true;
 	}
 }

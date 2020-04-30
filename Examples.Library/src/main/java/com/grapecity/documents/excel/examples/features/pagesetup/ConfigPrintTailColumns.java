@@ -17,17 +17,17 @@ public class ConfigPrintTailColumns extends ExampleBase {
 
 	@Override
 	public String getTemplateName() {
-		return "RepeatTails.xlsx";
+        return "RepeatTails.xlsx";
 	}
 
 	@Override
 	public String[] getResources() {
-		return new String[] { "xlsx/RepeatTails.xlsx" };
+        return new String[] { "xlsx/RepeatTails.xlsx" };
 	}
 
 	@Override
 	public boolean getShowViewer() {
-		return false;
+        return false;
 	}
 
 }

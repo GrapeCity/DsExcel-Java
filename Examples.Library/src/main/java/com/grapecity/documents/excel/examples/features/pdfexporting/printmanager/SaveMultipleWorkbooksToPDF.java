@@ -29,22 +29,22 @@ public class SaveMultipleWorkbooksToPDF extends ExampleBase {
 
 	@Override
 	public boolean getSavePageInfos() {
-		return true;
+        return true;
 	}
 
 	@Override
 	public boolean getShowViewer() {
-		return false;
+        return false;
 	}
 
 	@Override
 	public String getTemplateName() {
-		return "Any year calendar1.xlsx";
+        return "Any year calendar1.xlsx";
 	}
 
 	@Override
 	public String[] getResources() {
-		return new String[] {  "xlsx/Any year calendar1.xlsx" , "xlsx/Any year calendar (Ion theme)1.xlsx"  };
+        return new String[] {  "xlsx/Any year calendar1.xlsx" , "xlsx/Any year calendar (Ion theme)1.xlsx"  };
 	}
 
 }

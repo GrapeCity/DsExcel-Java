@@ -14,7 +14,7 @@ public class AddFunnelChart extends ExampleBase {
 	public void execute(Workbook workbook) {
 
         IWorksheet worksheet = workbook.getWorksheets().get(0);
-		
+        
         worksheet.getRange("A1:B7").setValue(new Object[][]{
         	{"Stage", "Amount"},
             {"Prospects", 500},
@@ -37,16 +37,11 @@ public class AddFunnelChart extends ExampleBase {
 
 	@Override
 	public boolean getShowViewer() {
-		return false;
+        return false;
 	}
 	
 	@Override
 	public boolean getShowScreenshot() {
-		return true;
-	}
-
-	@Override
-	public boolean getIsNew() {
-		return true;
+        return true;
 	}
 }

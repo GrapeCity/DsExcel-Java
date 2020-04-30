@@ -10,7 +10,7 @@ public class ShapeWithRotation extends ExampleBase {
 
 	@Override
     public void execute(Workbook workbook) {
-		
+        
         IWorksheet sheet = workbook.getWorksheets().get(0);
 
         sheet.getRange("D2").setValue("rectangle with 30 degrees");

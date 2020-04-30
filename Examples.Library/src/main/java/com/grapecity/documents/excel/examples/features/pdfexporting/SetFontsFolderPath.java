@@ -19,7 +19,7 @@ public class SetFontsFolderPath extends ExampleBase {
         //specify font path.
         Workbook.FontsFolderPath = "/var/usr/public/Fonts";
 
-//		//get the used fonts list in workbook, the list are:"Wide Latin", "Calibri"
+//        //get the used fonts list in workbook, the list are:"Wide Latin", "Calibri"
         List<FontInfo> fonts = workbook.getUsedFonts();
 
         //change the path to real export path when save.

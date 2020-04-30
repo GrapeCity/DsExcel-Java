@@ -1,0 +1,27 @@
+Area,City,Category,Name,Revenue
+"North America", "Chicago", "Consumer Electronics", "Bose 785593-0050", 92800
+"North America", "New York", "Consumer Electronics", "Bose 785593-0050", 92800
+"South America", "Santiago", "Consumer Electronics", "Bose 785593-0050", 19550
+"North America", "Chicago", "Consumer Electronics", "Canon EOS 1500D", 98650
+"North America", "Minnesota", "Consumer Electronics", "Canon EOS 1500D", 89110
+"South America", "Santiago", "Consumer Electronics", "Canon EOS 1500D", 459000
+"North America", "Chicago", "Consumer Electronics", "Haier 394L 4Star", 367050
+"South America", "Quito", "Consumer Electronics", "Haier 394L 4Star", 729100
+"South America", "Santiago", "Consumer Electronics", "Haier 394L 4Star", 578900
+"North America", "Fremont", "Consumer Electronics", "IFB 6.5 Kg FullyAuto", 904930
+"South America", "Buenos Aires", "Consumer Electronics", "IFB 6.5 Kg FullyAuto", 673800
+"South America", "Medillin", "Consumer Electronics", "IFB 6.5 Kg FullyAuto", 82910
+"North America", "Chicago", "Consumer Electronics", "Mi LED 40inch", 550010
+"North America", "Minnesota", "Consumer Electronics", "Mi LED 40inch", 1784702
+"South America", "Santiago", "Consumer Electronics", "Mi LED 40inch", 102905
+"North America", "Chicago", "Consumer Electronics", "Sennheiser HD 4.40-BT", 178100
+"South America", "Quito", "Consumer Electronics", "Sennheiser HD 4.40-BT", 234459
+"North America", "Minnesota", "Mobile", "Iphone XR", 1734621
+"South America", "Santiago", "Mobile", "Iphone XR", 109300
+"North America", "Chicago", "Mobile", "OnePlus 7Pro", 499100
+"South America", "Quito", "Mobile", "OnePlus 7Pro", 215000
+"North America", "Minnesota", "Mobile", "Redmi 7", 81650
+"South America", "Quito", "Mobile", "Redmi 7", 276390
+"North America", "Minnesota", "Mobile", "Samsung S9", 896250
+"South America", "Buenos Aires", "Mobile", "Samsung S9", 896250
+"South America", "Quito", "Mobile", "Samsung S9", 716520

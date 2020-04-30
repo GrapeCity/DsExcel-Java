@@ -1,4 +1,4 @@
-﻿# 介绍
+# 介绍
 
 在本教程中, 我们将会通过一个真实的使用场景，来让大家对GcExcel能够做什么有一个基础的了解，并且在教程的最后一步，你将会得到一个用GcExcel生成的Excel文件，这个文件可以用来分析你的月度收入和支出。
 
@@ -11,13 +11,10 @@
 3. 添加GcExcel Java依赖包:
 > **在Intellij IDEA 或 Eclipse中**
 > - 从[Maven](https://search.maven.org/artifact/com.grapecity.documents/gcexcel/)或者[Github](https://github.com/GrapeCity/GcExcel-Java)下载GcExcel jar包
-> - 将gcexcel-3.0.0.jar拷贝到现有工程目录下, 右键将jar包添加为依赖包
+> - 将gcexcel-3.1.0.jar拷贝到现有工程目录下, 右键将jar包添加为依赖包
 >
 > **Gradle工程**
 > - 打开build.gradle，在dependencies代码块下添加下面代码
-> ```xml
-> compile("com.grapecity.documents:gcexcel:3.0.0")
-> ```
 >
 > **Maven工程**
 > - 打开pom.xml，在dependencies结点下添加以下元素
@@ -25,9 +22,9 @@
 > <dependency>
 >    <groupId>com.grapecity.documents</groupId>
 >    <artifactId>gcexcel</artifactId>
->    <version>3.0.0</version>
+>    <version>3.1.0</version>
 > </dependency>
-> ``
+> ```
 
 ## 引入名字空间
 
@@ -249,4 +246,4 @@ chartSeries.getDataLabels().setPosition(DataLabelPosition.OutsideEnd);
 workbook.save("SimpleBudget.xlsx");
 ```
 
-此时，你可以下载并查看保存的[SimpleBudget.xlsx](api/examples/xlsx/com.grapecity.documents.excel.examples.Tutorial?fileName=SimpleBudget). 同时，你也可以下载本教程的[源代码工程](resources/gcexcel-tutorial.zip)并亲自运行它。
+此时，你可以下载并查看保存的[SimpleBudget.xlsx](api/examples/xlsx/tutorial?fileName=SimpleBudget). 同时，你也可以下载本教程的[源代码工程](resources/gcexcel-tutorial.zip)并亲自运行它。

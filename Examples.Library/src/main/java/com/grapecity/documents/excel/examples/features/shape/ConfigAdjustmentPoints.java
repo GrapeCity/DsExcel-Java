@@ -22,12 +22,4 @@ public class ConfigAdjustmentPoints extends ExampleBase {
         adjustments.set(3, 0.6);// text box width
 
     }
-
-    @Override
-    public boolean getIsNew() {
-
-        return true;
-
-    }
-	
 }

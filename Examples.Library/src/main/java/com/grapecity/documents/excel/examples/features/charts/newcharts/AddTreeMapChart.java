@@ -12,7 +12,7 @@ public class AddTreeMapChart extends ExampleBase {
 	public void execute(Workbook workbook) {
 
         IWorksheet worksheet = workbook.getWorksheets().get(0);
-		
+        
         worksheet.getRange("A1:D16").setValue(new Object[][]{
         	 {"Quarter", "Month", "Week", "Output"},
              {"1st", "Jan", null, 3.5},
@@ -41,10 +41,5 @@ public class AddTreeMapChart extends ExampleBase {
 
         //Modify chart title text.
         shape.getChart().getChartTitle().setText("Annual Report");
-	}
-
-	@Override
-	public boolean getIsNew() {
-		return true;
 	}
 }

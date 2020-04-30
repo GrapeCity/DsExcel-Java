@@ -28,9 +28,4 @@ public class AddSubtotalAdvanced extends ExampleBase {
 
         targetRange.autoFit();
     }
-
-    @Override
-    public boolean getIsNew() {
-        return true;
-    }
 }

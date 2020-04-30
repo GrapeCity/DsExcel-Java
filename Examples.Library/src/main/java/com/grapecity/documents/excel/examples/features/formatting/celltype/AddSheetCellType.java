@@ -19,9 +19,4 @@ public class AddSheetCellType extends ExampleBase {
 
         worksheet.setCellType(buttonCellType);
     }
-
-	@Override
-	public boolean getIsNew() {
-        return true;
-    }
 }

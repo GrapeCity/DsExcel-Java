@@ -16,7 +16,7 @@ public class AddBoxWhiskerChart extends ExampleBase {
 	public void execute(Workbook workbook) {
 
         IWorksheet worksheet = workbook.getWorksheets().get(0);
-		
+        
         worksheet.getRange("A1:D16").setValue(new Object[][]{
             {"Course", "SchoolA", "SchoolB", "SchoolC"},
             {"English", 63, 53, 45},
@@ -36,7 +36,7 @@ public class AddBoxWhiskerChart extends ExampleBase {
             {"English", 59, 54, 65}
         });
 
-		//Create a box&whisker chart.
+        //Create a box&whisker chart.
         IShape shape = worksheet.getShapes().addChart(ChartType.BoxWhisker, 300, 20, 300, 200);
         shape.getChart().getSeriesCollection().add(worksheet.getRange("A1:D16"));
 
@@ -56,16 +56,11 @@ public class AddBoxWhiskerChart extends ExampleBase {
 
 	@Override
 	public boolean getShowViewer() {
-		return false;
+        return false;
 	}
 	
 	@Override
 	public boolean getShowScreenshot() {
-		return true;
-	}
-
-	@Override
-	public boolean getIsNew() {
-		return true;
+        return true;
 	}
 }

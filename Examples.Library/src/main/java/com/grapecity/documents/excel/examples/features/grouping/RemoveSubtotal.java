@@ -21,9 +21,4 @@ public class RemoveSubtotal extends ExampleBase {
 
         workbook.getActiveSheet().getRange("A1:C13").removeSubtotal();
     }
-
-    @Override
-    public boolean getIsNew() {
-        return true;
-    }
 }

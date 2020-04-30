@@ -33,10 +33,4 @@ public class Tag extends ExampleBase {
     public boolean getShowViewer() {
         return false;
     }
-    
-    @Override
-    public boolean getIsNew() {
-    	return true;
-    }
-	
 }

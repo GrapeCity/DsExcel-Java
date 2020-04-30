@@ -9,7 +9,7 @@ public class ExportFlowChart extends ExampleBase {
 
 	@Override
     public void execute(Workbook workbook) {
-		
+        
         //Open an excel file
         InputStream fileStream = this.getResourceStream("xlsx/Flowcharts.xlsx");
         workbook.open(fileStream);

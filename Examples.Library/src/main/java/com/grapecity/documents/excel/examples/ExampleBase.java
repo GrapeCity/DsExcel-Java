@@ -37,6 +37,10 @@ public class ExampleBase {
     public boolean getCanDownload() {
         return true;
     }
+    
+    public boolean getShowTemplate() {
+        return false;
+    }
 
     public boolean getShowViewer() {
         return true;
@@ -147,35 +151,35 @@ public class ExampleBase {
 
         String codePre = "";
         if (this.getSavePageInfos()) {
-        	codePre =  "  //create to a pdf file stream" + System.lineSeparator() + "  FileOutputStream outputStream = null;" +
-        			   System.lineSeparator() + "  try {" + System.lineSeparator() + String.format("      outputStream = new FileOutputStream(\"%s.pdf\");", this.getShortID()) + 
-        			   System.lineSeparator() + "  } catch (FileNotFoundException e) {" + 
-        			   System.lineSeparator() + "      e.printStackTrace();" +
-        			   System.lineSeparator() + "  }" + System.lineSeparator();
-		}
+        	codePre =  "//create to a pdf file stream" + System.lineSeparator() + "FileOutputStream outputStream = null;" +
+                	   System.lineSeparator() + "try {" + System.lineSeparator() + String.format("    outputStream = new FileOutputStream(\"%s.pdf\");", this.getShortID()) +
+                	   System.lineSeparator() + "} catch (FileNotFoundException e) {" +
+                	   System.lineSeparator() + "    e.printStackTrace();" +
+                	   System.lineSeparator() + "}" + System.lineSeparator();
+        }
         else if (this.getSaveAsImage()) {
-        	codePre = "  //create to a png file stream" + System.lineSeparator() + "  FileOutputStream outputStream = null;" +
-     			   System.lineSeparator() + "  try {" + System.lineSeparator() + String.format("      outputStream = new FileOutputStream(\"%s.png\");", this.getShortID()) + 
-     			   System.lineSeparator() + "  } catch (FileNotFoundException e) {" + 
-     			   System.lineSeparator() + "      e.printStackTrace();" +
-     			   System.lineSeparator() + "  }" + System.lineSeparator();
-		}
+        	codePre = "//create to a png file stream" + System.lineSeparator() + "FileOutputStream outputStream = null;" +
+             	   System.lineSeparator() + "try {" + System.lineSeparator() + String.format("    outputStream = new FileOutputStream(\"%s.png\");", this.getShortID()) +
+             	   System.lineSeparator() + "} catch (FileNotFoundException e) {" +
+             	   System.lineSeparator() + "    e.printStackTrace();" +
+             	   System.lineSeparator() + "}" + System.lineSeparator();
+        }
         
-        codePre += "  //create a new workbook" + System.lineSeparator() + "  Workbook workbook = new Workbook();"; 
+        codePre += "//create a new workbook" + System.lineSeparator() + "Workbook workbook = new Workbook();";
         
         String codePost = "";
         if (this.getSavePageInfos() || this.getSaveAsImage()) {
-        	codePost = "  //close the file stream" + System.lineSeparator() + "  try {" + System.lineSeparator() +
-        			   "      outputStream.close();" + System.lineSeparator() +
-        			   "  } catch (IOException e) {" + System.lineSeparator() + 
-        			   "      e.printStackTrace();" + System.lineSeparator() +
-        			   "  }";
-		} else if (this.getSavePdf()) {
-            codePost = "  //save to an pdf file" + System.lineSeparator() + String.format("  workbook.save(\"%s.pdf\");", this.getShortID());
+        	codePost = "//close the file stream" + System.lineSeparator() + "try {" + System.lineSeparator() +
+                	   "    outputStream.close();" + System.lineSeparator() +
+                	   "} catch (IOException e) {" + System.lineSeparator() +
+                	   "    e.printStackTrace();" + System.lineSeparator() +
+                	   "}";
+        } else if (this.getSavePdf()) {
+            codePost = "//save to an pdf file" + System.lineSeparator() + String.format("workbook.save(\"%s.pdf\");", this.getShortID());
         } else if (this.getSaveCSV()) {
-            codePost = "  //save to an csv file" + System.lineSeparator() + String.format("  workbook.save(\"%s.csv\");", this.getShortID());
+            codePost = "//save to an csv file" + System.lineSeparator() + String.format("workbook.save(\"%s.csv\");", this.getShortID());
         } else if (this.getCanDownload()) {
-            codePost = "  //save to an excel file" + System.lineSeparator() + String.format("  workbook.save(\"%s.xlsx\");", this.getShortID());
+            codePost = "//save to an excel file" + System.lineSeparator() + String.format("workbook.save(\"%s.xlsx\");", this.getShortID());
         }
         code = codePre + code +  codePost;
 
@@ -190,37 +194,37 @@ public class ExampleBase {
 
         String codePre = "";
         if (this.getSavePageInfos()) {
-            codePre =  "  //create to a pdf file stream" + System.lineSeparator() + "  var outputStream: FileOutputStream? = null" +
-                System.lineSeparator() + "  try {" + System.lineSeparator() + String.format("      outputStream = FileOutputStream(\"%s.pdf\")", this.getShortID()) +
+            codePre =  "//create to a pdf file stream" + System.lineSeparator() + "var outputStream: FileOutputStream? = null" +
+                System.lineSeparator() + "  try {" + System.lineSeparator() + String.format("    outputStream = FileOutputStream(\"%s.pdf\")", this.getShortID()) +
                 System.lineSeparator() + "  } catch (e: FileNotFoundException) {" +
                 System.lineSeparator() + "      e.printStackTrace()" +
                 System.lineSeparator() + "  }" + System.lineSeparator();
         }
         else if (this.getSaveAsImage()) {
-            codePre = "  //create to a png file stream" + System.lineSeparator() + "  var outputStream: FileOutputStream? = null" +
-                System.lineSeparator() + "  try {" + System.lineSeparator() + String.format("      outputStream = FileOutputStream(\"%s.png\")", this.getShortID()) +
-                System.lineSeparator() + "  } catch (e: FileNotFoundException) {" +
+            codePre = "//create to a png file stream" + System.lineSeparator() + "var outputStream: FileOutputStream? = null" +
+                System.lineSeparator() + "try {" + System.lineSeparator() + String.format("    outputStream = FileOutputStream(\"%s.png\")", this.getShortID()) +
+                System.lineSeparator() + "} catch (e: FileNotFoundException) {" +
                 System.lineSeparator() + "      e.printStackTrace()" +
-                System.lineSeparator() + "  }" + System.lineSeparator();
+                System.lineSeparator() + "}" + System.lineSeparator();
         }
 
-        codePre += "  //create a new workbook" + System.lineSeparator() + "  var workbook = Workbook()";
+        codePre += "//create a new workbook" + System.lineSeparator() + "var workbook = Workbook()";
 
         String codePost = "";
         if (this.getSavePageInfos() || this.getSaveAsImage()) {
-            codePost = "  //close the file stream" + System.lineSeparator() + "  try {" + System.lineSeparator() +
-                "       if(outputStream != null){"+ System.lineSeparator() +
-                "           outputStream.close()" + System.lineSeparator() +
-                "       }" + System.lineSeparator() + System.lineSeparator() +
-                "  } catch (e: IOException) {" + System.lineSeparator() +
-                "      e.printStackTrace()" + System.lineSeparator() +
-                "  }";
+            codePost = "//close the file stream" + System.lineSeparator() + "try {" + System.lineSeparator() +
+                "     if(outputStream != null){"+ System.lineSeparator() +
+                "         outputStream.close()" + System.lineSeparator() +
+                "     }" + System.lineSeparator() + System.lineSeparator() +
+                "} catch (e: IOException) {" + System.lineSeparator() +
+                "    e.printStackTrace()" + System.lineSeparator() +
+                "}";
         } else if (this.getSavePdf()) {
-            codePost = "  //save to an pdf file" + System.lineSeparator() + String.format("  workbook.save(\"%s.pdf\")", this.getShortID());
+            codePost = "//save to an pdf file" + System.lineSeparator() + String.format("workbook.save(\"%s.pdf\")", this.getShortID());
         } else if (this.getSaveCSV()) {
-            codePost = "  //save to an csv file" + System.lineSeparator() + String.format("  workbook.save(\"%s.csv\")", this.getShortID());
+            codePost = "//save to an csv file" + System.lineSeparator() + String.format("workbook.save(\"%s.csv\")", this.getShortID());
         } else if (this.getCanDownload()) {
-            codePost = "  //save to an excel file" + System.lineSeparator() + String.format("  workbook.save(\"%s.xlsx\")", this.getShortID());
+            codePost = "//save to an excel file" + System.lineSeparator() + String.format("workbook.save(\"%s.xlsx\")", this.getShortID());
         }
 
         if(code == null){
@@ -235,7 +239,7 @@ public class ExampleBase {
         String[] lines = code.split("\r\n|\n");
         StringBuilder builder = new StringBuilder();
         for(String line : lines){
-            String s = line.replaceAll("^ {6}()", "$1");
+            String s = line.replaceAll("\\s{2}", "");
             builder.append(s);
             builder.append(System.lineSeparator());
         }

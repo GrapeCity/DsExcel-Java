@@ -31,9 +31,4 @@ public class AddComboBoxCellType extends ExampleBase {
         worksheet.getRange("C5").setCellType(cellType);
         worksheet.getRange("C5").setValue("CN");
     }
-
-	@Override
-	public boolean getIsNew() {
-        return true;
-    }
 }

@@ -38,7 +38,7 @@ public class SaveSheetBackgroundToPDF extends ExampleBase {
 
     @Override
 	public boolean getSavePageInfos() {
-		return true;
+        return true;
 	}
 	
     @Override
@@ -50,9 +50,4 @@ public class SaveSheetBackgroundToPDF extends ExampleBase {
     public String[] getResources() {
         return new String[]{"logo.png"};
     }
-
-	@Override
-	public boolean getIsNew() {
-		return true;
-	}
 }

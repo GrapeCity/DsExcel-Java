@@ -89,7 +89,8 @@ public class FolderExample extends ExampleBase {
         if(id == null){
             return null;
         }
-        if (example.getShortID().toLowerCase().equals(id.toLowerCase())) {
+        if (example.getShortID().toLowerCase().equals(id.toLowerCase()) ||
+            example.getID().toLowerCase().equals(id.toLowerCase())) {
             return example;
         }
 

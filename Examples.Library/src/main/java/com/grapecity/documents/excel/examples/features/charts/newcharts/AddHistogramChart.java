@@ -12,7 +12,7 @@ public class AddHistogramChart extends ExampleBase {
 	public void execute(Workbook workbook) {
 
         IWorksheet worksheet = workbook.getWorksheets().get(0);
-		
+        
         worksheet.getRange("A1:B11").setValue(new Object[][]{
         	  {"Complaint", "Count"},
               {"Too noisy", 27},
@@ -43,16 +43,11 @@ public class AddHistogramChart extends ExampleBase {
 
 	@Override
 	public boolean getShowViewer() {
-		return false;
+        return false;
 	}
 	
 	@Override
 	public boolean getShowScreenshot() {
-		return true;
-	}
-
-	@Override
-	public boolean getIsNew() {
-		return true;
+        return true;
 	}
 }

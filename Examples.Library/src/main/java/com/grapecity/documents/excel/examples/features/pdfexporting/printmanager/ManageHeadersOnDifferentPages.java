@@ -46,22 +46,22 @@ public class ManageHeadersOnDifferentPages extends ExampleBase {
 
 	@Override
 	public boolean getSavePageInfos() {
-		return true;
+        return true;
 	}
 
 	@Override
 	public boolean getShowViewer() {
-		return false;
+        return false;
 	}
 
 	@Override
 	public String getTemplateName() {
-		return "MultipleHeaders.xlsx";
+        return "MultipleHeaders.xlsx";
 	}
 
 	@Override
 	public String[] getResources() {
-		return new String[] { "xlsx/MultipleHeaders.xlsx" };
+        return new String[] { "xlsx/MultipleHeaders.xlsx" };
 	}
 
 }

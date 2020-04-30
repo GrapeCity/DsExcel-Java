@@ -15,7 +15,7 @@ public class AddWaterfallChart extends ExampleBase {
 	public void execute(Workbook workbook) {
 
         IWorksheet worksheet = workbook.getWorksheets().get(0);
-		
+        
         worksheet.getRange("A1:B8").setValue(new Object[][]{
         	 {"Starting Amt", 130},
              {"Measurement 1", 25},
@@ -48,16 +48,11 @@ public class AddWaterfallChart extends ExampleBase {
 
 	@Override
 	public boolean getShowViewer() {
-		return false;
+        return false;
 	}
 	
 	@Override
 	public boolean getShowScreenshot() {
-		return true;
-	}
-
-	@Override
-	public boolean getIsNew() {
-		return true;
+        return true;
 	}
 }

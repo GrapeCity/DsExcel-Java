@@ -15,21 +15,21 @@ public class ConvertExcelToPDF extends ExampleBase {
 
 	@Override
 	public boolean getSavePdf() {
-		return true;
+        return true;
 	}
 
 	@Override
 	public boolean getShowViewer() {
-		return false;
+        return false;
 	}
 
 	@Override
 	public String getTemplateName() {
-		return "Employee absence schedule.xlsx";
+        return "Employee absence schedule.xlsx";
 	}
 
 	@Override
 	public String[] getResources() {
-		return new String[] { "xlsx/Employee absence schedule.xlsx" };
+        return new String[] { "xlsx/Employee absence schedule.xlsx" };
 	}
 }

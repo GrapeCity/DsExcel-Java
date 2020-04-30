@@ -9,219 +9,270 @@ import com.grapecity.documents.excel.examples.ExampleBase;
 public class CustomObject extends ExampleBase {
 	@Override
 	public void execute(Workbook workbook) {
-		//Load template file Template_SalesDataGroup.xlsx from resource
-		InputStream templateFile = this.getResourceStream("xlsx/Template_SalesDataGroup.xlsx");
-		workbook.open(templateFile);
+        //Load template file from resource
+        InputStream templateFile = this.getResourceStream("xlsx/Template_SalesDataGroup.xlsx");
+        workbook.open(templateFile);
 
-		/// #region Define custom classes
-		//  public class SalesData
-		//  {
-		// 		public ArrayList<SalesRecord> records;
-		//  }
+        //#region Define custom classes
+        //public class SalesData
+        //{
+        //    public List<SalesRecord> sales;
+        //}
 
-		//  public class SalesRecord
-		//  {
-		// 		public String area;
-		// 		public String salesman;
-		// 		public String product;
-		// 		public String productType;
-		// 		public int sales;
-		//  }
-		/// #endregion
+        //public class SalesRecord
+        //{
+        //    public String area;
+        //    public String city;
+        //    public String category;
+        //    public String name;
+        //    public double revenue;
+        //}
+        //#endregion
 
-		SalesData datasource = new SalesData();
-		datasource.records = new ArrayList<SalesRecord>();
+        SalesData datasource = new SalesData();
+        datasource.sales = new ArrayList<SalesRecord>();
 
-		///#region Init Data
-		SalesRecord record1 = new SalesRecord();
-		record1.area = "NorthChina";
-		record1.salesman = "Hellen";
-		record1.product = "Apple";
-		record1.productType = "Fruit";
-		record1.sales = 120;
-		datasource.records.add(record1);
+        //#region Init Data
+        SalesRecord record1 = new SalesRecord();
+        record1.area = "North America";
+        record1.city = "Chicago";
+        record1.category = "Consumer Electronics";
+        record1.name = "Bose 785593-0050";
+        record1.revenue = 92800;
+        datasource.sales.add(record1);
 
-		SalesRecord record2 = new SalesRecord();
-		record2.area = "NorthChina";
-		record2.salesman = "Hellen";
-		record2.product = "Banana";
-		record2.productType = "Fruit";
-		record2.sales = 143;
-		datasource.records.add(record2);
+        SalesRecord record2 = new SalesRecord();
+        record2.area = "North America";
+        record2.city = "New York";
+        record2.category = "Consumer Electronics";
+        record2.name = "Bose 785593-0050";
+        record2.revenue = 92800;
+        datasource.sales.add(record2);
 
-		SalesRecord record3 = new SalesRecord();
-		record3.area = "NorthChina";
-		record3.salesman = "Hellen";
-		record3.product = "Kiwi";
-		record3.productType = "Fruit";
-		record3.sales = 322;
-		datasource.records.add(record3);
+        SalesRecord record3 = new SalesRecord();
+        record3.area = "South America";
+        record3.city = "Santiago";
+        record3.category = "Consumer Electronics";
+        record3.name = "Bose 785593-0050";
+        record3.revenue = 19550;
+        datasource.sales.add(record3);
 
-		SalesRecord record4 = new SalesRecord();
-		record4.area = "NorthChina";
-		record4.salesman = "Hellen";
-		record4.product = "Carrots";
-		record4.productType = "Vegetable";
-		record4.sales = 154;
-		datasource.records.add(record4);
+        SalesRecord record4 = new SalesRecord();
+        record4.area = "North America";
+        record4.city = "Chicago";
+        record4.category = "Consumer Electronics";
+        record4.name = "Canon EOS 1500D";
+        record4.revenue = 98650;
+        datasource.sales.add(record4);
 
-		SalesRecord record5 = new SalesRecord();
-		record5.area = "NorthChina";
-		record5.salesman = "Fancy";
-		record5.product = "Carrots";
-		record5.productType = "Vegetable";
-		record5.sales = 131;
-		datasource.records.add(record5);
+        SalesRecord record5 = new SalesRecord();
+        record5.area = "North America";
+        record5.city = "Minnesota";
+        record5.category = "Consumer Electronics";
+        record5.name = "Canon EOS 1500D";
+        record5.revenue = 89110;
+        datasource.sales.add(record5);
 
-		SalesRecord record6 = new SalesRecord();
-		record6.area = "NorthChina";
-		record6.salesman = "Fancy";
-		record6.product = "Cabbage";
-		record6.productType = "Vegetable";
-		record6.sales = 98;
-		datasource.records.add(record6);
+        SalesRecord record6 = new SalesRecord();
+        record6.area = "South America";
+        record6.city = "Santiago";
+        record6.category = "Consumer Electronics";
+        record6.name = "Canon EOS 1500D";
+        record6.revenue = 459000;
+        datasource.sales.add(record6);
 
-		SalesRecord record7 = new SalesRecord();
-		record7.area = "NorthChina";
-		record7.salesman = "Fancy";
-		record7.product = "Potato";
-		record7.productType = "Vegetable";
-		record7.sales = 212;
-		datasource.records.add(record7);
+        SalesRecord record7 = new SalesRecord();
+        record7.area = "North America";
+        record7.city = "Chicago";
+        record7.category = "Consumer Electronics";
+        record7.name = "Haier 394L 4Star";
+        record7.revenue = 367050;
+        datasource.sales.add(record7);
 
-		SalesRecord record8 = new SalesRecord();
-		record8.area = "NorthChina";
-		record8.salesman = "Fancy";
-		record8.product = "Apple";
-		record8.productType = "Fruit";
-		record8.sales = 102;
-		datasource.records.add(record8);
+        SalesRecord record8 = new SalesRecord();
+        record8.area = "South America";
+        record8.city = "Quito";
+        record8.category = "Consumer Electronics";
+        record8.name = "Haier 394L 4Star";
+        record8.revenue = 729100;
+        datasource.sales.add(record8);
 
-		SalesRecord record9 = new SalesRecord();
-		record9.area = "NorthChina";
-		record9.salesman = "Ivan";
-		record9.product = "Apple";
-		record9.productType = "Fruit";
-		record9.sales = 164;
-		datasource.records.add(record9);
+        SalesRecord record9 = new SalesRecord();
+        record9.area = "South America";
+        record9.city = "Santiago";
+        record9.category = "Consumer Electronics";
+        record9.name = "Haier 394L 4Star";
+        record9.revenue = 578900;
+        datasource.sales.add(record9);
 
-		SalesRecord record10 = new SalesRecord();
-		record10.area = "NorthChina";
-		record10.salesman = "Ivan";
-		record10.product = "Kiwi";
-		record10.productType = "Fruit";
-		record10.sales = 213;
-		datasource.records.add(record10);
+        SalesRecord record10 = new SalesRecord();
+        record10.area = "North America";
+        record10.city = "Fremont";
+        record10.category = "Consumer Electronics";
+        record10.name = "IFB 6.5 Kg FullyAuto";
+        record10.revenue = 904930;
+        datasource.sales.add(record10);
 
-		SalesRecord record11 = new SalesRecord();
-		record11.area = "NorthChina";
-		record11.salesman = "Ivan";
-		record11.product = "Potato";
-		record11.productType = "Vegetable";
-		record11.sales = 56;
-		datasource.records.add(record11);
+        SalesRecord record11 = new SalesRecord();
+        record11.area = "South America";
+        record11.city = "Buenos Aires";
+        record11.category = "Consumer Electronics";
+        record11.name = "IFB 6.5 Kg FullyAuto";
+        record11.revenue = 673800;
+        datasource.sales.add(record11);
 
-		SalesRecord record12 = new SalesRecord();
-		record12.area = "NorthChina";
-		record12.salesman = "Ivan";
-		record12.product = "Cabbage";
-		record12.productType = "Vegetable";
-		record12.sales = 265;
-		datasource.records.add(record12);
+        SalesRecord record12 = new SalesRecord();
+        record12.area = "South America";
+        record12.city = "Medillin";
+        record12.category = "Consumer Electronics";
+        record12.name = "IFB 6.5 Kg FullyAuto";
+        record12.revenue = 82910;
+        datasource.sales.add(record12);
 
-		SalesRecord record13 = new SalesRecord();
-		record13.area = "SouthChina";
-		record13.salesman = "Adam";
-		record13.product = "Cabbage";
-		record13.productType = "Vegetable";
-		record13.sales = 112;
-		datasource.records.add(record13);
+        SalesRecord record13 = new SalesRecord();
+        record13.area = "North America";
+        record13.city = "Chicago";
+        record13.category = "Consumer Electronics";
+        record13.name = "Mi LED 40inch";
+        record13.revenue = 550010;
+        datasource.sales.add(record13);
 
-		SalesRecord record14 = new SalesRecord();
-		record14.area = "SouthChina";
-		record14.salesman = "Adam";
-		record14.product = "Carrots";
-		record14.productType = "Vegetable";
-		record14.sales = 354;
-		datasource.records.add(record14);
+        SalesRecord record14 = new SalesRecord();
+        record14.area = "North America";
+        record14.city = "Minnesota";
+        record14.category = "Consumer Electronics";
+        record14.name = "Mi LED 40inch";
+        record14.revenue = 1784702;
+        datasource.sales.add(record14);
 
-		SalesRecord record15 = new SalesRecord();
-		record15.area = "SouthChina";
-		record15.salesman = "Adam";
-		record15.product = "Banana";
-		record15.productType = "Fruit";
-		record15.sales = 277;
-		datasource.records.add(record15);
+        SalesRecord record15 = new SalesRecord();
+        record15.area = "South America";
+        record15.city = "Santiago";
+        record15.category = "Consumer Electronics";
+        record15.name = "Mi LED 40inch";
+        record15.revenue = 102905;
+        datasource.sales.add(record15);
 
-		SalesRecord record16 = new SalesRecord();
-		record16.area = "SouthChina";
-		record16.salesman = "Adam";
-		record16.product = "Apple";
-		record16.productType = "Fruit";
-		record16.sales = 105;
-		datasource.records.add(record16);
+        SalesRecord record16 = new SalesRecord();
+        record16.area = "North America";
+        record16.city = "Chicago";
+        record16.category = "Consumer Electronics";
+        record16.name = "Sennheiser HD 4.40-BT";
+        record16.revenue = 178100;
+        datasource.sales.add(record16);
 
-		SalesRecord record17 = new SalesRecord();
-		record17.area = "SouthChina";
-		record17.salesman = "Bob";
-		record17.product = "Banana";
-		record17.productType = "Fruit";
-		record17.sales = 133;
-		datasource.records.add(record17);
+        SalesRecord record17 = new SalesRecord();
+        record17.area = "South America";
+        record17.city = "Quito";
+        record17.category = "Consumer Electronics";
+        record17.name = "Sennheiser HD 4.40-BT";
+        record17.revenue = 234459;
+        datasource.sales.add(record17);
 
-		SalesRecord record18 = new SalesRecord();
-		record18.area = "SouthChina";
-		record18.salesman = "Bob";
-		record18.product = "Cabbage";
-		record18.productType = "Vegetable";
-		record18.sales = 252;
-		datasource.records.add(record18);
+        SalesRecord record18 = new SalesRecord();
+        record18.area = "North America";
+        record18.city = "Minnesota";
+        record18.category = "Mobile";
+        record18.name = "Iphone XR";
+        record18.revenue = 1734621;
+        datasource.sales.add(record18);
 
-		SalesRecord record19 = new SalesRecord();
-		record19.area = "SouthChina";
-		record19.salesman = "Bob";
-		record19.product = "Potato";
-		record19.productType = "Vegetable";
-		record19.sales = 265;
-		datasource.records.add(record19);
+        SalesRecord record19 = new SalesRecord();
+        record19.area = "South America";
+        record19.city = "Santiago";
+        record19.category = "Mobile";
+        record19.name = "Iphone XR";
+        record19.revenue = 109300;
+        datasource.sales.add(record19);
 
-		SalesRecord record20 = new SalesRecord();
-		record20.area = "SouthChina";
-		record20.salesman = "Bob";
-		record20.product = "Kiwi";
-		record20.productType = "Fruit";
-		record20.sales = 402;
-		datasource.records.add(record20);
-		///#endregion
+        SalesRecord record20 = new SalesRecord();
+        record20.area = "North America";
+        record20.city = "Chicago";
+        record20.category = "Mobile";
+        record20.name = "OnePlus 7Pro";
+        record20.revenue = 499100;
+        datasource.sales.add(record20);
 
-		//Add data source
-		workbook.addDataSource("ds", datasource);
-		//Invoke to process the template
-		workbook.processTemplate();
-	}
+        SalesRecord record21 = new SalesRecord();
+        record21.area = "South America";
+        record21.city = "Quito";
+        record21.category = "Mobile";
+        record21.name = "OnePlus 7Pro";
+        record21.revenue = 215000;
+        datasource.sales.add(record21);
 
-	@Override
-	public boolean getIsNew() {
-		return true;
+        SalesRecord record22 = new SalesRecord();
+        record22.area = "North America";
+        record22.city = "Minnesota";
+        record22.category = "Mobile";
+        record22.name = "Redmi 7";
+        record22.revenue = 81650;
+        datasource.sales.add(record22);
+
+        SalesRecord record23 = new SalesRecord();
+        record23.area = "South America";
+        record23.city = "Quito";
+        record23.category = "Mobile";
+        record23.name = "Redmi 7";
+        record23.revenue = 276390;
+        datasource.sales.add(record23);
+
+        SalesRecord record24 = new SalesRecord();
+        record24.area = "North America";
+        record24.city = "Minnesota";
+        record24.category = "Mobile";
+        record24.name = "Samsung S9";
+        record24.revenue = 896250;
+        datasource.sales.add(record24);
+
+        SalesRecord record25 = new SalesRecord();
+        record25.area = "South America";
+        record25.city = "Buenos Aires";
+        record25.category = "Mobile";
+        record25.name = "Samsung S9";
+        record25.revenue = 896250;
+        datasource.sales.add(record25);
+
+        SalesRecord record26 = new SalesRecord();
+        record26.area = "South America";
+        record26.city = "Quito";
+        record26.category = "Mobile";
+        record26.name = "Samsung S9";
+        record26.revenue = 716520;
+        datasource.sales.add(record26);
+        //#endregion
+
+        //Init template global settings
+        workbook.getNames().add("TemplateOptions.KeepLineSize", "true");
+
+        //Add data source
+        workbook.addDataSource("ds", datasource);
+        //Invoke to process the template
+        workbook.processTemplate();
 	}
 
 	@Override
 	public String getTemplateName() {
-		return "Template_SalesDataGroup.xlsx";
+        return "Template_SalesDataGroup.xlsx";
 	}
 
 	@Override
 	public boolean getHasTemplate() {
-		return true;
-	}
-
-	@Override
-	public String[] getResources() {
-		return new String[] { "xlsx/Template_SalesDataGroup.xlsx" };
+        return true;
 	}
 	
 	@Override
+	public boolean getShowTemplate() {
+        return true;
+    }
+
+	@Override
+	public String[] getResources() {
+        return new String[] { "xlsx/Template_SalesDataGroup.xlsx" };
+	}
+
+	@Override
 	public String[] getRefs() {
-		return new String[] { "SalesData", "SalesRecord" };
+        return new String[] { "SalesData", "SalesRecord" };
 	}
 }

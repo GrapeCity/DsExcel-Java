@@ -19,9 +19,4 @@ public class Dependents extends ExampleBase {
             item.getInterior().setColor(Color.GetAzure());
         }
     }
-
-	@Override
-	public boolean getIsNew() {
-        return true;
-    }
 }

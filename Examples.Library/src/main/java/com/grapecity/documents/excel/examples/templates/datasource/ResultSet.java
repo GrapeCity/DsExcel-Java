@@ -9,38 +9,41 @@ import com.grapecity.documents.excel.examples.GcMockResultSet;
 public class ResultSet extends ExampleBase {
 	@Override
 	public void execute(Workbook workbook) {
-		//Load template file Template_Score.xlsx from resource
-		InputStream templateFile = this.getResourceStream("xlsx/Template_Score.xlsx");
-		workbook.open(templateFile);
+        //Load template file from resource
+        InputStream templateFile = this.getResourceStream("xlsx/Template_SalesDataGroup_ResultSet.xlsx");
+        workbook.open(templateFile);
 
-		//Here in the demo, we use a mock class to generate instance of java.sql.ResultSet.
-		//User who use template in product, must get instance of java.sql.ResultSet from the 
-		//related database connection.
-		java.sql.ResultSet datasource = new GcMockResultSet(this.getResourceStream("score.csv"));
+        //Here in the demo, we use a mock class to generate instance of java.sql.ResultSet.
+        //User who use template in product, must get instance of java.sql.ResultSet from the 
+        //related database connection.
+        java.sql.ResultSet datasource = new GcMockResultSet(this.getResourceStream("data/sales.csv"));
 
-		//Add data source
-		workbook.addDataSource("ds", datasource);
-		//Invoke to process the template
-		workbook.processTemplate();
-	}
-
-	@Override
-	public boolean getIsNew() {
-		return true;
+        //Init template global settings
+        workbook.getNames().add("TemplateOptions.KeepLineSize", "true");
+                
+        //Add data source
+        workbook.addDataSource("ds", datasource);
+        //Invoke to process the template
+        workbook.processTemplate();
 	}
 
 	@Override
 	public String getTemplateName() {
-		return "Template_Score.xlsx";
+        return "Template_SalesDataGroup_ResultSet.xlsx";
 	}
+	
+	@Override
+	public boolean getShowTemplate() {
+        return true;
+    }
 
 	@Override
 	public boolean getHasTemplate() {
-		return true;
+        return true;
 	}
 
 	@Override
 	public String[] getResources() {
-		return new String[] { "xlsx/Template_Score.xlsx", "score.csv" };
+        return new String[] { "xlsx/Template_SalesDataGroup_ResultSet.xlsx", "data/sales.csv" };
 	}
 }

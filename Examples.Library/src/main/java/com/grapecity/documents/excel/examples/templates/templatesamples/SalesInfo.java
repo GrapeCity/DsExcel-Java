@@ -6,4 +6,5 @@ public class SalesInfo {
 	public String product;
 	public String productType;
 	public int sales;
+	public byte[] productIcon;
 }

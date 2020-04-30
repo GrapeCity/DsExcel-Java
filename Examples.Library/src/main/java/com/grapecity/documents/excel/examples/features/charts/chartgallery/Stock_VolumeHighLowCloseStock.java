@@ -21,8 +21,8 @@ public class Stock_VolumeHighLowCloseStock extends ExampleBase {
 
     @Override
 	public void execute(Workbook workbook) {
-		
-		IWorksheet worksheet = workbook.getWorksheets().get(0);
+        
+        IWorksheet worksheet = workbook.getWorksheets().get(0);
         IShape shape = worksheet.getShapes().addChart(ChartType.StockVHLC, 350, 20, 360, 230);
         worksheet.getRange("A1:E17").setValue(new Object[][] {
         	{ null, "Volume", "High", "Low", "Close" },

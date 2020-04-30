@@ -37,11 +37,4 @@ public class AddChartSheet extends ExampleBase {
     {
     	return false;
     }
-    
-    @Override
-    public boolean getIsNew() {
-
-        return true;
-
-    }
 }

@@ -31,9 +31,4 @@ public class AddSubtotal extends ExampleBase {
 
         targetRange.autoFit();
     }
-
-    @Override
-    public boolean getIsNew() {
-        return true;
-    }
 }

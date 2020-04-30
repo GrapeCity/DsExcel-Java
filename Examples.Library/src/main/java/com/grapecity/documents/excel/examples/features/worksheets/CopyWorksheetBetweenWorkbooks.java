@@ -22,11 +22,11 @@ public class CopyWorksheetBetweenWorkbooks extends ExampleBase {
 
 	@Override
 	public String getTemplateName() {
-		return "Home inventory.xlsx";
+        return "Home inventory.xlsx";
 	}
 
 	@Override
 	public String[] getResources() {
-		return new String[] { "xlsx/Home inventory.xlsx" };
+        return new String[] { "xlsx/Home inventory.xlsx" };
 	}
 }

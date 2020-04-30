@@ -22,9 +22,4 @@ public class AddHyperlinkCellType extends ExampleBase {
         worksheet.getRange("C5").setCellType(cellType);
         worksheet.getRange("C5").setValue("http://www.google.com");
     }
-
-	@Override
-	public boolean getIsNew() {
-        return true;
-    }
 }

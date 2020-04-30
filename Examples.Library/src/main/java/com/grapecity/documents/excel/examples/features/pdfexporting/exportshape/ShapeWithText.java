@@ -12,7 +12,7 @@ public class ShapeWithText extends ExampleBase {
 
 	@Override
     public void execute(Workbook workbook) {
-		
+        
         IWorksheet sheet = workbook.getWorksheets().get(0);
         
         // Add a rectangle

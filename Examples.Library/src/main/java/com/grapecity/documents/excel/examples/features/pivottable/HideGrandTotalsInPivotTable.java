@@ -70,9 +70,4 @@ public class HideGrandTotalsInPivotTable extends ExampleBase {
 
         return true;
     }
-
-    @Override
-    public boolean getIsNew() {
-        return true;
-    }
 }

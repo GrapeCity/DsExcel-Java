@@ -24,9 +24,4 @@ public class AddCheckBoxCellType extends ExampleBase {
         worksheet.getRange("C5").setValue(true);
         worksheet.getRange("C6").setValue(false);
     }
-
-	@Override
-	public boolean getIsNew() {
-        return true;
-    }
 }

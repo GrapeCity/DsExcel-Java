@@ -39,7 +39,6 @@
 	<classpathentry combineaccessrules="false" kind="src" path="/Model.SparkLine"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/Model.Style"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/Model.Style.Color"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/Model.Style.Format"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/Model.Style.Format.New"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/Model.Table"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/Model.Utils"/>

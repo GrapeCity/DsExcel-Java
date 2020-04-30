@@ -9,7 +9,7 @@ public class AutoFit extends ExampleBase {
 	@Override
     public void execute(Workbook workbook) {
 
-		IWorksheet worksheet = workbook.getWorksheets().get(0);
+        IWorksheet worksheet = workbook.getWorksheets().get(0);
 
         // Auto fit column width of range 'A1'
         worksheet.getRange("A1").setValue("Grapecity Documents for Excel");

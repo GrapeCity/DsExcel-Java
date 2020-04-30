@@ -53,9 +53,4 @@ public class GetAllPrecedents extends ExampleBase {
             }
         }
     }
-
-	@Override
-	public boolean getIsNew() {
-        return true;
-    }
 }
