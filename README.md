@@ -27,6 +27,18 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
 
 # Release Notes
+## 3.1.3
+### Fixed
+* Error occurs when adding new row in a table.(DOCXLS-2366)
+* Cell formatted text is wrong when the number format is "@".(DOCXLS-2406)
+* Error occurs after calling Workbook.calculate().(DOCXLS-2430)
+* Cell font color is not correct when some kind of number formatter is applied.(DOCXLS-2432)
+* Cell background in the exported pdf is black even though it is "lightgray" in json.(DOCXLS-2438)
+* Error occurs when from json.(DOCXLS-2440)
+* Cell rich text is rendered wrong in the exported pdf when the cell is a combo cell type.(DOCXLS-2443)
+* Top alignment is changed to bottom in SpreadJS after loading json from GcExcel .(DOCXLS-2469)
+* Error occurs when importing Excel file with a lot of inline strings.(DOCXLS-2473)
+* The saved Excel is corrupted when creating a Pivot table with SubTotalType.None.(DOCXLS-2470)
 ## 3.1.2
 ### Fixed
 * Exception is thrown when cutting tables.(DOCXLS-2288)
