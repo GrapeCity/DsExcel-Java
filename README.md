@@ -39,6 +39,8 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * Top alignment is changed to bottom in SpreadJS after loading json from GcExcel .(DOCXLS-2469)
 * Error occurs when importing Excel file with a lot of inline strings.(DOCXLS-2473)
 * The saved Excel is corrupted when creating a Pivot table with SubTotalType.None.(DOCXLS-2470)
+### Changed
+- Depends on the latest PDFBox library-2.0.19
 ## 3.1.2
 ### Fixed
 * Exception is thrown when cutting tables.(DOCXLS-2288)
