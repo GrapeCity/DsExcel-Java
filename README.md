@@ -27,6 +27,13 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
 
 # Release Notes
+## 3.1.4
+### Fixed
+* Exception is thrown when loading Excel file which contains huge amount of inline strings.(DOCXLS-2480)
+* The data labels are not plotted correctly when exporting Radar chart to PDF.(DOCXLS-2516)
+* It will take a very long time to process template when there are thousands of data records.(DOCXLS-2526)
+* Exception is thrown when exporting to PDF.(DOCXLS-2541)
+* The calculated result of CountIfs function is wrong.(DOCXLS-2549)
 ## 3.1.3
 ### Fixed
 * Error occurs when adding new row in a table.(DOCXLS-2366)
