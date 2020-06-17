@@ -27,6 +27,21 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
 
 # Release Notes
+## 3.1.5
+## Fixed
+* Column width is not correct when workbook is exported to JSON.(DOCXLS-2497)
+* NullReference exception is thrown while adding row in Table.(DOCXLS-2504)
+* Background color of some cells is incorrect when rows are deleted on a sheet with background color set in cells.(DOCXLS-2530)
+* Text is not correctly separated on a specific line when loading tab-delimited text to workbook.(DOCXLS-2559)
+* Culture property of the Workbook does not respect the value of the cell when opening the CSV file.(DOCXLS-2566)
+* NumberFormat exception is thrown when importing ssjson that contains specific conditional formats.(DOCXLS-2575)
+* BlackAndWhite setting does not work for picture fill.(DOCXLS-2593)
+* Rannge of the Formula is updating incorrectly when inserting row in the sheet.(DOCXLS-2595)
+* The margin values in exported Excel file are slightly different with the values in ssjson.(DOCXLS-2598)
+* InvalidOperationException occurs when calling Calculate method in the excel containing COUNTIFS function.(DOCXLS-2609)
+* It takes a long time to set values in a loop.(DOCXLS-2610)
+* Workbook.TagJsonSerializer is null when used.(DOCXLS-2606)
+* processTemplate() takes a long time to execute.(DOCXLS-2526)
 ## 3.1.4
 ### Fixed
 * Exception is thrown when loading Excel file which contains huge amount of inline strings.(DOCXLS-2480)
