@@ -52,9 +52,4 @@ public class SaveBackgroundPicturesToPDF extends ExampleBase {
 	public String[] getResources() {
         return new String[] { "xlsx/To_Do_List.xlsx", "AcmeLogo.png" };
 	}
-
-	@Override
-	public boolean getIsNew() {
-        return true;
-	}
 }

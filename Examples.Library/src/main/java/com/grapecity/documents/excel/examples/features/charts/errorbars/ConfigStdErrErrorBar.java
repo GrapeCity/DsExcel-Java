@@ -27,9 +27,4 @@ public class ConfigStdErrErrorBar extends ExampleBase {
         // Set value type of first series' error bar as standard error
         series1.getYErrorBar().setValueType(ErrorBarType.StError);
     }
-
-    @Override
-    public boolean getIsNew() {
-        return true;
-    }
 }

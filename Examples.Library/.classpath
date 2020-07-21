@@ -43,5 +43,13 @@
 	<classpathentry combineaccessrules="false" kind="src" path="/Model.Table"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/Model.Utils"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/Model.Workbook"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Model.Cryptography"/>
+	<classpathentry kind="lib" path="lib/commons-io-2.5.jar"/>
+	<classpathentry kind="lib" path="lib/commons-logging-1.1.2.jar"/>
+	<classpathentry kind="lib" path="lib/fontbox-2.0.19.jar"/>
+	<classpathentry kind="lib" path="lib/gson-2.8.5.jar"/>
+	<classpathentry kind="lib" path="lib/javax.json-1.0.4.jar"/>
+	<classpathentry kind="lib" path="lib/json-20180130.jar"/>
+	<classpathentry kind="lib" path="lib/pdfbox-2.0.19.jar"/>
 	<classpathentry kind="output" path="bin/default"/>
 </classpath>

@@ -1,0 +1,94 @@
+package com.grapecity.documents.excel.examples.features.signatures;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.security.KeyStore;
+import java.security.KeyStoreException;
+import java.security.NoSuchAlgorithmException;
+import java.security.cert.CertificateException;
+
+import com.grapecity.documents.excel.*;
+import com.grapecity.documents.excel.examples.ExampleBase;
+
+public class SignExistingSignatureLine extends ExampleBase {
+    @Override
+    public void execute(Workbook workbook) {
+        // This file contains 2 already signed signature lines and
+        // a not signed signature line.
+        InputStream signedFile = getResourceStream("xlsx/SignatureLine2Signed1NotSigned.xlsx");
+
+        // Use DigitalSignatureOnly mode, because the workbook was already signed.
+        // If you don't open it with digital signature only mode,
+        // all existing signatures will be removed after saving the workbook.
+        XlsxOpenOptions openOption = new XlsxOpenOptions();
+        openOption.setDigitalSignatureOnly(true);
+        workbook.open(signedFile, openOption);
+
+        // Sign the first not signed signature line.
+        for (ISignature signature : workbook.getSignatures()) {
+            if (signature.getIsSignatureLine() && !signature.getIsSigned()) {
+                // TODO: Use your certificate.
+                KeyStore ks;
+                try {
+                    ks = KeyStore.getInstance("pkcs12");
+                } catch (KeyStoreException e) {
+                    throw new RuntimeException(e);
+                }
+
+                // TODO: Use your password.
+                String password = "<your password>";
+                char[] passwordChars = password.toCharArray();
+                String pfxFileKey = "<your certificate file>";
+                InputStream pfxStrm = getClass().getClassLoader().getResourceAsStream(pfxFileKey);
+                try {
+                    ks.load(pfxStrm, passwordChars);
+                } catch (NoSuchAlgorithmException e) {
+                    throw new RuntimeException(e);
+                } catch (CertificateException e) {
+                    throw new RuntimeException(e);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+
+                // TODO: Fill details with your information.
+                SignatureDetails details = new SignatureDetails();
+                details.setAddress1("<your address>");
+                details.setAddress2("<address 2>");
+                details.setSignatureComments("Final");
+                details.setCity("<your city>");
+                details.setStateOrProvince("<your state or province>");
+                details.setPostalCode("<your postal code>");
+                details.setCountryName("<your country or region>");
+                details.setClaimedRole("<your role>");
+                details.setCommitmentTypeDescription("Approved");
+                details.setCommitmentTypeQualifier("Final");
+
+                // TODO: Use your name or your signature image.
+                signature.sign(ks, password, "<your name>", details);
+            }
+        }
+
+        // Commit signatures
+        workbook.save("SignExistingSignatureLine.xlsx");
+    }
+
+    @Override
+    public boolean getIsNew() {
+        return true;
+    }
+
+    @Override
+    public boolean getShowViewer() {
+        return false;
+    }
+
+    @Override
+    public boolean getCanDownload() {
+        return false;
+    }
+
+    @Override
+    public String[] getResources() {
+        return new String[] { "xlsx/SignatureLine2Signed1NotSigned.xlsx" };
+    }
+}

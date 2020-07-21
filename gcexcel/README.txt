@@ -16,6 +16,3 @@ https://www.grapecity.com/documents-api-excel-java/docs/online/overview.html
 
 Offline Documentation
 https://www.grapecity.com/documents-api-excel-java/docs/offlinehelp.pdf
-
-ReadMe (Detailed)
-https://www.grapecity.com/documents-api-excel-java/docs/readme/readme.html

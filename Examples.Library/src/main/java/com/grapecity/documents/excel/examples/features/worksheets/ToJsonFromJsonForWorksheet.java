@@ -51,9 +51,4 @@ public class ToJsonFromJsonForWorksheet extends ExampleBase {
         return false;
 
 	}
-
-	@Override
-	public boolean getIsNew() {
-        return true;
-	}
 }

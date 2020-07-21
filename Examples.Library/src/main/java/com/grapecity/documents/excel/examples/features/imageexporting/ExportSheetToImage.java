@@ -33,9 +33,4 @@ public class ExportSheetToImage extends ExampleBase {
     public String[] getResources() {
         return new String[] {"xlsx/Home inventory.xlsx"};
     }
-
-    @Override
-    public boolean getIsNew() {
-        return true;
-    }
 }

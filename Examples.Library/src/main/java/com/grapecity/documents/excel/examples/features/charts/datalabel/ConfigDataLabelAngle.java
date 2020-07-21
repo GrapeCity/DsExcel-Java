@@ -34,11 +34,6 @@ public class ConfigDataLabelAngle extends ExampleBase {
     }
 
     @Override
-    public boolean getIsNew() {
-        return true;
-    }
-
-    @Override
     public boolean getShowViewer() {
         return false;
     }

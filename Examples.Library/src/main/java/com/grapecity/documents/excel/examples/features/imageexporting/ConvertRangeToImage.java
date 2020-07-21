@@ -39,9 +39,4 @@ public class ConvertRangeToImage extends ExampleBase {
 	public boolean getSaveAsImage() {
         return true;
 	}
-
-    @Override
-    public boolean getIsNew() {
-        return true;
-    }
 }

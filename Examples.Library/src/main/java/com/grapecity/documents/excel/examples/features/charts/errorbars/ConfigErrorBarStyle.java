@@ -29,9 +29,4 @@ public class ConfigErrorBarStyle extends ExampleBase {
         series1.getYErrorBar().getFormat().getLine().getColor().setRGB(Color.GetRed());
         series1.getYErrorBar().getFormat().getLine().setWeight(2);
     }
-
-    @Override
-    public boolean getIsNew() {
-        return true;
-    }
 }

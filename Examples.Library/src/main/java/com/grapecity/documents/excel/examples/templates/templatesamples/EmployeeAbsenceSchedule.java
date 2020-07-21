@@ -48,7 +48,7 @@ public class EmployeeAbsenceSchedule extends ExampleBase {
 	}
 	
 	@Override
-	public boolean getIsNew() {
-        return true;
+	public String[] getRefs() {
+        return new String[] { "GcMockResultSet", "GcResultSetMetaData" };
 	}
 }

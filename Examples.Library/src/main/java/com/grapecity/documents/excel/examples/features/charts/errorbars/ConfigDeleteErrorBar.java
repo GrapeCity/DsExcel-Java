@@ -33,9 +33,4 @@ public class ConfigDeleteErrorBar extends ExampleBase {
         // Delete first series' error bar
         series1.getYErrorBar().delete();
     }
-
-    @Override
-    public boolean getIsNew() {
-        return true;
-    }
 }

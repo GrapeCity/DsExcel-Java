@@ -1,15 +1,15 @@
 package com.grapecity.documents.excel.examples.features.pdfexporting.printmanager;
 
-import java.io.ByteArrayOutputStream;
-import java.io.InputStream;
-import java.util.List;
-
 import com.grapecity.documents.excel.IWorksheet;
 import com.grapecity.documents.excel.PageInfo;
 import com.grapecity.documents.excel.PaginationOrientation;
 import com.grapecity.documents.excel.PrintManager;
 import com.grapecity.documents.excel.Workbook;
 import com.grapecity.documents.excel.examples.ExampleBase;
+
+import java.io.ByteArrayOutputStream;
+import java.io.InputStream;
+import java.util.List;
 
 public class GetPaginationInfo extends ExampleBase {
     @Override
@@ -40,11 +40,6 @@ public class GetPaginationInfo extends ExampleBase {
 	@Override
 	public boolean getShowViewer() {
         return false;
-	}
-	
-	@Override
-	public boolean getIsNew() {
-        return true;
 	}
 
 	@Override

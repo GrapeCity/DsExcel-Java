@@ -33,9 +33,4 @@ public class CreateChartWithCustomName extends ExampleBase {
         areaChart.getChart().getSeriesCollection().add(worksheet.getRange("A1:C13"), RowCol.Columns);
         areaChart.getChart().getChartTitle().setText("Area Chart");
     }
-
-    @Override
-    public boolean getIsNew() {
-        return true;
-    }
 }

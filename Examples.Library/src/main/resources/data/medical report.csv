@@ -1,0 +1,7 @@
+date,time,event,systolic,diastolic,heartRate,glucose,notes
+43937,0.25,Wake,129,79,72,55,
+43937,0.29166666666666663,Before Meal,120,80,74,70,
+43937,0.375,After Meal,133,80,75,75,
+43937,0.41666666666666663,BP only,143,91,75,190,
+43937,0.5,Before Meal,141,84,70,140,
+43937,0.625,After Meal,132,80,68,90,Took BP medication with meal

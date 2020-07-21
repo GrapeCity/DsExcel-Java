@@ -48,7 +48,7 @@ public class SalesTracker extends ExampleBase {
 	}
 	
 	@Override
-	public boolean getIsNew() {
-        return true;
+	public String[] getRefs() {
+        return new String[] { "GcMockResultSet", "GcResultSetMetaData" };
 	}
 }

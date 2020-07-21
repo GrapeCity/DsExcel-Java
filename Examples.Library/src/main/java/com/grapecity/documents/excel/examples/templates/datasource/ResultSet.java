@@ -46,4 +46,9 @@ public class ResultSet extends ExampleBase {
 	public String[] getResources() {
         return new String[] { "xlsx/Template_SalesDataGroup_ResultSet.xlsx", "data/sales.csv" };
 	}
+	
+	@Override
+	public String[] getRefs() {
+        return new String[] { "GcMockResultSet", "GcResultSetMetaData" };
+	}
 }

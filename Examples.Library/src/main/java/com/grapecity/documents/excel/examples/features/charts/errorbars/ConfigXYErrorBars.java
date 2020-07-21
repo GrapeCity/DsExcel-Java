@@ -37,9 +37,4 @@ public class ConfigXYErrorBars extends ExampleBase {
         series1.getXErrorBar().setValueType(ErrorBarType.FixedValue);
         series1.getXErrorBar().setAmount(20);
     }
-
-    @Override
-    public boolean getIsNew() {
-        return true;
-    }
 }

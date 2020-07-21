@@ -93,9 +93,4 @@ public class PrintTransparentCell extends ExampleBase {
 	public String[] getResources() {
         return new String[] { "AcmeLogo-vertical-250px.png" };
 	}
-
-	@Override
-	public boolean getIsNew() {
-        return true;
-	}
 }

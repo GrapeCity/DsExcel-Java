@@ -30,9 +30,4 @@ public class ConvertShapeToImage extends ExampleBase {
 	public boolean getSaveAsImage() {
         return true;
 	}
-
-    @Override
-    public boolean getIsNew() {
-        return true;
-    }
 }

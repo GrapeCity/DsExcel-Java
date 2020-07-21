@@ -25,11 +25,6 @@ public class ConfigTickMarkLabelAngle extends ExampleBase {
     }
 
     @Override
-    public boolean getIsNew() {
-        return true;
-    }
-
-    @Override
     public String[] getResources() {
         return new String[] { "xlsx/Manufacturing output chart.xlsx" };
     }

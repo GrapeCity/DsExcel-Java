@@ -31,4 +31,9 @@ public class ProjectCostTracker extends ExampleBase {
     public boolean getShowCode() {
         return false;
     }
+
+    @Override
+    public boolean getCanDownloadZip() {
+        return false;
+    }
 }

@@ -26,11 +26,6 @@ public class ExportRangeToImage extends ExampleBase {
     }
 
     @Override
-    public boolean getIsNew() {
-        return true;
-    }
-
-    @Override
     public String[] getResources() {
         return new String[] { "xlsx/Personal Monthly Budget.xlsx" };
     }

@@ -94,9 +94,4 @@ public class OutlineColumn extends ExampleBase {
 	public String[] getResources() {
         return new String[] { "archiverFolder.png", "newFloder.png", "docFile.png", "increaseIndicator.png", "decreaseIndicator.png"  };
 	}
-
-	@Override
-	public boolean getIsNew() {
-        return true;
-	}
 }

@@ -1,6 +1,5 @@
 package com.grapecity.documents.excel.examples;
 
-import java.lang.reflect.Array;
 import java.lang.reflect.Constructor;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -58,17 +57,20 @@ public class FolderExample extends ExampleBase {
                 try {
 
                     ExampleBase child = childConstructor.newInstance();
+                    child.Level = this.Level + 1;
                     children.add(child);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
-            } else if (!subNS.contains(packageName)) {
+            } else if (packageName.startsWith(_namespace + ".") && !subNS.contains(packageName)) {
                 String ends = packageName.substring(this._namespace.length() + 1);
                 if (ends != null && !ends.isEmpty()) {
                     String[] nsItems = ends.split("\\.");
                     String currentNS = _namespace + "." + nsItems[0];
                     if (!subNS.contains(currentNS)) {
-                        children.add(new FolderExample(currentNS));
+                        FolderExample child = new FolderExample(currentNS);
+                        child.Level = this.Level + 1;
+                        children.add(child);
                         subNS.add(currentNS);
                     }
                     subNS.add(packageName);
@@ -136,5 +138,32 @@ public class FolderExample extends ExampleBase {
         }
 
         return false;
+    }
+
+    @Override
+    public String getDescriptionByCulture(String culture) {
+        String description = super.getDescriptionByCulture(culture);
+        description += System.lineSeparator();
+        description += System.lineSeparator();
+        description += ResourceUtil.getResourceByCulture(culture,"FolderExampleDemonstratingFeatures");
+        for (ExampleBase child : this.getChildren())
+        {
+            description += System.lineSeparator();
+            description += ("- " + child.getNameByCulture(culture));
+        }
+        return description;
+    }
+
+    public String getDescriptionByCultureWithChildrenLinks(String culture) {
+        String description = super.getDescriptionByCulture(culture);
+        description += System.lineSeparator();
+        description += System.lineSeparator();
+        description += ResourceUtil.getResourceByCulture(culture,"FolderExampleDemonstratingFeatures");
+        for (ExampleBase child : this.getChildren())
+        {
+            description += System.lineSeparator();
+            description += ("- [" + child.getNameByCulture(culture) + "](" + child.getShortID().toLowerCase() + ")");
+        }
+        return description;
     }
 }

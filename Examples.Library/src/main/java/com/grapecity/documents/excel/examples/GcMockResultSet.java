@@ -1,3 +1,12 @@
+/*
+ * Copyright (c) 2019 by GrapeCity, Inc.
+ * 
+ *  
+ * All rights reserved. No part of this source code may be copied, modified 
+ * or reproduced in any form without retaining the above copyright notice. 
+ * This source code, or source code derived from it, may not be redistributed 
+ * without express written permission of GrapeCity, Inc.
+ */
 package com.grapecity.documents.excel.examples;
 
 import java.io.InputStream;

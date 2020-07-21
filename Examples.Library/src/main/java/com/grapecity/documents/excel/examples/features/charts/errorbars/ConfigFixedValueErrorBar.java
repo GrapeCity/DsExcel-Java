@@ -28,9 +28,4 @@ public class ConfigFixedValueErrorBar extends ExampleBase {
         series1.getYErrorBar().setValueType(ErrorBarType.FixedValue);
         series1.getYErrorBar().setAmount(500);
     }
-
-    @Override
-    public boolean getIsNew() {
-        return true;
-    }
 }

@@ -18,9 +18,4 @@ public class AddShapeWithCustomName extends ExampleBase {
         IShape parallelogram = worksheet.getShapes().get("custom parallelogram");
         parallelogram.getFill().getColor().setRGB(Color.GetRed());
     }
-
-    @Override
-    public boolean getIsNew() {
-        return true;
-    }
 }

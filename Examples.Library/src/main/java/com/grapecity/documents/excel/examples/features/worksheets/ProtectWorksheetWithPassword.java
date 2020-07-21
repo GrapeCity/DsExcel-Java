@@ -1,10 +1,10 @@
 package com.grapecity.documents.excel.examples.features.worksheets;
 
-import java.io.InputStream;
-
 import com.grapecity.documents.excel.IWorksheet;
 import com.grapecity.documents.excel.Workbook;
 import com.grapecity.documents.excel.examples.ExampleBase;
+
+import java.io.InputStream;
 
 public class ProtectWorksheetWithPassword extends ExampleBase {
 	public void execute(Workbook workbook) {
@@ -25,13 +25,6 @@ public class ProtectWorksheetWithPassword extends ExampleBase {
         return false;
 
 	}
-	
-    @Override
-    public boolean getIsNew() {
-
-        return true;
-
-    }
 
     @Override
     public String[] getResources() {

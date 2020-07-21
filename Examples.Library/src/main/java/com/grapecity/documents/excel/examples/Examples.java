@@ -9,6 +9,7 @@ public class Examples {
     static
     {
         _rootExample = new RootExample(Examples.class.getPackage().getName());
+        _rootExample.Level = 0;
     }
 
     public static FolderExample getRootExample()

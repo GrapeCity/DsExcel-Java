@@ -1,0 +1,1 @@
+dotnet tools/updateCodeResource/UpdateJavaCodeResource.dll ./

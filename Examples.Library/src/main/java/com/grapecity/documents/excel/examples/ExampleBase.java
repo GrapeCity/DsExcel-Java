@@ -1,10 +1,7 @@
 package com.grapecity.documents.excel.examples;
 
-
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
-
-import javax.xml.bind.DatatypeConverter;
 
 import com.grapecity.documents.excel.Workbook;
 
@@ -13,6 +10,8 @@ public class ExampleBase {
 
     public ExampleBase() {
     }
+
+    public int Level = -1;
 
     public String getID() {
         return this.getClass().getName();
@@ -37,6 +36,10 @@ public class ExampleBase {
     public boolean getCanDownload() {
         return true;
     }
+
+    public boolean getCanDownloadZip() {
+        return true;
+    }
     
     public boolean getShowTemplate() {
         return false;
@@ -57,12 +60,24 @@ public class ExampleBase {
     public boolean getSavePdf() {
         return false;
     }
+
+    public boolean getViewInGcPdfViewer() {
+        return false;
+    }
     
     public boolean getSavePageInfos() {
         return false;
     }
     
     public boolean getSaveAsImage() {
+        return false;
+    }
+
+    public boolean getSaveAsZip(){
+        return false;
+    }
+
+    public boolean getSaveAsHtml(){
         return false;
     }
 
@@ -156,15 +171,25 @@ public class ExampleBase {
                 	   System.lineSeparator() + "} catch (FileNotFoundException e) {" +
                 	   System.lineSeparator() + "    e.printStackTrace();" +
                 	   System.lineSeparator() + "}" + System.lineSeparator();
-        }
-        else if (this.getSaveAsImage()) {
+        } else if (this.getSaveAsImage()) {
         	codePre = "//create to a png file stream" + System.lineSeparator() + "FileOutputStream outputStream = null;" +
              	   System.lineSeparator() + "try {" + System.lineSeparator() + String.format("    outputStream = new FileOutputStream(\"%s.png\");", this.getShortID()) +
              	   System.lineSeparator() + "} catch (FileNotFoundException e) {" +
              	   System.lineSeparator() + "    e.printStackTrace();" +
              	   System.lineSeparator() + "}" + System.lineSeparator();
+        } else if(this.getSaveAsZip()){
+            codePre = "//create to a zip file stream" + System.lineSeparator() + "FileOutputStream outputStream = null;" +
+                    System.lineSeparator() + "try {" + System.lineSeparator() + String.format("    outputStream = new FileOutputStream(\"%s.zip\");", this.getShortID()) +
+                    System.lineSeparator() + "} catch (FileNotFoundException e) {" +
+                    System.lineSeparator() + "    e.printStackTrace();" +
+                    System.lineSeparator() + "}" + System.lineSeparator();
+        } else if (this.getSaveAsHtml()){
+            codePre = "//create to a html file stream" + System.lineSeparator() + "FileOutputStream outputStream = null;" +
+                    System.lineSeparator() + "try {" + System.lineSeparator() + String.format("    outputStream = new FileOutputStream(\"%s.html\");", this.getShortID()) +
+                    System.lineSeparator() + "} catch (FileNotFoundException e) {" +
+                    System.lineSeparator() + "    e.printStackTrace();" +
+                    System.lineSeparator() + "}" + System.lineSeparator();
         }
-        
         codePre += "//create a new workbook" + System.lineSeparator() + "Workbook workbook = new Workbook();";
         
         String codePost = "";
@@ -178,6 +203,18 @@ public class ExampleBase {
             codePost = "//save to an pdf file" + System.lineSeparator() + String.format("workbook.save(\"%s.pdf\");", this.getShortID());
         } else if (this.getSaveCSV()) {
             codePost = "//save to an csv file" + System.lineSeparator() + String.format("workbook.save(\"%s.csv\");", this.getShortID());
+        } else if (this.getSaveAsHtml()){
+            codePost = "//close the html stream" + System.lineSeparator() + "try {" + System.lineSeparator() +
+                    "    outputStream.close();" + System.lineSeparator() +
+                    "} catch (IOException e) {" + System.lineSeparator() +
+                    "    e.printStackTrace();" + System.lineSeparator() +
+                    "}";
+        } else if (this.getSaveAsZip()){
+            codePost = "//close the zip stream" + System.lineSeparator() + "try {" + System.lineSeparator() +
+                    "    outputStream.close();" + System.lineSeparator() +
+                    "} catch (IOException e) {" + System.lineSeparator() +
+                    "    e.printStackTrace();" + System.lineSeparator() +
+                    "}";
         } else if (this.getCanDownload()) {
             codePost = "//save to an excel file" + System.lineSeparator() + String.format("workbook.save(\"%s.xlsx\");", this.getShortID());
         }
@@ -206,6 +243,18 @@ public class ExampleBase {
                 System.lineSeparator() + "} catch (e: FileNotFoundException) {" +
                 System.lineSeparator() + "      e.printStackTrace()" +
                 System.lineSeparator() + "}" + System.lineSeparator();
+        }else if(this.getSaveAsZip()){
+            codePre = "//create to a zip file stream" + System.lineSeparator() + "var outputStream: FileOutputStream? = null" +
+                    System.lineSeparator() + "try {" + System.lineSeparator() + String.format("    outputStream = FileOutputStream(\"%s.zip\");", this.getShortID()) +
+                    System.lineSeparator() + "  } catch (e: FileNotFoundException) {" +
+                    System.lineSeparator() + "    e.printStackTrace()" +
+                    System.lineSeparator() + "}" + System.lineSeparator();
+        } else if (this.getSaveAsHtml()){
+            codePre = "//create to a html file stream" + System.lineSeparator() + "var outputStream: FileOutputStream? = null" +
+                    System.lineSeparator() + "try {" + System.lineSeparator() + String.format("    outputStream = FileOutputStream(\"%s.html\");", this.getShortID()) +
+                    System.lineSeparator() + "  } catch (e: FileNotFoundException) {" +
+                    System.lineSeparator() + "    e.printStackTrace()" +
+                    System.lineSeparator() + "}" + System.lineSeparator();
         }
 
         codePre += "//create a new workbook" + System.lineSeparator() + "var workbook = Workbook()";
@@ -223,6 +272,22 @@ public class ExampleBase {
             codePost = "//save to an pdf file" + System.lineSeparator() + String.format("workbook.save(\"%s.pdf\")", this.getShortID());
         } else if (this.getSaveCSV()) {
             codePost = "//save to an csv file" + System.lineSeparator() + String.format("workbook.save(\"%s.csv\")", this.getShortID());
+        } else if (this.getSaveAsHtml()){
+            codePost = "//close the html stream" + System.lineSeparator() + "try {" + System.lineSeparator() +
+                    "     if(outputStream != null){"+ System.lineSeparator() +
+                    "         outputStream.close()" + System.lineSeparator() +
+                    "     }" + System.lineSeparator() + System.lineSeparator() +
+                    "} catch (e: IOException) {" + System.lineSeparator() +
+                    "    e.printStackTrace()" + System.lineSeparator() +
+                    "}";
+        } else if (this.getSaveAsZip()){
+            codePost = "//close the zip stream" + System.lineSeparator() + "try {" + System.lineSeparator() +
+                    "     if(outputStream != null){"+ System.lineSeparator() +
+                    "         outputStream.close()" + System.lineSeparator() +
+                    "     }" + System.lineSeparator() + System.lineSeparator() +
+                    "} catch (e: IOException) {" + System.lineSeparator() +
+                    "    e.printStackTrace()" + System.lineSeparator() +
+                    "}";
         } else if (this.getCanDownload()) {
             codePost = "//save to an excel file" + System.lineSeparator() + String.format("workbook.save(\"%s.xlsx\")", this.getShortID());
         }
@@ -276,7 +341,7 @@ public class ExampleBase {
             ByteArrayOutputStream byteArrayOutputStream = ResourceUtil.inputStreamToByteArrayOutputStream(inputStream);
             if (byteArrayOutputStream != null) {
                 byte[] bytes = byteArrayOutputStream.toByteArray();
-                String result = DatatypeConverter.printBase64Binary(bytes);
+                String result = Base64Helper.encode(bytes);
                 return result;
             }
         } catch (Exception e) {
@@ -284,6 +349,3 @@ public class ExampleBase {
         return null;
     }
 }
-
-
-

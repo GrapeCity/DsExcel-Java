@@ -28,9 +28,4 @@ public class ConfigPercentageErrorBar extends ExampleBase {
         series1.getYErrorBar().setValueType(ErrorBarType.Percentage);
         series1.getYErrorBar().setAmount(50);
     }
-
-    @Override
-    public boolean getIsNew() {
-        return true;
-    }
 }

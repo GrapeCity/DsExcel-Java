@@ -12,12 +12,12 @@ In this tutorial, we create a real-life scenario with GcExcel Java to give you a
 3. Add dependency for GcExcel library:
 > **Intellij or Eclipse Console Application**
 > - Download gcexcel jar package from [Maven](https://search.maven.org/artifact/com.grapecity.documents/gcexcel/) or [Github](https://github.com/GrapeCity/GcExcel-Java)
-> - Copy gcexcel-3.1.0.jar into project library folder, and add it as a dependency library
+> - Copy gcexcel-3.2.0.jar into project library folder, and add it as a dependency library
 >
 > **Gradle Project**
-> - Open the build.gradle and append below script in in the dependencies block
+> - Open the build.gradle and append below script in the dependencies block
 > ```xml
-> compile("com.grapecity.documents:gcexcel:3.1.0")
+> compile("com.grapecity.documents:gcexcel:3.2.0")
 > ```
 >
 > **Maven Project**
@@ -26,7 +26,7 @@ In this tutorial, we create a real-life scenario with GcExcel Java to give you a
 > <dependency>
 >    <groupId>com.grapecity.documents</groupId>
 >    <artifactId>gcexcel</artifactId>
->    <version>3.1.0</version>
+>    <version>3.2.0</version>
 > </dependency>
 > ```
 

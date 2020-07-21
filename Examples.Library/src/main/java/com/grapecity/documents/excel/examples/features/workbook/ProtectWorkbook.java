@@ -1,9 +1,9 @@
 package com.grapecity.documents.excel.examples.features.workbook;
 
-import java.io.InputStream;
-
 import com.grapecity.documents.excel.Workbook;
 import com.grapecity.documents.excel.examples.ExampleBase;
+
+import java.io.InputStream;
 
 public class ProtectWorkbook extends ExampleBase {
 
@@ -28,13 +28,6 @@ public class ProtectWorkbook extends ExampleBase {
     public boolean getShowViewer()
     {
     	return false;
-    }
-
-    @Override
-    public boolean getIsNew() {
-
-        return true;
-
     }
     
     @Override

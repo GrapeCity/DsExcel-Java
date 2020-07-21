@@ -37,9 +37,4 @@ public class GetRangeBoundary extends ExampleBase {
     public String[] getResources() {
         return new String[]{"xlsx/Sport sign-up sheet.xlsx", "logo.png"};
     }
-    
-    @Override
-    public boolean getIsNew() {
-        return true;
-    }
 }

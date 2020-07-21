@@ -80,11 +80,6 @@ public class BindCustomObject extends ExampleBase {
     }
 
     @Override
-    public boolean getIsNew() {
-        return true;
-    }
-
-    @Override
     public String[] getRefs() {
         return new String[]{"SalesData", "SalesRecord"};
     }

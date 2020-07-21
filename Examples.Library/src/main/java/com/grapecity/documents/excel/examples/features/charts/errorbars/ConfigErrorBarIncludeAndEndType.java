@@ -38,9 +38,4 @@ public class ConfigErrorBarIncludeAndEndType extends ExampleBase {
         series2.getYErrorBar().setType(ErrorBarInclude.Plus);
         series2.getYErrorBar().setEndStyle(EndStyleCap.NoCap);
     }
-
-    @Override
-    public boolean getIsNew() {
-        return true;
-    }
 }

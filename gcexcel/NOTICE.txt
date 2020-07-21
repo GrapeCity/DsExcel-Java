@@ -52,3 +52,17 @@ Bart Hanssens from FedICT
 
 GlassFish javax.json
 Dual license consisting of the CDDL v1.1 and GPL v2 https://oss.oracle.com/licenses/CDDL+GPL-1.1
+
+This product depends on bcpkix-jdk15on and bcprov-ext-jdk15 developed by org.bouncycastle at http://www.bouncycastle.org/java.html
+
+This product depends on commons-compress and commons-math3 developed by org.apache.commons at https://commons.apache.org/proper/commons-compress/
+
+This product depends on ooxml-security developed by org.apache.poi at http://poi.apache.org/
+
+This product depends on slf4j-api developed by org.slf4j at http://www.slf4j.org/
+
+This product depends on SparseBitSet developed by com.zaxxer at https://github.com/brettwooldridge/SparseBitSet
+
+This product depends on xmlbeans developed by org.apache.xmlbeans at https://xmlbeans.apache.org/
+
+This product depends on xmlsec developed by org.apache.santuario at https://santuario.apache.org/

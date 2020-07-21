@@ -29,9 +29,4 @@ public class ConfigCustomErrorBar extends ExampleBase {
         series1.getYErrorBar().setPlus("={2000}");
         series1.getYErrorBar().setMinus("={1000}");
     }
-
-    @Override
-    public boolean getIsNew() {
-        return true;
-    }
 }

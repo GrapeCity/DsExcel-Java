@@ -40,11 +40,6 @@ public class CellBinding extends ExampleBase {
     }
 
     @Override
-    public boolean getIsNew() {
-        return true;
-    }
-
-    @Override
     public String[] getRefs() {
         return new String[]{"SalesRecord"};
     }

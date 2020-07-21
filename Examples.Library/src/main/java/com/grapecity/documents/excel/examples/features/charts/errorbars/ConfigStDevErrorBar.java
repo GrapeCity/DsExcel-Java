@@ -28,9 +28,4 @@ public class ConfigStDevErrorBar extends ExampleBase {
         series1.getYErrorBar().setValueType(ErrorBarType.StDev);
         series1.getYErrorBar().setAmount(1);
     }
-
-    @Override
-    public boolean getIsNew() {
-        return true;
-    }
 }

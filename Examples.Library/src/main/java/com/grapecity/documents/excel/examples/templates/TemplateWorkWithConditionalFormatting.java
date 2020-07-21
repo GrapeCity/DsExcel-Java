@@ -1,12 +1,12 @@
 package com.grapecity.documents.excel.examples.templates;
 
-import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.List;
-
 import com.grapecity.documents.excel.Workbook;
 import com.grapecity.documents.excel.examples.ExampleBase;
 import com.grapecity.documents.excel.examples.templates.datasource.SalesRecord;
+
+import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.List;
 
 public class TemplateWorkWithConditionalFormatting extends ExampleBase {
 
@@ -276,10 +276,5 @@ public class TemplateWorkWithConditionalFormatting extends ExampleBase {
 	@Override
 	public String[] getRefs() {
         return new String[] { "SalesData", "SalesRecord" };
-	}
-
-	@Override
-	public boolean getIsNew() {
-        return true;
 	}
 }
