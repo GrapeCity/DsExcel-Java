@@ -27,6 +27,31 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
 
 # Release Notes
+## 3.2.1
+## Fixed
+* Templates markers are not cleared after processing template.(DOCXLS-2675)
+* Collapsed groups are not exported correctly to ssjson.(DOCXLS-2762)
+* Chart type is changed after loading a XYScatter chart from Excel.(DOCXLS-2643)
+* Table Resize method does not carry over the Formula, Style and Conditional Formatting.(DOCXLS-2665)
+* The exported PDF is wrong after setting best-fit-columns to true.(DOCXLS-2700)
+* The exported Excel can not be opened correctly after setting IPivotTable.MergeLabels to true.(DOCXLS-2739)
+* Cell text orientation is lost after importing from ssjson.(DOCXLS-2764)
+* Exception is thrown when there are some special characters and exporting to PDF.(DOCXLS-2769)
+* Program does not end and CPU utilisation is 100% after calling auto-fit on entire column.(DOCXLS-2785)
+* Excpetion is thrown after importing a ssjson and then exporting to PDF.(DOCXLS-2789)
+* The result of conditional format is wrong in the exported PDF.(DOCXLS-2685)
+* The saved password-protected Excel file can not be opened when there is more than 15M data.(DOCXLS-2690)
+* The height of cell(with wrapped text) is changed after importing ssjson and then saving to xlsx.(DOCXLS-2735)
+* RowCount and ColumnCount in exported ssjson is incorrect after deleting some rows/columns.(DOCXLS-2741)
+* Text can not be pasred correctly when current culture is en-GB.(DOCXLS-2745)
+* The calculated result is "∞" in GcExcel, which is #DIV/0! in Excel.(DOCXLS-2747)
+* Exception is thrown when opening an Excel with gradient unscaled fill.(DOCXLS-2761)
+* The accounting format is rendered wrong in the exported PDF.(DOCXLS-2765)
+* Exception is thrown when importing ssjson with an invalid "cap" value.(DOCXLS-2786)
+* Range.Text is incorrect when number format is #,##0.00,,.(DOCXLS-2788)
+* IRange.Clear() doesn't clear tags.(DOCXLS-2794)
+* The calculated results of “=0^-x” and “=0^0” are not same as Excel.(DOCXLS-2855)
+
 ## 3.2.0
 ## Added
 * Support for generating PDF Form from Excel Templates.
