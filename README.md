@@ -27,6 +27,37 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
 
 # Release Notes
+## 3.2.4
+## Fixed
+* DataValidation does not work for added rows for Table.(DOCXLS-3158)
+* PivotTable's row field is missing after PivotTable.AddDataField().(DOCXLS-3174)
+* Exception occurs when exporting Pivot Table to PDF.(DOCXLS-3176)
+* PivotTable.RowRange throws exception if there is no row fields.(DOCXLS-3179)
+* Table Resize with one row table lost conditional format and data validation.(DOCXLS-3194)
+* The printed area does not consider hidden rows and columns.(DOCXLS-3206)
+* The calculated result of Lookup formula is different with Excel.(DOCXLS-3177)
+* The IRange.Columns.AutoFit() result is wrong when wrapping text.(DOCXLS-3178)
+* PivotTable column fields' vertical alignment is wrong after setting MergeLabels to true.(DOCXLS-3180)
+* Import ssjson and export to PDF, the program is blocked.(DOCXLS-3216)
+* InvalidFormulaException is thrown when importing ssjson.(DOCXLS-3242)
+* IRange.AutoFit() does not consider ConditionalFormatting's icon size.(DOCXLS-3117)
+* It takes over 40 seconds to export to json.(DOCXLS-3138)
+* The calculated result is wrong when array formula and custom function work together.(DOCXLS-3141)
+* Richtext is lost in the exported image.(DOCXLS-3142)
+* Null reference exception is thrown while exporting to json.(DOCXLS-3166)
+* Null reference exception is thrown while opening an Excel with chart.(DOCXLS-3167)
+* CloneNotSupportedException when copying sheet with Top/Bottom % conditional formatting rule.(DOCXLS-3169)
+* Column width is not autofit correctly when Autofit() method is applied to a cell with full-width characters entered.(DOCXLS-3172)
+* Grouped rows displayed in UI even after calling showLevels(1,0) after exporting to ssjson.(DOCXLS-3173)
+* PivotTable's border style is wrong in the exported PDF.(DOCXLS-3175)
+* The calculated style of conditional formats is wrong in the exported PDF.(DOCXLS-3234)
+* NullPointerException in ArrayList occurs when copying a single cell after opening Excel File.(DOCXLS-3235)
+* The Pivot Table label's resource should be "值" instead of "Values".(DOCXLS-3236)
+* When workbook is exported to PDF, value axis' maximum scale in radar chart are changed.(DOCXLS-3239)
+* The quote prefix is lost in the exported ssjson.(DOCXLS-3240)
+* PdfSaveOptions is not applied to the output PDF when IWorksheet.Save() is used.(DOCXLS-3246)
+* Spans are lost after fromJSON.(DOCXLS-3250)
+
 ## 3.2.3
 ## Fixed
 * The generated Excel report is wrong with GcExcel teplates.(DOCXLS-2999)
