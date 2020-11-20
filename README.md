@@ -1,4 +1,4 @@
-# GrapeCity Documents for Excel, Java Edition
+*# GrapeCity Documents for Excel, Java Edition
 GrapeCity introduces Documents for Excel (GcExcel) Java Edition, a high-speed, feature-rich Excel document API based on VSTO that can help developers work with spreadsheets in Java applications. The library helps to generate, convert to pdf, calculate, format, and parse spreadsheets in any application. You can work with a variety of features like importing spreadsheets, calculate data, query, generate, and export any spreadsheet, add sorting, filtering, formatting, conditional formatting and data validation, grouping, sparklines, charts, shapes, pictures, slicers, comments, hyperlinks, themes etc.  In addition, you can import existing Excel templates, add data and save the spreadsheets back. You can also use GcExcel together with Spread.Sheets, another GrapeCity Spread product that is included in GrapeCity SpreadJS. GcExcel can also import and export Excel template files on the server side. Spread.Sheets works in the browser (client side) as a viewer or editor.
 
 With GcExcel, you can also load, edit, analyse, convert and save spreadsheets in Java applications with full support on Windows, MAC and Linux.
@@ -28,18 +28,18 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 
 ## 4.0.0
 ## Added
-** Support for new PDF Form custom input types in Excel Templates with advanced input and validation settings.
-** Support for adding, modifying and deleting Pivot Charts in Excel documents.
-** Support for iterative calculations in Excel documents.
-** Add Barcodes on PDF, HTML or Image Export
-** Support cross-workbook formula.
-** Support setting default value for template cell.
-** Get range address to get cell's address.
-** Add page printing events to track progress of Excel to PDF conversion.
-** Select multiple worksheets.
-** Get special cells in a range.
-** Disable auto grouping for date/times in PivotTable.
-** Add more features for GrapeCity SpreadJS integration: cell buttons, radio and checkbox list cell type, etc.
+* Support for new PDF Form custom input types in Excel Templates with advanced input and validation settings.
+* Support for adding, modifying and deleting Pivot Charts in Excel documents.
+* Support for iterative calculations in Excel documents.
+* Add Barcodes on PDF, HTML or Image Export
+* Support cross-workbook formula.
+* Support setting default value for template cell.
+* Get range address to get cell's address.
+* Add page printing events to track progress of Excel to PDF conversion.
+* Select multiple worksheets.
+* Get special cells in a range.
+* Disable auto grouping for date/times in PivotTable.
+* Add more features for GrapeCity SpreadJS integration: cell buttons, radio and checkbox list cell type, etc.
 
 ## Fixed
 * PivotTable MergeLabel's merged area is incorrect.(DOCXLS-3181)
