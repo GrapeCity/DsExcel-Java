@@ -40,9 +40,4 @@ public class PictureTransparency extends ExampleBase {
     public boolean getShowScreenshot() {
         return true;
     }
-
-    @Override
-    public boolean getIsNew() {
-        return true;
-    }
 }

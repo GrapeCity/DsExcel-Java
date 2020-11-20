@@ -1,11 +1,11 @@
 package com.grapecity.documents.excel.examples.templates.pdfformbuilder;
 
+import com.grapecity.documents.excel.Workbook;
+import com.grapecity.documents.excel.examples.ExampleBase;
+
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
-
-import com.grapecity.documents.excel.Workbook;
-import com.grapecity.documents.excel.examples.ExampleBase;
 
 public class ListboxFields extends ExampleBase {
 	@Override
@@ -33,7 +33,7 @@ public class ListboxFields extends ExampleBase {
         //Invoke to process the template
         workbook.processTemplate();
 	}
-
+	
 	@Override
 	public String getTemplateName() {
         return "Template_ListBoxField.xlsx";
@@ -54,13 +54,13 @@ public class ListboxFields extends ExampleBase {
         return new String[] { "xlsx/Template_ListBoxField.xlsx" };
 	}
 
-	@Override
-	public boolean getIsNew() {
-		return true;
-	}
-
     @Override
     public boolean getViewInGcPdfViewer() {
         return true;
+    }
+
+    @Override
+    public boolean getCanDownload() {
+        return false;
     }
 }

@@ -13,48 +13,46 @@ public class BindCustomObject extends ExampleBase {
     @Override
     public void execute(Workbook workbook) {
         //#region Define custom classes
-        //public class SalesData
-        //{
-        //    public ArrayList<SalesRecord> Records;
+        //public class SalesData {
+        //    public ArrayList<SalesRecord> sales;
         //}
 
-        //public class SalesRecord
-        //{
-        //    public String Area;
-        //    public String Salesman;
-        //    public String Product;
-        //    public String ProductType;
-        //    public int Sales;
+        //public class SalesRecord {
+        //    public String area;
+        //    public String city;
+        //    public String category;
+        //    public String name;
+        //    public double revenue;
         //}
         //#endregion
 
         //#region Init data
         SalesData datasource = new SalesData();
-        datasource.records = new ArrayList<SalesRecord>();
+        datasource.sales = new ArrayList<SalesRecord>();
 
         SalesRecord record1 = new SalesRecord();
-        record1.area = "NorthChina";
-        record1.salesman = "Hellen";
-        record1.product = "Apple";
-        record1.productType = "Fruit";
-        record1.sales = 120;
-        datasource.records.add(record1);
+        record1.area = "North America";
+        record1.city = "Chicago";
+        record1.category = "Consumer Electronics";
+        record1.name = "Bose 785593-0050";
+        record1.revenue = 92800;
+        datasource.sales.add(record1);
 
         SalesRecord record2 = new SalesRecord();
-        record2.area = "NorthChina";
-        record2.salesman = "Hellen";
-        record2.product = "Banana";
-        record2.productType = "Fruit";
-        record2.sales = 143;
-        datasource.records.add(record2);
+        record2.area = "North America";
+        record2.city = "New York";
+        record2.category = "Consumer Electronics";
+        record2.name = "Bose 785593-0050";
+        record2.revenue = 92800;
+        datasource.sales.add(record2);
 
         SalesRecord record3 = new SalesRecord();
-        record3.area = "NorthChina";
-        record3.salesman = "Hellen";
-        record3.product = "Kiwi";
-        record3.productType = "Fruit";
-        record3.sales = 322;
-        datasource.records.add(record3);
+        record3.area = "South America";
+        record3.city = "Santiago";
+        record3.category = "Consumer Electronics";
+        record3.name = "Bose 785593-0050";
+        record3.revenue = 19550;
+        datasource.sales.add(record3);
         //#endregion
 
         IWorksheet worksheet = workbook.getWorksheets().get(0);
@@ -66,14 +64,14 @@ public class BindCustomObject extends ExampleBase {
         table.setAutoGenerateColumns(false);
 
         // Set table binding path
-        table.setBindingPath("records");
+        table.setBindingPath("sales");
 
         // Set table column data field
         table.getColumns().get(0).setDataField("area");
-        table.getColumns().get(1).setDataField("salesman");
-        table.getColumns().get(2).setDataField("product");
-        table.getColumns().get(3).setDataField("productType");
-        table.getColumns().get(4).setDataField("sales");
+        table.getColumns().get(1).setDataField("city");
+        table.getColumns().get(2).setDataField("category");
+        table.getColumns().get(3).setDataField("name");
+        table.getColumns().get(4).setDataField("revenue");
 
         //Set custom object as data source
         worksheet.setDataSource(datasource);

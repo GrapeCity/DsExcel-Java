@@ -1,0 +1,173 @@
+﻿{
+  "version": "13.0.0",
+  "sheetCount": 12,
+  "tabStripRatio": 0.88,
+  "highlightInvalidData": true,
+  "customList": [
+  ],
+  "sheets": {
+    "Sheet1": {
+      "name": "Sheet1",
+      "isSelected": true,
+      "rowCount": 150,
+      "columnCount": 50,
+      "activeRow": 4,
+      "activeCol": 4,
+      "zoomFactor": 1,
+      "theme": "Office",
+      "data": {
+        "dataTable": {
+          "1": {
+            "0": {
+              "value": 1
+            },
+            "2": {
+              "value": 4
+            },
+            "4": {
+              "value": 7
+            }
+          },
+          "2": {
+            "0": {
+              "value": 2
+            },
+            "2": {
+              "value": 5
+            },
+            "4": {
+              "value": 8
+            }
+          },
+          "3": {
+            "0": {
+              "value": 3
+            },
+            "2": {
+              "value": 6
+            },
+            "4": {
+              "value": 9
+            }
+          }
+        },
+        "defaultDataNode": {
+          "style": {
+            "themeFont": "Body"
+          }
+        }
+      },
+      "rowHeaderData": {
+        "defaultDataNode": {
+          "style": {
+            "themeFont": "Body"
+          }
+        }
+      },
+      "colHeaderData": {
+        "defaultDataNode": {
+          "style": {
+            "themeFont": "Body"
+          }
+        }
+      },
+      "rows": [
+        null,
+        {
+        }
+      ],
+      "columns": [
+        null,
+        {
+        }
+      ],
+      "leftCellIndex": 0,
+      "topCellIndex": 0,
+      "selections": {
+        "0": {
+          "row": 4,
+          "rowCount": 1,
+          "col": 4,
+          "colCount": 1
+        },
+        "length": 1
+      },
+      "validations": [
+        {
+          "ignoreBlank": false,
+          "comparisonOperator": 0,
+          "type": 2,
+          "condition": {
+            "conType": 1,
+            "compareType": 0,
+            "expected": 0,
+            "ranges": [
+              {
+                "row": 1,
+                "rowCount": 3,
+                "col": 2,
+                "colCount": 1
+              }
+            ]
+          },
+          "ranges": "C2:C4",
+          "highlightStyle": "{\"type\":2,\"color\":\"rgb(255, 0, 0)\",\"position\":4}"
+        },
+        {
+          "ignoreBlank": false,
+          "comparisonOperator": 0,
+          "type": 2,
+          "condition": {
+            "conType": 1,
+            "compareType": 0,
+            "expected": 0,
+            "ranges": [
+              {
+                "row": 1,
+                "rowCount": 3,
+                "col": 4,
+                "colCount": 1
+              }
+            ]
+          },
+          "ranges": "E2:E4",
+          "highlightStyle": "{\"type\":0,\"color\":\"rgb(255, 0, 0)\"}"
+        },
+        {
+          "ignoreBlank": false,
+          "comparisonOperator": 0,
+          "type": 2,
+          "condition": {
+            "conType": 1,
+            "compareType": 0,
+            "expected": 0,
+            "ranges": [
+              {
+                "row": 1,
+                "rowCount": 3,
+                "col": 0,
+                "colCount": 1
+              }
+            ]
+          },
+          "ranges": "A2:A4",
+          "highlightStyle": "{\"type\":1,\"color\":\"rgb(255, 0, 0)\",\"position\":0}"
+        }
+      ],
+      "cellStates": {
+      },
+      "outlineColumnOptions": {
+      },
+      "autoMergeRangeInfos": [
+      ],
+      "printInfo": {
+        "paperSize": {
+          "width": 850,
+          "height": 1100,
+          "kind": 1
+        }
+      },
+      "index": 0
+    }
+  }
+}

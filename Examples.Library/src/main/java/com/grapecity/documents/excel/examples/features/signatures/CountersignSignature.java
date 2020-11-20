@@ -1,5 +1,11 @@
 package com.grapecity.documents.excel.examples.features.signatures;
 
+import com.grapecity.documents.excel.ISignature;
+import com.grapecity.documents.excel.ISignatureSetup;
+import com.grapecity.documents.excel.SignatureDetails;
+import com.grapecity.documents.excel.Workbook;
+import com.grapecity.documents.excel.examples.ExampleBase;
+
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -8,9 +14,6 @@ import java.security.KeyStore;
 import java.security.KeyStoreException;
 import java.security.NoSuchAlgorithmException;
 import java.security.cert.CertificateException;
-
-import com.grapecity.documents.excel.*;
-import com.grapecity.documents.excel.examples.ExampleBase;
 
 public class CountersignSignature extends ExampleBase {
     @Override
@@ -42,7 +45,7 @@ public class CountersignSignature extends ExampleBase {
             String password = "<your password>";
             char[] passwordChars = password.toCharArray();
             String pfxFileKey = "<your certificate file>";
-            InputStream pfxStrm = getClass().getClassLoader().getResourceAsStream(pfxFileKey);
+            InputStream pfxStrm = getResourceStream(pfxFileKey);
             try {
                 ks.load(pfxStrm, passwordChars);
             } catch (NoSuchAlgorithmException e) {
@@ -74,11 +77,6 @@ public class CountersignSignature extends ExampleBase {
     }
 
     @Override
-    public boolean getIsNew() {
-        return true;
-    }
-
-    @Override
     public boolean getShowViewer() {
         return false;
     }
@@ -91,5 +89,27 @@ public class CountersignSignature extends ExampleBase {
     @Override
     public boolean getCanDownload() {
         return false;
+    }
+
+    @Override
+    public String[] getDependencies() {
+        return new String[]{ "compile group: 'com.grapecity.documents', name: 'gcexcel.extension', version: '3.2.0'" };
+    }
+
+    @Override
+    public String[] getImportPackages() {
+        return new String[]{
+                "import java.io.IOException;",
+                "import java.io.InputStream;",
+                "import java.security.KeyStore;",
+                "import java.security.KeyStoreException;",
+                "import java.security.NoSuchAlgorithmException;",
+                "import java.security.cert.CertificateException;"
+        };
+    }
+
+    @Override
+    public String[] getResources() {
+        return new String[]{""};
     }
 }

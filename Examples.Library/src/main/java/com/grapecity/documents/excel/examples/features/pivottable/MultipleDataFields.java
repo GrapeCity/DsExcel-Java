@@ -65,10 +65,4 @@ public class MultipleDataFields extends ExampleBase {
 
         return true;
     }
-
-    @Override
-    public boolean getIsNew() {
-        return true;
-    }
-
 }

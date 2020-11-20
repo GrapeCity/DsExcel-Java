@@ -67,9 +67,4 @@ public class Sort extends ExampleBase {
 
         return true;
     }
-
-    @Override
-    public boolean getIsNew() {
-        return true;
-    }
 }

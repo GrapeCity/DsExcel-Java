@@ -42,12 +42,12 @@ public class ListSignatureLines extends ExampleBase {
     }
 
     @Override
-    public boolean getIsNew() {
-        return true;
+    public boolean getShowViewer() {
+        return false;
     }
 
     @Override
-    public boolean getShowViewer() {
-        return false;
+    public String[] getDependencies() {
+        return new String[]{ "compile group: 'com.grapecity.documents', name: 'gcexcel.extension', version: '3.2.0'" };
     }
 }

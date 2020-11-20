@@ -75,9 +75,4 @@ public class FieldLayoutSettings extends ExampleBase {
 
         return true;
     }
-
-    @Override
-    public boolean getIsNew() {
-        return true;
-    }
 }

@@ -1,11 +1,11 @@
 package com.grapecity.documents.excel.examples.templates.pdfformbuilder;
 
+import com.grapecity.documents.excel.Workbook;
+import com.grapecity.documents.excel.examples.ExampleBase;
+
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
-
-import com.grapecity.documents.excel.Workbook;
-import com.grapecity.documents.excel.examples.ExampleBase;
 
 public class RadiobuttonFields extends ExampleBase {
 	@Override
@@ -53,13 +53,13 @@ public class RadiobuttonFields extends ExampleBase {
         return new String[] { "xlsx/Template_RadiobuttonField.xlsx" };
 	}
 
-	@Override
-	public boolean getIsNew() {
-		return true;
-	}
-
     @Override
     public boolean getViewInGcPdfViewer() {
         return true;
+    }
+
+    @Override
+    public boolean getCanDownload() {
+        return false;
     }
 }

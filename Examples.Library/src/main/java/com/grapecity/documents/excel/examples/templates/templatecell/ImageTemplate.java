@@ -1,13 +1,14 @@
 package com.grapecity.documents.excel.examples.templates.templatecell;
 
-import com.grapecity.documents.excel.Workbook;
-import com.grapecity.documents.excel.examples.ExampleBase;
-import org.apache.commons.io.IOUtils;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
+
+import org.apache.commons.io.IOUtils;
+
+import com.grapecity.documents.excel.Workbook;
+import com.grapecity.documents.excel.examples.ExampleBase;
 
 public class ImageTemplate extends ExampleBase {
 
@@ -344,5 +345,15 @@ public class ImageTemplate extends ExampleBase {
 	@Override
 	public String[] getRefs() {
         return new String[] { "BikeInfo", "BikeSeries", "Bike" };
+	}
+
+	@Override
+    public String[] getDependencies() {
+        return new String[] { "compile group: 'commons-io', name: 'commons-io', version: '2.5'" };
+    }
+
+    @Override
+    public String[] getImportPackages() {
+        return new String[] { "import org.apache.commons.io.IOUtils;" };
 	}
 }

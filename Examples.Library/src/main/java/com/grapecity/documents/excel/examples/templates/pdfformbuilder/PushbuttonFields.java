@@ -1,9 +1,9 @@
 package com.grapecity.documents.excel.examples.templates.pdfformbuilder;
 
-import java.io.InputStream;
-
 import com.grapecity.documents.excel.Workbook;
 import com.grapecity.documents.excel.examples.ExampleBase;
+
+import java.io.InputStream;
 
 public class PushbuttonFields extends ExampleBase {
 	@Override
@@ -36,13 +36,13 @@ public class PushbuttonFields extends ExampleBase {
         return new String[] { "xlsx/Template_PushbuttonField.xlsx" };
 	}
 
-	@Override
-	public boolean getIsNew() {
-		return true;
-	}
-
     @Override
     public boolean getViewInGcPdfViewer() {
         return true;
     }
+
+	@Override
+	public boolean getCanDownload() {
+		return false;
+	}
 }

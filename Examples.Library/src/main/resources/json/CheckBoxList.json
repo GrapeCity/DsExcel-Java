@@ -1,0 +1,142 @@
+{
+  "version": "13.0.0",
+  "sheetCount": 2,
+  "customList": [],
+  "sheets": {
+    "Sheet1": {
+      "name": "Sheet1",
+      "isSelected": true,
+      "theme": "Office",
+      "data": {
+        "dataTable": {
+          "0": {
+            "0": {
+              "value": [
+                "1",
+                "3",
+                "4"
+              ],
+              "style": {
+                "cellType": {
+                  "typeName": "12",
+                  "items": [
+                    {
+                      "text": "Java",
+                      "value": "1"
+                    },
+                    {
+                      "text": "C#",
+                      "value": "2"
+                    },
+                    {
+                      "text": "Python",
+                      "value": "3"
+                    },
+                    {
+                      "text": "C++",
+                      "value": "4"
+                    },
+                    {
+                      "text": "Go",
+                      "value": "5"
+                    }
+                  ],
+                  "itemSpacing": {
+                    "horizontal": 20,
+                    "vertical": 5
+                  }
+                }
+              }
+            }
+          }
+        },
+        "defaultDataNode": {
+          "style": {
+            "themeFont": "Body"
+          }
+        }
+      },
+      "rowHeaderData": {
+        "defaultDataNode": {
+          "style": {
+            "themeFont": "Body"
+          }
+        }
+      },
+      "colHeaderData": {
+        "defaultDataNode": {
+          "style": {
+            "themeFont": "Body"
+          }
+        }
+      },
+      "rows": [
+        {
+          "size": 148
+        }
+      ],
+      "columns": [
+        {
+          "size": 164
+        }
+      ],
+      "leftCellIndex": 0,
+      "topCellIndex": 0,
+      "selections": {
+        "0": {
+          "row": 0,
+          "rowCount": 1,
+          "col": 0,
+          "colCount": 1
+        },
+        "length": 1
+      },
+      "rowOutlines": {
+        "items": []
+      },
+      "columnOutlines": {
+        "items": []
+      },
+      "cellStates": {},
+      "outlineColumnOptions": {},
+      "autoMergeRangeInfos": [],
+      "printInfo": {
+        "paperSize": {
+          "width": 850,
+          "height": 1100,
+          "kind": 1
+        }
+      },
+      "index": 0
+    },
+    "Sheet2": {
+      "name": "Sheet2",
+      "isSelected": false,
+      "theme": "Office",
+      "data": {},
+      "rowHeaderData": {},
+      "colHeaderData": {},
+      "leftCellIndex": 0,
+      "topCellIndex": 0,
+      "selections": {
+        "0": {
+          "row": 0,
+          "rowCount": 1,
+          "col": 0,
+          "colCount": 1
+        },
+        "length": 1
+      },
+      "rowOutlines": {
+        "items": []
+      },
+      "columnOutlines": {
+        "items": []
+      },
+      "cellStates": {},
+      "outlineColumnOptions": {},
+      "autoMergeRangeInfos": [],
+      "index": 1
+    }
+  }
+}

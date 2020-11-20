@@ -2,11 +2,8 @@ package com.grapecity.documents.excel.examples.templates.globaloptions;
 
 import com.grapecity.documents.excel.Workbook;
 import com.grapecity.documents.excel.examples.ExampleBase;
-import com.grapecity.documents.excel.examples.templates.datasource.SalesRecord;
 
 import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.List;
 
 public class EmbedFontForFormFields extends ExampleBase {
 
@@ -49,7 +46,7 @@ public class EmbedFontForFormFields extends ExampleBase {
     }
 
     @Override
-    public boolean getIsNew() {
-        return true;
+    public boolean getCanDownload() {
+        return false;
     }
 }

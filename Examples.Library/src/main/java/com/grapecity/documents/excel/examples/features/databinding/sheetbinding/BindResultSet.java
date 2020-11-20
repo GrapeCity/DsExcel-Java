@@ -32,4 +32,9 @@ public class BindResultSet extends ExampleBase {
     public String[] getResources() {
         return new String[] { "score.csv" };
     }
+
+    @Override
+    public String[] getRefs() {
+        return new String[] { "GcMockResultSet", "GcResultSetMetaData" };
+    }
 }

@@ -1,9 +1,9 @@
 package com.grapecity.documents.excel.examples.templates.pdfformbuildersamples;
 
-import java.io.InputStream;
-
 import com.grapecity.documents.excel.Workbook;
 import com.grapecity.documents.excel.examples.ExampleBase;
+
+import java.io.InputStream;
 
 public class ShipRegistration extends ExampleBase {
 	@Override
@@ -15,7 +15,7 @@ public class ShipRegistration extends ExampleBase {
         //Invoke to process the template
         workbook.processTemplate();
 	}
-	
+
 	@Override
 	public String getTemplateName() {
         return "Template_ShipRegistration.xlsx";
@@ -36,13 +36,13 @@ public class ShipRegistration extends ExampleBase {
         return new String[] { "xlsx/Template_ShipRegistration.xlsx" };
 	}
 
-	@Override
-	public boolean getIsNew() {
-		return true;
-	}
-
     @Override
     public boolean getViewInGcPdfViewer() {
         return true;
     }
+
+	@Override
+	public boolean getCanDownload() {
+		return false;
+	}
 }

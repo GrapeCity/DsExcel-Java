@@ -1,13 +1,13 @@
 package com.grapecity.documents.excel.examples.features.signatures;
 
-import java.security.cert.CertificateExpiredException;
-import java.security.cert.CertificateNotYetValidException;
-import java.security.cert.X509Certificate;
-
 import com.grapecity.documents.excel.ISignature;
 import com.grapecity.documents.excel.ISignatureSet;
 import com.grapecity.documents.excel.Workbook;
 import com.grapecity.documents.excel.examples.ExampleBase;
+
+import java.security.cert.CertificateExpiredException;
+import java.security.cert.CertificateNotYetValidException;
+import java.security.cert.X509Certificate;
 
 public class VerifySignatures extends ExampleBase {
     @Override
@@ -67,11 +67,6 @@ public class VerifySignatures extends ExampleBase {
     }
 
     @Override
-    public boolean getIsNew() {
-        return true;
-    }
-
-    @Override
     public boolean getShowViewer() {
         return false;
     }
@@ -79,5 +74,25 @@ public class VerifySignatures extends ExampleBase {
     @Override
     public boolean getCanDownload() {
         return false;
+    }
+
+    @Override
+    public String[] getDependencies() {
+        return new String[]{ "compile group: 'com.grapecity.documents', name: 'gcexcel.extension', version: '3.2.0'" };
+    }
+
+    @Override
+    public String[] getImportPackages() {
+        return new String[]{
+                "import java.security.cert.CertificateExpiredException;",
+                "import java.security.cert.CertificateNotYetValidException;",
+                "import java.security.cert.X509Certificate;"
+        };
+    }
+
+
+    @Override
+    public String[] getResources() {
+        return new String[] {"xlsx/Signature.xlsx"};
     }
 }

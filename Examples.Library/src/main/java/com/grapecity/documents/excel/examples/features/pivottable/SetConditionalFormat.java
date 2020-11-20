@@ -61,6 +61,7 @@ public class SetConditionalFormat extends ExampleBase {
         IAboveAverage averageCondition = pivottable.getDataBodyRange().getRows().get(rowCount - 1).getFormatConditions().addAboveAverage();
         averageCondition.setAboveBelow(AboveBelow.AboveAverage);
         averageCondition.getInterior().setColor(Color.GetTeal());
+        averageCondition.getFont().setColor(Color.GetWhite());
 
         worksheet.getRange("A:H").getEntireColumn().autoFit();
     }
@@ -76,10 +77,4 @@ public class SetConditionalFormat extends ExampleBase {
 
         return true;
     }
-
-    @Override
-    public boolean getIsNew() {
-        return true;
-    }
-
 }

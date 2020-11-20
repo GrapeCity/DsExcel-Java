@@ -1,0 +1,1937 @@
+{
+  "version": "13.0.0",
+  "sheetCount": 1,
+  "customList": [],
+  "sheets": {
+    "Sheet1": {
+      "name": "Sheet1",
+      "isSelected": true,
+      "theme": "Office",
+      "data": {
+        "dataTable": {
+          "0": {
+            "0": {
+              "value": {
+                "name": "Peyton's Assets",
+                "savings": 25000,
+                "shares": 55000,
+                "stocks": 15000,
+                "house": 250000,
+                "bonds": 11000,
+                "car": 7500
+              },
+              "style": {
+                "cellType": {
+                  "typeName": "16",
+                  "layout": {
+                    "rowCount": 9,
+                    "colCount": 3,
+                    "rowSize": [
+                      {
+                        "start": 0,
+                        "size": 0.20408163265306123
+                      },
+                      {
+                        "start": 0.20408163265306123,
+                        "size": 0.10204081632653061
+                      },
+                      {
+                        "start": 0.30612244897959184,
+                        "size": 0.10204081632653061
+                      },
+                      {
+                        "start": 0.40816326530612246,
+                        "size": 0.10204081632653061
+                      },
+                      {
+                        "start": 0.5102040816326531,
+                        "size": 0.10204081632653061
+                      },
+                      {
+                        "start": 0.6122448979591837,
+                        "size": 0.10204081632653061
+                      },
+                      {
+                        "start": 0.7142857142857143,
+                        "size": 0.10204081632653061
+                      },
+                      {
+                        "start": 0.8163265306122449,
+                        "size": 0.10204081632653061
+                      },
+                      {
+                        "start": 0.9183673469387755,
+                        "size": 0.08163265306122448
+                      }
+                    ],
+                    "colSize": [
+                      {
+                        "start": 0,
+                        "size": 0.3333333333333333
+                      },
+                      {
+                        "start": 0.3333333333333333,
+                        "size": 0.3333333333333333
+                      },
+                      {
+                        "start": 0.6666666666666666,
+                        "size": 0.3333333333333333
+                      }
+                    ],
+                    "cellStyleList": [
+                      [
+                        {
+                          "style": {
+                            "hAlign": 1,
+                            "vAlign": 1,
+                            "font": "20px Arial",
+                            "locked": true,
+                            "imeMode": 1
+                          },
+                          "spanWidth": 1,
+                          "spanHeight": 0.20408163265306123,
+                          "isSpan": true,
+                          "span": {
+                            "rowOffset": 0,
+                            "colOffset": 0,
+                            "rowCount": 1,
+                            "colCount": 3
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "$#,##0",
+                            "locked": true,
+                            "imeMode": 1
+                          },
+                          "isSpan": true
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "0.00%",
+                            "locked": true,
+                            "imeMode": 1
+                          },
+                          "isSpan": true
+                        }
+                      ],
+                      [
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "$#,##0",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "0.00%",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        }
+                      ],
+                      [
+                        {
+                          "style": {
+                            "backColor": "#919F81",
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "$#,##0",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "0.00%",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        }
+                      ],
+                      [
+                        {
+                          "style": {
+                            "backColor": "#D7913E",
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "$#,##0",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "0.00%",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        }
+                      ],
+                      [
+                        {
+                          "style": {
+                            "backColor": "#CEA722",
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "$#,##0",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "0.00%",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        }
+                      ],
+                      [
+                        {
+                          "style": {
+                            "backColor": "#B58091",
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "$#,##0",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "0.00%",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        }
+                      ],
+                      [
+                        {
+                          "style": {
+                            "backColor": "#8974A9",
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "$#,##0",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "0.00%",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        }
+                      ],
+                      [
+                        {
+                          "style": {
+                            "backColor": "#728BAD",
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "$#,##0",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "0.00%",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        }
+                      ],
+                      [
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14px Arial",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 1,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "$#,##0",
+                            "locked": true,
+                            "imeMode": 1
+                          },
+                          "spanWidth": 0.6666666666666666,
+                          "spanHeight": 0.08163265306122448,
+                          "isSpan": true,
+                          "span": {
+                            "rowOffset": 8,
+                            "colOffset": 1,
+                            "rowCount": 1,
+                            "colCount": 2
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "0.00%",
+                            "locked": true,
+                            "imeMode": 1
+                          },
+                          "isSpan": true
+                        }
+                      ]
+                    ],
+                    "sparklines": [
+                      [
+                        null,
+                        null,
+                        null
+                      ],
+                      [
+                        null,
+                        null,
+                        null
+                      ],
+                      [
+                        null,
+                        null,
+                        null
+                      ],
+                      [
+                        null,
+                        null,
+                        null
+                      ],
+                      [
+                        null,
+                        null,
+                        null
+                      ],
+                      [
+                        null,
+                        null,
+                        null
+                      ],
+                      [
+                        null,
+                        null,
+                        null
+                      ],
+                      [
+                        null,
+                        null,
+                        null
+                      ],
+                      [
+                        null,
+                        null,
+                        null
+                      ]
+                    ],
+                    "totalWidth": 300,
+                    "totalHeight": 245
+                  },
+                  "resolvor": {
+                    "spillRangs": [],
+                    "allowDynamicArray": false,
+                    "range": {
+                      "row": 0,
+                      "col": 0,
+                      "rowCount": 9,
+                      "colCount": 3
+                    },
+                    "templatejson": "{\"name\":\"Sheet2\",\"isSelected\":false,\"activeRow\":2,\"activeCol\":2,\"theme\":\"Office\",\"data\":{\"dataTable\":{\"0\":{\"0\":{\"style\":{\"hAlign\":1,\"vAlign\":1,\"font\":\"20px Arial\"},\"bindingPath\":\"name\",\"value\":\"Chris's Assets\"}},\"1\":{\"0\":{\"value\":\"Asset Type\"},\"1\":{\"value\":\"Amount\"},\"2\":{\"value\":\"Note\",\"style\":{\"hAlign\":3,\"vAlign\":0,\"themeFont\":\"Body\",\"formatter\":\"0.00%\",\"imeMode\":1}}},\"2\":{\"0\":{\"value\":\"Savings\",\"style\":{\"backColor\":\"#919F81\"}},\"1\":{\"bindingPath\":\"savings\",\"value\":70000},\"2\":{\"value\":0.259259259259259,\"formula\":\"B3/$B$9\"}},\"3\":{\"0\":{\"value\":\"Shares\",\"style\":{\"backColor\":\"#D7913E\"}},\"1\":{\"bindingPath\":\"shares\",\"value\":85000},\"2\":{\"value\":0.314814814814815,\"formula\":\"B4/$B$9\"}},\"4\":{\"0\":{\"value\":\"Stocks\",\"style\":{\"backColor\":\"#CEA722\"}},\"1\":{\"bindingPath\":\"stocks\",\"value\":35000},\"2\":{\"value\":0.12962962962963,\"formula\":\"B5/$B$9\"}},\"5\":{\"0\":{\"value\":\"House\",\"style\":{\"backColor\":\"#B58091\"}},\"1\":{\"bindingPath\":\"house\",\"value\":20000},\"2\":{\"value\":0.074074074074074,\"formula\":\"B6/$B$9\"}},\"6\":{\"0\":{\"value\":\"Bonds\",\"style\":{\"backColor\":\"#8974A9\"}},\"1\":{\"bindingPath\":\"bonds\",\"value\":15000},\"2\":{\"value\":0.055555555555556,\"formula\":\"B7/$B$9\"}},\"7\":{\"0\":{\"value\":\"Car\",\"style\":{\"backColor\":\"#728BAD\"}},\"1\":{\"bindingPath\":\"car\",\"value\":45000},\"2\":{\"value\":0.166666666666667,\"formula\":\"B8/$B$9\"}},\"8\":{\"0\":{\"value\":\"Total\",\"style\":{\"font\":\"14px Arial\"}},\"1\":{\"value\":270000,\"style\":{\"hAlign\":1},\"formula\":\"SUM(B3:B8)\"}}},\"columnDataArray\":[null,{\"style\":{\"formatter\":\"$#,##0\"}},{\"style\":{\"formatter\":\"0.00%\"}},{\"style\":{\"formatter\":\"0.00%\"}}],\"defaultDataNode\":{\"style\":{\"themeFont\":\"Body\"}}},\"rowHeaderData\":{\"defaultDataNode\":{\"style\":{\"themeFont\":\"Body\"}}},\"colHeaderData\":{\"defaultDataNode\":{\"style\":{\"themeFont\":\"Body\"}}},\"rows\":[{\"size\":50},{\"size\":25},{\"size\":25},{\"size\":25},{\"size\":25},{\"size\":25},{\"size\":25},{\"size\":25}],\"columns\":[{\"size\":100},{\"size\":100},{\"size\":100}],\"leftCellIndex\":0,\"topCellIndex\":0,\"spans\":[{\"row\":0,\"rowCount\":1,\"col\":0,\"colCount\":3},{\"row\":8,\"rowCount\":1,\"col\":1,\"colCount\":2}],\"selections\":{\"0\":{\"row\":2,\"rowCount\":6,\"col\":2,\"colCount\":1},\"length\":1},\"conditionalFormats\":{\"rules\":[{\"ruleType\":12,\"ranges\":[{\"row\":2,\"rowCount\":6,\"col\":2,\"colCount\":1}],\"gradient\":false,\"color\":\"rgb(173, 216, 230)\",\"borderColor\":\"rgb(0, 0, 0)\",\"dataBarDirection\":1,\"minValue\":\"(Automatic)\",\"maxValue\":\"(Automatic)\"}]},\"cellStates\":{},\"outlineColumnOptions\":{},\"autoMergeRangeInfos\":[],\"printInfo\":{\"paperSize\":{\"width\":850,\"height\":1100,\"kind\":1}}}"
+                  }
+                }
+              }
+            },
+            "1": {
+              "value": {
+                "name": "Icey's Assets",
+                "savings": 30000,
+                "shares": 45000,
+                "stocks": 25000,
+                "house": 20000,
+                "bonds": 18000,
+                "car": 75000
+              },
+              "style": {
+                "cellType": {
+                  "typeName": "16",
+                  "layout": {
+                    "rowCount": 9,
+                    "colCount": 3,
+                    "rowSize": [
+                      {
+                        "start": 0,
+                        "size": 0.20408163265306123
+                      },
+                      {
+                        "start": 0.20408163265306123,
+                        "size": 0.10204081632653061
+                      },
+                      {
+                        "start": 0.30612244897959184,
+                        "size": 0.10204081632653061
+                      },
+                      {
+                        "start": 0.40816326530612246,
+                        "size": 0.10204081632653061
+                      },
+                      {
+                        "start": 0.5102040816326531,
+                        "size": 0.10204081632653061
+                      },
+                      {
+                        "start": 0.6122448979591837,
+                        "size": 0.10204081632653061
+                      },
+                      {
+                        "start": 0.7142857142857143,
+                        "size": 0.10204081632653061
+                      },
+                      {
+                        "start": 0.8163265306122449,
+                        "size": 0.10204081632653061
+                      },
+                      {
+                        "start": 0.9183673469387755,
+                        "size": 0.08163265306122448
+                      }
+                    ],
+                    "colSize": [
+                      {
+                        "start": 0,
+                        "size": 0.3333333333333333
+                      },
+                      {
+                        "start": 0.3333333333333333,
+                        "size": 0.3333333333333333
+                      },
+                      {
+                        "start": 0.6666666666666666,
+                        "size": 0.3333333333333333
+                      }
+                    ],
+                    "cellStyleList": [
+                      [
+                        {
+                          "style": {
+                            "hAlign": 1,
+                            "vAlign": 1,
+                            "font": "20px Arial",
+                            "locked": true,
+                            "imeMode": 1
+                          },
+                          "spanWidth": 1,
+                          "spanHeight": 0.20408163265306123,
+                          "isSpan": true,
+                          "span": {
+                            "rowOffset": 0,
+                            "colOffset": 0,
+                            "rowCount": 1,
+                            "colCount": 3
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "$#,##0",
+                            "locked": true,
+                            "imeMode": 1
+                          },
+                          "isSpan": true
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "0.00%",
+                            "locked": true,
+                            "imeMode": 1
+                          },
+                          "isSpan": true
+                        }
+                      ],
+                      [
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "$#,##0",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "0.00%",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        }
+                      ],
+                      [
+                        {
+                          "style": {
+                            "backColor": "#919F81",
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "$#,##0",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "0.00%",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        }
+                      ],
+                      [
+                        {
+                          "style": {
+                            "backColor": "#D7913E",
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "$#,##0",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "0.00%",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        }
+                      ],
+                      [
+                        {
+                          "style": {
+                            "backColor": "#CEA722",
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "$#,##0",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "0.00%",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        }
+                      ],
+                      [
+                        {
+                          "style": {
+                            "backColor": "#B58091",
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "$#,##0",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "0.00%",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        }
+                      ],
+                      [
+                        {
+                          "style": {
+                            "backColor": "#8974A9",
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "$#,##0",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "0.00%",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        }
+                      ],
+                      [
+                        {
+                          "style": {
+                            "backColor": "#728BAD",
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "$#,##0",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "0.00%",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        }
+                      ],
+                      [
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14px Arial",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 1,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "$#,##0",
+                            "locked": true,
+                            "imeMode": 1
+                          },
+                          "spanWidth": 0.6666666666666666,
+                          "spanHeight": 0.08163265306122448,
+                          "isSpan": true,
+                          "span": {
+                            "rowOffset": 8,
+                            "colOffset": 1,
+                            "rowCount": 1,
+                            "colCount": 2
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "0.00%",
+                            "locked": true,
+                            "imeMode": 1
+                          },
+                          "isSpan": true
+                        }
+                      ]
+                    ],
+                    "sparklines": [
+                      [
+                        null,
+                        null,
+                        null
+                      ],
+                      [
+                        null,
+                        null,
+                        null
+                      ],
+                      [
+                        null,
+                        null,
+                        null
+                      ],
+                      [
+                        null,
+                        null,
+                        null
+                      ],
+                      [
+                        null,
+                        null,
+                        null
+                      ],
+                      [
+                        null,
+                        null,
+                        null
+                      ],
+                      [
+                        null,
+                        null,
+                        null
+                      ],
+                      [
+                        null,
+                        null,
+                        null
+                      ],
+                      [
+                        null,
+                        null,
+                        null
+                      ]
+                    ],
+                    "totalWidth": 300,
+                    "totalHeight": 245
+                  },
+                  "resolvor": {
+                    "spillRangs": [],
+                    "allowDynamicArray": false,
+                    "range": {
+                      "row": 0,
+                      "col": 0,
+                      "rowCount": 9,
+                      "colCount": 3
+                    },
+                    "templatejson": "{\"name\":\"Sheet2\",\"isSelected\":false,\"activeRow\":2,\"activeCol\":2,\"theme\":\"Office\",\"data\":{\"dataTable\":{\"0\":{\"0\":{\"style\":{\"hAlign\":1,\"vAlign\":1,\"font\":\"20px Arial\"},\"bindingPath\":\"name\",\"value\":\"Chris's Assets\"}},\"1\":{\"0\":{\"value\":\"Asset Type\"},\"1\":{\"value\":\"Amount\"},\"2\":{\"value\":\"Note\",\"style\":{\"hAlign\":3,\"vAlign\":0,\"themeFont\":\"Body\",\"formatter\":\"0.00%\",\"imeMode\":1}}},\"2\":{\"0\":{\"value\":\"Savings\",\"style\":{\"backColor\":\"#919F81\"}},\"1\":{\"bindingPath\":\"savings\",\"value\":70000},\"2\":{\"value\":0.259259259259259,\"formula\":\"B3/$B$9\"}},\"3\":{\"0\":{\"value\":\"Shares\",\"style\":{\"backColor\":\"#D7913E\"}},\"1\":{\"bindingPath\":\"shares\",\"value\":85000},\"2\":{\"value\":0.314814814814815,\"formula\":\"B4/$B$9\"}},\"4\":{\"0\":{\"value\":\"Stocks\",\"style\":{\"backColor\":\"#CEA722\"}},\"1\":{\"bindingPath\":\"stocks\",\"value\":35000},\"2\":{\"value\":0.12962962962963,\"formula\":\"B5/$B$9\"}},\"5\":{\"0\":{\"value\":\"House\",\"style\":{\"backColor\":\"#B58091\"}},\"1\":{\"bindingPath\":\"house\",\"value\":20000},\"2\":{\"value\":0.074074074074074,\"formula\":\"B6/$B$9\"}},\"6\":{\"0\":{\"value\":\"Bonds\",\"style\":{\"backColor\":\"#8974A9\"}},\"1\":{\"bindingPath\":\"bonds\",\"value\":15000},\"2\":{\"value\":0.055555555555556,\"formula\":\"B7/$B$9\"}},\"7\":{\"0\":{\"value\":\"Car\",\"style\":{\"backColor\":\"#728BAD\"}},\"1\":{\"bindingPath\":\"car\",\"value\":45000},\"2\":{\"value\":0.166666666666667,\"formula\":\"B8/$B$9\"}},\"8\":{\"0\":{\"value\":\"Total\",\"style\":{\"font\":\"14px Arial\"}},\"1\":{\"value\":270000,\"style\":{\"hAlign\":1},\"formula\":\"SUM(B3:B8)\"}}},\"columnDataArray\":[null,{\"style\":{\"formatter\":\"$#,##0\"}},{\"style\":{\"formatter\":\"0.00%\"}},{\"style\":{\"formatter\":\"0.00%\"}}],\"defaultDataNode\":{\"style\":{\"themeFont\":\"Body\"}}},\"rowHeaderData\":{\"defaultDataNode\":{\"style\":{\"themeFont\":\"Body\"}}},\"colHeaderData\":{\"defaultDataNode\":{\"style\":{\"themeFont\":\"Body\"}}},\"rows\":[{\"size\":50},{\"size\":25},{\"size\":25},{\"size\":25},{\"size\":25},{\"size\":25},{\"size\":25},{\"size\":25}],\"columns\":[{\"size\":100},{\"size\":100},{\"size\":100}],\"leftCellIndex\":0,\"topCellIndex\":0,\"spans\":[{\"row\":0,\"rowCount\":1,\"col\":0,\"colCount\":3},{\"row\":8,\"rowCount\":1,\"col\":1,\"colCount\":2}],\"selections\":{\"0\":{\"row\":2,\"rowCount\":6,\"col\":2,\"colCount\":1},\"length\":1},\"conditionalFormats\":{\"rules\":[{\"ruleType\":12,\"ranges\":[{\"row\":2,\"rowCount\":6,\"col\":2,\"colCount\":1}],\"gradient\":false,\"color\":\"rgb(173, 216, 230)\",\"borderColor\":\"rgb(0, 0, 0)\",\"dataBarDirection\":1,\"minValue\":\"(Automatic)\",\"maxValue\":\"(Automatic)\"}]},\"cellStates\":{},\"outlineColumnOptions\":{},\"autoMergeRangeInfos\":[],\"printInfo\":{\"paperSize\":{\"width\":850,\"height\":1100,\"kind\":1}}}"
+                  }
+                }
+              }
+            }
+          },
+          "1": {
+            "0": {
+              "value": {
+                "name": "Walter's Assets",
+                "savings": 20000,
+                "shares": 4000,
+                "stocks": 95000,
+                "house": 30000,
+                "bonds": 10000,
+                "car": 56000
+              },
+              "style": {
+                "cellType": {
+                  "typeName": "16",
+                  "layout": {
+                    "rowCount": 9,
+                    "colCount": 3,
+                    "rowSize": [
+                      {
+                        "start": 0,
+                        "size": 0.20408163265306123
+                      },
+                      {
+                        "start": 0.20408163265306123,
+                        "size": 0.10204081632653061
+                      },
+                      {
+                        "start": 0.30612244897959184,
+                        "size": 0.10204081632653061
+                      },
+                      {
+                        "start": 0.40816326530612246,
+                        "size": 0.10204081632653061
+                      },
+                      {
+                        "start": 0.5102040816326531,
+                        "size": 0.10204081632653061
+                      },
+                      {
+                        "start": 0.6122448979591837,
+                        "size": 0.10204081632653061
+                      },
+                      {
+                        "start": 0.7142857142857143,
+                        "size": 0.10204081632653061
+                      },
+                      {
+                        "start": 0.8163265306122449,
+                        "size": 0.10204081632653061
+                      },
+                      {
+                        "start": 0.9183673469387755,
+                        "size": 0.08163265306122448
+                      }
+                    ],
+                    "colSize": [
+                      {
+                        "start": 0,
+                        "size": 0.3333333333333333
+                      },
+                      {
+                        "start": 0.3333333333333333,
+                        "size": 0.3333333333333333
+                      },
+                      {
+                        "start": 0.6666666666666666,
+                        "size": 0.3333333333333333
+                      }
+                    ],
+                    "cellStyleList": [
+                      [
+                        {
+                          "style": {
+                            "hAlign": 1,
+                            "vAlign": 1,
+                            "font": "20px Arial",
+                            "locked": true,
+                            "imeMode": 1
+                          },
+                          "spanWidth": 1,
+                          "spanHeight": 0.20408163265306123,
+                          "isSpan": true,
+                          "span": {
+                            "rowOffset": 0,
+                            "colOffset": 0,
+                            "rowCount": 1,
+                            "colCount": 3
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "$#,##0",
+                            "locked": true,
+                            "imeMode": 1
+                          },
+                          "isSpan": true
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "0.00%",
+                            "locked": true,
+                            "imeMode": 1
+                          },
+                          "isSpan": true
+                        }
+                      ],
+                      [
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "$#,##0",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "0.00%",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        }
+                      ],
+                      [
+                        {
+                          "style": {
+                            "backColor": "#919F81",
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "$#,##0",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "0.00%",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        }
+                      ],
+                      [
+                        {
+                          "style": {
+                            "backColor": "#D7913E",
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "$#,##0",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "0.00%",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        }
+                      ],
+                      [
+                        {
+                          "style": {
+                            "backColor": "#CEA722",
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "$#,##0",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "0.00%",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        }
+                      ],
+                      [
+                        {
+                          "style": {
+                            "backColor": "#B58091",
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "$#,##0",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "0.00%",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        }
+                      ],
+                      [
+                        {
+                          "style": {
+                            "backColor": "#8974A9",
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "$#,##0",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "0.00%",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        }
+                      ],
+                      [
+                        {
+                          "style": {
+                            "backColor": "#728BAD",
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "$#,##0",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "0.00%",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        }
+                      ],
+                      [
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14px Arial",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 1,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "$#,##0",
+                            "locked": true,
+                            "imeMode": 1
+                          },
+                          "spanWidth": 0.6666666666666666,
+                          "spanHeight": 0.08163265306122448,
+                          "isSpan": true,
+                          "span": {
+                            "rowOffset": 8,
+                            "colOffset": 1,
+                            "rowCount": 1,
+                            "colCount": 2
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "0.00%",
+                            "locked": true,
+                            "imeMode": 1
+                          },
+                          "isSpan": true
+                        }
+                      ]
+                    ],
+                    "sparklines": [
+                      [
+                        null,
+                        null,
+                        null
+                      ],
+                      [
+                        null,
+                        null,
+                        null
+                      ],
+                      [
+                        null,
+                        null,
+                        null
+                      ],
+                      [
+                        null,
+                        null,
+                        null
+                      ],
+                      [
+                        null,
+                        null,
+                        null
+                      ],
+                      [
+                        null,
+                        null,
+                        null
+                      ],
+                      [
+                        null,
+                        null,
+                        null
+                      ],
+                      [
+                        null,
+                        null,
+                        null
+                      ],
+                      [
+                        null,
+                        null,
+                        null
+                      ]
+                    ],
+                    "totalWidth": 300,
+                    "totalHeight": 245
+                  },
+                  "resolvor": {
+                    "spillRangs": [],
+                    "allowDynamicArray": false,
+                    "range": {
+                      "row": 0,
+                      "col": 0,
+                      "rowCount": 9,
+                      "colCount": 3
+                    },
+                    "templatejson": "{\"name\":\"Sheet2\",\"isSelected\":false,\"activeRow\":2,\"activeCol\":2,\"theme\":\"Office\",\"data\":{\"dataTable\":{\"0\":{\"0\":{\"style\":{\"hAlign\":1,\"vAlign\":1,\"font\":\"20px Arial\"},\"bindingPath\":\"name\",\"value\":\"Chris's Assets\"}},\"1\":{\"0\":{\"value\":\"Asset Type\"},\"1\":{\"value\":\"Amount\"},\"2\":{\"value\":\"Note\",\"style\":{\"hAlign\":3,\"vAlign\":0,\"themeFont\":\"Body\",\"formatter\":\"0.00%\",\"imeMode\":1}}},\"2\":{\"0\":{\"value\":\"Savings\",\"style\":{\"backColor\":\"#919F81\"}},\"1\":{\"bindingPath\":\"savings\",\"value\":70000},\"2\":{\"value\":0.259259259259259,\"formula\":\"B3/$B$9\"}},\"3\":{\"0\":{\"value\":\"Shares\",\"style\":{\"backColor\":\"#D7913E\"}},\"1\":{\"bindingPath\":\"shares\",\"value\":85000},\"2\":{\"value\":0.314814814814815,\"formula\":\"B4/$B$9\"}},\"4\":{\"0\":{\"value\":\"Stocks\",\"style\":{\"backColor\":\"#CEA722\"}},\"1\":{\"bindingPath\":\"stocks\",\"value\":35000},\"2\":{\"value\":0.12962962962963,\"formula\":\"B5/$B$9\"}},\"5\":{\"0\":{\"value\":\"House\",\"style\":{\"backColor\":\"#B58091\"}},\"1\":{\"bindingPath\":\"house\",\"value\":20000},\"2\":{\"value\":0.074074074074074,\"formula\":\"B6/$B$9\"}},\"6\":{\"0\":{\"value\":\"Bonds\",\"style\":{\"backColor\":\"#8974A9\"}},\"1\":{\"bindingPath\":\"bonds\",\"value\":15000},\"2\":{\"value\":0.055555555555556,\"formula\":\"B7/$B$9\"}},\"7\":{\"0\":{\"value\":\"Car\",\"style\":{\"backColor\":\"#728BAD\"}},\"1\":{\"bindingPath\":\"car\",\"value\":45000},\"2\":{\"value\":0.166666666666667,\"formula\":\"B8/$B$9\"}},\"8\":{\"0\":{\"value\":\"Total\",\"style\":{\"font\":\"14px Arial\"}},\"1\":{\"value\":270000,\"style\":{\"hAlign\":1},\"formula\":\"SUM(B3:B8)\"}}},\"columnDataArray\":[null,{\"style\":{\"formatter\":\"$#,##0\"}},{\"style\":{\"formatter\":\"0.00%\"}},{\"style\":{\"formatter\":\"0.00%\"}}],\"defaultDataNode\":{\"style\":{\"themeFont\":\"Body\"}}},\"rowHeaderData\":{\"defaultDataNode\":{\"style\":{\"themeFont\":\"Body\"}}},\"colHeaderData\":{\"defaultDataNode\":{\"style\":{\"themeFont\":\"Body\"}}},\"rows\":[{\"size\":50},{\"size\":25},{\"size\":25},{\"size\":25},{\"size\":25},{\"size\":25},{\"size\":25},{\"size\":25}],\"columns\":[{\"size\":100},{\"size\":100},{\"size\":100}],\"leftCellIndex\":0,\"topCellIndex\":0,\"spans\":[{\"row\":0,\"rowCount\":1,\"col\":0,\"colCount\":3},{\"row\":8,\"rowCount\":1,\"col\":1,\"colCount\":2}],\"selections\":{\"0\":{\"row\":2,\"rowCount\":6,\"col\":2,\"colCount\":1},\"length\":1},\"conditionalFormats\":{\"rules\":[{\"ruleType\":12,\"ranges\":[{\"row\":2,\"rowCount\":6,\"col\":2,\"colCount\":1}],\"gradient\":false,\"color\":\"rgb(173, 216, 230)\",\"borderColor\":\"rgb(0, 0, 0)\",\"dataBarDirection\":1,\"minValue\":\"(Automatic)\",\"maxValue\":\"(Automatic)\"}]},\"cellStates\":{},\"outlineColumnOptions\":{},\"autoMergeRangeInfos\":[],\"printInfo\":{\"paperSize\":{\"width\":850,\"height\":1100,\"kind\":1}}}"
+                  }
+                }
+              }
+            },
+            "1": {
+              "value": {
+                "name": "Chris's Assets",
+                "savings": 70000,
+                "shares": 85000,
+                "stocks": 35000,
+                "house": 20000,
+                "bonds": 15000,
+                "car": 45000
+              },
+              "style": {
+                "cellType": {
+                  "typeName": "16",
+                  "layout": {
+                    "rowCount": 9,
+                    "colCount": 3,
+                    "rowSize": [
+                      {
+                        "start": 0,
+                        "size": 0.20408163265306123
+                      },
+                      {
+                        "start": 0.20408163265306123,
+                        "size": 0.10204081632653061
+                      },
+                      {
+                        "start": 0.30612244897959184,
+                        "size": 0.10204081632653061
+                      },
+                      {
+                        "start": 0.40816326530612246,
+                        "size": 0.10204081632653061
+                      },
+                      {
+                        "start": 0.5102040816326531,
+                        "size": 0.10204081632653061
+                      },
+                      {
+                        "start": 0.6122448979591837,
+                        "size": 0.10204081632653061
+                      },
+                      {
+                        "start": 0.7142857142857143,
+                        "size": 0.10204081632653061
+                      },
+                      {
+                        "start": 0.8163265306122449,
+                        "size": 0.10204081632653061
+                      },
+                      {
+                        "start": 0.9183673469387755,
+                        "size": 0.08163265306122448
+                      }
+                    ],
+                    "colSize": [
+                      {
+                        "start": 0,
+                        "size": 0.3333333333333333
+                      },
+                      {
+                        "start": 0.3333333333333333,
+                        "size": 0.3333333333333333
+                      },
+                      {
+                        "start": 0.6666666666666666,
+                        "size": 0.3333333333333333
+                      }
+                    ],
+                    "cellStyleList": [
+                      [
+                        {
+                          "style": {
+                            "hAlign": 1,
+                            "vAlign": 1,
+                            "font": "20px Arial",
+                            "locked": true,
+                            "imeMode": 1
+                          },
+                          "spanWidth": 1,
+                          "spanHeight": 0.20408163265306123,
+                          "isSpan": true,
+                          "span": {
+                            "rowOffset": 0,
+                            "colOffset": 0,
+                            "rowCount": 1,
+                            "colCount": 3
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "$#,##0",
+                            "locked": true,
+                            "imeMode": 1
+                          },
+                          "isSpan": true
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "0.00%",
+                            "locked": true,
+                            "imeMode": 1
+                          },
+                          "isSpan": true
+                        }
+                      ],
+                      [
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "$#,##0",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "0.00%",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        }
+                      ],
+                      [
+                        {
+                          "style": {
+                            "backColor": "#919F81",
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "$#,##0",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "0.00%",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        }
+                      ],
+                      [
+                        {
+                          "style": {
+                            "backColor": "#D7913E",
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "$#,##0",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "0.00%",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        }
+                      ],
+                      [
+                        {
+                          "style": {
+                            "backColor": "#CEA722",
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "$#,##0",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "0.00%",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        }
+                      ],
+                      [
+                        {
+                          "style": {
+                            "backColor": "#B58091",
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "$#,##0",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "0.00%",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        }
+                      ],
+                      [
+                        {
+                          "style": {
+                            "backColor": "#8974A9",
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "$#,##0",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "0.00%",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        }
+                      ],
+                      [
+                        {
+                          "style": {
+                            "backColor": "#728BAD",
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "$#,##0",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "0.00%",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        }
+                      ],
+                      [
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14px Arial",
+                            "locked": true,
+                            "imeMode": 1
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 1,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "$#,##0",
+                            "locked": true,
+                            "imeMode": 1
+                          },
+                          "spanWidth": 0.6666666666666666,
+                          "spanHeight": 0.08163265306122448,
+                          "isSpan": true,
+                          "span": {
+                            "rowOffset": 8,
+                            "colOffset": 1,
+                            "rowCount": 1,
+                            "colCount": 2
+                          }
+                        },
+                        {
+                          "style": {
+                            "hAlign": 3,
+                            "vAlign": 0,
+                            "font": "14.6667px Calibri",
+                            "themeFont": "Body",
+                            "formatter": "0.00%",
+                            "locked": true,
+                            "imeMode": 1
+                          },
+                          "isSpan": true
+                        }
+                      ]
+                    ],
+                    "sparklines": [
+                      [
+                        null,
+                        null,
+                        null
+                      ],
+                      [
+                        null,
+                        null,
+                        null
+                      ],
+                      [
+                        null,
+                        null,
+                        null
+                      ],
+                      [
+                        null,
+                        null,
+                        null
+                      ],
+                      [
+                        null,
+                        null,
+                        null
+                      ],
+                      [
+                        null,
+                        null,
+                        null
+                      ],
+                      [
+                        null,
+                        null,
+                        null
+                      ],
+                      [
+                        null,
+                        null,
+                        null
+                      ],
+                      [
+                        null,
+                        null,
+                        null
+                      ]
+                    ],
+                    "totalWidth": 300,
+                    "totalHeight": 245
+                  },
+                  "resolvor": {
+                    "spillRangs": [],
+                    "allowDynamicArray": false,
+                    "range": {
+                      "row": 0,
+                      "col": 0,
+                      "rowCount": 9,
+                      "colCount": 3
+                    },
+                    "templatejson": "{\"name\":\"Sheet2\",\"isSelected\":false,\"activeRow\":2,\"activeCol\":2,\"theme\":\"Office\",\"data\":{\"dataTable\":{\"0\":{\"0\":{\"style\":{\"hAlign\":1,\"vAlign\":1,\"font\":\"20px Arial\"},\"bindingPath\":\"name\",\"value\":\"Chris's Assets\"}},\"1\":{\"0\":{\"value\":\"Asset Type\"},\"1\":{\"value\":\"Amount\"},\"2\":{\"value\":\"Note\",\"style\":{\"hAlign\":3,\"vAlign\":0,\"themeFont\":\"Body\",\"formatter\":\"0.00%\",\"imeMode\":1}}},\"2\":{\"0\":{\"value\":\"Savings\",\"style\":{\"backColor\":\"#919F81\"}},\"1\":{\"bindingPath\":\"savings\",\"value\":70000},\"2\":{\"value\":0.259259259259259,\"formula\":\"B3/$B$9\"}},\"3\":{\"0\":{\"value\":\"Shares\",\"style\":{\"backColor\":\"#D7913E\"}},\"1\":{\"bindingPath\":\"shares\",\"value\":85000},\"2\":{\"value\":0.314814814814815,\"formula\":\"B4/$B$9\"}},\"4\":{\"0\":{\"value\":\"Stocks\",\"style\":{\"backColor\":\"#CEA722\"}},\"1\":{\"bindingPath\":\"stocks\",\"value\":35000},\"2\":{\"value\":0.12962962962963,\"formula\":\"B5/$B$9\"}},\"5\":{\"0\":{\"value\":\"House\",\"style\":{\"backColor\":\"#B58091\"}},\"1\":{\"bindingPath\":\"house\",\"value\":20000},\"2\":{\"value\":0.074074074074074,\"formula\":\"B6/$B$9\"}},\"6\":{\"0\":{\"value\":\"Bonds\",\"style\":{\"backColor\":\"#8974A9\"}},\"1\":{\"bindingPath\":\"bonds\",\"value\":15000},\"2\":{\"value\":0.055555555555556,\"formula\":\"B7/$B$9\"}},\"7\":{\"0\":{\"value\":\"Car\",\"style\":{\"backColor\":\"#728BAD\"}},\"1\":{\"bindingPath\":\"car\",\"value\":45000},\"2\":{\"value\":0.166666666666667,\"formula\":\"B8/$B$9\"}},\"8\":{\"0\":{\"value\":\"Total\",\"style\":{\"font\":\"14px Arial\"}},\"1\":{\"value\":270000,\"style\":{\"hAlign\":1},\"formula\":\"SUM(B3:B8)\"}}},\"columnDataArray\":[null,{\"style\":{\"formatter\":\"$#,##0\"}},{\"style\":{\"formatter\":\"0.00%\"}},{\"style\":{\"formatter\":\"0.00%\"}}],\"defaultDataNode\":{\"style\":{\"themeFont\":\"Body\"}}},\"rowHeaderData\":{\"defaultDataNode\":{\"style\":{\"themeFont\":\"Body\"}}},\"colHeaderData\":{\"defaultDataNode\":{\"style\":{\"themeFont\":\"Body\"}}},\"rows\":[{\"size\":50},{\"size\":25},{\"size\":25},{\"size\":25},{\"size\":25},{\"size\":25},{\"size\":25},{\"size\":25}],\"columns\":[{\"size\":100},{\"size\":100},{\"size\":100}],\"leftCellIndex\":0,\"topCellIndex\":0,\"spans\":[{\"row\":0,\"rowCount\":1,\"col\":0,\"colCount\":3},{\"row\":8,\"rowCount\":1,\"col\":1,\"colCount\":2}],\"selections\":{\"0\":{\"row\":2,\"rowCount\":6,\"col\":2,\"colCount\":1},\"length\":1},\"conditionalFormats\":{\"rules\":[{\"ruleType\":12,\"ranges\":[{\"row\":2,\"rowCount\":6,\"col\":2,\"colCount\":1}],\"gradient\":false,\"color\":\"rgb(173, 216, 230)\",\"borderColor\":\"rgb(0, 0, 0)\",\"dataBarDirection\":1,\"minValue\":\"(Automatic)\",\"maxValue\":\"(Automatic)\"}]},\"cellStates\":{},\"outlineColumnOptions\":{},\"autoMergeRangeInfos\":[],\"printInfo\":{\"paperSize\":{\"width\":850,\"height\":1100,\"kind\":1}}}"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "defaultDataNode": {
+          "style": {
+            "themeFont": "Body"
+          }
+        }
+      },
+      "rowHeaderData": {
+        "defaultDataNode": {
+          "style": {
+            "themeFont": "Body"
+          }
+        }
+      },
+      "colHeaderData": {
+        "defaultDataNode": {
+          "style": {
+            "themeFont": "Body"
+          }
+        }
+      },
+      "rows": [
+        {
+          "size": 249
+        },
+        {
+          "size": 249
+        }
+      ],
+      "columns": [
+        {
+          "size": 300
+        },
+        {
+          "size": 300
+        }
+      ],
+      "leftCellIndex": 0,
+      "topCellIndex": 0,
+      "selections": {
+        "0": {
+          "row": 0,
+          "rowCount": 1,
+          "col": 0,
+          "colCount": 1
+        },
+        "length": 1
+      },
+      "cellStates": {},
+      "outlineColumnOptions": {},
+      "autoMergeRangeInfos": [],
+      "printInfo": {
+        "paperSize": {
+          "width": 850,
+          "height": 1100,
+          "kind": 1
+        }
+      },
+      "index": 0
+    }
+  }
+}

@@ -31,11 +31,6 @@ public class SaveHtmlWithScalableWidth extends ExampleBase {
     }
 
     @Override
-    public boolean getIsNew() {
-        return true;
-    }
-
-    @Override
     public String[] getResources() {
         return new String[] { "xlsx/NetProfit.xlsx" };
     }

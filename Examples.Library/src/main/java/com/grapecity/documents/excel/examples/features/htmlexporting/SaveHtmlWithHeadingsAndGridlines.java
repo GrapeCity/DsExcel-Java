@@ -34,11 +34,6 @@ public class SaveHtmlWithHeadingsAndGridlines extends ExampleBase {
     }
 
     @Override
-    public boolean getIsNew() {
-        return true;
-    }
-
-    @Override
     public String[] getResources() {
         return new String[] { "xlsx/Home maintenance schedule and task list.xlsx" };
     }

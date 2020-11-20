@@ -30,11 +30,6 @@ public class CopySignatureLines extends ExampleBase {
     }
 
     @Override
-    public boolean getIsNew() {
-        return true;
-    }
-
-    @Override
     public boolean getShowViewer() {
         return false;
     }
@@ -42,5 +37,10 @@ public class CopySignatureLines extends ExampleBase {
     @Override
     public boolean getShowScreenshot() {
         return true;
+    }
+
+    @Override
+    public String[] getDependencies() {
+        return new String[]{ "compile group: 'com.grapecity.documents', name: 'gcexcel.extension', version: '3.2.0'" };
     }
 }

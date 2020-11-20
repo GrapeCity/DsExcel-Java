@@ -233,7 +233,7 @@ public class TablixReport extends ExampleBase {
         tablixInfo23.productType = "Confections";
         tablixInfo23.year = "2018";
         tablixInfo23.season = "Q2";
-        tablixInfos.add(tablixInfo1);
+        tablixInfos.add(tablixInfo23);
 
         TablixInfo tablixInfo24 = new TablixInfo();
         tablixInfo24.orderID = 24;

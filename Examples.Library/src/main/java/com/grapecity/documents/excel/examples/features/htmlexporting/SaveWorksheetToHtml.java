@@ -31,11 +31,6 @@ public class SaveWorksheetToHtml extends ExampleBase {
     }
 
     @Override
-    public boolean getIsNew() {
-        return true;
-    }
-
-    @Override
     public String[] getResources() {
         return new String[] { "xlsx/BreakEven.xlsx" };
     }

@@ -1,11 +1,11 @@
 package com.grapecity.documents.excel.examples.templates.pdfformbuilder;
 
+import com.grapecity.documents.excel.Workbook;
+import com.grapecity.documents.excel.examples.ExampleBase;
+
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
-
-import com.grapecity.documents.excel.Workbook;
-import com.grapecity.documents.excel.examples.ExampleBase;
 
 public class CheckBoxFields extends ExampleBase {
 	@Override
@@ -51,13 +51,13 @@ public class CheckBoxFields extends ExampleBase {
         return new String[] { "xlsx/Template_CheckBoxField.xlsx" };
 	}
 
-	@Override
-	public boolean getIsNew() {
-		return true;
-	}
-
     @Override
     public boolean getViewInGcPdfViewer() {
         return true;
+    }
+
+    @Override
+    public boolean getCanDownload() {
+        return false;
     }
 }

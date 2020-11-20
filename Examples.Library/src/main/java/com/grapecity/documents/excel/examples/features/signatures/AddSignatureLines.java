@@ -1,13 +1,8 @@
 package com.grapecity.documents.excel.examples.features.signatures;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.security.KeyStore;
-import java.security.KeyStoreException;
-import java.security.NoSuchAlgorithmException;
-import java.security.cert.CertificateException;
-
-import com.grapecity.documents.excel.*;
+import com.grapecity.documents.excel.ISignature;
+import com.grapecity.documents.excel.ISignatureSetup;
+import com.grapecity.documents.excel.Workbook;
 import com.grapecity.documents.excel.examples.ExampleBase;
 
 public class AddSignatureLines extends ExampleBase {
@@ -26,11 +21,6 @@ public class AddSignatureLines extends ExampleBase {
     }
 
     @Override
-    public boolean getIsNew() {
-        return true;
-    }
-
-    @Override
     public boolean getShowViewer() {
         return false;
     }
@@ -38,5 +28,10 @@ public class AddSignatureLines extends ExampleBase {
     @Override
     public boolean getShowScreenshot() {
         return true;
+    }
+
+    @Override
+    public String[] getDependencies() {
+        return new String[]{ "compile group: 'com.grapecity.documents', name: 'gcexcel.extension', version: '3.2.0'" };
     }
 }

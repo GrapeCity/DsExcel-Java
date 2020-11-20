@@ -133,9 +133,4 @@ public class SetFillMode extends ExampleBase {
 	public String[] getRefs() {
         return new String[] { "SalesData", "SalesRecord" };
 	}
-
-	@Override
-	public boolean getIsNew() {
-        return true;
-	}
 }

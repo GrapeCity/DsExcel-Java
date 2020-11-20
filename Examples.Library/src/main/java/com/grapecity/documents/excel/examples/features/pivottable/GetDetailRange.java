@@ -55,6 +55,7 @@ public class GetDetailRange extends ExampleBase {
         for (IPivotLine item : pivottable.getPivotRowAxis().getPivotLines()) {
             if (item.getLineType() == PivotLineType.Subtotal) {
                 item.getPivotLineCells().get(0).getRange().getInterior().setColor(Color.GetTeal());
+                item.getPivotLineCells().get(0).getRange().getFont().setColor(Color.GetWhite());
             }
         }
 
@@ -72,10 +73,4 @@ public class GetDetailRange extends ExampleBase {
 
         return true;
     }
-
-    @Override
-    public boolean getIsNew() {
-        return true;
-    }
-
 }

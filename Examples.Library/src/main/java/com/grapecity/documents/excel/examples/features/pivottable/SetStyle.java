@@ -71,6 +71,7 @@ public class SetStyle extends ExampleBase {
                 int column = pivottable.getDataBodyRange().getColumn() + item.getPosition();
                 // Set style for range of German mobile.
                 worksheet.getRange(row, column, rowCount, 1).getInterior().setColor(Color.GetTeal());
+                worksheet.getRange(row, column, rowCount, 1).getFont().setColor(Color.GetWhite());
             }
         }
 
@@ -86,11 +87,6 @@ public class SetStyle extends ExampleBase {
     @Override
     public boolean getShowScreenshot() {
 
-        return true;
-    }
-
-    @Override
-    public boolean getIsNew() {
         return true;
     }
 }

@@ -32,9 +32,4 @@ public class SetShapeZOrder extends ExampleBase {
         // Set triangle to bottom
         triangle.zOrder(ZOrderType.SendToBack);
     }
-
-    @Override
-    public boolean getIsNew() {
-        return true;
-    }
 }

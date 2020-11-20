@@ -1,9 +1,9 @@
 package com.grapecity.documents.excel.examples;
 
+import com.grapecity.documents.excel.Workbook;
+
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
-
-import com.grapecity.documents.excel.Workbook;
 
 public class ExampleBase {
 
@@ -70,6 +70,10 @@ public class ExampleBase {
     }
     
     public boolean getSaveAsImage() {
+        return false;
+    }
+    
+    public boolean getSaveAsJSON() {
         return false;
     }
 
@@ -199,7 +203,7 @@ public class ExampleBase {
                 	   "} catch (IOException e) {" + System.lineSeparator() +
                 	   "    e.printStackTrace();" + System.lineSeparator() +
                 	   "}";
-        } else if (this.getSavePdf()) {
+        } else if (this.getSavePdf() || this.getViewInGcPdfViewer()) {
             codePost = "//save to an pdf file" + System.lineSeparator() + String.format("workbook.save(\"%s.pdf\");", this.getShortID());
         } else if (this.getSaveCSV()) {
             codePost = "//save to an csv file" + System.lineSeparator() + String.format("workbook.save(\"%s.csv\");", this.getShortID());
@@ -215,7 +219,21 @@ public class ExampleBase {
                     "} catch (IOException e) {" + System.lineSeparator() +
                     "    e.printStackTrace();" + System.lineSeparator() +
                     "}";
-        } else if (this.getCanDownload()) {
+        }
+        else if (this.getSaveAsJSON()) {
+        	codePost = "//create to a ssjson file stream" + System.lineSeparator() + "FileOutputStream outputStream = null;" +
+                    System.lineSeparator() + "try {" + System.lineSeparator() + String.format("    outputStream = new FileOutputStream(\"%s.ssjson\");", this.getShortID()) +
+                    System.lineSeparator() + "} catch (FileNotFoundException e) {" +
+                    System.lineSeparator() + "    e.printStackTrace();" +
+                    System.lineSeparator() + "}" + System.lineSeparator();
+        	codePost += "\nworkbook.toJson(outputStream);" + System.lineSeparator();
+        	codePost += "\n//close the ssjson stream" + System.lineSeparator() + "try {" + System.lineSeparator() +
+                    "    outputStream.close();" + System.lineSeparator() +
+                    "} catch (IOException e) {" + System.lineSeparator() +
+                    "    e.printStackTrace();" + System.lineSeparator() +
+                    "}";
+        }
+        else if (this.getCanDownload()) {
             codePost = "//save to an excel file" + System.lineSeparator() + String.format("workbook.save(\"%s.xlsx\");", this.getShortID());
         }
         code = codePre + code +  codePost;
@@ -288,7 +306,23 @@ public class ExampleBase {
                     "} catch (e: IOException) {" + System.lineSeparator() +
                     "    e.printStackTrace()" + System.lineSeparator() +
                     "}";
-        } else if (this.getCanDownload()) {
+        }
+        else if (this.getSaveAsJSON()) {
+        	codePost = "//create to a ssjson file stream" + System.lineSeparator() + "var outputStream: FileOutputStream? = null" +
+                    System.lineSeparator() + "try {" + System.lineSeparator() + String.format("    outputStream = FileOutputStream(\"%s.ssjson\");", this.getShortID()) +
+                    System.lineSeparator() + "} catch (e: FileNotFoundException) {" +
+                    System.lineSeparator() + "    e.printStackTrace()" +
+                    System.lineSeparator() + "}" + System.lineSeparator();
+        	codePost += "\nworkbook.toJson(outputStream)" + System.lineSeparator();
+        	codePost += "\n//close the ssjson stream" + System.lineSeparator() + "try {" + System.lineSeparator() +
+                    "     if(outputStream != null){"+ System.lineSeparator() +
+                    "         outputStream.close()" + System.lineSeparator() +
+                    "     }" + System.lineSeparator() + System.lineSeparator() +
+                    "} catch (e: IOException) {" + System.lineSeparator() +
+                    "    e.printStackTrace()" + System.lineSeparator() +
+                    "}";
+        }
+        else if (this.getCanDownload()) {
             codePost = "//save to an excel file" + System.lineSeparator() + String.format("workbook.save(\"%s.xlsx\")", this.getShortID());
         }
 
@@ -332,6 +366,14 @@ public class ExampleBase {
     }
 
     public String[] getRefs(){
+        return null;
+    }
+
+    public String[] getDependencies() {
+        return null;
+    }
+
+    public String[] getImportPackages(){
         return null;
     }
 

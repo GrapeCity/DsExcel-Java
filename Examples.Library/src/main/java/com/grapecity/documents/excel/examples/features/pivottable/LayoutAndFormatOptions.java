@@ -77,10 +77,4 @@ public class LayoutAndFormatOptions extends ExampleBase {
 
         return true;
     }
-
-    @Override
-    public boolean getIsNew() {
-        return true;
-    }
-
 }

@@ -51,9 +51,4 @@ public class ConstructionProposal extends ExampleBase {
 	public String[] getRefs() {
         return new String[] { "GcMockResultSet", "GcResultSetMetaData" };
 	}
-	
-	@Override
-	public boolean getIsNew() {
-        return true;
-	}
 }

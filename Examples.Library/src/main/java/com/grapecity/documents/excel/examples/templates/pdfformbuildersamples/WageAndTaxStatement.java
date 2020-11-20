@@ -36,11 +36,6 @@ public class WageAndTaxStatement extends ExampleBase {
         return new String[] { "xlsx/Template_fw2-USTaxForm.xlsx" };
 	}
 
-	@Override
-	public boolean getIsNew() {
-		return true;
-	}
-
     @Override
     public boolean getViewInGcPdfViewer() {
         return true;

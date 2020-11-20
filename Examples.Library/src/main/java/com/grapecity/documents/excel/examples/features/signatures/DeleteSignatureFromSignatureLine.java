@@ -1,11 +1,11 @@
 package com.grapecity.documents.excel.examples.features.signatures;
 
-import java.io.InputStream;
-
 import com.grapecity.documents.excel.ISignature;
 import com.grapecity.documents.excel.Workbook;
 import com.grapecity.documents.excel.XlsxOpenOptions;
 import com.grapecity.documents.excel.examples.ExampleBase;
+
+import java.io.InputStream;
 
 public class DeleteSignatureFromSignatureLine extends ExampleBase {
     @Override
@@ -37,11 +37,6 @@ public class DeleteSignatureFromSignatureLine extends ExampleBase {
     }
 
     @Override
-    public boolean getIsNew() {
-        return true;
-    }
-
-    @Override
     public boolean getShowViewer() {
         return false;
     }
@@ -49,5 +44,10 @@ public class DeleteSignatureFromSignatureLine extends ExampleBase {
     @Override
     public String[] getResources() {
         return new String[] { "xlsx/SignatureLine2Signed1NotSigned.xlsx" };
+    }
+
+    @Override
+    public String[] getDependencies() {
+        return new String[]{ "compile group: 'com.grapecity.documents', name: 'gcexcel.extension', version: '3.2.0'" };
     }
 }

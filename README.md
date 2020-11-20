@@ -26,7 +26,39 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | SpringBootDemo/SpringBoot+React     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用React+SpreadJS展示|
 | SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
 
-# Release Notes
+## 4.0.0
+## Added
+** Support for new PDF Form custom input types in Excel Templates with advanced input and validation settings.
+** Support for adding, modifying and deleting Pivot Charts in Excel documents.
+** Support for iterative calculations in Excel documents.
+** Add Barcodes on PDF, HTML or Image Export
+** Support cross-workbook formula.
+** Support setting default value for template cell.
+** Get range address to get cell's address.
+** Add page printing events to track progress of Excel to PDF conversion.
+** Select multiple worksheets.
+** Get special cells in a range.
+** Disable auto grouping for date/times in PivotTable.
+** Add more features for GrapeCity SpreadJS integration: cell buttons, radio and checkbox list cell type, etc.
+
+## Fixed
+* PivotTable MergeLabel's merged area is incorrect.(DOCXLS-3181)
+* PivotTable.DataBodyRange throws exception.(DOCXLS-3283)
+* Can't open the xlsx when the pivot source contains null values.(DOCXLS-3285)
+* Failed to export an Excel with pivot table.(DOCXLS-3297)
+* Program does not end and CPU utilisation is 100% when exporting to PDF.(DOCXLS-2744)
+* Broken Excel file is generated when copying a sheet.(DOCXLS-3252)
+* ArrayIndexOutOfBoundsException when generating JSON.(DOCXLS-3165)
+* When margins are set to the same value, the rendering position is not the same in PDF.(DOCXLS-3211)
+* Labels does not merge in exported xlsx file.(DOCXLS-3262)
+* SUM is calculated incorrectly when using GcExcel template functionality.(DOCXLS-3267)
+* PDF form is not displayed when 'printed' and 'hidden' settings are false in form field.(DOCXLS-3275)
+* Rows are not repeating while using GcExcel Template.(DOCXLS-3278)
+* Null exception is thrown during loading ssjson.(DOCXLS-3290)
+* Null exception is thrown when calling Workbook.Calculate.(DOCXLS-3299)
+* The text in exported image is wrong.(DOCXLS-3314)
+* The pivot table label does not merge in exported xlsx file.(DOCXLS-3262)
+
 ## 3.2.4
 ## Fixed
 * DataValidation does not work for added rows for Table.(DOCXLS-3158)

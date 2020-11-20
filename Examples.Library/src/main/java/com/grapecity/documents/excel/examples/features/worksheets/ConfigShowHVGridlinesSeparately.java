@@ -22,9 +22,4 @@ public class ConfigShowHVGridlinesSeparately extends ExampleBase {
     public boolean getCanDownload() {
         return false;
     }
-
-    @Override
-    public boolean getIsNew() {
-        return true;
-    }
 }

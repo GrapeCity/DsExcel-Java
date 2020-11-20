@@ -23,11 +23,6 @@ public class SaveWorkbookToHtml extends ExampleBase {
     }
 
     @Override
-    public boolean getIsNew() {
-        return true;
-    }
-
-    @Override
     public String[] getResources() {
         return new String[] { "xlsx/Project tracker.xlsx" };
     }
