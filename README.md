@@ -25,7 +25,29 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | Examples.Library     | 示例源码工程，帮助您学习和使用GcExcel Java的每一个API |
 | SpringBootDemo/SpringBoot+React     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用React+SpreadJS展示|
 | SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
-
+## 4.0.1
+## Fixed
+* #REF! error occurs when copying formula between workbooks.(DOCXLS-3313)
+* Broken xlsx file is generated after copying sheet between workbooks.(DOCXLS-3316,DOCXLS-3329,DOCXLS-3330)
+* Hyperlinks are not exported to the PDF correctly.(DOCXLS-3335)
+* Exception is thrown when saving to Excel with Pivot Table.(DOCXLS-3297)
+* The col tag is not correct in the saved Html.(DOCXLS-3370)
+* After saving to Html, the total value in Pivot Table shows a lot of #.(DOCXLS-3344)
+* Exception is thrown during from json.(DOCXLS-3361)
+* ConcurrentModificationException is thrown when saving to Excel file.(DOCXLS-3362)
+* NullException is thrown when opening an Excel file.(DOCXLS-3401)
+* NumberFormatException is thrown when an Excel file.(DOCXLS-3403)
+* DataValidation will not work in SpreadJS after loading the ssjson exported by GcExcel.(DOCXLS-3405)
+* Error occurs when opening a xlsx file which is saved by GcExcel.(DOCXLS-3408)
+* IllegalStateException is thrown during from ssjson.(DOCXLS-3424)
+* Column width is wrong in SpreadJS after loading the ssjson exported by GcExcel.(DOCXLS-3430)
+* Can not navigate to destination address when click hyperlink in exported PDF file.(DOCXLS-3265)
+* NullPointerException is thrown when copying sheet between workbooks.(DOCXLS-3315)
+* Workbook.SelectedSheets doesn't reset after FromJson.(DOCXLS-3356)
+* Error popping up while opening an Excel file having the pivot.(DOCXLS-3360)
+* NullReferenceException will occur when Workbook.ToJson() is used.(DOCXLS-3366)
+* When saving as Html, the text with format ";;;" should not be export to Html.(DOCXLS-3372)
+* The custom data validation can be added without the formula.(DOCXLS-3379)
 ## 4.0.0
 ## Added
 * Support for new PDF Form custom input types in Excel Templates with advanced input and validation settings.
