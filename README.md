@@ -24,6 +24,32 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | Examples.Library     | 示例源码工程，帮助您学习和使用GcExcel Java的每一个API |
 | SpringBootDemo/SpringBoot+React     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用React+SpreadJS展示|
 | SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
+## 4.0.3
+## Fixed
+* Exception occurs when save as HTML if the background image's name is null.(DOCXLS-3578)
+* The line spacing becomes too big in the saved Pdf document.(DOCXLS-3524)
+* When IRange.Font is getten in multi-thread processing, System.InvalidOperationException will occur.(DOCXLS-3567)
+* Chart plot area in the exported Pdf is not the same as in Excel.(DOCXLS-2375)
+* Some lines disappear in the exported Html.(DOCXLS-3374)
+* Opening workbook fails with "Invalid argument: Number" exception.(DOCXLS-3503)
+* Double underline is not exported to Pdf correctly.(DOCXLS-3507)
+* Background image should not stretch in exported Html with settings "ImageLayout.None".(DOCXLS-3535)
+* ClassCastException occurs when process template.(DOCXLS-3539)
+* Add a picture to the sheet, and the text will not display completely in the exported Pdf.(DOCXLS-3541)
+* After opening an Excel file and converting it to a json file, the word wrapping is lost.(DOCXLS-3586)
+* Exception on getting formula after copying a worksheet.(DOCXLS-3587)
+* Some rows are not auto-fitted in the exported Pdf.(DOCXLS-3588)
+* The margins of rich text cell are not correct in the exported Pdf.(DOCXLS-3589)
+* Opening file throws exception.(DOCXLS-3597)
+* When a PDF form field without font name is exported to a PDF, this PDF shows an error message.(DOCXLS-3599)
+* The font of cells with conditional format has changed in PDF.(DOCXLS-3602)
+* ArrayIndexOutOfBoundsException in reading attached xlsx files.(DOCXLS-3628)
+* When a shape is copied, horizontal alignment of text on copied shape is cleared.(DOCXLS-3630)
+* Garbled text will show in some enhanced text fields.(DOCXLS-3648)
+* java.lang.IllegalStateException occurs when open a xlsx file which is exported by POI.(DOCXLS-3569, DOCXLS-3572, DOCXLS-3575)
+* javax.xml.stream.XMLStreamException occurs when open a xlsx file which is exported by POI.(DOCXLS-3570)
+* NullPointerException occurs when open a xlsx file which is exported by POI.(DOCXLS-3571)
+* java.lang.ArrayIndexOutOfBoundsException occurs when open a xlsx file which is exported by POI.(DOCXLS-3577)
 ## 4.0.2
 ## Fixed
 * Image position is wrong after importing ssjson then export to PDF.(DOCXLS-3431)
