@@ -24,6 +24,14 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | Examples.Library     | 示例源码工程，帮助您学习和使用GcExcel Java的每一个API |
 | SpringBootDemo/SpringBoot+React     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用React+SpreadJS展示|
 | SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
+## 4.0.5
+## Fixed
+* When workbook is exported to PDF on AWS Lambda, TypeInitializationException will be thrown.(DOCXLS-3887)
+* Structured references in table cells not calculating after range copy/paste between worksheets.(DOCXLS-3806)
+* Incorrect value when using COUNT function with comma at last in GcExcel.(DOCXLS-3841)
+* NullPointerException when Deleting the Sheet from workbook using GcExcel API.(DOCXLS-3872)
+* Workbook corrupted after saving using GcExcel API.(DOCXLS-3891)
+* GCExcel fails to create json from the excel file.(DOCXLS-3913)
 ## 4.0.4
 ## Fixed
 * Generating SSJSON takes longer time.(DOCXLS-3598)
