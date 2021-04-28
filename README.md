@@ -24,6 +24,33 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | Examples.Library     | 示例源码工程，帮助您学习和使用GcExcel Java的每一个API |
 | SpringBootDemo/SpringBoot+React     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用React+SpreadJS展示|
 | SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
+## 4.1.0
+## Added
+* Parse formula string into a syntax tree.
+* Ignore Formulas when saving Excel files.
+* Support open action script on PdfSaveOptions.
+* New overload method to load JSON.
+* More Features for SpreadJS Integration: RangeTemplate cell type, get/set custom object as cell value.
+* New ToJson and FromJSON methods to Workbook elements.
+
+## Enhanced
+* Performance improvements in Excel Template processing.
+* Improved Calculation Engine's performance when setting values.
+
+## Fixed
+* Performance issue when updating data in Excel using GcExcel API.(DOCXLS-3912)
+* When the worksheet contains a shape, the row height cannot be changed.(DOCXLS-3909)
+* The formula =TEXT("12345","[dbnum2]") not work.(DOCXLS-3900)
+* The font is bold after exporting to PDF.(DOCXLS-3895)
+* ROUNDUP result is different with Excel.(DOCXLS-3870)
+* GcExcel formula result is different with Excel.(DOCXLS-3866)
+* COUNTIF result is different with Excel.(DOCXLS-3860)
+* After saving to Excel, the hidden rows are displayed.(DOCXLS-3848)
+* Conditional Format is not coming in PDF/HTML.(DOCXLS-3846)
+* The position of radio button list is wrong in the exported PDF.(DOCXLS-3815)
+* After setting the cell style in two ways, the results are different.(DOCXLS-3787)
+* Using IRange.HasFormula and IRange.Value together, degrades performance.(DOCXLS-3164)
+* Mixed order of Set and Get cell values degrades performance.(DOCXLS-3163)
 ## 4.0.5
 ## Fixed
 * When workbook is exported to PDF on AWS Lambda, TypeInitializationException will be thrown.(DOCXLS-3887)
