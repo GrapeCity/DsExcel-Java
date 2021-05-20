@@ -24,6 +24,32 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | Examples.Library     | 示例源码工程，帮助您学习和使用GcExcel Java的每一个API |
 | SpringBootDemo/SpringBoot+React     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用React+SpreadJS展示|
 | SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
+## 4.1.1
+## Fixed
+* Shape Color changed after saving Excel file using GcExcel API.(DOCXLS-3918)
+* Invalid formula error when opening particular Excel using GcExcel API.(DOCXLS-3919)
+* Behaviors of pivot table changed after saving using GcExcel API.(DOCXLS-3973)
+* INDEX function value in returning "Ref" when opening excel using GcExcel API with DoNotRecalculateAfterOpened= false.(DOCXLS-3987)
+* Collapsed grouping shows "-" sign when opening exported excel from GcExcel, in SpreadJs.(DOCXLS-4039)
+* Value is returning "Ref" for the output fields after calling Calculate method of GcExcel.(DOCXLS-4099)
+* The cell with ";;;" NumberFormat shouldn't be shown in pdf.(DOCXLS-3939)
+* Formula Cells referencing Date Cells with Empty or Zero as a value are erasing the numberFormat property value after assigning a value.(DOCXLS-3990)
+* The ComboBox is lost after gcexcel loading given ssjson file.(DOCXLS-4008)
+* Exception was thrown when loaing the ssjson file.(DOCXLS-4027)
+* Gradient fill is displayed as solid fill in the exported HTML.(DOCXLS-3896)
+* The cell value would be lost if the column's width is 1px when exporting HTML.(DOCXLS-3906)
+* The drop down items is not correct in exported ssjson file.(DOCXLS-3947)
+* The sheet would be lost when exporting to ssjson file.(DOCXLS-3979)
+* Could not delete the custom style of GcExcel.(DOCXLS-3980)
+* NullPointerException would be thrown when saving to excel file.(DOCXLS-3982)
+* When an xlsx file that contains shapes is exported to pdf/image/HTML, shapes are not output correctly.(DOCXLS-3985)
+* Exporting is not processed correctly when the workbook containing shapes with the same name is exported to HTML.(DOCXLS-3982)
+* NullPointerException would be thrown when loaing ssjson file which contains hyperlink.(DOCXLS-3993)
+* Hyperlink info would be lost in exported ssjson file.(DOCXLS-3995)
+* Some exceptions would be thrown when exporting to json.(DOCXLS-4024)
+* Drop down style is disorder in exported ssjson by GcExcel.(DOCXLS-4036)
+* Prompt issues when open exported xlsx file by MSExcel(DOCXLS-4049).
+* Infinite loop when `PrintManager.Paginate` called with specific parameters.(DOCXLS-4056)
 ## 4.1.0
 ## Added
 * Parse formula string into a syntax tree.
