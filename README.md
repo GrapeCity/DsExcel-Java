@@ -33,7 +33,7 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * Saved Workbook corrupted after copying sheet with invalid cell format from existing workbook.(DOCXL(DOCXLS-4039)
 * GcExcel for java takes too long to import ssjson.(DOCXLS-4158).(DOCXLS-4099)
 * ToJSON throw Index out of bound exception.(DOCXLS-4161)
-* [I/O Lossless]Support SpreadJS table expandBoundRows.(DOCXLS-4191)rFormat property value after assigning a value.(DOCXLS-3990)
+* [I/O Lossless]Support SpreadJS table expandBoundRows.(DOCXLS-4191)
 * FromJSON throw error.(DOCXLS-4212)
 * The font of the exported excel file is bold.(DOCXLS-4054)
 * Setting the chart axis not to have gridlines is not applied.(DOCXLS-4100)
