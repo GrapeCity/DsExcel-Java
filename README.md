@@ -24,27 +24,52 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | Examples.Library     | 示例源码工程，帮助您学习和使用GcExcel Java的每一个API |
 | SpringBootDemo/SpringBoot+React     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用React+SpreadJS展示|
 | SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
+## 4.1.3
+## Fixed
+* Throw NumberFormatException when opening the Excel file.(DOCXLS-4146)
+* Method 'toJson' fails while using Cube Formulas and OLAP Tools.(DOCXLS-4162)
+* When the connector which is set as arrow head style is exported to JSON file, it is not displayed correctly on importing that JSON file in SpreadJS.(DOCXLS-4174)
+* PivotTable's data field NumberFormat lost after exporting to Excel file.(DOCXLS-4214)
+* Exception on opening an Excel file.(DOCXLS-4266)
+* SetValue method throws exception.(DOCXLS-4273)
+* An exception is thrown when opening an Excel file.(DOCXLS-4277)
+* When the existing combination chart is copied in an Excel, saved xlsx file is corrupted.(DOCXLS-4287)
+* Formula result calculated by GcExcel is different from Excel.(DOCXLS-4317)
+* The row tags were lost in exported JSON.(DOCXLS-4321)
+* The hyperlink address is incorrect in exported JSON.(DOCXLS-4322)
+* Formula displays #value in GcExcel.(DOCXLS-4360)
+* Opening a certain Excel file throws an Illegalargumentexception.(DOCXLS-4361)
+* After copying the sheet with 'fromjson', the drop-down is lost in exported JSON.(DOCXLS-4367)
+* When an xlsx file containing shape with link of a relative path is loaded and saved, saved file is corrupted.(DOCXLS-4370)
+* The drop-down menu is incorrect in exported JSON.(DOCXLS-4371)
+* When range is copied and Workbook.ToJson() is executed, an exception is thrown.(DOCXLS-4374)
+* The cell padding style is lost in exported JSON.(DOCXLS-4391)
+* The textDecoration field is missing in exported JSON when compare with the original JSON.(DOCXLS-4393)
+* The JSON with cell background graph cannot be imported on loading from 'fromjson' method.(DOCXLS-4394)
+## Enhanced
+* Reduce the size of exported json file.(DOCXLS-4281)
+* Optimize the performance of import and export json file.(DOCXLS-4372)
 ## 4.1.2
 ## Fixed
-* Performance Issue in reading formula from excel file using GcExcel API with compare to Spread.(DOCX
+* Performance Issue in reading formula from Excel file using GcExcel API with compare to Spread.(DOCXLS-3974)
 * Range Value not getting after loading file in GcExcel.(DOCXLS-4128)
-* Performance issue in accessing the cell when using Slicer in the excel sheet.(DOCXLS-4187)
-* FormulaResult is not correct if the Evaluate returns null.(DOCXLS-4190)ecalculateAfterOpened= false.(DOCXLS-3987)
-* Saved Workbook corrupted after copying sheet with invalid cell format from existing workbook.(DOCXL(DOCXLS-4039)
-* GcExcel for java takes too long to import ssjson.(DOCXLS-4158).(DOCXLS-4099)
+* Performance issue in accessing the cell when using Slicer in the Excel sheet.(DOCXLS-4187)
+* FormulaResult is not correct if the Evaluate returns null.(DOCXLS-4190)
+* Saved Workbook corrupted after copying sheet with invalid cell format from existing workbook.(DOCXLS-4221)
+* GcExcel for java takes too long to import ssjson.(DOCXLS-4158)
 * ToJSON throw Index out of bound exception.(DOCXLS-4161)
 * [I/O Lossless]Support SpreadJS table expandBoundRows.(DOCXLS-4191)
 * FromJSON throw error.(DOCXLS-4212)
-* The font of the exported excel file is bold.(DOCXLS-4054)
+* The font of the exported Excel file is bold.(DOCXLS-4054)
 * Setting the chart axis not to have gridlines is not applied.(DOCXLS-4100)
-* Formula result is different from SpreadJS.(DOCXLS-4135)06)
+* Formula result is different from SpreadJS.(DOCXLS-4135)
 * Program would be stuck while executing exporting pdf.(DOCXLS-4141)
 * StackOverflowError occurs when importing ssjson with fromJson.(DOCXLS-4170)
 * Result of exported xlsx file contains ENCODEURL function is not correct.(DOCXLS-4171)
 * The value obtained by the gettext method is incorrect.(DOCXLS-4178)
-* ToJSON is not including the pivotTable info.(DOCXLS-4229)put correctly.(DOCXLS-3985)
-* FromJSON throws error.(DOCXLS-4235)ame is exported to HTML.(DOCXLS-3982)
-* After deleting a column, the getlastcolumn method does not get the correct result.(DOCXLS-4246)OCXLS-3993)
+* ToJSON is not including the pivotTable info.(DOCXLS-4229)
+* FromJSON throws error.(DOCXLS-4235)
+* After deleting a column, the getlastcolumn method does not get the correct result.(DOCXLS-4246)
 * When xlsx file saved with GcExcel is loaded and saved again, number becomes incorrect.(DOCXLS-4260)
 ## 4.1.1
 ## Fixed
