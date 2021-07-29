@@ -24,6 +24,18 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | Examples.Library     | 示例源码工程，帮助您学习和使用GcExcel Java的每一个API |
 | SpringBootDemo/SpringBoot+React     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用React+SpreadJS展示|
 | SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
+## 4.1.4
+## Fixed
+* The exported PDF is different from SpreadJS designer.(DOCXLS-4152)
+* Throws an exception on saving a PDF file.(DOCXLS-4407)
+* Program stucks on using the 'copy' method of IRange.(DOCXLS-4414)
+* 'CellInfo.GetRangeBoundary' method generates incorrect result.(DOCXLS-4424)
+* Zoomfactor info is lost in the exported JSON.(DOCXLS-4427)
+* The page footer in exported PDF is incorrect with the '&D' format.(DOCXLS-4432)
+* The number format of PivotTable's data field is lost in the exported Excel file.(DOCXLS-4445)
+* Throws an exception on using the 'IWorksheet.FromJson' method.(DOCXLS-4448)
+* Treemap and Sunburst charts are not created by referring the data from another worksheet.(DOCXLS-4522)
+* Drop-down list is lost in the exported JSON file.(DOCXLS-4551)
 ## 4.1.3
 ## Fixed
 * Throw NumberFormatException when opening the Excel file.(DOCXLS-4146)
