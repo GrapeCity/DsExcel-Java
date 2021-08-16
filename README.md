@@ -24,6 +24,29 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | Examples.Library     | 示例源码工程，帮助您学习和使用GcExcel Java的每一个API |
 | SpringBootDemo/SpringBoot+React     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用React+SpreadJS展示|
 | SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
+## 4.2.0
+## Added
+* Dynamic Array Formulas along with the new functions: FILTER/RANDARRAY/SEQUENCE/SINGLE/SORT/SORTBY/UNIQUE.
+* Support for new Calc Engine functions: WEBSERVICE/FILTERXML/ASC/DBCS/JIS/XLOOKUP/XMATCH.
+* External workbook links from the web.
+* Document properties for workbook.
+* Retrieve the row and column grouping information.
+* Copy hidden rows to new range.
+* Control the size of the exported json file.
+* Support for margin settings for text in a shape.
+* Expand or Collapse grouped items in a Pivot Table.
+* More features for SpreadJS integration: RowCount or ColumnCount, get URL of a picture, Pivot Table for json I/O, etc.
+* Support for exporting charts to PDF.
+## Fixed
+* NullReference exception is thrown while adding a row in a table.(DOCXLS-2504)
+* When MarkerStyle.None is set for ISeries.MarkerStyle, the chart is not exported correctly in Excel.(DOCXLS-4071)
+* When a JSON file is opened and exported to another JSON file, the picture floating object is lost.(DOCXLS-4098)
+* Exported xlsx file does not meet the OpenXml standard if it contains a picture shape.(DOCXLS-4213)
+* Exception is thrown on saving an Excel file.(DOCXLS-4215)
+* When the pagebreak of template properties is set as true, page breaks are added before the field.(DOCXLS-4307)
+* Dynamic array formula does not generate the correct value.(DOCXLS-4433)
+* Exception is thrown on opening a JSON file.(DOCXLS-4599)
+* Exception is thrown on calling the 'ToJson' method.(DOCXLS-4611)
 ## 4.1.4
 ## Fixed
 * The exported PDF is different from SpreadJS designer.(DOCXLS-4152)
