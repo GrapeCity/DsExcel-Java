@@ -24,6 +24,32 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | Examples.Library     | 示例源码工程，帮助您学习和使用GcExcel Java的每一个API |
 | SpringBootDemo/SpringBoot+React     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用React+SpreadJS展示|
 | SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
+## 4.2.1
+## Added
+* Support for exporting charts to Image/HTML.
+## Enhanced
+* Enhancement of Range.AutoFit(bool considerMergedCell).
+* Add dynamic array and workbook URI link to formula parser.
+## Fixed                              
+* ITickLabels.NumberFormat is not applied when saving a workbook to PDF/Image/HTML file.(DOCXLS-4143)
+* When IAxis.MajorUnit is set, tick labels are duplicated in exported PDF/Image/HTML file.(DOCXLS-4144) 
+* When the chart series is added, orders of series and legends are incorrect in exported xlsx file.(DOCXLS-4165) 
+* Values of category axis are incorrect in exported PDF/Image/HTML file.(DOCXLS-4274) 
+* Exception is thrown on saving PDF/Image/HTML file, if ISeries.Formula is set.(DOCXLS-4275)
+* The exported file is incorrect after deleting columns by GcExcel.(DOCXLS-4606)
+* Exception is thrown on using Formula parser if syntax contains '.'.(DOCXLS-4642)
+* Exception is thrown on opening an Excel file.(DOCXLS-4643) 
+* Cell's numberformat is different from the original JSON file in exported JSON.(DOCXLS-4653) 
+* The exported CSV file is incorrect when Range.Value contains '\n'.(DOCXLS-4655)
+* Exception is thrown on opening an Excel file(exported by an unknown program).(DOCXLS-4662)
+* The font style is not correct in exported PDF file.(DOCXLS-4670)
+* Exception should be thrown when setting Worksheet.Name which contains invalid characters.(DOCXLS-4676)
+* The text in the textbox is not exported to PDF correctly.(DOCXLS-4678)
+* The result of row height is incorrect in Range.RowHeight using GcExcel.(DOCXLS-4699)
+* The exported JSON file by GcExcel is too large.(DOCXLS-4700)
+* Exception is thrown on adding table.(DOCXLS-4702)
+* Fallback font is not used after FontFolderPath is set when exporting to PDF file on Linux.(DOCXLS-4713)
+* The result in exported Excel file is not correct after delete columns/rows.(DOCXLS-4728)
 ## 4.2.0
 ## Added
 * Dynamic Array Formulas along with the new functions: FILTER/RANDARRAY/SEQUENCE/SINGLE/SORT/SORTBY/UNIQUE.
