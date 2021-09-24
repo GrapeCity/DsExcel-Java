@@ -47,7 +47,6 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * NullPointerException is thrown on copying a range from a specific Excel file to a new workbook using GcExcel API.(DOCXLS-4838)
 * The result in exported Excel file is incorrect after using IWorksheet.Outline.ShowLevels() method.(DOCXLS-4871)
 * The cell style is incorrect in the exported PDF file.(DOCXLS-4876)
-## Fixed
 ## 4.2.1
 ## Added
 * Support for exporting charts to Image/HTML.
