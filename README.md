@@ -24,6 +24,30 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | Examples.Library     | 示例源码工程，帮助您学习和使用GcExcel Java的每一个API |
 | SpringBootDemo/SpringBoot+React     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用React+SpreadJS展示|
 | SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
+## 4.2.2
+## Enhanced
+* Support XlsmOpenOptions and XlsmSaveOptions.(DOCXLS-4747)
+* Upgrade the pdfbox version to 2.0.24.(DOCXLS-4787)
+## Fixed                              
+* Exception is thrown on copying a worksheet to another workbook.(DOCXLS-4737)
+* The checkbox is lost in the exported PDF file.(DOCXLS-4744)
+* The cell value is incorrect after using setValue method to set the cell value.(DOCXLS-4781)
+* Print Area is different from the original JSON file in the exported JSON.(DOCXLS-4789)
+* Exception is thrown on reading the JSON file.(DOCXLS-4798)
+* The exported Excel file is corrupted after deleting rows using GcExcel API.(DOCXLS-4799)
+* It takes too much time on calling the ToJson method.(DOCXLS-4803)
+* The cell value is incorrect on using setValue method when the value is a BigDecimal.(DOCXLS-4806)
+* Exception is thrown on calling the toJson method when the margin of the printinfo is null.(DOCXLS-4808)
+* The formula result "=EDATE(NOW(),1)" calculated by GcExcel is different from Excel.(DOCXLS-4816)
+* NumberFormatException is thrown on loading a particular excel file with user.language=de.(DOCXLS-4817)
+* It takes too much time on opening a workbook.(DOCXLS-4818)
+* The grouped result using GcExcel is different from Excel.(DOCXLS-4823)
+* Exception is thrown on calling the IRange.Group()and workbook.Save() methods.(DOCXLS-4824)
+* NullPointerException is thrown on calling the toJson method for specific Excel using GcExcel API.(DOCXLS-4829)
+* NullPointerException is thrown on copying a range from a specific Excel file to a new workbook using GcExcel API.(DOCXLS-4838)
+* The result in exported Excel file is incorrect after using IWorksheet.Outline.ShowLevels() method.(DOCXLS-4871)
+* The cell style is incorrect in the exported PDF file.(DOCXLS-4876)
+## Fixed
 ## 4.2.1
 ## Added
 * Support for exporting charts to Image/HTML.
