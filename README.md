@@ -26,7 +26,7 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
 ## 4.2.3
 ## Enhanced
-* Internal compatibility additions with GcEccel .NET
+* Internal compatibility additions with GcExcel .NET
 ## 4.2.2
 ## Enhanced
 * Support XlsmOpenOptions and XlsmSaveOptions.(DOCXLS-4747)
