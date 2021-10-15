@@ -24,6 +24,20 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | Examples.Library     | 示例源码工程，帮助您学习和使用GcExcel Java的每一个API |
 | SpringBootDemo/SpringBoot+React     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用React+SpreadJS展示|
 | SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
+## 4.2.4
+## Fixed                              
+* IGraphic.LockAspectRatio didn't take effect when adding picture or changing picture size.(DOCXLS-4175)
+* An error would be thrown when loading the JSON file exported by GcExcel in SpreadJS designer.(DOCXLS-4778)
+* Exception is thrown on opening excel file exported by YARG using GcExcel.(DOCXLS-4874)
+* The exported JSON could not be validated.(DOCXLS-4900)
+* InvalidFormulaException is thrown on opening an Excel file.(DOCXLS-4901)
+* Exception is thrown on copying range.(DOCXLS-4903)
+* Exception is thrown on loading JSON file exported by GcExcel.(DOCXLS-4908)
+* Formula is lost after loading JSON and exporting to Excel file.(DOCXLS-4924)
+* (Duplicate)InvalidFormulaException is thrown on opening an Excel file.(DOCXLS-4947)
+* The comments are lost in exported JSON file.(DOCXLS-4953)
+* ConcurrentModificationException is thrown on copying workbook range.(DOCXLS-4965)
+* Exception is thrown on saving Excel file using GcExcel.(DOCXLS-4988)
 ## 4.2.3
 ## Enhanced
 * Internal compatibility additions with GcExcel .NET
