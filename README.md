@@ -24,6 +24,24 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | Examples.Library     | 示例源码工程，帮助您学习和使用GcExcel Java的每一个API |
 | SpringBootDemo/SpringBoot+React     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用React+SpreadJS展示|
 | SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
+## 4.2.5
+## Fixed
+* It takes too much time on calling method 'GetUsedRange'.(DOCXLS-4552)
+* It takes too much time on copying range with formulas.(DOCXLS-4884)
+* Exception is thrown on calling IRange.FromJson.(DOCXLS-4922)
+* The formula is not correct after cutting range to another position.(DOCXLS-4979)
+* The exported Excel file is corrupted after copying a range from one workbook to another.(DOCXLS-4985)
+* The number format is changed after setting cell's value.(DOCXLS-4987)
+* Exception is thrown on calling 'ToJson' method in Mac environement.(DOCXLS-4997)
+* Macros are not preserved when an xlsm file with OLE objects is loaded and saved.(DOCXLS-5027)
+* The exported Excel file is corrupted after copying a worksheet from one workbook to another.(DOCXLS-5043)
+* OLE Objects are broken in exported Excel file.(DOCXLS-5047)
+* NumberFormatException is thrown on opening an Excel file which contains Pivot Table.(DOCXLS-5051)
+* The filter result is incorrect in exported JSON file.(DOCXLS-5059)
+* Extra characters are added to the comments in exported Excel file.(DOCXLS-5060)
+* The rows that should be hidden are shown in exported Excel file.(DOCXLS-5061)
+* Exception is thrown on calling 'workbook.calculate()' method.(DOCXLS-5079)
+* It takes too much time on calling method 'IWorksheet.FromJson()'.(DOCXLS-5084)
 ## 4.2.4
 ## Fixed                              
 * IGraphic.LockAspectRatio didn't take effect when adding picture or changing picture size.(DOCXLS-4175)
