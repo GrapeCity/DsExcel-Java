@@ -26,6 +26,22 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
 ## 4.2.5
 ## Fixed
+* The cell formula and value are lost in exported JSON file.(DOCXLS-5089)
+* It takes too much time on calling method 'Workbook.ProcessTemplate()'.(DOCXLS-5094)
+* Exception is thrown on calling 'Workbook.ToJson()' method.(DOCXLS-5098)
+* The cell style is incorrect in the exported Excel file.(DOCXLS-5099)
+* Exception is thrown on calling 'Workbook.FromJson()' method.(DOCXLS-5112)
+* The result of 'Round' formula is incorrect in German culture.(DOCXLS-5117)
+* IlleagalArguement and NumberFormat exception would be thrown on opening particular excel file using GcExcel.(DOCXLS-5118)
+* The formula in exported JSON by GcExcel is not the same as original JSON.(DOCXLS-5122)
+* The floating object is lost in the exported JSON file.(DOCXLS-5125)
+* Exception is thrown on opening particular excel file.(DOCXLS-5129)
+* Exception is thrown on calling method 'Workbook.ToJson()' when workbook contains PivotTable.(DOCXLS-5140)
+* Theme color is incorrect in the exported Excel file.(DOCXLS-5144)
+* The version is incorrect in the exported JSON file.(DOCXLS-5145)
+* Exception is thrown on calling method 'Workbook.FromJson()' when JSON contains conditional format.(DOCXLS-5149)
+## 4.2.5
+## Fixed
 * It takes too much time on calling method 'GetUsedRange'.(DOCXLS-4552)
 * It takes too much time on copying range with formulas.(DOCXLS-4884)
 * Exception is thrown on calling IRange.FromJson.(DOCXLS-4922)
