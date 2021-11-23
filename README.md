@@ -24,7 +24,7 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | Examples.Library     | 示例源码工程，帮助您学习和使用GcExcel Java的每一个API |
 | SpringBootDemo/SpringBoot+React     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用React+SpreadJS展示|
 | SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
-## 4.2.5
+## 4.2.6
 ## Fixed
 * The cell formula and value are lost in exported JSON file.(DOCXLS-5089)
 * It takes too much time on calling method 'Workbook.ProcessTemplate()'.(DOCXLS-5094)
