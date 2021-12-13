@@ -24,6 +24,28 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | Examples.Library     | 示例源码工程，帮助您学习和使用GcExcel Java的每一个API |
 | SpringBootDemo/SpringBoot+React     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用React+SpreadJS展示|
 | SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
+## 5.0.0
+## Added
+* Support for Linked Picture.(DOCXLS-625)
+* Support for Table expandBoundRows API.(DOCXLS-3447)
+* Support for Excel threaded comments.(DOCXLS-3989)
+* Enhance license system.(DOCXLS-4181)
+* Import data function.(DOCXLS-4758)
+* Support for workbook views.(DOCXLS-4760)
+* New Formula2 property to set Dynamic Array Formula.(DOCXLS-4949)
+* Support for GETPIVOTDATA Function.(DOCXLS-5200)
+## Fixed
+* The result of NOW() function is incorrect.(DOCXLS-3721)
+* There is a large gap on the top of the cell in exported PDF file.(DOCXLS-4218)
+* NullPointerException is thrown on calling 'Workbook.Open()' method.(DOCXLS-4886)
+* The cell style is lost in the exported JSON file when compared with the original JSON file.(DOCXLS-4999)
+* The pattern fill settings of charts are not rendered in exported PDF file.(DOCXLS-5071)
+* The text with "\n" in charts is shifted in exported PDF file.(DOCXLS-5072)
+* The cell values are incorrect in exported CSV file.(DOCXLS-5153)
+* The cell styles are incorrect in exported Excel file after loading the JSON file.(DOCXLS-5154)
+* The exported Excel file is corrupted when copying a worksheet from another worksheet.(DOCXLS-5155)
+* The result of 'TEXT' function is incorrect.(DOCXLS-5173)
+* ArrayIndexOutOfBoundsException is thrown on calling 'Workbook.ToJson()' method.(DOCXLS-5196)
 ## 4.2.6
 ## Fixed
 * The cell formula and value are lost in exported JSON file.(DOCXLS-5089)
