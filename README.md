@@ -24,6 +24,21 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | Examples.Library     | 示例源码工程，帮助您学习和使用GcExcel Java的每一个API |
 | SpringBootDemo/SpringBoot+React     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用React+SpreadJS展示|
 | SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
+## 5.0.1
+## Fixed
+* The alignment style is lost in the exported JSON file.(DOCXLS-5198)
+* The formula is incorrect in the exported Excel file when using template language to generate report.(DOCXLS-5205)
+* Unexpected borders are shown in exported image.(DOCXLS-5209)
+* FormatRows setting of worksheet protection is lost in the exported Excel file.(DOCXLS-5213)
+* System.AggregateException is thrown on saving Excel file to multiple PDF files in parallel.(DOCXLS-5222)
+* Hidden rows are shown in the exported JSON file.(DOCXLS-5225)
+* IndexOutOfRangeException is thrown on calling 'Workbook.Calculate()' method.(DOCXLS-5227)
+* The cell color is incorrect in the exported Excel file.(DOCXLS-5229)
+* The QRCode which has connection symbol is not output to the PDF file correctly.(DOCXLS-5230)
+* The radar chart is incorrect in the exported Excel file.(DOCXLS-5238)
+* Unexpected borders are output in the exported PDF file if the cell is merged.(DOCXLS-5248)
+* NullPointerException is thrown on calling 'Workbook.ToJson()' method.(DOCXLS-5253)
+* The exported Excel file is corrupted when copying a sheet with name length is 31.(DOCXLS-5256)
 ## 5.0.0
 ## Added
 * Support for Linked Picture.(DOCXLS-625)
