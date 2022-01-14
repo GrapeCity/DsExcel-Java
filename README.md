@@ -24,6 +24,21 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | Examples.Library     | 示例源码工程，帮助您学习和使用GcExcel Java的每一个API |
 | SpringBootDemo/SpringBoot+React     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用React+SpreadJS展示|
 | SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
+## 5.0.2
+## Fixed
+* Default column width changes when exporting to Excel file.(DOCXLS-5161)
+* The method IRange.Autofit() would not take effect when adjacent cell is set wrapping.(DOCXLS-5264)
+* Exception is thrown on saving Excel file when the formula2 in data validation is empty.(DOCXLS-5266)
+* Exception is thrown on saving PDF file when workbook contains specific chart.(DOCXLS-5274)
+* InvalidFormulaException is thrown on opening particular Excel file contains special characters in table column.(DOCXLS-5277)
+* OutOfMemory exception is thrown on exporting the Excel file with shape object to HTML.(DOCXLS-5278)
+* It takes a long time on calling Workbook.ToJson() method.(DOCXLS-5302)
+* Some KR demo resources are missing.(DOCXLS-5317)
+* Exception is thrown on loading the JSON file exported by GcExcel.(DOCXLS-5321)
+* Exception is thrown on exporting PDF file when workbook contains specific Pivit Table.(DOCXLS-5325)
+* StackOverFlow exception is thrown on opening specific Excel file.(DOCXLS-5328)
+* Shape border is changed in the exported HTML file when resaving it.(DOCXLS-5335)
+* Temporary file is created after opening the Excel file using GcExcel API.(DOCXLS-5396)
 ## 5.0.1
 ## Fixed
 * The alignment style is lost in the exported JSON file.(DOCXLS-5198)
