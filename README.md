@@ -1,6 +1,44 @@
-GrapeCity introduces Documents for Excel (GcExcel) Java Edition, a high-speed, feature-rich Excel document API based on VSTO that can help developers work with spreadsheets in Java applications. The library helps to generate, convert to pdf, calculate, format, and parse spreadsheets in any application. You can work with a variety of features like importing spreadsheets, calculate data, query, generate, and export any spreadsheet, add sorting, filtering, formatting, conditional formatting and data validation, grouping, sparklines, charts, shapes, pictures, slicers, comments, hyperlinks, themes etc.  In addition, you can import existing Excel templates, add data and save the spreadsheets back. You can also use GcExcel together with Spread.Sheets, another GrapeCity Spread product that is included in GrapeCity SpreadJS. GcExcel can also import and export Excel template files on the server side. Spread.Sheets works in the browser (client side) as a viewer or editor.
+# GrapeCity Documents for Excel, Java Edition
+Programmatically generate, load, modify, and convert Excel .xlsx spreadsheets with ease in your Java applications. GrapeCity Documents for Excel (GcExcel) is a cross-platform high-speed, small-footprint spreadsheet API library that requires no dependencies on Excel. Applications using this spreadsheet API can be deployed to the cloud, Windows, Mac, or Linux. The powerful calculation engine and breadth of features means you'll never have to compromise on design or requirements.
 
-With GcExcel, you can also load, edit, analyse, convert and save spreadsheets in Java applications with full support on Windows, MAC and Linux.
+At a glance:
+- Create, load, edit, and save Excel spreadsheets
+- Save to .XLSX, PDF, HTML, CSV, and JSON
+- Based on the Excel Object Model with zero Excel dependencies
+- Deploy locally, inhouse or to Cloud including Azure and AWS
+- 450+ Excel Functions and custom functions supported to perform complex calculations
+- Use the Templates to create custom Excel reports
+- 2x+ faster and less memory than Apache POI
+
+Based on the extensive Excel Object Model, the interface-based API allows you to import, calculate, query, generate, and export any spreadsheet scenario. With the VS Tools for Office-style API, you can create custom styles using the same elements as VS Tools for Office.
+
+Using GcExcel, you can create full reports, sorted and filtered tables, sorted and filtered pivot tables, dashboard reports, add charts, slicers, sparklines, conditional formats, import and export Excel templates, convert spreadsheets to PDF and so much more.
+
+**Complete Client-Server Spreadsheet Solution**
+You can optionally integrate GcExcel with the SpreadJS JavaScript spreadsheet as a client-side editor/viewer solution when working with Excel files for a complete client-server solution. View the complete supported features list [here](https://www.grapecity.com/documents-api-excel-java/docs/online/support-for-spreadjs-features.html) or download a trial from [NPM](https://www.npmjs.com/package/&#64;grapecity/spread-sheets) or the [SpreadJS](https://www.grapecity.com/spreadjs) page.
+
+If you'd like to remove the trial watermark and other [trial limitations](https://www.grapecity.com/documents-api-excel-java/docs/online/LicenseInformation.html), please email us.sales@grapecity.com to request your 30-day evaluation key.
+
+## Resources
+
+- [Download 30-day Evaluation](https://www.grapecity.com/documents-api-excel-java/download)
+- [Product Page](https://www.grapecity.com/documents-api-excel-java)
+- [Online Demo](https://www.grapecity.com/documents-api-excel-java/demos)
+- [Getting Started](https://www.grapecity.com/documents-api-excel-java/docs/online/getting-started.html)
+- [License Information](https://www.grapecity.com/documents-api-excel-java/docs/online/LicenseInformation.html)
+- [Licensing FAQ](https://www.grapecity.com/licensing/documents-api)
+- [How to get Trial Keys](https://www.grapecity.com/documents-api-excel-java/docs/online/LicenseInformation.html)
+- [GcExcel Blogs](https://www.grapecity.com/blogs/tags/grapecity-documents)
+- [Online Documentation](https://www.grapecity.com/documents-api-excel-java/docs/online/overview.html)
+- [Offline Documentation (PDF)](https://www.grapecity.com/documents-api-excel-java/docs/offlinehelp.pdf)
+
+## Other GrapeCity Document API Solutions
+
+- [Documents for Excel, .NET](https://www.grapecity.com/documents-api-excel)
+- [Documents for PDF](https://www.grapecity.com/documents-api-pdf)
+- [Documents for PDF Viewer](https://www.grapecity.com/documents-api-pdf/javascript-pdf-viewer)
+- [Documents for Word](https://www.grapecity.com/documents-api-word)
+- [Documents for Imaging](https://www.grapecity.com/documents-api-imaging)
 
 This repository contains source project of Examples and Showcases of GcExcel to help you learn and write your own applications. 
 
@@ -283,7 +321,7 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * Some exceptions would be thrown when exporting to json.(DOCXLS-4024)
 * Drop down style is disorder in exported ssjson by GcExcel.(DOCXLS-4036)
 * Prompt issues when open exported xlsx file by MSExcel(DOCXLS-4049).
-* Infinite loop when `PrintManager.Paginate` called with specific parameters.(DOCXLS-4056)
+* Infinite loop when 'PrintManager.Paginate' called with specific parameters.(DOCXLS-4056)
 ## 4.1.0
 ## Added
 * Parse formula string into a syntax tree.
