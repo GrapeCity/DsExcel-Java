@@ -3,7 +3,7 @@ Programmatically generate, load, modify, and convert Excel .xlsx spreadsheets wi
 
 At a glance:
 - Create, load, edit, and save Excel spreadsheets
-- Save to .XLSX, PDF, HTML, CSV, and JSON
+- Save to .XLSX, PDF, Image, HTML, CSV, and JSON
 - Based on the Excel Object Model with zero Excel dependencies
 - Deploy locally, inhouse or to Cloud including Azure and AWS
 - 450+ Excel Functions and custom functions supported to perform complex calculations
