@@ -15,6 +15,7 @@ Based on the extensive Excel Object Model, the interface-based API allows you to
 Using GcExcel, you can create full reports, sorted and filtered tables, sorted and filtered pivot tables, dashboard reports, add charts, slicers, sparklines, conditional formats, import and export Excel templates, convert spreadsheets to PDF and so much more.
 
 **Complete Client-Server Spreadsheet Solution**
+
 You can optionally integrate GcExcel with the SpreadJS JavaScript spreadsheet as a client-side editor/viewer solution when working with Excel files for a complete client-server solution. View the complete supported features list [here](https://www.grapecity.com/documents-api-excel-java/docs/online/support-for-spreadjs-features.html) or download a trial from [NPM](https://www.npmjs.com/package/&#64;grapecity/spread-sheets) or the [SpreadJS](https://www.grapecity.com/spreadjs) page.
 
 If you'd like to remove the trial watermark and other [trial limitations](https://www.grapecity.com/documents-api-excel-java/docs/online/LicenseInformation.html), please email us.sales@grapecity.com to request your 30-day evaluation key.
