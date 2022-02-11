@@ -63,6 +63,20 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | Examples.Library     | 示例源码工程，帮助您学习和使用GcExcel Java的每一个API |
 | SpringBootDemo/SpringBoot+React     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用React+SpreadJS展示|
 | SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
+## 5.0.3
+## Breaking changes
+* Support option to control whether treat BigDecimal as double for cell value.(DOCXLS-5364)
+## Added
+* Add ability to add filter without condition using IRange.AutoFilter().(DOCXLS-2435)
+* Add options to control if serialize workbook to JSON without worksheets.(DOCXLS-5357)
+## Fixed
+* Formulas are lost in exported Excel file.(DOCXLS-5371)
+* ToJson method generates invalid json file when Excel file having multi-line comments.(DOCXLS-5384)
+* Cell value is incorrect when evaluating formula using GcExcel.(DOCXLS-5385)
+* The cell style is incorrect in exported Excel file after loading the JSON exported by SpreadJS.(DOCXLS-5389)
+* Exception is thrown on calling workbook.toJson() method.(DOCXLS-5398)
+* Performance degradation when evaluating values from the particular Excel file.(DOCXLS-5400)
+* The formula result of SUBSTITUTE is incorrect.(DOCXLS-5408) 
 ## 5.0.2
 ## Fixed
 * Default column width changes when exporting to Excel file.(DOCXLS-5161)
