@@ -63,6 +63,37 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | Examples.Library     | 示例源码工程，帮助您学习和使用GcExcel Java的每一个API |
 | SpringBootDemo/SpringBoot+React     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用React+SpreadJS展示|
 | SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
+## 5.0.4
+## Fixed
+* [Template Language] Cell style is incorrect after calling IWorkbook.ProcessTemplate().(DOCXLS-5206)
+* IndexOutOfRangeException is thrown on exporting pdf file when sheet contains hidden columns.(DOCXLS-5263)
+* Column width is changed when importing JSON file exported by SpreadJS.(DOCXLS-5314)
+* IndexOutOfBoundsException is thrown on exporting JSON file for specific Excel file.(DOCXLS-5377)
+* Exception is thrown on saving an Excel file exported by GcExcel.(DOCXLS-5393)
+* The exported Excel file is corrupted when it contains specific linked objects.(DOCXLS-5402)
+* The exported Excel file is corrupted when it contains dynamic array formulas.(DOCXLS-5409)
+* NullReferenceException is thrown on opening some excel files with waterfall chart.(DOCXLS-5418)
+* Font in shape is changed in exported Excel file.(DOCXLS-5422)
+* The linked picture does not change along with the refered range.(DOCXLS-5439)
+* The tab of active sheet is not displayed in the tab strip.(DOCXLS-5441)
+* The formula value is incorrect in the exported Excel file.(DOCXLS-5444)
+* The exported Excel file is corrupted when copying range with dynamic array formula.(DOCXLS-5459)
+* The row height changes after inserting rows.(DOCXLS-5465)
+* Format settings are not copied when copying entire rows contains merge area.(DOCXLS-5472)
+* Formula result is different from Excel in Chinese culture.(DOCXLS-5488)
+* NullPointerException is thrown on calling toJson method for user specific excel.(DOCXLS-5523)
+* The result of function "=NOW()" is not precise when time goes by.(DOCXLS-5524)
+* When the BarChart is exported to PDF, the order of the legends is reversed.(DOCXLS-5536)
+* XMLStreamException is thrown on saving Excel to JSON file.(DOCXLS-5540)
+* An error occurred while copying sheet with threaded comment.(DOCXLS-5546)
+* Binding result is incorrect when using bigdecimal as data source.(DOCXLS-5547)
+* Particular headers and footers are not output to PDF correctly.(DOCXLS-5554)
+* The style is incorrect in the exported PDF file when copying sheet with conditional format.(DOCXLS-5557)
+* Exception of index out of range is thrown on exporting PDF file if the workbook contains specific conditional format.(DOCXLS-5588)
+* LET function changed in the exported Excel file.(DOCXLS-5593)
+* InvalidFormulaException is thrown on opening a workbook with specific charts.(DOCXLS-5596)
+* The result of formula calculation is different with Excel.(DOCXLS-5598)
+* Exception is thrown on exporting chart to image.(DOCXLS-5626)
 ## 5.0.3
 ## Breaking changes
 * Support option to control whether treat BigDecimal as double for cell value.(DOCXLS-5364)
