@@ -63,6 +63,27 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | Examples.Library     | 示例源码工程，帮助您学习和使用GcExcel Java的每一个API |
 | SpringBootDemo/SpringBoot+React     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用React+SpreadJS展示|
 | SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
+## 5.0.5
+## Fixed
+* Bad performance when calculating formulas in a specific Excel file.(DOCXLS-5501)
+* The position of the frozen pane is changed after JSON I/O.(DOCXLS-5525)
+* The layout of checkbox list in the exported pdf file is different from SpreadJS designer.(DOCXLS-5544)
+* Performance is bad when calling method toJSON with particular Excel file.(DOCXLS-5564)
+* When the chart is exported to PDF, the pattern fill of the legend symbol is not correct.(DOCXLS-5567)
+* The layout of the list object in the exporting pdf is not correct.(DOCXLS-5590)
+* The checkbox is unchecked when the cell value is set.(DOCXLS-5624)
+* Open csv file with double quote, the records would be lost.(DOCXLS-5639)
+* ParseException is thrown on opening particular excel file with threaed comment.(DOCXLS-5643)
+* Exception is thrown on setting Workbook.Culture property when workbook contains Hyperlink named style.(DOCXLS-5649)
+* Exception is throws when opening loading specific JSON file.(DOCXLS-5656) 
+* Exception is thrown on calling Workbook.SetLicenseKey method in multi-thread.(DOCXLS-5660)
+* The result of IRange.LastColumn is not correct in some Excel file.(DOCXLS-5668)
+* The plot area of chart is not updated in the exported pdf file when enabling/disabling calculation.(DOCXLS-5682)
+* Custom named style are not exported to JSON or Excel file if it is not used in any range.(DOCXLS-5683)
+* Font "Noto Sans JP" is not shown correctly in the exported pdf.(DOCXLS-5701)
+* Exception is thrown on opening an Excel file.(DOCXLS-5704)
+* Exception is thrown on opening an Excel file with ActiveX control.(DOCXLS-5706)
+* NullPointerException is thrown on calling Calculate method after loading JSON file.(DOCXLS-5709)
 ## 5.0.4
 ## Fixed
 * [Template Language] Cell style is incorrect after calling IWorkbook.ProcessTemplate().(DOCXLS-5206)
