@@ -63,6 +63,35 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | Examples.Library     | 示例源码工程，帮助您学习和使用GcExcel Java的每一个API |
 | SpringBootDemo/SpringBoot+React     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用React+SpreadJS展示|
 | SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
+## 5.1.0
+## Added
+* [Pivot Table] Specify 'ShowValuesAs' Option for 'Values' Field.(DOCXLS-738)
+* Add Numbers Fit Mode of overflow/mask.(DOCXLS-3696)
+* Modify Password of Excel Documents.(DOCXLS-4076)
+* [Pivot Table] Support for Calculated Field.(DOCXLS-4211)
+* Support JSON data source for template language.(DOCXLS-4359)
+* Support for "Show #N/A as an empty cell" in Chart.(DOCXLS-4442)
+* Convert Table to Range.(DOCXLS-4601)
+* Support CELL function.(DOCXLS-4645)
+* CSV Custom Parser.(DOCXLS-5162)
+* Support for Pivot table views (JSON I/O).(DOCXLS-5221)
+* Import Data Function to Import Table, Range, or Worksheet from Excel Files.(DOCXLS-5276)
+* Support for TableSheet (JSON I/O).(DOCXLS-5487)
+## Fixed
+* Converting the imported Excel to Json breaks all formulas in it.(DOCXLS-3840)
+* [Template language]Out of memory exception is thrown on using template in multi-thread.(DOCXLS-4449)
+* [Template language]The layout is incorrect in the exported xlsx file when using template with cross table.(DOCXLS-4756)
+* [Template language]The result of sum function is incorrect in the exported xlsx file.(DOCXLS-4827)
+* [Template language]The cell values are not expected in the exported Excel file.(DOCXLS-4888)
+* [Template language]The IF formula is lost in the exported xlsx file.(DOCXLS-5224)
+* [Template language]The formula is not expanded correctly in exported xlsx file.(DOCXLS-5239)
+* IndexOutOfRangeException is thrown on exporting radar chart to PDF file.(DOCXLS-5262)
+* [Template language]The result of sum function is incorrect in the exported xlsx file.(DOCXLS-5485)
+* The legend of series is not shown in the exported PDF file if the datapoints of the series are empty.(DOCXLS-5569)
+* InvalidFormulaException is thrown on creating table when there is "'" in the table column's name.(DOCXLS-5690)
+* Extra characters are exported in data validation in the exported JSON file.(DOCXLS-5734)
+* NullReferenceException is thrown on setting series formula which contains bubble size info.(DOCXLS-5751)
+* The layout of checkbox list is incorrect in the exported PDF file.(DOCXLS-5754)
 ## 5.0.5
 ## Fixed
 * Bad performance when calculating formulas in a specific Excel file.(DOCXLS-5501)
