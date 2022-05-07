@@ -63,6 +63,27 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | Examples.Library     | 示例源码工程，帮助您学习和使用GcExcel Java的每一个API |
 | SpringBootDemo/SpringBoot+React     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用React+SpreadJS展示|
 | SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
+## 5.1.1
+## Fixed
+* [Template language]The layout is incorrect when rendering list of data with dynamic object in both right and down direction.(DOCXLS-4727)
+* When shapes with text are exported to the PDF file, shapes are not the same as Excel file.(DOCXLS-5723)
+* Illegal access warning occurs when using JDK9 or above.(DOCXLS-5752)
+* ArgumentOutOfRangeException or NullReferenceException is thrown on using GcExcel API in multi-threaded environment when there's TEXT function in workbook.(DOCXLS-5784)
+* The picture's position is incorrect in the exporting PDF file when some column is hidden.(DOCXLS-5798)
+* Some borders are lost in the exported Excel file after loading SSJSON file.(DOCXLS-5813)
+* The fontsize of cell is incorrect after loading the JSON file.(DOCXLS-5818)
+* NullPointerException is thrown on loading JSON file.(DOCXLS-5821)
+* The bottom border is lost in the exported PDF file.(DOCXLS-5838)
+* The tick labels' orientation of chart is changed in the exported Excel file.(DOCXLS-5840)
+* [Template language]Chart is incorrect after processing template in the exported Excel file.(DOCXLS-5844)
+* #REF! error occurs when calculating OFFSET function.(DOCXLS-5847)
+* NullPointerException is thrown on calling IPivotTable.refresh() method.(DOCXLS-5850)
+* The first space of cell text is not preserved in the exported Excel file if the cell value is calculated by formula.(DOCXLS-5851)
+* The result of COUNT function is incorrect.(DOCXLS-5859)
+* The exported Excel file is corrupted after processing template.(DOCXLS-5876)
+* The program would be stuck when exporting to JSON when there's filter in workbook.(DOCXLS-5879)
+* ArrayIndexOutOfBoundsException is thrown on calling Workbook.toJson() method.(DOCXLS-5883)
+* The exported Excel file is corrupted after loading specific xlsx file containing chart.(DOCXLS-5887)
 ## 5.1.0
 ## Added
 * [Pivot Table] Specify 'ShowValuesAs' Option for 'Values' Field.(DOCXLS-738)
