@@ -63,6 +63,22 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | Examples.Library     | 示例源码工程，帮助您学习和使用GcExcel Java的每一个API |
 | SpringBootDemo/SpringBoot+React     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用React+SpreadJS展示|
 | SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
+## 5.1.2
+## Fixed
+* The chart in the exported ssjson file is different from the ssjson exported by SpreadJS.(DOCXLS-5753）
+* Data binding does not support multi-layer level.(DOCXLS-5875）
+* The result of IRange.toImage() is incorrect.(DOCXLS-5884）
+* The exported xlsx file is corrupted when copying range from one sheet to another.(DOCXLS-5888）
+* [Template Language]The generated xlsx file is corrupted when template file has multiple sheets.(DOCXLS-5889)
+* Some cell values are #REF! after using data binding.(DOCXLS-5913）
+* The size of exported chart image is smaller than the original chart in MSExcel.(DOCXLS-5938)
+* The exported xlsx file is corrupted when comment contains special characters.(DOCXLS-5942）
+* The cell value is #REF! when calculating SUMIF function.(DOCXLS-5944)
+* The position of chart's tick labels are incorrect in the exported xlsx file.(DOCXLS-5946)
+* The rowcount is incorrect after loading CSV file from stream.(DOCXLS-5951)
+* Performance degradation comparing with old versions.(DOCXLS-5952)
+* The cell content is incorrect when the alignment is distributed and indent in exported PDF file.(DOCXLS-5953)
+* The exported image is corrupted when the range is entire column/row.(DOCXLS-5990)
 ## 5.1.1
 ## Fixed
 * [Template language]The layout is incorrect when rendering list of data with dynamic object in both right and down direction.(DOCXLS-4727)
