@@ -63,6 +63,21 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | Examples.Library     | 示例源码工程，帮助您学习和使用GcExcel Java的每一个API |
 | SpringBootDemo/SpringBoot+React     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用React+SpreadJS展示|
 | SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
+## 5.1.3
+## Fixed
+* The color of cell font is incorrect in exported JSON file.(DOCXLS-5945）
+* Platform dependent characters are incorrect in the exported PDF file.(DOCXLS-5971）
+* NullReferenceException is thrown on exporting PDF file.(DOCXLS-5996）
+* The performance of inserting lots of pictures is bad.(DOCXLS-6009)
+* The value of formula N is incorrect.(DOCXLS-6010)
+* The exported xlsm file is corrupted after deleting some sheet which contains external reference.(DOCXLS-6012)
+* Setting IWorksheetView.ScrollColumn/ScrollRow properties on a worksheet which has freeze pane corrupts the saved Exel file.(DOCXLS-6026）
+* Series lines in a chart are not exported to PDF file.(DOCXLS-6030)
+* The zoom scale of the worksheet changes from 90% to 100%.(DOCXLS-6042)
+* The exported Excel file is corrupted when the rows are deleted in the worksheet which has freeze pane.(DOCXLS-6054)
+* Using copy method to copy range will throw System.NullReferenceException if pasteType value is NumberFormats.(DOCXLS-6056)
+* Exception is thrown on opening the Excel file exported by GcExcel.(DOCXLS-6066)
+* The cell value is disordered after calling IRange.Clear() method when workbook contains phonetic text.(DOCXLS-6083)
 ## 5.1.2
 ## Fixed
 * The chart in the exported ssjson file is different from the ssjson exported by SpreadJS.(DOCXLS-5753）
