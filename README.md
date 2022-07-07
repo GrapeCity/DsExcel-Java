@@ -63,6 +63,26 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | Examples.Library     | 示例源码工程，帮助您学习和使用GcExcel Java的每一个API |
 | SpringBootDemo/SpringBoot+React     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用React+SpreadJS展示|
 | SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
+## 5.1.4
+## Fixed
+* The rowheight is incorrect after copying worksheet.(DOCXLS-5845)
+* The result of SEARCHB func is different from Excel in Chinese culture.(DOCXLS-5994)
+* The result of autoFit is bad in the exported PDF file.(DOCXLS-6028)
+* Some borders are missing in the exported image after loading particular JSON file.(DOCXLS-6097)
+* Exception is thrown on drawing Pivot Table to PDF file.(DOCXLS-6110)
+* IllegalArgumentException is thrown on exporting image when some fonts are missed in system.(DOCXLS-6123)
+* The texts in the merged cell near the page boundary are not output to PDF file.(DOCXLS-6137)
+* ArgumentException is thrown on saving Excel file when workbook contains some special characters.(DOCXLS-6138)
+* Invalid Argument exception is thrown on loading csv from URL stream.(DOCXLS-6142)
+* The last cell of column is incorrect when a column is deleted.(DOCXLS-6144)
+* The rows are hidden in the exported JSON file.(DOCXLS-6153)
+* NullReferenceException is thrown on saving to Excecl file.(DOCXLS-6155)
+* IllegalArgumentException is thrown on loading particular JSON file.(DOCXLS-6158)
+* The texts in merged cell are not exported in the PDF file.(DOCXLS-6159)
+* Exception is thrown on saving to PDF file if workbook contains corrupted image.(DOCXLS-6164)
+* ArgumentException is thrown on loading a particular JSON file contains different slicer with same name.(DOCXLS-6166)
+* IndexOutOfRangeException is thrown on getting some cell's value.(DOCXLS-6168)
+* The exported Excel file is corrupted after refreshing the Pivot Table.(DOCXLS-6174)
 ## 5.1.3
 ## Fixed
 * The color of cell font is incorrect in exported JSON file.(DOCXLS-5945）
