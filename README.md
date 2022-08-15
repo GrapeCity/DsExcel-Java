@@ -63,6 +63,21 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | Examples.Library     | 示例源码工程，帮助您学习和使用GcExcel Java的每一个API |
 | SpringBootDemo/SpringBoot+React     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用React+SpreadJS展示|
 | SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
+## 5.2.0
+## Added
+* New API to add Excel Form Controls.(DOCXLS-2532)
+* Support for CASCADESPARKLINE formula.(DOCXLS-3562)
+* Define Paginated Templates in spreadsheets (with GcExcel Templates).(DOCXLS-3829)
+* Support for Chart Data Table.(DOCXLS-4438)
+* Support for LET function.(DOCXLS-5185)
+* GetPivotData Formula supports spilled data.(DOCXLS-5390)
+* Add Calculated Item in Pivot Table.(DOCXLS-5437)
+* Get accurate range boundary.(DOCXLS-5473)
+* Support JSON as DataSource in data binding.(DOCXLS-5499)
+* IsVolatile property support in Custom function.(DOCXLS-5714)
+* Debug mode in GcExcel Templates.(DOCXLS-5715)
+* Debug better with additional details in InvalidFormulaException.(DOCXLS-5744)
+* Support for adding and rendering SVG image.(DOCXLS-5817)
 ## 5.1.5
 ## Fixed
 * The performance of opening particular Excel file need to be optimized.(DOCXLS-6038) 
