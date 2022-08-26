@@ -63,7 +63,7 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | Examples.Library     | 示例源码工程，帮助您学习和使用GcExcel Java的每一个API |
 | SpringBootDemo/SpringBoot+React     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用React+SpreadJS展示|
 | SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
-## 5.1.5
+## 5.2.1
 ## Fixed
 * The results of IWorksheet.FreezeColumn/FreezeRow are incorrect.(DOCXLS-6299)
 * Exception is thrown on processing template if the data source name is number and Japanese.(DOCXLS-6300)
