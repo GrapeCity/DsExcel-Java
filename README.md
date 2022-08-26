@@ -63,6 +63,20 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | Examples.Library     | 示例源码工程，帮助您学习和使用GcExcel Java的每一个API |
 | SpringBootDemo/SpringBoot+React     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用React+SpreadJS展示|
 | SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
+## 5.1.5
+## Fixed
+* The results of IWorksheet.FreezeColumn/FreezeRow are incorrect.(DOCXLS-6299)
+* Exception is thrown on processing template if the data source name is number and Japanese.(DOCXLS-6300)
+* The result of Search function is incorrect when it contains the wild char "\*".(DOCXLS-6361)
+* Poor performance and high memory footprint when loading particular Excel file.(DOCXLS-6362)
+* The exported Excel file is corrupted when workbook contains bubble chart.(DOCXLS-6372)
+* The slicer in the exported ssjson file is different from the original JSON file.(DOCXLS-6384)
+* The layout and the data field value of pivot table in exported XLSX file is incorrect.(DOCXLS-6406)
+* The data field result of pivot table is not filterd in the exported XLSX file.(DOCXLS-6412)
+* The result of INames.Contains() is incorrect.(DOCXLS-6429)
+* Exception is thrown on loading SSJSON file when font name contains unexpected characters.(DOCXLS-6436)
+* Repeated loading and saving of an existing file corrupts the saved Excel file.(DOCXLS-6470)
+
 ## 5.2.0
 ## Added
 * New API to add Excel Form Controls.(DOCXLS-2532)
