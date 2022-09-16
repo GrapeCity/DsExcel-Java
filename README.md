@@ -63,6 +63,25 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | Examples.Library     | 示例源码工程，帮助您学习和使用GcExcel Java的每一个API |
 | SpringBootDemo/SpringBoot+React     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用React+SpreadJS展示|
 | SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
+## 5.2.2
+## Fixed
+* NumberFormatException is thrown on loading the particular excel file.(DOCXLS-6134)           
+* Bad Performance when exporting PDF.(DOCXLS-6428)
+* Exception is thrown on deleting the series collection of chart.(DOCXLS-6442)
+* Font color changed when importing SSJSON file to workbook and saving back to Excel file.(DOCXLS-6455)
+* The result of INDEX function is not spilled correctly.(DOCXLS-6483)
+* ArgumentOutOfRange exception is thrown on copying a sheet from one workbook to another.(DOCXLS-6485)
+* NumberFormatException is thrown on loading the particular excel file.(DOCXLS-6489)
+* Z-order of pictures is changed when loading SSJSON file and exporting to Excel file.(DOCXLS-6496)
+* The result of IRange.Text is incorrect when showzero is false.(DOCXLS-6525)
+* Invalid key data exception is thrown when adding jakarta.json dependency.(DOCXLS-6545)
+* Exception is thrown on loading SSJSON file when conditional format contains gradient color.(DOCXLS-6556)
+* The exported Excel file is corrupted when calling IRange.sort() method.(DOCXLS-6565)
+* Twill pattern of conditional format would be lost after loading SSJSON file.(DOCXLS-6578)
+* Grouped shapes do not move with cells.(DOCXLS-6584)
+* Exception is thrown on loading particular Excel file.(DOCXLS-6636)
+* Exception is thrown on exporting to PDF file when workbook contains charts.(DOCXLS-6638)
+
 ## 5.2.1
 ## Fixed
 * The results of IWorksheet.FreezeColumn/FreezeRow are incorrect.(DOCXLS-6299)
