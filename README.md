@@ -63,6 +63,31 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | Examples.Library     | 示例源码工程，帮助您学习和使用GcExcel Java的每一个API |
 | SpringBootDemo/SpringBoot+React     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用React+SpreadJS展示|
 | SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
+## 5.2.3
+## Fixed
+* Performance issue when exporting the Excel file to JSON when workbook contains lots of table with striped styles.(DOCXLS-5242)
+* The result of IPivotItem.Visible is incorrect when the option "select multiple items" is checked.(DOCXLS-6385)
+* The result of INDEX function is not spilled correctly.(DOCXLS-6483)
+* When Excel file including "Add-ins" is loaded and saved, "Add-ins" is lost.(DOCXLS-6535)
+* The cell value is not formatted correctly in the exported HTML file.(DOCXLS-6555)
+* An OutOfMemoryError occurs when exporting specific Excel file to image.(DOCXLS-6577)
+* There would be #Ref error when the sheet name starts with number.(DOCXLS-6580)
+* The file is bigger after exported.(DOCXLS-6595)
+* Performance issue when calculating lots of formulas.(DOCXLS-6597)
+* The result of get hidden columns is incorrect when the Excel is exported by other product.(DOCXLS-6639)
+* ArrayIndexOutOfBoundsException is thrown on exporting Excel file.(DOCXLS-6640)
+* The EUDC font could not be displayed correctly in the exported PDF file.(DOCXLS-6670)
+* The picture is lost in the exported PDF file.(DOCXLS-6671)
+* Json parse error is thrown when the row count or column count is string in conditional format.(DOCXLS-6679)
+* InvalidFormulaException is thrown on refreshing data in the PivotTable.(DOCXLS-6697)
+* The position of the bent connector's arrow is incorrect in the exported image file.(DOCXLS-6699)
+* "This Year" setting in conditional format is not supported after loading JSON file.(DOCXLS-6712)
+* Floating object is lost in the exported JSON file.(DOCXLS-6721)
+* The layout of databar is incorrect in the exported HTML file.(DOCXLS-6725)
+* Performance issue when exporting to PDF file when condition format contains whole column reference.(DOCXLS-6730)
+* The cell type on table column is lost after loading the JSON file.(DOCXLS-6741)
+* Exception is thrown on loading particular Excel file.(DOCXLS-6748)
+
 ## 5.2.2
 ## Fixed
 * NumberFormatException is thrown on loading the particular excel file.(DOCXLS-6134)           
