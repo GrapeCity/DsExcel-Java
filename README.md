@@ -63,6 +63,31 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | Examples.Library     | 示例源码工程，帮助您学习和使用GcExcel Java的每一个API |
 | SpringBootDemo/SpringBoot+React     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用React+SpreadJS展示|
 | SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
+## 5.2.4
+## Fixed
+* Incorrect results with iterative calculations after loading the particular Excel file.(DOCXLS-6444)              
+* When the url wrapped in a cell is exported to pdf, it breaks in the wrong position.(DOCXLS-6547)
+* Performance issue when setting the hidden property of the row.(DOCXLS-6588)
+* CharSet of the QR code is missed in the exported pdf file.(DOCXLS-6765)
+* NullPointerException is thrown on setting cell values in worksheet which contains iterative calculation.(DOCXLS-6779)
+* Exception is thrown on calculating MIDB function in CJK culture.(DOCXLS-6791)
+* The hidden rows are unhidden after loading the SSJSON file.(DOCXLS-6806)
+* Bad performance when loading SSJSON file contains lots of named styles.(DOCXLS-6821)
+* Print area is lost after loading the ssjson file.(DOCXLS-6824)
+* VBA project digital signature is lost in the exported Excel file.(DOCXLS-6831)
+* The style is incorrect after calling the copy() method.(DOCXLS-6853)
+* The column width of exported PDF is inconsistent with SpreadJS.(DOCXLS-6857)
+* The path in external link is not encoded correctly.(DOCXLS-6862)
+* The program would not exit if the repeat area is large when exporting PDF file.(DOCXLS-6866)
+* The count of Pivot items is incorrect.(DOCXLS-6867)
+* Exception is thrown on loading particular SSJSON file contains #SPILL!.(DOCXLS-6874)
+* IndexOutOfRangeException is thrown on copying a sheet from one workbook to another.(DOCXLS-6878)
+* Merged cells unmerged after processing the template.(DOCXLS-6882)
+* When cells with long wrapped texts are autofitted and exported to PDF file, the row heights are not adjusted.(DOCXLS-6883)
+* The position of barcode is incorrect in the exported PDF file.(DOCXLS-6884)
+* Print range and margin settings are lost in the exported report when pagination mode is on.(DOCXLS-6888)
+* Exception is thrown on exporting SSJSON file when workbook contains particular defined names.(DOCXLS-6901)
+
 ## 5.2.3
 ## Fixed
 * Performance issue when exporting the Excel file to JSON when workbook contains lots of table with striped styles.(DOCXLS-5242)
