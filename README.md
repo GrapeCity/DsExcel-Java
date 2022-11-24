@@ -63,6 +63,29 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | Examples.Library     | 示例源码工程，帮助您学习和使用GcExcel Java的每一个API |
 | SpringBootDemo/SpringBoot+React     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用React+SpreadJS展示|
 | SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
+## 5.2.5
+## Fixed
+* The column width of exported PDF is inconsistent with SpreadJS.(DOCXLS-6857)
+* IndexOutOfRangeException is thrown on calling Calculate method twice for a workbook.(DOCXLS-6873)
+* Performance issue in opening Excel file and saving to JSON when workbook contains lots of comments.(DOCXLS-6886)
+* The exported report is incorrect when sheet name is bind to the datafield with DataSet as datasource.(DOCXLS-6889)
+* The layout is incorrect on call the IPivotTable.refresh() method.(DOCXLS-6890)
+* Field name is missed in the exported report when using the Range and Group feature of template at the same time.(DOCXLS-6892)
+* The border is lost in the exported SSJSON file.(DOCXLS-6896)	
+* Loading the specific SSJSON file, some node would be discarded.(DOCXLS-6902)
+* Template is not processed correctly.(DOCXLS-6909)
+* Table formula is not updated when using template.(DOCXLS-6916)
+* The exported SSJSON file is incorrect comparing with the original one.(DOCXLS-6970)
+* Performance issue with Add function in dynamic array.(DOCXLS-6979)
+* Exception is thrown on loading Excel file which contains irregualr content.(DOCXLS-6981)
+* Exception is thrown on loading particular SSJSON file with Pivot Table.(DOCXLS-6982)
+* InvalidOperationException is thrown on getting cell value twice from a workbook.(DOCXLS-6988)
+* The number format is missed when data source contains date value.(DOCXLS-6996)
+* The row height is incorrect after calling autofit	method.(DOCXLS-7005)
+* The cell value is incorrect when workbook contains cross workbook reference.(DOCXLS-7008)
+* Exception is thrown on loading particular SSJSON file contains conditional format with entire column reference.(DOCXLS-7024)
+* The SUMIF function result is incorrect.(DOCXLS-7032)
+
 ## 5.2.4
 ## Fixed
 * Incorrect results with iterative calculations after loading the particular Excel file.(DOCXLS-6444)              
