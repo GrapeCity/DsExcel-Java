@@ -63,6 +63,26 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | Examples.Library     | 示例源码工程，帮助您学习和使用GcExcel Java的每一个API |
 | SpringBootDemo/SpringBoot+React     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用React+SpreadJS展示|
 | SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
+## 6.0.0
+## Breaking changes
+* Changed XlsxOpenOptions.DoNotAutofitAfterOpened to XlsxOpenOptions.DoNotAutoFitAfterOpened(F in caps).(DOCXLS-6428)
+## Added
+* Support for new Lambda function including help functions.(DOCXLS-3667)
+* Paginated Spreadsheet reports new enhancements.(DOCXLS-3829)
+* New text and array manipulation Excel functions.(DOCXLS-5711)
+* Support 'RowColumnStates' in JSON I/O.(DOCXLS-5828)
+* Add shape text with range reference or defined name.(DOCXLS-5829)
+* Add shape/picture to cell/cell range using direct method.(DOCXLS-6182)
+* Add option to control Auto Fit.(DOCXLS-6228)
+* Support cross workbook formula - 'externalReference' in JSON I/O.(DOCXLS-6243)
+* Get used range in selected area.(DOCXLS-6330)
+* Support page number and page count for groups in template pagination.(DOCXLS-6374)
+* Keep original template and return the report workbook instance.(DOCXLS-6417)
+* Process specific template worksheets in template language.(DOCXLS-6418)
+* Excel workbook size optimization through save options.(DOCXLS-6441)
+* Range intersection, union and offset.(DOCXLS-6487)
+* GcExcel Java now targets JDK 8.(DOCXLS-6650)
+* Support for 'allSheetsListVisible' field in JSON I/O.(DOCXLS-6696)
 ## 5.2.5
 ## Fixed
 * The column width of exported PDF is inconsistent with SpreadJS.(DOCXLS-6857)
