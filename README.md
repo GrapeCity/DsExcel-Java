@@ -63,6 +63,28 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | Examples.Library     | 示例源码工程，帮助您学习和使用GcExcel Java的每一个API |
 | SpringBootDemo/SpringBoot+React     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用React+SpreadJS展示|
 | SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
+## 6.0.1
+## Fixed
+* Performance issue when using table bindings with 500,000 rows data.(DOCXLS-6781)
+* The exported Excel file is corrupted after processing template.(DOCXLS-6826)
+* The data validation lost after loading the SSJSON file when the applied range is whole column.(DOCXLS-7082)
+* Exception is thrown on exporting PDF file when using data binding.(DOCXLS-7094)
+* PageSetup.Zoom does not take effect on barcode in the exported PDF file.(DOCXLS-7095)
+* "Swiss 721 BT" font is not shown correctly in the exported PDF file.(DOCXLS-7102)
+* Print titles settings are lost in the generated report after processing template.(DOCXLS-7126)
+* The formula result is different from Excel.(DOCXLS-7168)
+* Exception is thrown on loading particular XLSX file contains invalid data.(DOCXLS-7171)
+* Exception is thrown on loading SSJSON file then calling Workbook.ToJson() method when JSON contains dupicated named styles.(DOCXLS-7174)
+* Exception is thrown on calling processing template when data field name contains number.(DOCXLS-7194)
+* PageSetup.CustomPaperSize method did not working.(DOCXLS-7195)
+* The DateTimePicker cell button cannot be deleted when deleting row.(DOCXLS-7199)
+* The cell text is incorrect after loading the Excel file contains rich text.(DOCXLS-7200)
+* The applied range of conditional formatting is incorrect after coping cell.(DOCXLS-7214)
+* Exception is thrown on rendering HTML when workbook contains Pivot Table.(DOCXLS-7219)
+* Exception is thrown on processing template when sheet contains defined names.(DOCXLS-7220)
+* The calculation result of VARP function differs from Excel.(DOCXLS-7221)
+* Exception is thrown on loading particular XLSX file contains invalid data.(DOCXLS-7223)
+
 ## 6.0.0
 ## Breaking changes
 * Changed XlsxOpenOptions.DoNotAutofitAfterOpened to XlsxOpenOptions.DoNotAutoFitAfterOpened(F in caps).(DOCXLS-6428)
@@ -83,6 +105,7 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * Range intersection, union and offset.(DOCXLS-6487)
 * GcExcel Java now targets JDK 8.(DOCXLS-6650)
 * Support for 'allSheetsListVisible' field in JSON I/O.(DOCXLS-6696)
+
 ## 5.2.5
 ## Fixed
 * The column width of exported PDF is inconsistent with SpreadJS.(DOCXLS-6857)
