@@ -63,6 +63,14 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | Examples.Library     | 示例源码工程，帮助您学习和使用GcExcel Java的每一个API |
 | SpringBootDemo/SpringBoot+React     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用React+SpreadJS展示|
 | SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
+## 6.0.2
+## Fixed
+* The marker size, data label and series line color chart in incorrect in the exported PDF file.(DOCXLS-7229)
+* Some row heights are incorrect after processing template.(DOCXLS-7268)
+* The linked cell text color becomes white after loading the SSJSON file then exporting to SSJSON file.(DOCXLS-7293)
+* Exception is thrown on saving Excel file when the file name has only one character.(DOCXLS-7314)
+* The interface Workbook.SetLicenseFile is lost.(DOCXLS-7315)
+
 ## 6.0.1
 ## Fixed
 * Performance issue when using table bindings with 500,000 rows data.(DOCXLS-6781)
