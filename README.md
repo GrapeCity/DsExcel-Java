@@ -51,7 +51,7 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use GcExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 ---
-[GrapeCity Documents for Excel（Java）](https://www.grapecity.com.cn/developer/grapecitydocuments) 是葡萄城推出的一款文档 API 组件，适用于所有 Java 6.0 及以上标准的平台，以编码的方式，无需 Microsoft Excel 依赖 ，即可快速批量操作 Excel 文件，通过与纯前端表格控件 [SpreadJS](https://www.grapecity.com.cn/developer/spreadjs) 结合使用，可同时在 Web 端实现 Excel 类数据展示、Excel 功能和布局样式，以及后端 Excel 导入导出等业务场景，使您开发的应用程序具备快速创建、加载、编辑、导入/导出大型 Excel 文档的功能模块。
+[GrapeCity Documents for Excel（Java）](https://www.grapecity.com.cn/developer/grapecitydocuments) 是葡萄城推出的一款文档 API 组件，适用于所有 Java 8 及以上标准的平台，以编码的方式，无需 Microsoft Excel 依赖 ，即可快速批量操作 Excel 文件，通过与纯前端表格控件 [SpreadJS](https://www.grapecity.com.cn/developer/spreadjs) 结合使用，可同时在 Web 端实现 Excel 类数据展示、Excel 功能和布局样式，以及后端 Excel 导入导出等业务场景，使您开发的应用程序具备快速创建、加载、编辑、导入/导出大型 Excel 文档的功能模块。
 
 超快速、低占用率、更轻量，使用 GrapeCity Documents 可极大节省应用程序在生成、加载、编辑和保存大型文档时所占用的内存和时间，帮助企业以更高效的方式处理各种文档，实现更多定制化选项。
 
