@@ -63,6 +63,29 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | Examples.Library     | 示例源码工程，帮助您学习和使用GcExcel Java的每一个API |
 | SpringBootDemo/SpringBoot+React     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用React+SpreadJS展示|
 | SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
+## 6.0.3
+## Fixed
+* The calculation result is incorrect when the formula is array formula.(DOCXLS-4598)             
+* The number format changes from "General" to "Custom" after loading and exporting SSJSON file.(DOCXLS-6854)
+* The height of plot area and the tick lables are incorrect in the exported PDF file.(DOCXLS-7076)
+* Exception is thrown on inserting rows when worksheet contains data validation.(DOCXLS-7364)
+* Exception is thrown on loading particular SSJSON file contains unexpected binding path content.(DOCXLS-7365)
+* Exception is thrown on loading then saving to another Excel file.(DOCXLS-7376)
+* The style of chart's trendline is incorrect in the exported PDF file.(DOCXLS-7381)
+* The arrow mark is missed in the exported PDF file.(DOCXLS-7383)
+* Exception is thrown on loading particular SSJSON file.(DOCXLS-7386)
+* The table formula is lost when loading particular SSJSON file.(DOCXLS-7401)
+* The checkbox format is different from the SpreadJS designer and exported PDF file.(DOCXLS-7412)
+* Exception is thrown on loading Excel file contains external reference.(DOCXLS-7429)
+* Unexpected cell content is shown in the exported PDF file.(DOCXLS-7430)
+* Exception is thrown on acessing group shape's children using iterator.(DOCXLS-7434)
+* The "colHeaderVisible" setting is lost after loading the original SSJSON file then exporting to another.(DOCXLS-7435)
+* Exception is thrown on adding validation which contains INDIRECT function.(DOCXLS-7442)
+* Exception is thrown on loading irregular Excel file then exporting to SSJSON file.(DOCXLS-7444)
+* The transparency setting of the text in the shape is lost in the exported PDF file.(DOCXLS-7471)
+* The underline is lost in the exported PDF file.(DOCXLS-7476)
+* Exception is thrown on setting Hyperlink funtion in a copied worksheet.(DOCXLS-7510)
+
 ## 6.0.2
 ## Fixed
 * The marker size, data label and series line color chart in incorrect in the exported PDF file.(DOCXLS-7229)
