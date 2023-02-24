@@ -63,6 +63,23 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | Examples.Library     | 示例源码工程，帮助您学习和使用GcExcel Java的每一个API |
 | SpringBootDemo/SpringBoot+React     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用React+SpreadJS展示|
 | SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
+## 6.0.4
+## Added
+* Option to control if export shared formula in SSJSON file.(DOCXLS-7477)
+## Fixed
+* Exception is thrown on loading particular SSJSON file contains circular reference.(DOCXLS-7377)
+* The calculated result is incorrect from Excel.(DOCXLS-7472)
+* The result of IFNA function is incorrect from Excel.(DOCXLS-7537)
+* The celltype in copied range is not cleared when copying range from other worksheet.(DOCXLS-7563)
+* The column which width is 0 is invisible in the SpreadJS designer.(DOCXLS-7565)
+* The shape is lost in the exported Excel and PDF file after setting the shape position.(DOCXLS-7598)
+* Performance downgradation on using PrintManager to exporting PDF file comparing to old version.(DOCXLS-7599)
+* The transparency effect in the shape text is lost in the exported PDF file.(DOCXLS-7604)
+* The rotation of the shape is counterclockwise in the exported PDF file.(DOCXLS-7606)
+* The protection setting is lost in the exported SSJSON file.(DOCXLS-7614)
+* Stack overflow exception is thrown on calling calculate() method.(DOCXLS-7617)
+* The exported Excel file is corrupted when original file contains invalid Pivot Table data.(DOCXLS-7633)
+* IllegalArguments exception is thrown on loading particular Excel file.(DOCXLS-7634)
 ## 6.0.3
 ## Fixed
 * The calculation result is incorrect when the formula is array formula.(DOCXLS-4598)             
