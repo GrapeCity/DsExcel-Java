@@ -63,6 +63,23 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | Examples.Library     | 示例源码工程，帮助您学习和使用GcExcel Java的每一个API |
 | SpringBootDemo/SpringBoot+React     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用React+SpreadJS展示|
 | SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
+## 6.0.5
+## Fixed
+* Exception is thrown on calling calculated or save method when workbook contains dynamic array formulas.(DOCXLS-7404)
+* The error type of formulas are different from Excel.(DOCXLS-7593)
+* The condition format result in the exported PDF file is different Excel.(DOCXLS-7631)
+* The table style is incorrect in the exported Excel file after processing template.(DOCXLS-7632)
+* Exception is thrown on calling fromJson method.(DOCXLS-7641)
+* Lambda function does not return correct result when getting values.(DOCXLS-7649)
+* Exception is thrown on saving workbook when it contains corrupted ActiveX controls.(DOCXLS-7677)
+* Sorting with blank rows is not worked correctly.(DOCXLS-7681)
+* Exception is thrown on exporting PDF file through PrintManager when workbook contains hidden column.(DOCXLS-7716)
+* Exception is thrown on calling IPivotTable.refresh() method.(DOCXLS-7723)
+* The text layout is different from the Excel file and the exported PDF file.(DOCXLS-7738)
+* The character is not escaped in the exported JSON file.(DOCXLS-7746)
+* The link color of hyperlink is lost in the exported JSON file.(DOCXLS-7755)
+* Exception is thrown on loading particular JSON file exported by GcExcel.(DOCXLS-7756)
+* The column width is inconsistent in different pages in the exported PDF file.(DOCXLS-7757)
 ## 6.0.4
 ## Added
 * Option to control if export shared formula in SSJSON file.(DOCXLS-7477)
