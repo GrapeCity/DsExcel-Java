@@ -63,6 +63,25 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | Examples.Library     | 示例源码工程，帮助您学习和使用GcExcel Java的每一个API |
 | SpringBootDemo/SpringBoot+React     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用React+SpreadJS展示|
 | SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
+## 6.0.6
+## Fixed
+* Image size is not adjusted with the column width when setting BestFitColumns as true when exporting PDF file.(DOCXLS-7782)                 
+* NullReferenceException is thrown on calling the PrintManager.Paginate() method.(DOCXLS-7808)
+* The text is not wrapped in the exported PDF file.(DOCXLS-7828)
+* Cell notes lost after saving workbook to a new Excel file.(DOCXLS-7831)
+* Data binding does not support special symbols.(DOCXLS-7837)
+* Table filters are not working properly after fetching Table JSON.(DOCXLS-7843)
+* Table and Slicers are cleared after fetching the table JSON.(DOCXLS-7844)
+* Exception is thrown on setting particular calculated field formula for Pivot Table.(DOCXLS-7854)
+* The application gets hanged on loading the XLSX file.(DOCXLS-7856)
+* The time validation info is wrong in the SSJSON file exported by GcExcel.(DOCXLS-7861)
+* Bad performance of IRange.RowHeight setter.(DOCXLS-7866)
+* When the cell with incorrect formula is copied to another workbook, the workbook is corrupted.(DOCXLS-7871)
+* Defined names are lost in the exported SSJSON file.(DOCXLS-7873)
+* AutoParse does not take affect when using data binding.(DOCXLS-7874)
+* Connector shapes are lost in the exported PDF file.(DOCXLS-7884)
+* The text style is lost in the copied shape when shape has linked text.(DOCXLS-7885)
+* The chart plot area becomes smaller in the exported PDF file when chart is a grouped item.(DOCXLS-7889)
 ## 6.0.5
 ## Fixed
 * Exception is thrown on calling calculated or save method when workbook contains dynamic array formulas.(DOCXLS-7404)
