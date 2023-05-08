@@ -63,6 +63,27 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | Examples.Library     | 示例源码工程，帮助您学习和使用GcExcel Java的每一个API |
 | SpringBootDemo/SpringBoot+React     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用React+SpreadJS展示|
 | SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
+## 6.1.0
+## Added
+* Export options in ToImage() method.(DOCXLS-5481)
+* Copy/move multiple sheets at once.(DOCXLS-6332)
+* Support for XLTX File Format.(DOCXLS-6343)
+* Support Form Controls on SpreadJS JSON I/O.(DOCXLS-6872)
+* Support for allowResize property on SpreadJS JSON I/O.(DOCXLS-6875)
+## Fixed
+* Exception is thrown on adding calculated items on Pivot Field.(DOCXLS-7800)                 
+* The performance of Workbook.fromJson() method is bad when JSON contains stripped style in big tables.(DOCXLS-7892)
+* The calculating performance is bad when sheet contains SUMPRODUCT formula.(DOCXLS-7902)
+* The axis position of chart is incorrect in the exported PDF file.(DOCXLS-7914)
+* Exception is thrown on loading particular Excel file with chart.(DOCXLS-7922)
+* The calculated formula of table column is lost in the exported SSJSON file.(DOCXLS-7930)
+* 3D chart is missing in the exported PDF file.(DOCXLS-7984)
+* The result of MATCH function is incorrect.(DOCXLS-8013)
+* The result of COUNT function is incorrect.(DOCXLS-8023)
+* The cell value is not overflowed in the exported PDF file when cell value type is text and has customer number format.(DOCXLS-8025)
+* The result of some functions is incorrect when they refer to 3D reference.(DOCXLS-8048)
+* Exception is thrown on exporting PDF file when combo chart's category axis has null value in the workbook.(DOCXLS-8063)
+
 ## 6.0.6
 ## Fixed
 * Image size is not adjusted with the column width when setting BestFitColumns as true when exporting PDF file.(DOCXLS-7782)                 
@@ -138,7 +159,6 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * The transparency setting of the text in the shape is lost in the exported PDF file.(DOCXLS-7471)
 * The underline is lost in the exported PDF file.(DOCXLS-7476)
 * Exception is thrown on setting Hyperlink funtion in a copied worksheet.(DOCXLS-7510)
-
 ## 6.0.2
 ## Fixed
 * The marker size, data label and series line color chart in incorrect in the exported PDF file.(DOCXLS-7229)
@@ -146,7 +166,6 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * The linked cell text color becomes white after loading the SSJSON file then exporting to SSJSON file.(DOCXLS-7293)
 * Exception is thrown on saving Excel file when the file name has only one character.(DOCXLS-7314)
 * The interface Workbook.SetLicenseFile is lost.(DOCXLS-7315)
-
 ## 6.0.1
 ## Fixed
 * Performance issue when using table bindings with 500,000 rows data.(DOCXLS-6781)
@@ -168,7 +187,6 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * Exception is thrown on processing template when sheet contains defined names.(DOCXLS-7220)
 * The calculation result of VARP function differs from Excel.(DOCXLS-7221)
 * Exception is thrown on loading particular XLSX file contains invalid data.(DOCXLS-7223)
-
 ## 6.0.0
 ## Breaking changes
 * Changed XlsxOpenOptions.DoNotAutofitAfterOpened to XlsxOpenOptions.DoNotAutoFitAfterOpened(F in caps).(DOCXLS-6428)
@@ -212,7 +230,6 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * The cell value is incorrect when workbook contains cross workbook reference.(DOCXLS-7008)
 * Exception is thrown on loading particular SSJSON file contains conditional format with entire column reference.(DOCXLS-7024)
 * The SUMIF function result is incorrect.(DOCXLS-7032)
-
 ## 5.2.4
 ## Fixed
 * Incorrect results with iterative calculations after loading the particular Excel file.(DOCXLS-6444)              
@@ -237,7 +254,6 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * The position of barcode is incorrect in the exported PDF file.(DOCXLS-6884)
 * Print range and margin settings are lost in the exported report when pagination mode is on.(DOCXLS-6888)
 * Exception is thrown on exporting SSJSON file when workbook contains particular defined names.(DOCXLS-6901)
-
 ## 5.2.3
 ## Fixed
 * Performance issue when exporting the Excel file to JSON when workbook contains lots of table with striped styles.(DOCXLS-5242)
@@ -262,7 +278,6 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * Performance issue when exporting to PDF file when condition format contains whole column reference.(DOCXLS-6730)
 * The cell type on table column is lost after loading the JSON file.(DOCXLS-6741)
 * Exception is thrown on loading particular Excel file.(DOCXLS-6748)
-
 ## 5.2.2
 ## Fixed
 * NumberFormatException is thrown on loading the particular excel file.(DOCXLS-6134)           
@@ -281,7 +296,6 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * Grouped shapes do not move with cells.(DOCXLS-6584)
 * Exception is thrown on loading particular Excel file.(DOCXLS-6636)
 * Exception is thrown on exporting to PDF file when workbook contains charts.(DOCXLS-6638)
-
 ## 5.2.1
 ## Fixed
 * The results of IWorksheet.FreezeColumn/FreezeRow are incorrect.(DOCXLS-6299)
@@ -295,7 +309,6 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * The result of INames.Contains() is incorrect.(DOCXLS-6429)
 * Exception is thrown on loading SSJSON file when font name contains unexpected characters.(DOCXLS-6436)
 * Repeated loading and saving of an existing file corrupts the saved Excel file.(DOCXLS-6470)
-
 ## 5.2.0
 ## Added
 * New API to add Excel Form Controls.(DOCXLS-2532)
@@ -311,6 +324,7 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * Debug mode in GcExcel Templates.(DOCXLS-5715)
 * Debug better with additional details in InvalidFormulaException.(DOCXLS-5744)
 * Support for adding and rendering SVG image.(DOCXLS-5817)
+
 ## 5.1.5
 ## Fixed
 * The performance of opening particular Excel file need to be optimized.(DOCXLS-6038) 
