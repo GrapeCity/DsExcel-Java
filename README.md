@@ -63,6 +63,32 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | Examples.Library     | 示例源码工程，帮助您学习和使用GcExcel Java的每一个API |
 | SpringBootDemo/SpringBoot+React     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用React+SpreadJS展示|
 | SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
+## 6.1.1
+## Fixed
+- Performance issue on calling IRange.merge() method and exporting to Excel file.(DOCXLS-6001)
+- Exception is thrown on loading particular SSJSON file.(DOCXLS-8071)
+- The result is incorrect of data binding when the binding path contains the index of array.(DOCXLS-8074)
+- The tick marks units of charts in the exported PDF file are smaller than ones in Excel file.(DOCXLS-8089)
+- The margin setting is incorrect in the exported Excel file after loading the SSJSON file.(DOCXLS-8092)
+- Performance issue on calling calculate method when workbook contains LOOKUP functions.(DOCXLS-8097)
+- Filter is lost in the exported SSJSON file.(DOCXLS-8115)
+- The column width of row header is lost in the exported SSJSON file.(DOCXLS-8121)
+- The exported Excel file is corrupted when the original file contains group shape.(DOCXLS-8125)
+- The series is incorrect in the exported Excel file when the chart contains references to defined names of other worksheet.(DOCXLS-8139)
+- The result of the formula is incorrect when formula contains defined name which has volatile function.(DOCXLS-8142)
+- The result of OR function is incorrect.(DOCXLS-8144)
+- Unexpected fore color style is in the exported SSJSON file.(DOCXLS-8149)
+- Performance issue on loading sjs file.(DOCXLS-8152)
+- The number format is changed in the exported SSJSON file.(DOCXLS-8156)
+- Some content is lost on loading the particular SSJSON file.(DOCXLS-8190)
+- The result of VLOOKUP function is incorrect.(DOCXLS-8193)
+- The cellpadding setting takes no effect on the exported PDF file when cell contains celltype.(DOCXLS-8207)
+- The fore color is incorrect when cell has number format with colors in the exported SSJSON file.(DOCXLS-8218)
+- Exception is thrown on loading the particular Excel file then calling ToJson method.(DOCXLS-8219)
+- Performance issue on calling ToJson method.(DOCXLS-8221)
+- The drop-down box is lost in the exported SSJSON file.(DOCXLS-8224)
+- Exception is thrown on loading particular Excel file which contains invalid content.(DOCXLS-8234)
+- Exception is thrown on exporting Excel file after loading the SSJSON file contains abnormal chart title.(DOCXLS-8237)
 ## 6.1.0
 ## Added
 * Export options in ToImage() method.(DOCXLS-5481)
