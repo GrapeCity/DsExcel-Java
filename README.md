@@ -63,6 +63,18 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | Examples.Library     | 示例源码工程，帮助您学习和使用GcExcel Java的每一个API |
 | SpringBootDemo/SpringBoot+React     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用React+SpreadJS展示|
 | SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
+## 6.1.3
+## Fixed
+- Performance issue on processing Template file.(DOCXLS-7932)
+- Exception is thrown on calling IRange.ungroup() method.(DOCXLS-8355)
+- The result of DATEDIF formula is incorrect in JP culture.(DOCXLS-8378)
+- Some cell content is lost after processing Template file.(DOCXLS-8385)
+- Exception is thrown on copying worksheet contains form controls.(DOCXLS-8412)
+- After refreshing the Pivot Table, the exported SSJSON file size becomes very large.(DOCXLS-8443)
+- Performance issue on formula calculation.(DOCXLS-8455)
+- The row height is incorrect when cell has center across selection in the exported PDF file.(DOCXLS-8465)
+- The row height is incorrect when meger cell has not set wrap text.(DOCXLS-8473)
+- The transparency setting of shape is lost in the exported Excel file.(DOCXLS-8476)
 ## 6.1.2
 ## Fixed
 * Performance downgradation on using PrintManager to exporting PDF file comparing to old version.(DOCXLS-7599)
