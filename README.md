@@ -63,18 +63,33 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | Examples.Library     | 示例源码工程，帮助您学习和使用GcExcel Java的每一个API |
 | SpringBootDemo/SpringBoot+React     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用React+SpreadJS展示|
 | SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
+## 6.1.4
+## Fixed
+* The result of XIRR func is incorrect.(DOCXLS-8450)
+* InvalidFormulaException is thrown on opening an Excel file with XLOOKUP formula which refers to external Table formula.(DOCXLS-8478)
+* The result of reappling filter is incorrect after setting data source.(DOCXLS-8481)
+* The result of COUNTIFS func is incorrect.(DOCXLS-8483)
+* The result of dynamic array formula is incorrect when disabling calculation engine the enabling.(DOCXLS-8503)
+* StackOverFlowException is thrown on processing template when there are circular reference.(DOCXLS-8511)
+* The size of the QR code is incorrect in the exported PDF file.(DOCXLS-8513)
+* The multiple fields in the same template cell do not take effect in the exported report workbook.(DOCXLS-8514)
+* Performance issue on calculating SUMPRODUCT function.(DOCXLS-8516)
+* The data bar is lost in the exported PDF file.(DOCXLS-8524)
+* The result of WEEKNUM formula is incorrect.(DOCXLS-8531)
+* The shape disappears in the exported image after setting rotation.(DOCXLS-8540)
+* InvalidCastException is thrown on exporting PDF file.(DOCXLS-8542)
 ## 6.1.3
 ## Fixed
-- Performance issue on processing Template file.(DOCXLS-7932)
-- Exception is thrown on calling IRange.ungroup() method.(DOCXLS-8355)
-- The result of DATEDIF formula is incorrect in JP culture.(DOCXLS-8378)
-- Some cell content is lost after processing Template file.(DOCXLS-8385)
-- Exception is thrown on copying worksheet contains form controls.(DOCXLS-8412)
-- After refreshing the Pivot Table, the exported SSJSON file size becomes very large.(DOCXLS-8443)
-- Performance issue on formula calculation.(DOCXLS-8455)
-- The row height is incorrect when cell has center across selection in the exported PDF file.(DOCXLS-8465)
-- The row height is incorrect when meger cell has not set wrap text.(DOCXLS-8473)
-- The transparency setting of shape is lost in the exported Excel file.(DOCXLS-8476)
+* Performance issue on processing Template file.(DOCXLS-7932)
+* Exception is thrown on calling IRange.ungroup() method.(DOCXLS-8355)
+* The result of DATEDIF formula is incorrect in JP culture.(DOCXLS-8378)
+* Some cell content is lost after processing Template file.(DOCXLS-8385)
+* Exception is thrown on copying worksheet contains form controls.(DOCXLS-8412)
+* After refreshing the Pivot Table, the exported SSJSON file size becomes very large.(DOCXLS-8443)
+* Performance issue on formula calculation.(DOCXLS-8455)
+* The row height is incorrect when cell has center across selection in the exported PDF file.(DOCXLS-8465)
+* The row height is incorrect when meger cell has not set wrap text.(DOCXLS-8473)
+* The transparency setting of shape is lost in the exported Excel file.(DOCXLS-8476)
 ## 6.1.2
 ## Fixed
 * Performance downgradation on using PrintManager to exporting PDF file comparing to old version.(DOCXLS-7599)
