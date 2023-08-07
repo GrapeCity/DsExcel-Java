@@ -14,17 +14,20 @@ Based on the extensive Excel Object Model, the interface-based API allows you to
 
 Using GcExcel, you can create full reports, sorted and filtered tables, sorted and filtered pivot tables, dashboard reports, add charts, slicers, sparklines, conditional formats, import and export Excel templates, convert spreadsheets to PDF and so much more.
 
+GcExcel comes with a full-featured [JavaScript Data viewer control (GcDataViewer)](https://www.npmjs.com/package/@grapecity/gcdataviewer).
+
+If you'd like to remove the trial watermark and other [trial limitations](https://www.grapecity.com/documents-api-excel-java/docs/online/LicenseInformation.html), please email us.sales@grapecity.com to request your 30-day evaluation key.
+
 **Complete Client-Server Spreadsheet Solution**
 
 You can optionally integrate GcExcel with the SpreadJS JavaScript spreadsheet as a client-side editor/viewer solution when working with Excel files for a complete client-server solution. View the complete supported features list [here](https://www.grapecity.com/documents-api-excel-java/docs/online/support-for-spreadjs-features.html) or download a trial from [NPM](https://www.npmjs.com/package/&#64;grapecity/spread-sheets) or the [SpreadJS](https://www.grapecity.com/spreadjs) page.
-
-If you'd like to remove the trial watermark and other [trial limitations](https://www.grapecity.com/documents-api-excel-java/docs/online/LicenseInformation.html), please email us.sales@grapecity.com to request your 30-day evaluation key.
 
 ## Resources
 
 - [Download 30-day Evaluation](https://www.grapecity.com/documents-api-excel-java/download)
 - [Product Page](https://www.grapecity.com/documents-api-excel-java)
 - [Online Demo](https://www.grapecity.com/documents-api-excel-java/demos)
+- [GcDataViewer Demo](https://www.grapecity.com/documents-api-dataviewer/demos)
 - [Getting Started](https://www.grapecity.com/documents-api-excel-java/docs/online/getting-started.html)
 - [License Information](https://www.grapecity.com/documents-api-excel-java/docs/online/LicenseInformation.html)
 - [Licensing FAQ](https://www.grapecity.com/licensing/documents-api)
@@ -63,6 +66,15 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | Examples.Library     | 示例源码工程，帮助您学习和使用GcExcel Java的每一个API |
 | SpringBootDemo/SpringBoot+React     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用React+SpreadJS展示|
 | SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
+## 6.2.0
+## Added
+* Set Vertical text direction in a Shape and Chart.(DOCXLS-6334)
+* Alignment options for Shape Text.(DOCXLS-6793)
+* Support header reference.(DOCXLS-7725)
+* Support for SpreadJS .sjs file format.(DOCXLS-8004)
+## Fixed
+* The result of XLOOKUP formula is incorrect.(DOCXLS-8542)
+
 ## 6.1.4
 ## Fixed
 * The result of XIRR func is incorrect.(DOCXLS-8450)
