@@ -70,7 +70,7 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 ## Added
 * Set Vertical text direction in a Shape and Chart.(DOCXLS-6334)
 * Alignment options for Shape Text.(DOCXLS-6793)
-* Support header reference.(DOCXLS-7725)
+* Support header reference.(DOCXLS-8055)
 * Support for SpreadJS .sjs file format.(DOCXLS-8004)
 ## Fixed
 * The result of XLOOKUP formula is incorrect.(DOCXLS-8542)
