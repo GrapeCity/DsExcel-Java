@@ -66,6 +66,31 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | Examples.Library     | 示例源码工程，帮助您学习和使用GcExcel Java的每一个API |
 | SpringBootDemo/SpringBoot+React     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用React+SpreadJS展示|
 | SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
+## 6.2.1
+## Fixed
+* The legend of deleted series in chart are displayed in the exported Excel file.(DOCXLS-8452)
+* Doughnut charts is lost in the exported PDF file.(DOCXLS-8530)
+* The wrap position is incorrect when text contains "-" charactor in the exported PDF file.(DOCXLS-8535)
+* The result of the formula in the defined name is not updated correctly.(DOCXLS-8563)
+* The font is incorrect in the exported PDF file.(DOCXLS-8575)
+* The program gets stuck when processing template.(DOCXLS-8578)
+* The sparklines is incorrect in the exported PDF file.(DOCXLS-8586)
+* The program gets stuck when processing template.(DOCXLS-8598)
+* Exception is thrown on exporting PDF file when workbook contains sparklines.(DOCXLS-8603)
+* Exception is thrown on evaluating LAMBDA function.(DOCXLS-8620)
+* Exception is thrown on loading particular SSJSON file.(DOCXLS-8633)
+* Exception is thrown on loading the SSJSON made by customer.(DOCXLS-8654)
+* Some shape, picture and lines are lost in the exported PDF file.(DOCXLS-8685)
+* The cell text is not displayed completely in the exported PDF file.(DOCXLS-8686)
+* Exception is thrown on exporting PDF file when page footer contains special font.(DOCXLS-8692)
+* Exception is thrown on opening particular Excel file contains unsupported vml drawings.(DOCXLS-8711)
+* Diagonal lines disappeared in the exported Excel file.(DOCXLS-8713)
+* Incorrect cell value is returned when EnableCalculation = False.(DOCXLS-8725)
+* Performance downgradation on calling calculate method.(DOCXLS-8728)
+* Sheet name is lost after loading the SSJSON file.(DOCXLS-8735)
+* The pagination result is incorrect in the exported PDF file.(DOCXLS-8744)
+* Exception is thrown on loading SSJSON file after disable the calculate engine.(DOCXLS-8754)
+
 ## 6.2.0
 ## Added
 * Set Vertical text direction in a Shape and Chart.(DOCXLS-6334)
