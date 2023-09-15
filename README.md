@@ -76,6 +76,7 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * Exception is thrown on rendering PDF file when workbook contains particular chart.(DOCXLS-8857)
 * Performance issue on setting cell value.(DOCXLS-8858)
 * The interior of cell is incorrect in the exported PDF file.(DOCXLS-8891)
+## 6.2.1
 ## Fixed
 * The legend of deleted series in chart are displayed in the exported Excel file.(DOCXLS-8452)
 * Doughnut charts is lost in the exported PDF file.(DOCXLS-8530)
