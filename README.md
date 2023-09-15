@@ -66,7 +66,16 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | Examples.Library     | 示例源码工程，帮助您学习和使用GcExcel Java的每一个API |
 | SpringBootDemo/SpringBoot+React     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用React+SpreadJS展示|
 | SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
-## 6.2.1
+## 6.2.2
+## Fixed
+* The result of XLOOKUP function is incorrect.(DOCXLS-8691)
+* The text wrapping position is inconsistent with SpreadJS.(DOCXLS-8784)
+* The picture is incorrect in the exported PDF file when picture has crop and rotation setting.(DOCXLS-8791)
+* The center header of printinfo is lost in the exported SSJSON file.(DOCXLS-8800)
+* Exception is thrown on loading the SSJSON file that contains invalid chart data.(DOCXLS-8806)
+* Exception is thrown on rendering PDF file when workbook contains particular chart.(DOCXLS-8857)
+* Performance issue on setting cell value.(DOCXLS-8858)
+* The interior of cell is incorrect in the exported PDF file.(DOCXLS-8891)
 ## Fixed
 * The legend of deleted series in chart are displayed in the exported Excel file.(DOCXLS-8452)
 * Doughnut charts is lost in the exported PDF file.(DOCXLS-8530)
@@ -90,7 +99,6 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * Sheet name is lost after loading the SSJSON file.(DOCXLS-8735)
 * The pagination result is incorrect in the exported PDF file.(DOCXLS-8744)
 * Exception is thrown on loading SSJSON file after disable the calculate engine.(DOCXLS-8754)
-
 ## 6.2.0
 ## Added
 * Set Vertical text direction in a Shape and Chart.(DOCXLS-6334)
