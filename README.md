@@ -66,6 +66,15 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 | Examples.Library     | 示例源码工程，帮助您学习和使用GcExcel Java的每一个API |
 | SpringBootDemo/SpringBoot+React     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用React+SpreadJS展示|
 | SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
+## 6.2.3
+## Fixed
+* There are unexpected lines in the exported Excel file after processing Template file.(DOCXLS-8921)
+* DataValidation Error Alert doesn't preserves after saving the Workbook.(DOCXLS-8923)
+* InvalidOperationException is thrown on specifying multiple ranges for a chart data source.(DOCXLS-8962)
+* The calculated result is inconsistent between the exported PDF and Excel files.(DOCXLS-8987)
+* Threaded comments are not visible in Finnish locale.(DOCXLS-8995)
+* Size of Chart Y Axis is incorrect in the exported Excel file.(DOCXLS-8996)
+* There are unexpected characters in the exported PDF file.(DOCXLS-9020)
 ## 6.2.2
 ## Fixed
 * The result of XLOOKUP function is incorrect.(DOCXLS-8691)
