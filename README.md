@@ -1,5 +1,5 @@
-# GrapeCity Documents for Excel, Java Edition
-Programmatically generate, load, modify, and convert Excel .xlsx spreadsheets with ease in your Java applications. GrapeCity Documents for Excel (GcExcel) is a cross-platform high-speed, small-footprint spreadsheet API library that requires no dependencies on Excel. Applications using this spreadsheet API can be deployed to the cloud, Windows, Mac, or Linux. The powerful calculation engine and breadth of features means you'll never have to compromise on design or requirements.
+# Document Solutions for Excel, Java Edition
+Programmatically generate, load, modify, and convert Excel .xlsx spreadsheets with ease in your Java applications. Document Solutions for Excel (DsExcel) is a cross-platform high-speed, small-footprint spreadsheet API library that requires no dependencies on Excel. Applications using this spreadsheet API can be deployed to the cloud, Windows, Mac, or Linux. The powerful calculation engine and breadth of features means you'll never have to compromise on design or requirements.
 
 At a glance:
 - Create, load, edit, and save Excel spreadsheets
@@ -12,60 +12,49 @@ At a glance:
 
 Based on the extensive Excel Object Model, the interface-based API allows you to import, calculate, query, generate, and export any spreadsheet scenario. With the VS Tools for Office-style API, you can create custom styles using the same elements as VS Tools for Office.
 
-Using GcExcel, you can create full reports, sorted and filtered tables, sorted and filtered pivot tables, dashboard reports, add charts, slicers, sparklines, conditional formats, import and export Excel templates, convert spreadsheets to PDF and so much more.
+Using DsExcel, you can create full reports, sorted and filtered tables, sorted and filtered pivot tables, dashboard reports, add charts, slicers, sparklines, conditional formats, import and export Excel templates, convert spreadsheets to PDF and so much more.
 
-GcExcel comes with a full-featured [JavaScript Data viewer control (GcDataViewer)](https://www.npmjs.com/package/@grapecity/gcdataviewer).
+DsExcel comes with a full-featured [JavaScript Data viewer control (DsDataViewer)](https://www.npmjs.com/package/@grapecity/gcdataviewer).
 
-If you'd like to remove the trial watermark and other [trial limitations](https://www.grapecity.com/documents-api-excel-java/docs/online/LicenseInformation.html), please email us.sales@grapecity.com to request your 30-day evaluation key.
+If you'd like to remove the trial watermark and other [trial limitations](https://developer.mescius.com/document-solutions/dot-net-excel-api/docs/online/LicenseInformation.html), please email us.sales@mescius.com to request your 30-day evaluation key.
 
 **Complete Client-Server Spreadsheet Solution**
 
-You can optionally integrate GcExcel with the SpreadJS JavaScript spreadsheet as a client-side editor/viewer solution when working with Excel files for a complete client-server solution. View the complete supported features list [here](https://www.grapecity.com/documents-api-excel-java/docs/online/support-for-spreadjs-features.html) or download a trial from [NPM](https://www.npmjs.com/package/&#64;grapecity/spread-sheets) or the [SpreadJS](https://www.grapecity.com/spreadjs) page.
+You can optionally integrate DsExcel with the SpreadJS JavaScript spreadsheet as a client-side editor/viewer solution when working with Excel files for a complete client-server solution. View the complete supported features list [here](https://developer.mescius.com/documents-api-excel-java/docs/online/support-for-spreadjs-features.html) or download a trial from [NPM](https://www.npmjs.com/package/&#64;grapecity/spread-sheets) or the [SpreadJS](https://developer.mescius.com/spreadjs) page.
 
 ## Resources
 
-- [Download 30-day Evaluation](https://www.grapecity.com/documents-api-excel-java/download)
-- [Product Page](https://www.grapecity.com/documents-api-excel-java)
-- [Online Demo](https://www.grapecity.com/documents-api-excel-java/demos)
-- [GcDataViewer Demo](https://www.grapecity.com/documents-api-dataviewer/demos)
-- [Getting Started](https://www.grapecity.com/documents-api-excel-java/docs/online/getting-started.html)
-- [License Information](https://www.grapecity.com/documents-api-excel-java/docs/online/LicenseInformation.html)
-- [Licensing FAQ](https://www.grapecity.com/licensing/documents-api)
-- [How to get Trial Keys](https://www.grapecity.com/documents-api-excel-java/docs/online/LicenseInformation.html)
-- [GcExcel Blogs](https://www.grapecity.com/blogs/tags/grapecity-documents)
-- [Online Documentation](https://www.grapecity.com/documents-api-excel-java/docs/online/overview.html)
-- [Offline Documentation (PDF)](https://www.grapecity.com/documents-api-excel-java/docs/offlinehelp.pdf)
+- [Download 30-day Evaluation](https://developer.mescius.com/documents-api-excel-java/download)
+- [Product Page](https://developer.mescius.com/document-solutions/java-excel-api)
+- [Online Demo](https://developer.mescius.com/document-solutions/java-excel-api/demos/)
+- [DsDataViewer Demo](https://developer.mescius.com/document-solutions/javascript-data-viewer/demos/Overview)
+- [Getting Started](https://developer.mescius.com/document-solutions/java-excel-api/docs/online/getting-started.html)
+- [License Information](https://developer.mescius.com/document-solutions/java-excel-api/docs/online/LicenseInformation.html)
+- [Licensing FAQ](https://developer.mescius.com/document-solutions/licensing)
+- [How to get Trial Keys](https://developer.mescius.com/document-solutions/java-excel-api/docs/online/LicenseInformation.html)
+- [DsExcel Blogs](https://developer.mescius.com/blogs/categories/products/documents)
+- [Online Documentation](https://developer.mescius.com/document-solutions/java-excel-api/docs/online/overview.html)
+- [Offline Documentation (PDF)](https://developer.mescius.com/document-solutions/java-excel-api/docs/offlinehelp.pdf)
 
-## Other GrapeCity Document API Solutions
+## Other Document Solutions API Solutions
 
-- [Documents for Excel, .NET](https://www.grapecity.com/documents-api-excel)
-- [Documents for PDF](https://www.grapecity.com/documents-api-pdf)
-- [Documents for PDF Viewer](https://www.grapecity.com/documents-api-pdf/javascript-pdf-viewer)
-- [Documents for Word](https://www.grapecity.com/documents-api-word)
-- [Documents for Imaging](https://www.grapecity.com/documents-api-imaging)
+- [Documents for Excel, .NET](https://developer.mescius.com/document-solutions/dot-net-excel-api)
+- [Documents for PDF](https://developer.mescius.com/document-solutions/dot-net-pdf-api)
+- [Documents for PDF Viewer](https://developer.mescius.com/document-solutions/javascript-pdf-viewer)
+- [Documents for Word](https://developer.mescius.com/document-solutions/dot-net-word-api)
+- [Documents for Imaging](https://developer.mescius.com/document-solutions/dot-net-imaging-api)
 
-This repository contains source project of Examples and Showcases of GcExcel to help you learn and write your own applications. 
+This repository contains source project of Examples and Showcases of DsExcel to help you learn and write your own applications. 
 
 | Directory    | Description    |
 | ------------- |-------------|
-| gcexcel     | Contains the latest GcExcel jar package and its dependency packages |
+| Dsexcel     | Contains the latest DsExcel jar package and its dependency packages |
 | Examples.Library     | A collection of Java examples that help you learn and explore the API features |
-| SpringBootDemo/SpringBoot+React     | A source project that demonstrates how to use GcExcel Java with SpringBoot + React + Spread.Sheets|
-| SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use GcExcel with SpringBoot + Angular2 + Spread.Sheets|
+| SpringBootDemo/SpringBoot+React     | A source project that demonstrates how to use DsExcel Java with SpringBoot + React + Spread.Sheets|
+| SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use DsExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 ---
-[GrapeCity Documents for Excel（Java）](https://www.grapecity.com.cn/developer/grapecitydocuments) 是葡萄城推出的一款文档 API 组件，适用于所有 Java 8 及以上标准的平台，以编码的方式，无需 Microsoft Excel 依赖 ，即可快速批量操作 Excel 文件，通过与纯前端表格控件 [SpreadJS](https://www.grapecity.com.cn/developer/spreadjs) 结合使用，可同时在 Web 端实现 Excel 类数据展示、Excel 功能和布局样式，以及后端 Excel 导入导出等业务场景，使您开发的应用程序具备快速创建、加载、编辑、导入/导出大型 Excel 文档的功能模块。
 
-超快速、低占用率、更轻量，使用 GrapeCity Documents 可极大节省应用程序在生成、加载、编辑和保存大型文档时所占用的内存和时间，帮助企业以更高效的方式处理各种文档，实现更多定制化选项。
-
-本仓库包含GcExcel Java的示例工程，以帮助您学习和编写自己的应用程序。
-
-| 目录    | 描述    |
-| ------------- |-------------|
-| gcexcel     | 包含最新的GcExcel以及所有依赖的jar包 |
-| Examples.Library     | 示例源码工程，帮助您学习和使用GcExcel Java的每一个API |
-| SpringBootDemo/SpringBoot+React     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用React+SpreadJS展示|
-| SpringBootDemo/SpringBoot+Angular2     | 演示如何在Spring Boot中使用GcExcel Java的源码工程，前端使用Angular2+SpreadJS展示|
 ## 6.2.3
 ## Fixed
 * There are unexpected lines in the exported Excel file after processing Template file.(DOCXLS-8921)
@@ -226,7 +215,7 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * Table and Slicers are cleared after fetching the table JSON.(DOCXLS-7844)
 * Exception is thrown on setting particular calculated field formula for Pivot Table.(DOCXLS-7854)
 * The application gets hanged on loading the XLSX file.(DOCXLS-7856)
-* The time validation info is wrong in the SSJSON file exported by GcExcel.(DOCXLS-7861)
+* The time validation info is wrong in the SSJSON file exported by DsExcel.(DOCXLS-7861)
 * Bad performance of IRange.RowHeight setter.(DOCXLS-7866)
 * When the cell with incorrect formula is copied to another workbook, the workbook is corrupted.(DOCXLS-7871)
 * Defined names are lost in the exported SSJSON file.(DOCXLS-7873)
@@ -249,7 +238,7 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * The text layout is different from the Excel file and the exported PDF file.(DOCXLS-7738)
 * The character is not escaped in the exported JSON file.(DOCXLS-7746)
 * The link color of hyperlink is lost in the exported JSON file.(DOCXLS-7755)
-* Exception is thrown on loading particular JSON file exported by GcExcel.(DOCXLS-7756)
+* Exception is thrown on loading particular JSON file exported by DsExcel.(DOCXLS-7756)
 * The column width is inconsistent in different pages in the exported PDF file.(DOCXLS-7757)
 ## 6.0.4
 ## Added
@@ -336,7 +325,7 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * Process specific template worksheets in template language.(DOCXLS-6418)
 * Excel workbook size optimization through save options.(DOCXLS-6441)
 * Range intersection, union and offset.(DOCXLS-6487)
-* GcExcel Java now targets JDK 8.(DOCXLS-6650)
+* DsExcel Java now targets JDK 8.(DOCXLS-6650)
 * Support for 'allSheetsListVisible' field in JSON I/O.(DOCXLS-6696)
 
 ## 5.2.5
@@ -444,7 +433,7 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 ## Added
 * New API to add Excel Form Controls.(DOCXLS-2532)
 * Support for CASCADESPARKLINE formula.(DOCXLS-3562)
-* Define Paginated Templates in spreadsheets (with GcExcel Templates).(DOCXLS-3829)
+* Define Paginated Templates in spreadsheets (with DsExcel Templates).(DOCXLS-3829)
 * Support for Chart Data Table.(DOCXLS-4438)
 * Support for LET function.(DOCXLS-5185)
 * GetPivotData Formula supports spilled data.(DOCXLS-5390)
@@ -452,7 +441,7 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * Get accurate range boundary.(DOCXLS-5473)
 * Support JSON as DataSource in data binding.(DOCXLS-5499)
 * IsVolatile property support in Custom function.(DOCXLS-5714)
-* Debug mode in GcExcel Templates.(DOCXLS-5715)
+* Debug mode in DsExcel Templates.(DOCXLS-5715)
 * Debug better with additional details in InvalidFormulaException.(DOCXLS-5744)
 * Support for adding and rendering SVG image.(DOCXLS-5817)
 
@@ -468,7 +457,7 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * Exception is thrown on calling IRange.fromJson() method.(DOCXLS-6199)
 * The calculation result of AGGREGATE formula is incorrect.(DOCXLS-6209)
 * The allowDynamicArray setting is lost in the exported SSJSON file.(DOCXLS-6210)
-* One static row is missing after processing the template using GcExcel.(DOCXLS-6212)
+* One static row is missing after processing the template using DsExcel.(DOCXLS-6212)
 * The ignore blank setting of DataValidation is changed after loading the SSJSON file.(DOCXLS-6217)
 ## 5.1.4
 ## Fixed
@@ -503,7 +492,7 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * The zoom scale of the worksheet changes from 90% to 100%.(DOCXLS-6042)
 * The exported Excel file is corrupted when the rows are deleted in the worksheet which has freeze pane.(DOCXLS-6054)
 * Using copy method to copy range will throw System.NullReferenceException if pasteType value is NumberFormats.(DOCXLS-6056)
-* Exception is thrown on opening the Excel file exported by GcExcel.(DOCXLS-6066)
+* Exception is thrown on opening the Excel file exported by DsExcel.(DOCXLS-6066)
 * The cell value is disordered after calling IRange.Clear() method when workbook contains phonetic text.(DOCXLS-6083)
 ## 5.1.2
 ## Fixed
@@ -526,7 +515,7 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * [Template language]The layout is incorrect when rendering list of data with dynamic object in both right and down direction.(DOCXLS-4727)
 * When shapes with text are exported to the PDF file, shapes are not the same as Excel file.(DOCXLS-5723)
 * Illegal access warning occurs when using JDK9 or above.(DOCXLS-5752)
-* ArgumentOutOfRangeException or NullReferenceException is thrown on using GcExcel API in multi-threaded environment when there's TEXT function in workbook.(DOCXLS-5784)
+* ArgumentOutOfRangeException or NullReferenceException is thrown on using DsExcel API in multi-threaded environment when there's TEXT function in workbook.(DOCXLS-5784)
 * The picture's position is incorrect in the exporting PDF file when some column is hidden.(DOCXLS-5798)
 * Some borders are lost in the exported Excel file after loading SSJSON file.(DOCXLS-5813)
 * The fontsize of cell is incorrect after loading the JSON file.(DOCXLS-5818)
@@ -598,7 +587,7 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * IndexOutOfRangeException is thrown on exporting pdf file when sheet contains hidden columns.(DOCXLS-5263)
 * Column width is changed when importing JSON file exported by SpreadJS.(DOCXLS-5314)
 * IndexOutOfBoundsException is thrown on exporting JSON file for specific Excel file.(DOCXLS-5377)
-* Exception is thrown on saving an Excel file exported by GcExcel.(DOCXLS-5393)
+* Exception is thrown on saving an Excel file exported by DsExcel.(DOCXLS-5393)
 * The exported Excel file is corrupted when it contains specific linked objects.(DOCXLS-5402)
 * The exported Excel file is corrupted when it contains dynamic array formulas.(DOCXLS-5409)
 * NullReferenceException is thrown on opening some excel files with waterfall chart.(DOCXLS-5418)
@@ -632,7 +621,7 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 ## Fixed
 * Formulas are lost in exported Excel file.(DOCXLS-5371)
 * ToJson method generates invalid json file when Excel file having multi-line comments.(DOCXLS-5384)
-* Cell value is incorrect when evaluating formula using GcExcel.(DOCXLS-5385)
+* Cell value is incorrect when evaluating formula using DsExcel.(DOCXLS-5385)
 * The cell style is incorrect in exported Excel file after loading the JSON exported by SpreadJS.(DOCXLS-5389)
 * Exception is thrown on calling workbook.toJson() method.(DOCXLS-5398)
 * Performance degradation when evaluating values from the particular Excel file.(DOCXLS-5400)
@@ -647,11 +636,11 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * OutOfMemory exception is thrown on exporting the Excel file with shape object to HTML.(DOCXLS-5278)
 * It takes a long time on calling Workbook.ToJson() method.(DOCXLS-5302)
 * Some KR demo resources are missing.(DOCXLS-5317)
-* Exception is thrown on loading the JSON file exported by GcExcel.(DOCXLS-5321)
+* Exception is thrown on loading the JSON file exported by DsExcel.(DOCXLS-5321)
 * Exception is thrown on exporting PDF file when workbook contains specific Pivit Table.(DOCXLS-5325)
 * StackOverFlow exception is thrown on opening specific Excel file.(DOCXLS-5328)
 * Shape border is changed in the exported HTML file when resaving it.(DOCXLS-5335)
-* Temporary file is created after opening the Excel file using GcExcel API.(DOCXLS-5396)
+* Temporary file is created after opening the Excel file using DsExcel API.(DOCXLS-5396)
 ## 5.0.1
 ## Fixed
 * The alignment style is lost in the exported JSON file.(DOCXLS-5198)
@@ -697,8 +686,8 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * The cell style is incorrect in the exported Excel file.(DOCXLS-5099)
 * Exception is thrown on calling 'Workbook.FromJson()' method.(DOCXLS-5112)
 * The result of 'Round' formula is incorrect in German culture.(DOCXLS-5117)
-* IlleagalArguement and NumberFormat exception would be thrown on opening particular excel file using GcExcel.(DOCXLS-5118)
-* The formula in exported JSON by GcExcel is not the same as original JSON.(DOCXLS-5122)
+* IlleagalArguement and NumberFormat exception would be thrown on opening particular excel file using DsExcel.(DOCXLS-5118)
+* The formula in exported JSON by DsExcel is not the same as original JSON.(DOCXLS-5122)
 * The floating object is lost in the exported JSON file.(DOCXLS-5125)
 * Exception is thrown on opening particular excel file.(DOCXLS-5129)
 * Exception is thrown on calling method 'Workbook.ToJson()' when workbook contains PivotTable.(DOCXLS-5140)
@@ -726,20 +715,20 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 ## 4.2.4
 ## Fixed                              
 * IGraphic.LockAspectRatio didn't take effect when adding picture or changing picture size.(DOCXLS-4175)
-* An error would be thrown when loading the JSON file exported by GcExcel in SpreadJS designer.(DOCXLS-4778)
-* Exception is thrown on opening excel file exported by YARG using GcExcel.(DOCXLS-4874)
+* An error would be thrown when loading the JSON file exported by DsExcel in SpreadJS designer.(DOCXLS-4778)
+* Exception is thrown on opening excel file exported by YARG using DsExcel.(DOCXLS-4874)
 * The exported JSON could not be validated.(DOCXLS-4900)
 * InvalidFormulaException is thrown on opening an Excel file.(DOCXLS-4901)
 * Exception is thrown on copying range.(DOCXLS-4903)
-* Exception is thrown on loading JSON file exported by GcExcel.(DOCXLS-4908)
+* Exception is thrown on loading JSON file exported by DsExcel.(DOCXLS-4908)
 * Formula is lost after loading JSON and exporting to Excel file.(DOCXLS-4924)
 * (Duplicate)InvalidFormulaException is thrown on opening an Excel file.(DOCXLS-4947)
 * The comments are lost in exported JSON file.(DOCXLS-4953)
 * ConcurrentModificationException is thrown on copying workbook range.(DOCXLS-4965)
-* Exception is thrown on saving Excel file using GcExcel.(DOCXLS-4988)
+* Exception is thrown on saving Excel file using DsExcel.(DOCXLS-4988)
 ## 4.2.3
 ## Enhanced
-* Internal compatibility additions with GcExcel .NET
+* Internal compatibility additions with DsExcel .NET
 ## 4.2.2
 ## Enhanced
 * Support XlsmOpenOptions and XlsmSaveOptions.(DOCXLS-4747)
@@ -750,17 +739,17 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * The cell value is incorrect after using setValue method to set the cell value.(DOCXLS-4781)
 * Print Area is different from the original JSON file in the exported JSON.(DOCXLS-4789)
 * Exception is thrown on reading the JSON file.(DOCXLS-4798)
-* The exported Excel file is corrupted after deleting rows using GcExcel API.(DOCXLS-4799)
+* The exported Excel file is corrupted after deleting rows using DsExcel API.(DOCXLS-4799)
 * It takes too much time on calling the ToJson method.(DOCXLS-4803)
 * The cell value is incorrect on using setValue method when the value is a BigDecimal.(DOCXLS-4806)
 * Exception is thrown on calling the toJson method when the margin of the printinfo is null.(DOCXLS-4808)
-* The formula result "=EDATE(NOW(),1)" calculated by GcExcel is different from Excel.(DOCXLS-4816)
+* The formula result "=EDATE(NOW(),1)" calculated by DsExcel is different from Excel.(DOCXLS-4816)
 * NumberFormatException is thrown on loading a particular excel file with user.language=de.(DOCXLS-4817)
 * It takes too much time on opening a workbook.(DOCXLS-4818)
-* The grouped result using GcExcel is different from Excel.(DOCXLS-4823)
+* The grouped result using DsExcel is different from Excel.(DOCXLS-4823)
 * Exception is thrown on calling the IRange.Group()and workbook.Save() methods.(DOCXLS-4824)
-* NullPointerException is thrown on calling the toJson method for specific Excel using GcExcel API.(DOCXLS-4829)
-* NullPointerException is thrown on copying a range from a specific Excel file to a new workbook using GcExcel API.(DOCXLS-4838)
+* NullPointerException is thrown on calling the toJson method for specific Excel using DsExcel API.(DOCXLS-4829)
+* NullPointerException is thrown on copying a range from a specific Excel file to a new workbook using DsExcel API.(DOCXLS-4838)
 * The result in exported Excel file is incorrect after using IWorksheet.Outline.ShowLevels() method.(DOCXLS-4871)
 * The cell style is incorrect in the exported PDF file.(DOCXLS-4876)
 ## 4.2.1
@@ -775,7 +764,7 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * When the chart series is added, orders of series and legends are incorrect in exported xlsx file.(DOCXLS-4165) 
 * Values of category axis are incorrect in exported PDF/Image/HTML file.(DOCXLS-4274) 
 * Exception is thrown on saving PDF/Image/HTML file, if ISeries.Formula is set.(DOCXLS-4275)
-* The exported file is incorrect after deleting columns by GcExcel.(DOCXLS-4606)
+* The exported file is incorrect after deleting columns by DsExcel.(DOCXLS-4606)
 * Exception is thrown on using Formula parser if syntax contains '.'.(DOCXLS-4642)
 * Exception is thrown on opening an Excel file.(DOCXLS-4643) 
 * Cell's numberformat is different from the original JSON file in exported JSON.(DOCXLS-4653) 
@@ -784,8 +773,8 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * The font style is not correct in exported PDF file.(DOCXLS-4670)
 * Exception should be thrown when setting Worksheet.Name which contains invalid characters.(DOCXLS-4676)
 * The text in the textbox is not exported to PDF correctly.(DOCXLS-4678)
-* The result of row height is incorrect in Range.RowHeight using GcExcel.(DOCXLS-4699)
-* The exported JSON file by GcExcel is too large.(DOCXLS-4700)
+* The result of row height is incorrect in Range.RowHeight using DsExcel.(DOCXLS-4699)
+* The exported JSON file by DsExcel is too large.(DOCXLS-4700)
 * Exception is thrown on adding table.(DOCXLS-4702)
 * Fallback font is not used after FontFolderPath is set when exporting to PDF file on Linux.(DOCXLS-4713)
 * The result in exported Excel file is not correct after delete columns/rows.(DOCXLS-4728)
@@ -834,10 +823,10 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * SetValue method throws exception.(DOCXLS-4273)
 * An exception is thrown when opening an Excel file.(DOCXLS-4277)
 * When the existing combination chart is copied in an Excel, saved xlsx file is corrupted.(DOCXLS-4287)
-* Formula result calculated by GcExcel is different from Excel.(DOCXLS-4317)
+* Formula result calculated by DsExcel is different from Excel.(DOCXLS-4317)
 * The row tags were lost in exported JSON.(DOCXLS-4321)
 * The hyperlink address is incorrect in exported JSON.(DOCXLS-4322)
-* Formula displays #value in GcExcel.(DOCXLS-4360)
+* Formula displays #value in DsExcel.(DOCXLS-4360)
 * Opening a certain Excel file throws an Illegalargumentexception.(DOCXLS-4361)
 * After copying the sheet with 'fromjson', the drop-down is lost in exported JSON.(DOCXLS-4367)
 * When an xlsx file containing shape with link of a relative path is loaded and saved, saved file is corrupted.(DOCXLS-4370)
@@ -851,12 +840,12 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * Optimize the performance of import and export json file.(DOCXLS-4372)
 ## 4.1.2
 ## Fixed
-* Performance Issue in reading formula from Excel file using GcExcel API with compare to Spread.(DOCXLS-3974)
-* Range Value not getting after loading file in GcExcel.(DOCXLS-4128)
+* Performance Issue in reading formula from Excel file using DsExcel API with compare to Spread.(DOCXLS-3974)
+* Range Value not getting after loading file in DsExcel.(DOCXLS-4128)
 * Performance issue in accessing the cell when using Slicer in the Excel sheet.(DOCXLS-4187)
 * FormulaResult is not correct if the Evaluate returns null.(DOCXLS-4190)
 * Saved Workbook corrupted after copying sheet with invalid cell format from existing workbook.(DOCXLS-4221)
-* GcExcel for java takes too long to import ssjson.(DOCXLS-4158)
+* DsExcel for java takes too long to import ssjson.(DOCXLS-4158)
 * ToJSON throw Index out of bound exception.(DOCXLS-4161)
 * [I/O Lossless]Support SpreadJS table expandBoundRows.(DOCXLS-4191)
 * FromJSON throw error.(DOCXLS-4212)
@@ -870,31 +859,31 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * ToJSON is not including the pivotTable info.(DOCXLS-4229)
 * FromJSON throws error.(DOCXLS-4235)
 * After deleting a column, the getlastcolumn method does not get the correct result.(DOCXLS-4246)
-* When xlsx file saved with GcExcel is loaded and saved again, number becomes incorrect.(DOCXLS-4260)
+* When xlsx file saved with DsExcel is loaded and saved again, number becomes incorrect.(DOCXLS-4260)
 ## 4.1.1
 ## Fixed
-* Shape Color changed after saving Excel file using GcExcel API.(DOCXLS-3918)
-* Invalid formula error when opening particular Excel using GcExcel API.(DOCXLS-3919)
-* Behaviors of pivot table changed after saving using GcExcel API.(DOCXLS-3973)
-* INDEX function value in returning "Ref" when opening excel using GcExcel API with DoNotRecalculateAfterOpened= false.(DOCXLS-3987)
-* Collapsed grouping shows "-" sign when opening exported excel from GcExcel, in SpreadJs.(DOCXLS-4039)
-* Value is returning "Ref" for the output fields after calling Calculate method of GcExcel.(DOCXLS-4099)
+* Shape Color changed after saving Excel file using DsExcel API.(DOCXLS-3918)
+* Invalid formula error when opening particular Excel using DsExcel API.(DOCXLS-3919)
+* Behaviors of pivot table changed after saving using DsExcel API.(DOCXLS-3973)
+* INDEX function value in returning "Ref" when opening excel using DsExcel API with DoNotRecalculateAfterOpened= false.(DOCXLS-3987)
+* Collapsed grouping shows "-" sign when opening exported excel from DsExcel, in SpreadJs.(DOCXLS-4039)
+* Value is returning "Ref" for the output fields after calling Calculate method of DsExcel.(DOCXLS-4099)
 * The cell with ";;;" NumberFormat shouldn't be shown in pdf.(DOCXLS-3939)
 * Formula Cells referencing Date Cells with Empty or Zero as a value are erasing the numberFormat property value after assigning a value.(DOCXLS-3990)
-* The ComboBox is lost after gcexcel loading given ssjson file.(DOCXLS-4008)
+* The ComboBox is lost after Dsexcel loading given ssjson file.(DOCXLS-4008)
 * Exception was thrown when loaing the ssjson file.(DOCXLS-4027)
 * Gradient fill is displayed as solid fill in the exported HTML.(DOCXLS-3896)
 * The cell value would be lost if the column's width is 1px when exporting HTML.(DOCXLS-3906)
 * The drop down items is not correct in exported ssjson file.(DOCXLS-3947)
 * The sheet would be lost when exporting to ssjson file.(DOCXLS-3979)
-* Could not delete the custom style of GcExcel.(DOCXLS-3980)
+* Could not delete the custom style of DsExcel.(DOCXLS-3980)
 * NullPointerException would be thrown when saving to excel file.(DOCXLS-3982)
 * When an xlsx file that contains shapes is exported to pdf/image/HTML, shapes are not output correctly.(DOCXLS-3985)
 * Exporting is not processed correctly when the workbook containing shapes with the same name is exported to HTML.(DOCXLS-3982)
 * NullPointerException would be thrown when loaing ssjson file which contains hyperlink.(DOCXLS-3993)
 * Hyperlink info would be lost in exported ssjson file.(DOCXLS-3995)
 * Some exceptions would be thrown when exporting to json.(DOCXLS-4024)
-* Drop down style is disorder in exported ssjson by GcExcel.(DOCXLS-4036)
+* Drop down style is disorder in exported ssjson by DsExcel.(DOCXLS-4036)
 * Prompt issues when open exported xlsx file by MSExcel(DOCXLS-4049).
 * Infinite loop when 'PrintManager.Paginate' called with specific parameters.(DOCXLS-4056)
 ## 4.1.0
@@ -911,12 +900,12 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * Improved Calculation Engine's performance when setting values.
 
 ## Fixed
-* Performance issue when updating data in Excel using GcExcel API.(DOCXLS-3912)
+* Performance issue when updating data in Excel using DsExcel API.(DOCXLS-3912)
 * When the worksheet contains a shape, the row height cannot be changed.(DOCXLS-3909)
 * The formula =TEXT("12345","[dbnum2]") not work.(DOCXLS-3900)
 * The font is bold after exporting to PDF.(DOCXLS-3895)
 * ROUNDUP result is different with Excel.(DOCXLS-3870)
-* GcExcel formula result is different with Excel.(DOCXLS-3866)
+* DsExcel formula result is different with Excel.(DOCXLS-3866)
 * COUNTIF result is different with Excel.(DOCXLS-3860)
 * After saving to Excel, the hidden rows are displayed.(DOCXLS-3848)
 * Conditional Format is not coming in PDF/HTML.(DOCXLS-3846)
@@ -928,10 +917,10 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 ## Fixed
 * When workbook is exported to PDF on AWS Lambda, TypeInitializationException will be thrown.(DOCXLS-3887)
 * Structured references in table cells not calculating after range copy/paste between worksheets.(DOCXLS-3806)
-* Incorrect value when using COUNT function with comma at last in GcExcel.(DOCXLS-3841)
-* NullPointerException when Deleting the Sheet from workbook using GcExcel API.(DOCXLS-3872)
-* Workbook corrupted after saving using GcExcel API.(DOCXLS-3891)
-* GCExcel fails to create json from the excel file.(DOCXLS-3913)
+* Incorrect value when using COUNT function with comma at last in DsExcel.(DOCXLS-3841)
+* NullPointerException when Deleting the Sheet from workbook using DsExcel API.(DOCXLS-3872)
+* Workbook corrupted after saving using DsExcel API.(DOCXLS-3891)
+* DsExcel fails to create json from the excel file.(DOCXLS-3913)
 ## 4.0.4
 ## Fixed
 * Generating SSJSON takes longer time.(DOCXLS-3598)
@@ -943,14 +932,14 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * Setting formula fails with exception.(DOCXLS-3742)
 * Copying range fails with exception.(DOCXLS-3743)
 * Getting value from source after copying takes more than 5 minutes.(DOCXLS-3744)
-* Excel with pivot table corrupted after saving using GcExcel API.(DOCXLS-3747)
+* Excel with pivot table corrupted after saving using DsExcel API.(DOCXLS-3747)
 * NullPointerException when saving copy.(DOCXLS-3750)
-* Excel corrupted after hiding columns using GcExcel API.(DOCXLS-3751)
+* Excel corrupted after hiding columns using DsExcel API.(DOCXLS-3751)
 * IndexOutOfBoundsException when saving workbook.(DOCXLS-3752)
 * Cannot read formula in copied file.(DOCXLS-3765)
 * Broken file produced during copy.(DOCXLS-3766)
 * Removing formula in copied workbook fails with exception.(DOCXLS-3767)
-* ProtectionOptions setting lost after saving to json using GcExcel.(DOCXLS-3772)
+* ProtectionOptions setting lost after saving to json using DsExcel.(DOCXLS-3772)
 * Cached value lost in sourceSheet after copying range, Different behavior when copying range and sheet.(DOCXLS-3773)
 * Calculation hangs in workbook copied using ssjson.(DOCXLS-3805)
 * Structured references in table cells not calculating after range copy/paste between worksheets.(DOCXLS-3806)
@@ -962,10 +951,10 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * Copy result is not correct if copy entire single row to multi rows and target rows contains entire merge areas.(DOCXLS-3538)
 * Java API column setHidden() method is not working properly.(DOCXLS-3563)
 * After the excel file toJson, data validation is lost.(DOCXLS-3649)
-* After GCExcel imports and exports ssjson，the chart type has changed.(DOCXLS-3650)
+* After DsExcel imports and exports ssjson，the chart type has changed.(DOCXLS-3650)
 * Invalid values after calculation with Release 4.0.2.(DOCXLS-3669)
 * IRange.Find won't work while the search string end with "~".(DOCXLS-3708)
-* Sheet password does not work after saving by GCExcel.(DOCXLS-3715)
+* Sheet password does not work after saving by DsExcel.(DOCXLS-3715)
 * Exception of type 'GrapeCity.Documents.Excel.InvalidFormulaException' was thrown when Cutting a range in sheet to another workbook.(DOCXLS-3720)
 * Getting the background color of entire column is wrong.(DOCXLS-3740)
 * When pareto chart and funnel chart are exported to a PDF, NullReferenceException occurs.(DOCXLS-3781)
@@ -1002,8 +991,8 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * Image position is wrong after importing ssjson then export to PDF.(DOCXLS-3431)
 * Pivot Table's border is lost in the exported PDF when there are banded rows/columns.(DOCXLS-3450)
 * Exception occurs when opening certain Excel file.(DOCXLS-3479)
-* Freezing range changed after saving existing excel via GcExcel API.(DOCXLS-3488)
-* The image can not display when opening GcExcel exported Html in QQ and outlook mailbox.(DOCXLS-3367)
+* Freezing range changed after saving existing excel via DsExcel API.(DOCXLS-3488)
+* The image can not display when opening DsExcel exported Html in QQ and outlook mailbox.(DOCXLS-3367)
 * The image border is wrong in the exported HTML.(DOCXLS-3343)
 * Null exception is thrown after calling calculate method.(DOCXLS-3428)
 * It becomes slow if you update cell tag in custom function.(DOCXLS-3426)
@@ -1011,9 +1000,9 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * Open and then save an Excel with auto filter, an error occurs.(DOCXLS-3468)
 * IRR formula calculation result is different with Excel.(DOCXLS-3487)
 * Cell B2's value is different with Excel.(DOCXLS-3510)
-* Gradient and pattern fill are lost after GcExcel load ssjson.(DOCXLS-3527)
+* Gradient and pattern fill are lost after DsExcel load ssjson.(DOCXLS-3527)
 * Copy pasting with intersecting merged cells throws exception.(DOCXLS-3161)
-* When GcExcel copys whole rows/columns to other one with merged area, an invalid operation exception will occur.(DOCXLS-3205)
+* When DsExcel copys whole rows/columns to other one with merged area, an invalid operation exception will occur.(DOCXLS-3205)
 * The line disappears in exported image.(DOCXLS-3374)
 * Sheet background image can not be exported to Html.(DOCXLS-3398)
 * When the cell adjacent to the cell set the C template property is entered value or formatted, generated data is incorrect.(DOCXLS-3410)
@@ -1021,11 +1010,11 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * Cell value is wrong when opening Excel with DoNotCalculateAfterOpened is true.(DOCXLS-3443)
 * Exception is thrown after opening and saving Excel file.(DOCXLS-3444)
 * When TemplateOptions.KeepLineSize is set true, row heights in generated xlsx file are not the same as the original template file.(DOCXLS-3448)
-* ArgumentOutOfRangeException occurs when GcExcel get the cell value which can't be converted to DateTime.(DOCXLS-3457)
+* ArgumentOutOfRangeException occurs when DsExcel get the cell value which can't be converted to DateTime.(DOCXLS-3457)
 * ArgumentOutOfRangeException occurs when the max value of DateTime is set in a cell.(DOCXLS-3470)
 * Hyperlink is not generated in exported Html when the cell is set a Hyperlink function.(DOCXLS-3475)
 * Broken file created when copying sheet (related to Comments).(DOCXLS-3504)
-* Cell formats are lost after SpreadJS load the ssjson generated by GcExcel.(DOCXLS-3522)
+* Cell formats are lost after SpreadJS load the ssjson generated by DsExcel.(DOCXLS-3522)
 * Webdings font does not take effect in the exported PDF.(DOCXLS-3536)
 ## 4.0.1
 ## Fixed
@@ -1039,10 +1028,10 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * ConcurrentModificationException is thrown when saving to Excel file.(DOCXLS-3362)
 * NullException is thrown when opening an Excel file.(DOCXLS-3401)
 * NumberFormatException is thrown when an Excel file.(DOCXLS-3403)
-* DataValidation will not work in SpreadJS after loading the ssjson exported by GcExcel.(DOCXLS-3405)
-* Error occurs when opening a xlsx file which is saved by GcExcel.(DOCXLS-3408)
+* DataValidation will not work in SpreadJS after loading the ssjson exported by DsExcel.(DOCXLS-3405)
+* Error occurs when opening a xlsx file which is saved by DsExcel.(DOCXLS-3408)
 * IllegalStateException is thrown during from ssjson.(DOCXLS-3424)
-* Column width is wrong in SpreadJS after loading the ssjson exported by GcExcel.(DOCXLS-3430)
+* Column width is wrong in SpreadJS after loading the ssjson exported by DsExcel.(DOCXLS-3430)
 * Can not navigate to destination address when click hyperlink in exported PDF file.(DOCXLS-3265)
 * NullPointerException is thrown when copying sheet between workbooks.(DOCXLS-3315)
 * Workbook.SelectedSheets doesn't reset after FromJson.(DOCXLS-3356)
@@ -1063,7 +1052,7 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * Select multiple worksheets.
 * Get special cells in a range.
 * Disable auto grouping for date/times in PivotTable.
-* Add more features for GrapeCity SpreadJS integration: cell buttons, radio and checkbox list cell type, etc.
+* Add more features for SpreadJS integration: cell buttons, radio and checkbox list cell type, etc.
 
 ## Fixed
 * PivotTable MergeLabel's merged area is incorrect.(DOCXLS-3181)
@@ -1075,9 +1064,9 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * ArrayIndexOutOfBoundsException when generating JSON.(DOCXLS-3165)
 * When margins are set to the same value, the rendering position is not the same in PDF.(DOCXLS-3211)
 * Labels does not merge in exported xlsx file.(DOCXLS-3262)
-* SUM is calculated incorrectly when using GcExcel template functionality.(DOCXLS-3267)
+* SUM is calculated incorrectly when using DsExcel template functionality.(DOCXLS-3267)
 * PDF form is not displayed when 'printed' and 'hidden' settings are false in form field.(DOCXLS-3275)
-* Rows are not repeating while using GcExcel Template.(DOCXLS-3278)
+* Rows are not repeating while using DsExcel Template.(DOCXLS-3278)
 * Null exception is thrown during loading ssjson.(DOCXLS-3290)
 * Null exception is thrown when calling Workbook.Calculate.(DOCXLS-3299)
 * The text in exported image is wrong.(DOCXLS-3314)
@@ -1116,7 +1105,7 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 
 ## 3.2.3
 ## Fixed
-* The generated Excel report is wrong with GcExcel teplates.(DOCXLS-2999)
+* The generated Excel report is wrong with DsExcel teplates.(DOCXLS-2999)
 * Performance issue when setting value to single cell.(DOCXLS-3029)
 * The calculated result of SUMIFS formula is wrong.(DOCXLS-3033)
 * Data validations are lost after expanding table ranges.(DOCXLS-3075)
@@ -1129,12 +1118,12 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * The cell font size is lost after loading ssjson with Conditional Formattings.(DOCXLS-3046)
 * Error occurs when loading a ssjson which contains cell value of empty array.(DOCXLS-3115)
 * Cell's display color is wrong when a color number formatter is applied.(DOCXLS-3114)
-* The calculated result should be #DIV/0! like Excel, but #NUM! now in GcExcel.(DOCXLS-3012)
+* The calculated result should be #DIV/0! like Excel, but #NUM! now in DsExcel.(DOCXLS-3012)
 * Out of memory occurs during processing templates.(DOCXLS-3031)
-* GcExcel fails to open workbook with a checkbox wherein Excel is created using Aspose(DOCXLS-3019)
+* DsExcel fails to open workbook with a checkbox wherein Excel is created using Aspose(DOCXLS-3019)
 * It seems that rounding of a number does not take effect in the exported PDF.(DOCXLS-3095)
 * Invalid range error occurs when setting print area.(DOCXLS-3136)
-* Excel takes a long time to open a large xlsx generated by GcExcel.(DOCXLS-3128)
+* Excel takes a long time to open a large xlsx generated by DsExcel.(DOCXLS-3128)
 
 ## 3.2.2
 ## Fixed
@@ -1144,13 +1133,13 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * InvalidFormulaException is thrown when importing some Excel file.(DOCXLS-2889)
 * Exception is thrown after processing templates and then to json.(DOCXLS-2961)
 * Processing templates and exporting to json is very slow.(DOCXLS-2965)
-* Incorrect settings for Protected Sheet for exported JSON from GcExcel.(DOCXLS-2977)
-* Data Validation with any type in SpreadJS can't be read via GcExcel.(DOCXLS-2982)
+* Incorrect settings for Protected Sheet for exported JSON from DsExcel.(DOCXLS-2977)
+* Data Validation with any type in SpreadJS can't be read via DsExcel.(DOCXLS-2982)
 * Error occurs when importing JSON with pictures of gif.(DOCXLS-2992)
 * FM=overwrite does not work correctly when G=R in Templates.(DOCXLS-2871)
-* Column width in SpreadJS is changed after GcExcel JSON I/O.(DOCXLS-2873)
+* Column width in SpreadJS is changed after DsExcel JSON I/O.(DOCXLS-2873)
 * The cell with HYPERLINK formula does not display as hyperlink in the exported Excel.(DOCXLS-2914)
-* Error occurs when GcExcel imports its own exported JSON .(DOCXLS-2967)
+* Error occurs when DsExcel imports its own exported JSON .(DOCXLS-2967)
 * Borders are lost in the exported PDF.(DOCXLS-2994)
 * The used range becomes very large after from JSON.(DOCXLS-299)
 * There are some weird lines in the exported PDF.(DOCXLS-2795)
@@ -1160,7 +1149,7 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * The text of ITextRun is wrong.(DOCXLS-2902)
 * The formatted text is not same as Excel with formatter "0.00E+00".(DOCXLS-2892)
 * IllegalArgumentException is thrown during to JSON.(DOCXLS-2874)
-* Error occurs during opening xlsx which is generated by GcExcel.(DOCXLS-2983)
+* Error occurs during opening xlsx which is generated by DsExcel.(DOCXLS-2983)
 * A lot of empty rows are generated after prcossing templates.(DOCXLS-2985)
 * Table filter changes after saving to Excel.(DOCXLS-2962)
 * Charts are changed after inserting a picture.(DOCXLS-2980)
@@ -1182,7 +1171,7 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * The height of cell(with wrapped text) is changed after importing ssjson and then saving to xlsx.(DOCXLS-2735)
 * RowCount and ColumnCount in exported ssjson is incorrect after deleting some rows/columns.(DOCXLS-2741)
 * Text can not be pasred correctly when current culture is en-GB.(DOCXLS-2745)
-* The calculated result is "∞" in GcExcel, which is #DIV/0! in Excel.(DOCXLS-2747)
+* The calculated result is "∞" in DsExcel, which is #DIV/0! in Excel.(DOCXLS-2747)
 * Exception is thrown when opening an Excel with gradient unscaled fill.(DOCXLS-2761)
 * The accounting format is rendered wrong in the exported PDF.(DOCXLS-2765)
 * Exception is thrown when importing ssjson with an invalid "cap" value.(DOCXLS-2786)
@@ -1206,7 +1195,7 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 ## Fixed
 * Object reference error on converting the Workbook to JSON with DataValidation definitions.(DOCXLS-2659)
 * ToJSON method throws error when cell has formatter on Linux.(DOCXLS-2679)
-* FromJSON method takes long time to import ssjson file using GcExcel.(DOCXLS-2656)
+* FromJSON method takes long time to import ssjson file using DsExcel.(DOCXLS-2656)
 * Some content displays incompletely in exported PDF.(DOCXLS-2737)
 * Program does not end and CPU utilisation is 100% when exporting to PDF.(DOCXLS-2744)
 * There is messy code in exported image generated by sheet toImage() method on Linux OS.(DOCXLS-2478)
@@ -1244,7 +1233,7 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * Cell background in the exported pdf is black even though it is "lightgray" in json.(DOCXLS-2438)
 * Error occurs when from json.(DOCXLS-2440)
 * Cell rich text is rendered wrong in the exported pdf when the cell is a combo cell type.(DOCXLS-2443)
-* Top alignment is changed to bottom in SpreadJS after loading json from GcExcel .(DOCXLS-2469)
+* Top alignment is changed to bottom in SpreadJS after loading json from DsExcel .(DOCXLS-2469)
 * Error occurs when importing Excel file with a lot of inline strings.(DOCXLS-2473)
 * The saved Excel is corrupted when creating a Pivot table with SubTotalType.None.(DOCXLS-2470)
 ### Changed
@@ -1296,7 +1285,7 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * Copying a sheet containing a chart to another workbook corrupts the book.(DOCXLS-2247)
 * Calculation result is incorrect if different reference methods are used together in SUBTOTAL function.(DOCXLS-2257) 
 * After export to PDF, some text can not display completely.(DOCXLS-2258)
-* Error occurs after opening Excel file saved by GcExcel.(DOCXLS-2261) 
+* Error occurs after opening Excel file saved by DsExcel.(DOCXLS-2261) 
 * Error occurs during from json.(DOCXLS-2262)
 * Formulas is incorrectly marked as array formulas.(DOCXLS-2266)
 * Data is lost after importting an Excel. (DOCXLS-2268)
@@ -1334,14 +1323,14 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * Support worksheet JSON I/O.
 * Support Outline column to display hierarchical data in saved PDF.
 * Support data binding of Range, Table and Worksheet.
-* Return errors from JSON Import in GcExcel.
+* Return errors from JSON Import in DsExcel.
 ### Fixed
-* Filtered data cannot be re-displayed after JSON(made by SJS) I/O in GcExcel.(DOCXLS-1646)
+* Filtered data cannot be re-displayed after JSON(made by SJS) I/O in DsExcel.(DOCXLS-1646)
 * Exception occurs on loading specific ssjson.(DOCXLS-2158)
 * Exception may occur on exporting certain Excel sheets with charts to PDF (DOCXLS-2094)
 * Hiding fixed columns and rows causes incorrect display in Excel file.(DOCXLS-2020)
 * Pagination is inconsistent with SpreadJS when the form is exported to PDF.(DOCXLS-2159)
-* JSON file size is bigger when converted using GcExcel vs Online designer tool.(DOCXLS-1905)
+* JSON file size is bigger when converted using DsExcel vs Online designer tool.(DOCXLS-1905)
 * The Value property value of the ComboBox cell is lost after JSON I/O.(DOCXLS-2029)
 * NullPointerException may occur on loading certain Excel file and saving it. (DOCXLS-2041)
 * Conditional formatting is lost if the rule references another sheet.(DOCXLS-2093)
@@ -1349,9 +1338,9 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 ### Bugs Fixed
 * Exception is thrown when importing ssjson with certain group settings.(DOCXLS-1998)
 * Exception is thrown when importing ssjson with some null values.(DOCXLS-1959)
-* Digital signature is lost when an Excel file is modified and saved through GcExcel.(DOCXLS-1988)
-* Memory leak occurs when using GcExcel in multiple threads.(DOCXLS-1950)
-* Group can not be expanded in SpreadJS after loading ssjson from GcExcel.(DOCXLS-1870)
+* Digital signature is lost when an Excel file is modified and saved through DsExcel.(DOCXLS-1988)
+* Memory leak occurs when using DsExcel in multiple threads.(DOCXLS-1950)
+* Group can not be expanded in SpreadJS after loading ssjson from DsExcel.(DOCXLS-1870)
 * Rich text can not be rendered correctly in the exported pdf.(DOCXLS-1906)
 * The return value of IRange.HasFomula is wong.(DOCXLS-1940)
 ## 3.0.3
@@ -1365,10 +1354,10 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * Extra Border is drawn around an image in the header, when xlsx is printed.
 * Text styles are lost after copying worksheet and exporting to PDF.(DOCXLS-1814)
 * Formulas do not work in generated xlsx file from JSON.(DOCXLS-1847)
-* Unable to import specific xlsx file in GcExcel.(DOCXLS-1848)
+* Unable to import specific xlsx file in DsExcel.(DOCXLS-1848)
 * Placement.MoveAndSize does not work after exporting to PDF.(DOCXLS-1856)
 * External link can not work in the exported PDF when the external file's name contains Chinese characters.(DOCXLS-1867)
-* Borders are lost in SpreadJS after importing ssjson generated from GcExcel.(DOCXLS-1885)
+* Borders are lost in SpreadJS after importing ssjson generated from DsExcel.(DOCXLS-1885)
 ## 3.0.2
 ### Bugs Fixed
 * Exception is thrown when importing ssjson that contains duplicated table names.(DOCXLS-1733)
@@ -1376,10 +1365,10 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * Index out of range exception is thrown when exporting to pdf.(DOCXLS-1784)
 ## 3.0.1
 ### Bugs Fixed
-* The font color is changed in SpreadJS after importing the ssjson exported by GCExcel.(DOCXLS-1729)
-* The hidden rows and columns are visible in SpreadJS after importing the ssjson exported by GCExcel.(DOCXLS-1729)
+* The font color is changed in SpreadJS after importing the ssjson exported by DsExcel.(DOCXLS-1729)
+* The hidden rows and columns are visible in SpreadJS after importing the ssjson exported by DsExcel.(DOCXLS-1729)
 * Shape name is changed after copying worksheet.(DOCXLS-1728)
-* GcExcel can not load some kind of ssjson correctly. (DOCXLS-1726)
+* DsExcel can not load some kind of ssjson correctly. (DOCXLS-1726)
 * Some rich text is overlapped after exporting to Pdf.(DOCXLS-1724)
 * Exception is thrown during exporting to pdf if the machine is German locale.(DOCXLS-1707) 
 * Import ssjson containing data validaiton style and then export,the validation style will be lost in the exported ssjson.(DOCXLS-1692)
@@ -1407,9 +1396,9 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * Export Excel files with multiple images to PDF with reduced file size.
 * Support license workbook instance.
 * Rename pivot fields and Data Fields.
-* Support cell tags of GrapeCity SpreadJS.
-* Support cell types of GrapeCity SpreadJS.
-* Support best fit rows/columns feature of GrapeCity SpreadJS.
+* Support cell tags of SpreadJS.
+* Support cell types of SpreadJS.
+* Support best fit rows/columns feature of SpreadJS.
 ### Bugs Fixed
 * Unable to set Icon  for IconCriteria.(DOCXLS-1531s)
 * "_xlfn" prefix added before IFNA formula while converting to JSON.(DOCXLS-1537)
@@ -1462,8 +1451,8 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * Out of memerory occurs while loading an Excel file.(DOCXLS-1279)
 * Stack overflow occurs while saving to PDF file.(DOCXLS-1315)
 * Exception is thrown while loading a xlsm file.(DOCXLS-1335)
-* Calculation results from GCExcel doesn't match the results from MSExcel.(DOCXLS-1322, DOCXLS-1323)
-* Cell Style is not correct after GcExcel toJSON and then SpreadJS fromJSON.(DOCXLS-1334)
+* Calculation results from DsExcel doesn't match the results from MSExcel.(DOCXLS-1322, DOCXLS-1323)
+* Cell Style is not correct after DsExcel toJSON and then SpreadJS fromJSON.(DOCXLS-1334)
 ## 2.2.2
 ### Enhancements
 * Customer can overwrite current function implementation when registering a new custom function.(DOCXLS-1146)
@@ -1472,13 +1461,13 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * Exception is thrown after adding a lot of hyperlinks then saving to Excel.(DOCXLS-1154)
 * Some text can not display completely in the exported pdf file.(DOCXLS-1156)
 * ArgumentOutOfRangeException is thrown on using Calculate method for a Workbook.(DOCXLS-1211)
-* If calculated result is too large(20+ digits) in the cell, the value acquired by GcExcel is horizontally reversed.(DOCXLS-1127)
-* There is a difference between the Excel display value and the Text value acquired by GcExcel.(DOCXLS-1128)
+* If calculated result is too large(20+ digits) in the cell, the value acquired by DsExcel is horizontally reversed.(DOCXLS-1127)
+* There is a difference between the Excel display value and the Text value acquired by DsExcel.(DOCXLS-1128)
 * When a cell referenced by a formula is moved by "Cut" method, the formula is not automatically updated.(DOCXLS-1210)
-* The exported pdf and Excel file is corrupted when using GcExcel in multiple threading. (DOCXLS-1208)
+* The exported pdf and Excel file is corrupted when using DsExcel in multiple threading. (DOCXLS-1208)
 ## 2.2.1
 ### Bug fixed
-* GcExcel throws exception when loading ssjon with invalid image source.(DOCXLS-1115)
+* DsExcel throws exception when loading ssjon with invalid image source.(DOCXLS-1115)
 * Exception is thrown when opening an Excel with a lot of conditional formatting.(DOCXLS-1047)
 * Unable to export to PDF with a specified culture.(DOCXLS-1043)
 * The exported Excel file does not open correctly after loading ssjson.(DOCXLS-1076)
@@ -1491,7 +1480,7 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * Exception is thrown when loading ssjson with custom function.(DOCXLS-1044)
 * Copy behavior is inconsistent with Excel when the target range is larger than the source range.(DOCXLS-844)
 * Exception is thrown after opening certain Excel file and then export to ssjson.(DOCXLS-1116)
-* GcExcel can not export text with Simhei bold font.(DOCXLS-937).
+* DsExcel can not export text with Simhei bold font.(DOCXLS-937).
 * Load ssjson with combobox cells and then export to Excel, the cell value of combobox cell is wrong in the exported Excel file.(DOCXLS-1106)
 ## 2.2.0
 ### New Features
@@ -1519,13 +1508,13 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 * OLEObject will be preserved after Excel I/O.
 * Support Shrink to fit, wrapped text while saving to pdf.
 ### Bug fixed
-* GcExcel ignores 'ignore_empty' parameter in TEXTJOIN formula.(DOCXLS-970)
+* DsExcel ignores 'ignore_empty' parameter in TEXTJOIN formula.(DOCXLS-970)
 * Large JSON file generated when using ToJson on a particular Workbook.(DOCXLS-968)
 * UsedRange.Value sets improper values to the range when Formula is set to Empty.(DOCXLS-956)
 ## 2.1.5
 ### Bug Fixed
-* The column width, font size and picture's left position changes after JSON I/O with GcExcel.(DOCXLS-902)
-* The cell font changes after JSON I/O with GcExcel.(DOCXLS-921)
+* The column width, font size and picture's left position changes after JSON I/O with DsExcel.(DOCXLS-902)
+* The cell font changes after JSON I/O with DsExcel.(DOCXLS-921)
 * Visible property of secondary category axis returns incorrect value.(DOCXLS-849)
 * The major and minor units of value axis of stacked area chart return incorrect value.(DOCXLS-805)
 * The major and minor units of value axis for 100% stacked chart return incorrect value.(DOCXLS-800)
@@ -1535,7 +1524,7 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 ### Enhancements
 * Performance of exporting a single worksheet to PDF was improved significantly.
 * fromJson method  was improved when json contained table style and multiple named styles.
-* GcExcel now sets minimum value of Zoom factor to 10% when exporting spreadsheet to PDF, similar to MS Excel setting. 
+* DsExcel now sets minimum value of Zoom factor to 10% when exporting spreadsheet to PDF, similar to MS Excel setting. 
 ### Bug Fixed
 * The TintAndShade property does not work as expected if Color is set.(DOCXLS-872)
 * Cells containing SUBTOTAL formula do not return correct values.(DOCXLS-881)
@@ -1549,7 +1538,7 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 *  Improve the performance of lookup functions when looking up string values.
 ## 2.1.2
 ### Bug fixed
-* GcExcel is unable to load an Excel file consisting SUMPRODUCT formula.(DOCXLS-733)
+* DsExcel is unable to load an Excel file consisting SUMPRODUCT formula.(DOCXLS-733)
 ## 2.1.1
 ### Enhancements
 * Added IWorksheet.FixedPageBreaks to control whether to adjust page breaks after inserting/deleting rows or columns.
@@ -1570,7 +1559,7 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 ### New Features
 * The performance of workbook.fromJson() method has been enhanced when the JSON file contains multiple styles.
 * Users can now import and export spreadsheets that contain macros. While these will not be executed, the macros will now be preserved when saving.
-* The support for loading and saving GrapeCity SpreadJS JSON files with shapes have been added.
+* The support for loading and saving SpreadJS JSON files with shapes have been added.
 * Users can now set rich text format in the cells by applying different styles to the textual information entered in the cell.
 * While working with custom named styles, users can now modify an existing style and add it to the Styles collection.
 * Users can now export Excel files with vertical text to PDF.
@@ -1590,14 +1579,12 @@ This repository contains source project of Examples and Showcases of GcExcel to 
 ### Bug fixed
 * Exception thrown when Workbook opens the stream returned by HttpServletRequest.getInputStream().
 * Null pointer exception is thrown on saving to PDF, if the font used is null.
-* GcExcel throws exception on loading ssjson file with null values.
+* DsExcel throws exception on loading ssjson file with null values.
 * Merged range in table couldn't be rendered to pdf.
 * The hidden rows are still rendered to pdf after loading ssjson file.
 
 
 # Other Resources
-* Product Home Site: [https://www.grapecity.com/documents-api-excel](https://www.grapecity.com/documents-api-excel)
-* Demo Site: [https://www.grapecity.com/documents-api-excel/demos/](https://www.grapecity.com/documents-api-excel/demos/)
-* 中文主页: [https://www.grapecity.com.cn/developer/grapecitydocuments](https://www.grapecity.com.cn/developer/grapecitydocuments)
-* 中文示例站点: [https://demo.grapecity.com.cn/documents-api-excel-java/demos/](https://demo.grapecity.com.cn/documents-api-excel-java/demos/)
+* Product Home Site: [https://developer.mescius.com/document-solutions/java-excel-api](https://developer.mescius.com/document-solutions/java-excel-api)
+* Demo Site: [https://developer.mescius.com/document-solutions/java-excel-api/demos/](https://developer.mescius.com/document-solutions/java-excel-api/demos/)
 * Maven Repo Address: [https://search.maven.org/artifact/com.grapecity.documents/gcexcel/](https://search.maven.org/artifact/com.grapecity.documents/gcexcel/)
