@@ -48,7 +48,7 @@ This repository contains source project of Examples and Showcases of DsExcel to 
 
 | Directory    | Description    |
 | ------------- |-------------|
-| Dsexcel     | Contains the latest DsExcel jar package and its dependency packages |
+| dsexcel     | Contains the latest DsExcel jar package and its dependency packages |
 | Examples.Library     | A collection of Java examples that help you learn and explore the API features |
 | SpringBootDemo/SpringBoot+React     | A source project that demonstrates how to use DsExcel Java with SpringBoot + React + Spread.Sheets|
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use DsExcel with SpringBoot + Angular2 + Spread.Sheets|
