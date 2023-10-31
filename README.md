@@ -38,11 +38,11 @@ You can optionally integrate DsExcel with the SpreadJS JavaScript spreadsheet as
 
 ## Other Document Solutions API Solutions
 
-- [Documents for Excel, .NET](https://developer.mescius.com/document-solutions/dot-net-excel-api)
-- [Documents for PDF](https://developer.mescius.com/document-solutions/dot-net-pdf-api)
-- [Documents for PDF Viewer](https://developer.mescius.com/document-solutions/javascript-pdf-viewer)
-- [Documents for Word](https://developer.mescius.com/document-solutions/dot-net-word-api)
-- [Documents for Imaging](https://developer.mescius.com/document-solutions/dot-net-imaging-api)
+- [Document Solutions for Excel, .NET](https://developer.mescius.com/document-solutions/dot-net-excel-api)
+- [Document Solutions for PDF](https://developer.mescius.com/document-solutions/dot-net-pdf-api)
+- [Document Solutions PDF Viewer](https://developer.mescius.com/document-solutions/javascript-pdf-viewer)
+- [Document Solutions for Word](https://developer.mescius.com/document-solutions/dot-net-word-api)
+- [Document Solutions for Imaging](https://developer.mescius.com/document-solutions/dot-net-imaging-api)
 
 This repository contains source project of Examples and Showcases of DsExcel to help you learn and write your own applications. 
 
