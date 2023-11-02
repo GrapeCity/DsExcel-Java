@@ -38,7 +38,7 @@ dependencies {
 	}
 	
 	//dependencies of GcExcel
-	compile('com.grapecity.documents:gcexcel:4.0.0')
+	compile('com.grapecity.documents:gcexcel:6.2.3')
 }
 
 task clientBuild(type: GradleBuild){
