@@ -54,7 +54,16 @@ This repository contains source project of Examples and Showcases of DsExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use DsExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 ---
-
+## 6.2.4
+## Fixed
+* Chart is not output correctly in PDF file when combo chart of scatter charts have no data.(DOCXLS-9027)
+* Exception is thrown on Workbook.processTemplate() method.(DOCXLS-9053)
+* The cell formatting is incorret in the copied worksheet.(DOCXLS-9058)
+* Exception is thrown on loading the particular SSJSON file contains ComboBox celltype.(DOCXLS-9063)
+* Exception is thrown on calculating the function which refers to a non-exist worksheet.(DOCXLS-9106)
+* Exception is thrown on saving workbook to the Excel file.(DOCXLS-9153)
+* The exported XLSX file is corrupted when the hyperlink contains quote.(DOCXLS-9174)
+* Inconsistent results when processing template with multiple threads.(DOCXLS-9180)
 ## 6.2.3
 ## Fixed
 * There are unexpected lines in the exported Excel file after processing Template file.(DOCXLS-8921)
