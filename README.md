@@ -54,6 +54,21 @@ This repository contains source project of Examples and Showcases of DsExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use DsExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 ---
+## 6.2.5
+## Fixed
+* The size of the QR code is not as expected.(DOCXLS-8801)
+* After calling IWorksheet.copyAfter() method, an error occurs when opening the exported Excel file.(DOCXLS-8901)
+* Performance issue when calling IRange.Copy() method many times.(DOCXLS-9157)
+* The icon of conditional format in the exported PDF file is different from Excel and SpreadJS.(DOCXLS-9177)
+* Exception is thrown on copying sheet across Excel files when sheet contains custom sheet views.(DOCXLS-9179)
+* The selected area is a whole row, the used range would be changed in the exported SJS file.(DOCXLS-9182)
+* The picture cannot be fully displayed in the exported PDF file.(DOCXLS-9194)
+* When a worksheet is copied twice to another workbook, the defined names are not copied correctly.(DOCXLS-9217)
+* The number format of NOW function is incorrect under Korean culture.(DOCXLS-9218)
+* The formula has been changed in the exported Excel file after loading the original SSJSON file.(DOCXLS-9240)
+* Cell headers style is incorrect in the exported SSJSON file after loading the original SSJSON file.(DOCXLS-9243)
+* The exported Excel file gets corrupted with particular sheet name and Print Area detail.(DOCXLS-9246)
+* Exception occurred during data binding.(DOCXLS-9254)
 ## 6.2.4
 ## Fixed
 * Chart is not output correctly in PDF file when combo chart of scatter charts have no data.(DOCXLS-9027)
