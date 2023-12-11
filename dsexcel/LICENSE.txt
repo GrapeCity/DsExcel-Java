@@ -2,21 +2,364 @@ This document applies to the third party software included with this package,
 or used to build some parts of it.
 
 ---------------------------------------------------------------------------------
-For GrapeCity Documents Licensing, please see
-https://www.grapecity.com/licensing/documents-api
+For Document Solutions Licensing, please see
+https://developer.mescius.com/document-solutions/licensing
+---------------------------------------------------------------------------------
+
 
 ---------------------------------------------------------------------------------
+Apache PDFBox <https://github.com/apache/pdfbox>
+
 Apache PDFBox
-Apache License 2.0 https://docs.oracle.com/cloud/latest/big-data-discovery-cloud/BDDLG/rl_apache_license_for_pdfbox.htm#BDDLG-reference_6DDE4598BD5D4987A1684E7C2FF7B423
+Copyright 2014 The Apache Software Foundation
+
+PDFBox is licensed under Apache License, Version 2.0. https://www.apache.org/licenses/LICENSE-2.0
+A copy of the license can be obtained at http://pdfbox.apache.org/.
+
+This product includes software developed at
+The Apache Software Foundation (http://www.apache.org/).
+
+Based on source code originally developed in the PDFBox and 
+FontBox projects.
+
+Copyright (c) 2002-2007, www.pdfbox.org
+
+Based on source code originally developed in the PaDaF project.
+Copyright (c) 2010 Atos Worldline SAS
+
+Includes the Adobe Glyph List
+Copyright 1997, 1998, 2002, 2007, 2010 Adobe Systems Incorporated.
+
+Includes the Zapf Dingbats Glyph List
+Copyright 2002, 2010 Adobe Systems Incorporated.
+
+Includes OSXAdapter
+Copyright (C) 2003-2007 Apple, Inc., All Rights Reserved
+---------------------------------------------------------------------------------
+
 
 ---------------------------------------------------------------------------------
-GlassFish javax.json
-Dual license consisting of the CDDL v1.1 and GPL v2 https://oss.oracle.com/licenses/CDDL+GPL-1.1
+GlassFish javax.json <https://github.com/javaee/jsonp>
+
+Copyright (c) YYYY Oracle and/or its affiliates. All rights reserved.
+
+The contents of this file are subject to the terms of either the GNU
+General Public License Version 2 only ("GPL") or the Common Development
+and Distribution License("CDDL") (collectively, the "License").  You
+may not use this file except in compliance with the License.  You can
+obtain a copy of the License at
+https://oss.oracle.com/licenses/CDDL+GPL-1.1
+or LICENSE.txt.  See the License for the specific
+language governing permissions and limitations under the License.
+---------------------------------------------------------------------------------
+
 
 ---------------------------------------------------------------------------------
-Apache POI
-Apache License 2.0 https://poi.apache.org/legal.html
+Apache Commons Logging <https://github.com/apache/commons-logging>
 
+Apache Commons Logging
+Copyright 2003-2016 The Apache Software Foundation
+
+This product includes software developed at
+The Apache Software Foundation (http://www.apache.org/).
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Barcode4j <http://barcode4j.sourceforge.net/index.html>
+
+Barcode4J is licensed under the the Apache License, Version 2.0.
+Copyright 2003-2016 The Apache Software Foundation
+
+This product includes software developed at
+The Apache Software Foundation (http://www.apache.org/).
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Gson <https://github.com/google/gson>
+
+Copyright 2008 Google Inc.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Bouncy Castle <https://bouncycastle.org/java.html>
+bcpkix-jdk15on 
+bcprov-ext-jdk15on
+
+Copyright (c) 2000 - 2021 The Legion of the Bouncy Castle Inc. (https://www.bouncycastle.org)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Apache Commons Compress <https://github.com/apache/commons-compress>
+
+Copyright 2002-2022 The Apache Software Foundation
+
+This product includes software developed at
+The Apache Software Foundation (https://www.apache.org/).
+
+---
+
+The files in the package org.apache.commons.compress.archivers.sevenz
+were derived from the LZMA SDK, version 9.20 (C/ and CPP/7zip/),
+which has been placed in the public domain:
+
+"LZMA SDK is placed in the public domain." (http://www.7-zip.org/sdk.html)
+
+---
+
+The test file lbzip2_32767.bz2 has been copied from libbzip2's source
+repository:
+
+This program, "bzip2", the associated library "libbzip2", and all
+documentation, are copyright (C) 1996-2019 Julian R Seward.  All
+rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+
+1. Redistributions of source code must retain the above copyright
+   notice, this list of conditions and the following disclaimer.
+
+2. The origin of this software must not be misrepresented; you must 
+   not claim that you wrote the original software.  If you use this 
+   software in a product, an acknowledgment in the product 
+   documentation would be appreciated but is not required.
+
+3. Altered source versions must be plainly marked as such, and must
+   not be misrepresented as being the original software.
+
+4. The name of the author may not be used to endorse or promote 
+   products derived from this software without specific prior written 
+   permission.
+
+THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS
+OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY
+DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
+GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Julian Seward, jseward@acm.org
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Apache Commons Math <https://github.com/apache/commons-math>
+
+Copyright 2001-2022 The Apache Software Foundation
+
+This product includes software developed at
+The Apache Software Foundation (http://www.apache.org/).
+
+This product includes software developed for Orekit by
+CS Systèmes d'Information (http://www.c-s.fr/)
+Copyright 2010-2012 CS Systèmes d'Information
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Apache POI <https://github.com/apache/poi>
+
+Copyright 2003-2021 The Apache Software Foundation
+
+This product includes software developed at
+The Apache Software Foundation (https://www.apache.org/).
+
+This product contains parts that were originally based on software from BEA.
+Copyright (c) 2000-2003, BEA Systems, <http://www.bea.com/> (dead link),
+which was acquired by Oracle Corporation in 2008.
+<http://www.oracle.com/us/corporate/Acquisitions/bea/index.html>
+<https://en.wikipedia.org/wiki/BEA_Systems>
+
+This product contains W3C XML Schema documents. Copyright 2001-2003 (c)
+World Wide Web Consortium (Massachusetts Institute of Technology, European
+Research Consortium for Informatics and Mathematics, Keio University)
+
+This product contains the chunks_parse_cmds.tbl file from the vsdump program.
+Copyright (C) 2006-2007 Valek Filippov (frob@df.ru)
+
+This product contains parts of the eID Applet project
+<http://eid-applet.googlecode.com> and <https://github.com/e-Contract/eid-applet>.
+Copyright (c) 2009-2018
+FedICT (federal ICT department of Belgium), e-Contract.be BVBA (https://www.e-contract.be),
+Bart Hanssens from FedICT
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Simple Logging Facade for Java (SLF4J) <https://www.slf4j.org/>
+SLF4J source code and binaries are distributed under the MIT license.
+
+
+Copyright (c) 2004-2017 QOS.ch
+All rights reserved.
+
+Permission is hereby granted, free  of charge, to any person obtaining
+a  copy  of this  software  and  associated  documentation files  (the
+"Software"), to  deal in  the Software without  restriction, including
+without limitation  the rights to  use, copy, modify,  merge, publish,
+distribute,  sublicense, and/or sell  copies of  the Software,  and to
+permit persons to whom the Software  is furnished to do so, subject to
+the following conditions:
+
+The  above  copyright  notice  and  this permission  notice  shall  be
+included in all copies or substantial portions of the Software.
+
+THE  SOFTWARE IS  PROVIDED  "AS  IS", WITHOUT  WARRANTY  OF ANY  KIND,
+EXPRESS OR  IMPLIED, INCLUDING  BUT NOT LIMITED  TO THE  WARRANTIES OF
+MERCHANTABILITY,    FITNESS    FOR    A   PARTICULAR    PURPOSE    AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE,  ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+SparseBitSet <https://github.com/brettwooldridge/SparseBitSet>
+
+Copyright 2003-2021 The Apache Software Foundation
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+XMLBeans <https://xmlbeans.apache.org/index.html>
+
+Copyright 2004 The Apache Software Foundation
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Apache Santuario - XML Security for Java <https://santuario.apache.org/index.html>
+Copyright 1999-2021 The Apache Software Foundation
+
+This product includes software developed at
+The Apache Software Foundation (http://www.apache.org/).
+
+It was originally based on software copyright (c) 2001, Institute for
+Data Communications Systems, <http://www.nue.et-inf.uni-siegen.de/>.
+
+The development of this software was partly funded by the European 
+Commission in the <WebSig> project in the ISIS Programme. 
+
+This product contains software that is
+copyright (c) 2021, Oracle and/or its affiliates.
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Zxing <https://github.com/zxing/zxing>
+
+---------------------
+NOTICES FOR BARCODE4J
+---------------------
+
+Barcode4J
+Copyright 2002-2010 Jeremias Märki
+Copyright 2005-2006 Dietmar Bürkle
+
+Portions of this software were contributed under section 5 of the
+Apache License. Contributors are listed under:
+http://barcode4j.sourceforge.net/contributors.html
+
+----------------------
+NOTICES FOR JCOMMANDER
+----------------------
+
+Copyright 2010 Cedric Beust cedric@beust.com
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Apache Batik <https://github.com/apache/xmlgraphics-batik>
+
+Copyright 2001-2022 The Apache Software Foundation
+
+This product includes software developed at
+The Apache Software Foundation (http://www.apache.org/).
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Apache XML Commons XML APIs
+Copyright 1999-2009 The Apache Software Foundation.
+
+This product includes software developed at
+The Apache Software Foundation (http://www.apache.org/).
+
+Portions of this software were originally based on the following:
+  - software copyright (c) 1999, IBM Corporation., http://www.ibm.com.
+  - software copyright (c) 1999, Sun Microsystems., http://www.sun.com.
+  - software copyright (c) 2000 World Wide Web Consortium, http://www.w3.org
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Apache XML Graphics Commons
+Copyright 2006-2022 The Apache Software Foundation
+
+This product includes software developed at
+The Apache Software Foundation (http://www.apache.org/).
 ---------------------------------------------------------------------------------
 
 See NOTICE.txt for applicable information about the third party software.
