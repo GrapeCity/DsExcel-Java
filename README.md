@@ -54,6 +54,39 @@ This repository contains source project of Examples and Showcases of DsExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use DsExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 ---
+## 7.0.0
+
+## Important note for users of the GrapeCity Documents for Excel, Java Edition
+* com.grapecity.documents:gcexcel is being renamed and will be continued to be maintained under the new names com.mescius.documents:dsexcel. These new packages provide the same functionality, ensure future enhancements, and are backwards compatible with GrapeCity Documents for Excel. Please update your references to avoid any possible future interruptions. Your existing subscriptions will continue to work with the new packages.
+
+* com.grapecity.documents:gcexcel 已经更名为 com.grapecitysoft.documents:gcexcel。
+* com.grapecitysoft.documents:gcexcel 与 com.grapecity.documents:gcexcel 的功能保持一致，并且保持兼容，未来我们将持续对 com.grapecitysoft.documents:gcexcel 添加新功能并进行维护。请将您的引用从 com.grapecity.documents:gcexcel 改为 com.grapecitysoft.documents:gcexcel 以避免任何可能的问题。
+* com.grapecitysoft.documents:gcexcel 与 com.grapecity.documents:gcexcel 使用相同的授权策略，如果在您的升级中，遇到任何授权问题，可以发送邮件至 info.xa@grapecity.com 联系我们获取帮助。
+
+## Breaking Changes from the Previous Release
+* The return value of Parent property of IDataLabel interface has been changed from IPoint to Object.
+
+## Added
+* Support Formatting for Trendline Equations in Charts (and export).(DOCXLS-5769)
+* Async User-Defined Function Support.(DOCXLS-6971)
+* Export Excel to HTML with Inline CSS option.(DOCXLS-7433)
+* Improvements in Grouping for OptionButton Controls.(DOCXLS-7784)
+* [Template Language]Maintain Image aspect ratio.(DOCXLS-8216)
+* Support Acroform Creation with GcExcel API.(DOCXLS-8341)
+* [SpreadJS Integration]Support for password in the protected sheet.(DOCXLS-8421)
+* Support exporting of Funnel Charts to PDF.(DOCXLS-8570)
+* [SpreadJS integration]Support for Mask style.(DOCXLS-8618)
+* Support for IRange.DefaultValue.(DOCXLS-8651)
+* [SpreadJS integration]Support for cell.altText property.(DOCXLS-8652)
+* [Template Language]Support shapes and images in pagination mode.(DOCXLS-8694)
+* Support exporting of smooth lines in chart to PDF.(DOCXLS-8710)
+* Set first page number to 'Auto' in Page Setup.(DOCXLS-8734)
+* Specify columns to quote on exporting to CSV.(DOCXLS-8795)
+
+## Fixed
+* Formula linked with radio button disappeared in the exported Excel file.(DOCXLS-7688)
+* The celltype is changed in the exported SSJSON file.(DOCXLS-8348)
+
 ## 6.2.5
 ## Fixed
 * The size of the QR code is not as expected.(DOCXLS-8801)
