@@ -54,6 +54,30 @@ This repository contains source project of Examples and Showcases of DsExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use DsExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 ---
+## 7.0.1
+## Fixed
+* It takes more than 5 minutes to export specific SSJSON file to PDF file.(DOCXLS-8989)
+* Unexpected diagonal border is exported in the XLSX file.(DOCXLS-9173)
+* The result of AGGREGATE formula is incorrect.(DOCXLS-9287)
+* The font style of shape is incorrect in the exported PDF file.(DOCXLS-9300)
+* The icon of conditional format in the exported HTML file is different from Excel and SpreadJS.(DOCXLS-9302)
+* Some back color of cells change to black in the exported PDF file.(DOCXLS-9313)
+* Exception is thrown on loading a specific XLSX file.(DOCXLS-9335)
+* Exception is thrown on loading a specific XLSX file.(DOCXLS-9339)
+* Exception is thrown on loading a specific SSJSON file if the file contains invalid chart data.(DOCXLS-9340)
+* Performance issue while calculating workbook.(DOCXLS-9360)
+* The conditional formatting styles are lost after loading an SSJSON file then exporting to SJS file.(DOCXLS-9364)
+* The call of method PrintManager.paginate() takes too much time.(DOCXLS-9387)
+* When the special xlsx with hyperlinks is loaded and saved, the saved xlsx is corrupted.(DOCXLS-9395)
+* Some cells that were not locked became locked after loading an SJS file then exporting to another SJS file.(DOCXLS-9401)
+* The returned value of fromJson does not contain formula error.(DOCXLS-9402)
+* Exception is thrown on calling Workbook.ToJson() method.(DOCXLS-9406)
+* Exception is thrown on opening an SSJSON file contains invalid formulas.(DOCXLS-9416)
+* The result of VDB function is different from Excel.(DOCXLS-9427)
+* The formula is not updated after calling IWorksheet.FromJson().(DOCXLS-9433)
+* The text is incorrect in the exported PDF file.(DOCXLS-9448)
+* The center header of page setup can not be set using setText method.(DOCXLS-9479)
+* Exception is thrown on copying worksheet to another workbook.(DOCXLS-9510)
 ## 7.0.0
 
 ## Important note for users of the GrapeCity Documents for Excel, Java Edition
