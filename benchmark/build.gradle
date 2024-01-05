@@ -17,7 +17,7 @@ repositories {
 
 dependencies {
    // compile fileTree(dir: 'libs', include: ['*.jar'])
-	implementation 'com.grapecity.documents:gcexcel:6.2.4'
+	implementation 'com.mescius.documents:gcexcel:7.0.1'
 
     implementation 'org.apache.poi:poi-ooxml:4.1.1'
     implementation 'org.apache.poi:poi-ooxml-schemas:4.1.1'
