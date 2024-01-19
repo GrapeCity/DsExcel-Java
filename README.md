@@ -54,6 +54,23 @@ This repository contains source project of Examples and Showcases of DsExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use DsExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 ---
+## 7.0.2
+## Fixed
+* The formula changes after inserting columns if the referenced worksheet does not exist.(DOCXLS-7267)
+* After importing SJS and SSJSON files exported by DsExcel into the SpreadJS designer, the charts appear differently.(DOCXLS-9362)
+* The cell value is incorrect after loading the SJS file exported by SpreadJS.(DOCXLS-9365)
+* The exported Excel file is corrupted after loading the SSJSON file then exporting.(DOCXLS-9453)
+* Exception is thrown on calling GetAccurateRangeBoundary method for particular Excel if the calc engine is turned off.(DOCXLS-9502)
+* Exception is thrown on exporting PDF file when workbook contains specific chart.(DOCXLS-9532)
+* Exception is thrown on loading the specific SSJSON file exported by SpreadJS.(DOCXLS-9572)
+* The layout of cell background image is incorrect in the exported PDF file.(DOCXLS-9585)
+* Exception is thrown on opening SSJSON file when calc engine is turned off.(DOCXLS-9593)
+* The number format is changed in the exported SJS file.(DOCXLS-9605)
+* The font size is incorrect in the exported PDF file.(DOCXLS-9606)
+* Exception is thrown on refreshing Pivot Table.(DOCXLS-9607)
+* The column width is not adjusted after calling IRange.Autofit() method.(DOCXLS-9681)
+* The result of COUNTA(UNIQUE()) function is incorrect.(DOCXLS-9683)
+* Exception is thrown on adding sheet after setting formula.(DOCXLS-9686)
 ## 7.0.1
 ## Fixed
 * It takes more than 5 minutes to export specific SSJSON file to PDF file.(DOCXLS-8989)
