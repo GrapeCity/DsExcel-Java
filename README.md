@@ -54,6 +54,19 @@ This repository contains source project of Examples and Showcases of DsExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use DsExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 ---
+## 7.0.3
+## Fixed
+* The captions of Pivot Table item are reset after refreshing it.(DOCXLS-9160)
+* Exception is thrown on exporting workbook to PDF file.(DOCXLS-9586)
+* Performance issue when copying cells to another workbook.(DOCXLS-9623)
+* The border in the exported HTML file is inconsistent with the display in SpreadJS.(DOCXLS-9627)
+* The processing time of the template has significantly increased after the upgrade.(DOCXLS-9697)
+* Exception is thrown on trying to get the DataValidation Formula.(DOCXLS-9708)
+* Integers have an extra decimal place in the exported file after template processing.(DOCXLS-9715)
+* Exception is thrown on saving to SJS file after loading the original one.(DOCXLS-9723)
+* The border is lost in the exported SJS file after calling IRange.Copy() method.(DOCXLS-9725)
+* Exception is thrown on loading specific Excel file.(DOCXLS-9731)
+* DefaultValue property doesn't work correctly in a certain case.(DOCXLS-9741)
 ## 7.0.2
 ## Fixed
 * The formula changes after inserting columns if the referenced worksheet does not exist.(DOCXLS-7267)
