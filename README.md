@@ -54,6 +54,18 @@ This repository contains source project of Examples and Showcases of DsExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use DsExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 ---
+## 7.0.4
+## Fixed
+* The checkstatus of the checkbox is incorrect in the exported PDF file.(DOCXLS-4050)
+* The cell value is incorect in the exported PDF file when value is an array.(DOCXLS-9790)
+* Exception is thrown on exporting SJS file when data validation contains invalid formulas.(DOCXLS-9791)
+* Exception is thrown on getting cell value when the cell refers to non-existing worksheet.(DOCXLS-9794)
+* The formula changed after inserting a column when formula contains non-existing worksheet.(DOCXLS-9796)
+* The image in page setup is lost in the exported SSJSON file.(DOCXLS-9806)
+* Exception is thrown on opening a particular Excel file.(DOCXLS-9823)
+* The shape is not copied using IRange.Copy() method.(DOCXLS-9854)
+* Merge area changed in the exported Excel file.(DOCXLS-9862)
+* The copying option in Excel is failed in the exported Excel file.(DOCXLS-9914)
 ## 7.0.3
 ## Fixed
 * The captions of Pivot Table item are reset after refreshing it.(DOCXLS-9160)
