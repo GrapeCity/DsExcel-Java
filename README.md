@@ -54,6 +54,23 @@ This repository contains source project of Examples and Showcases of DsExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use DsExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 ---
+### 7.0.5
+## Fixed
+* Some content in the hyperlink is escaped after loading the SJS file.(DOCXLS-9926)
+* The table range is not updated after data binding.(DOCXLS-9946)
+* Exception is thrown on expoting PDF file when workbook contains specific cell button.(DOCXLS-9947)
+* Exception is thrown on processing template.(DOCXLS-9949)
+* Exception is thrown on loading Excel file.(DOCXLS-9951)
+* Exception is thrown on loading SJS file when some table formula is empty.(DOCXLS-9955)
+* Performance issue on accessing or setting named style.(DOCXLS-9957)
+* Performance issue on getting or setting value when workbook contains dynamic array formulas.(DOCXLS-9994)
+* The KeepTogether result is in correct in the generated Excel file.(DOCXLS-9997)
+* Specific svg image is lost in the exported PNG file.(DOCXLS-9999)
+* Exception is thrown on processing template.(DOCXLS-10002)
+* Grouped shapes are clipped off in the exported image file.(DOCXLS-10003)
+* The font size of axis label in chart is incorrect in the exported image file.(DOCXLS-10004)
+* Exception is thrown on loading particular SSJSON file.(DOCXLS-10010)
+* Exception is thrown on loading then exporting SJS file when it contains particular tags.(DOCXLS-10013)
 ## 7.0.4
 ## Fixed
 * The checkstatus of the checkbox is incorrect in the exported PDF file.(DOCXLS-4050)
