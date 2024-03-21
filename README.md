@@ -54,7 +54,7 @@ This repository contains source project of Examples and Showcases of DsExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use DsExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 ---
-### 7.0.5
+## 7.0.5
 ## Fixed
 * Some content in the hyperlink is escaped after loading the SJS file.(DOCXLS-9926)
 * The table range is not updated after data binding.(DOCXLS-9946)
