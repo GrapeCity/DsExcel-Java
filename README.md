@@ -54,6 +54,53 @@ This repository contains source project of Examples and Showcases of DsExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use DsExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 ---
+## 7.1.0
+
+## Added
+* Enhance Template Language with better performance.(DOCXLS-5722)
+* Ignore errors in range.(DOCXLS-8310)
+* Support for interrupting execution of ProcessTemplate method.(DOCXLS-8396)
+* Use custom fonts via font streams on PDF Export.(DOCXLS-8432)
+* Template Language supports OverwriteWithFormat under Classic Mode.(DOCXLS-8515)
+* Support lossless .sjs/ssjson I/O of GanttSheet.(DOCXLS-8629)
+* Support CalculationMode options.(DOCXLS-8750)
+* Search cells with tags.(DOCXLS-8759)
+* Support multi column sorting in Template Language.(DOCXLS-8818)
+* Support custom sort order in Template Language.(DOCXLS-8819)
+* Get and set cell background images.(DOCXLS-8829)
+* Support table reference in cross workbook formulas.(DOCXLS-8859)
+* Export Barcodes as Pictures in Excel files.(DOCXLS-9278)
+* Support lossless .sjs/ssjson I/O of ReportSheet.(DOCXLS-9625)
+## Fixed
+* Exception is thrown on calling ProcessTemplate method when data source is not found.(DOCXLS-5052)
+* The grouped result is incorrect after calling ProcessTemplate method when using JSON data source.(DOCXLS-6476)
+* The result of SUMIFS formula is incorrect after processing template file.(DOCXLS-6596)
+* Exception is thrown on calling ProcessTemplate method when data field is numeric.(DOCXLS-8098)
+* The result in the report workbook is incorrect after processing the template file.(DOCXLS-8489)
+* The result of SUM formula is incorrect after processing the template file.(DOCXLS-8514)
+* The merge area is incorrect after processing the template file.(DOCXLS-8656)
+* The result of DIV formula is incorrect after processing the template file.(DOCXLS-8669)
+* The cell background color is not expanded as expected in the exported report workbook.(DOCXLS-8709)
+* The result of MIN and MAX formula is incorrect after processing template file.(DOCXLS-8786)
+* The calculated result is incorrect in the exported report workbook after processing template file.(DOCXLS-8834)
+* The formula is changed in the exported report workbook after processing template file.(DOCXLS-9002)
+* Exception is thrown on calling ProcessTemplate method.(DOCXLS-9023)
+* Performance issue on processing template when setting G=R.(DOCXLS-9041)
+* The apply range of conditional format is changed in the exported workbook.(DOCXLS-9046)
+* The chart in the exported PDF file is incorrect.(DOCXLS-9579)
+* In the exported PDF file, there are some Chinese characters that appear as garbled or scrambled.(DOCXLS-9778)
+* The ISort.apply() method didn't work as intended.(DOCXLS-9853)
+* Performance issue on processing template containing merged cell.(DOCXLS-9961)
+* The border is lost in the exported XLSX file.(DOCXLS-10015)
+* Image is lost in the exported XLSX file when PaginationMode is true.(DOCXLS-10020)
+* The row/column header caption in Pivot Table is lost in the exported XLSX file.(DOCXLS-10044)
+* Exception is thrown on loading particular SSJSON file.(DOCXLS-10047)
+* Exception is thrown on loading particular SJS file.(DOCXLS-10084)
+* The result of the DATEVALUE formula is incorrect.(DOCXLS-10085)
+* Performance issue on processing template when there're too many sheets.(DOCXLS-10088)
+* The table formula is not expanded correctly when calling ProcessTemplate method.(DOCXLS-10090)
+* Exception is thrown on loading worksheet from JSON containing non-existent external references.(DOCXLS-10092)
+
 ## 7.0.5
 ## Fixed
 * Some content in the hyperlink is escaped after loading the SJS file.(DOCXLS-9926)
