@@ -54,6 +54,22 @@ This repository contains source project of Examples and Showcases of DsExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use DsExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 ---
+## 7.1.1
+## Fixed
+* Sheet scrolling buttons are not working when hiding sheet and exporting to Excel file.(DOCXLS-8480)
+* The text direction is different from Excel in the exported PDF file.(DOCXLS-10091)
+* The formula result is incorrect when reading the formula cell value and saving back to Excel.(DOCXLS-10106)
+* The formula result is incorrect with Japanese full-width parameters.(DOCXLS-10115)
+* Exception is thrown on saving an Excel after copying range with formula.(DOCXLS-10116)
+* Exception is thrown on saving Excel to PDF file with Espanol culture.(DOCXLS-10117)
+* Some cell values have an additional decimal place compared to Excel in the exported PDF file.(DOCXLS-10157)
+* The axis lable doesn't renders correctly in the PDF file.(DOCXLS-10165)
+* Exception is thrown on opening an Excel file.(DOCXLS-10173)
+* The exported Excel file size is very large and time-consuming.(DOCXLS-10182)
+* Exception is thrown on saving to the Excel file.(DOCXLS-10187)
+* The row count is changed in the exported SSJSON file.(DOCXLS-10211)
+* Exception is thrown on loading an SJS file.(DOCXLS-10236)
+* Long cell value is lost in the exported PDF file when using PrintManager.(DOCXLS-10249)
 ## 7.1.0
 
 ## Added
