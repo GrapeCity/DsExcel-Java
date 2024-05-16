@@ -54,6 +54,24 @@ This repository contains source project of Examples and Showcases of DsExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use DsExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 ---
+## 7.1.2
+## Fixed
+* The formula result is incorrect using API to get the cell value.(DOCXLS-10106)
+* Performance issue on calculating workbook containing dynamic array formulas.(DOCXLS-10174)
+* The number format is incorrect when using Chinese version of Excel to open the Excel file exported in US culture.(DOCXLS-10234)
+* Rich text is missing in the exported PDF file.(DOCXLS-10247)
+* Copying the sheet takes a long time when sheet contains lots of pictures.(DOCXLS-10279)
+* The print info is changed in the exported SSJSON file.(DOCXLS-10280)
+* An exception is thrown on saving Excel file.(DOCXLS-10284)
+* Chart data lost after copying worksheet if EnableCalculation is false.(DOCXLS-10289)
+* Performance issue on exporting specific SSJSON file.(DOCXLS-10292)
+* German text changes to English language when refreshing the Pivot Table.(DOCXLS-10293)
+* Exception is thrown on applying sorting via FontColorSortField.(DOCXLS-10314)
+* Exception is thrown on loading particular Excel file.(DOCXLS-10320)
+* Exception is thrown on processing the template when it contains cross worksheet formula.(DOCXLS-10326)
+* Exception is thrown on processing the template when it contains hidden sheets.(DOCXLS-10329)
+* All rows are hidden in the exported SJS file.(DOCXLS-10335)
+* The comments are lost in the exported Excel file after processing template.(DOCXLS-10336)
 ## 7.1.1
 ## Fixed
 * Sheet scrolling buttons are not working when hiding sheet and exporting to Excel file.(DOCXLS-8480)
