@@ -54,6 +54,22 @@ This repository contains source project of Examples and Showcases of DsExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use DsExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 ---
+## 7.1.3
+## Fixed
+* The column style is lost after calling processTemplate method in the exported XLSX file.(DOCXLS-10338)
+* There is a performance issue when saving specific Excel files to an HTML file.(DOCXLS-10342)
+* Enhance the exception message when deleting range is not allowed.(DOCXLS-10364)
+* Exception is thrown on filling the specific template file.(DOCXLS-10379)
+* Row heights are changed after opening an XLSX file then export to SSJSON file.(DOCXLS-10386)
+* Exception is thrown on deleting row after loading some particular SJS file.(DOCXLS-10389)
+* Constant cells are expand along with the template cell.(DOCXLS-10417)
+* Exception is thrown on calling processTemplate method after loading some particular file.(DOCXLS-10418)
+* Some zero value appera after process template in the export XLSX file.(DOCXLS-10422)
+* Exception is thrown on exporting to SJS file.(DOCXLS-10428)
+* Exception is thrown on calling IWorksheets.CopyAfter method.(DOCXLS-10448)
+* Performance issue on loading particular XLSX file.(DOCXLS-10457)
+* The value of allowMove property in chart changed in the exported SJS file.(DOCXLS-10461)
+* The text changes to vertical text in the exported PDF file.(DOCXLS-10482)
 ## 7.1.2
 ## Fixed
 * The formula result is incorrect using API to get the cell value.(DOCXLS-10106)
