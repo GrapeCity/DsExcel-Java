@@ -54,6 +54,19 @@ This repository contains source project of Examples and Showcases of DsExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use DsExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 ---
+## 7.1.4
+## Fixed
+* Merged cells are unmerged in the exported Excel file when template cell have G=R property.(DOCXLS-10484)
+* The serise line of chart changed after loading the SSJSON file then exporting to SJS file.(DOCXLS-10488)
+* The formula is lost after loading the particular SJS file.(DOCXLS-10495)
+* The font weight is lost after loading the particular SSJSON file.(DOCXLS-10498)
+* Performance issues on opening a particular Excel file which contains lots of external workbooks.(DOCXLS-10506)
+* Exception is thrown on expoting Excel file after deleting particular sheet.(DOCXLS-10510)
+* The customized properties of celltype are lost in the exported SSJSON file.(DOCXLS-10553)
+* Exception is thrown on setting dynamic array formula to data validation.(DOCXLS-10571)
+* Exception is thrown on calling Workbook.toJson() method when the original SSJSON file contains invalid comment data.(DOCXLS-10589)
+* The result of TEXTJOIN function is incorrect if the parameter contains CalcError.(DOCXLS-10617)
+* The text is incorrect in the exported PDF file when the font is "symbol".(DOCXLS-10639)
 ## 7.1.3
 ## Fixed
 * The column style is lost after calling processTemplate method in the exported XLSX file.(DOCXLS-10338)
