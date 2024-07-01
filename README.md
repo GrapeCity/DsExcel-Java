@@ -14,7 +14,7 @@ Based on the extensive Excel Object Model, the interface-based API allows you to
 
 Using DsExcel, you can create full reports, sorted and filtered tables, sorted and filtered pivot tables, dashboard reports, add charts, slicers, sparklines, conditional formats, import and export Excel templates, convert spreadsheets to PDF and so much more.
 
-DsExcel comes with a full-featured [JavaScript Data viewer control (DsDataViewer)](https://www.npmjs.com/package/@grapecity/gcdataviewer).
+DsExcel comes with a full-featured [JavaScript Data viewer control (DsDataViewer)](https://www.npmjs.com/package/@mescius/dsdataviewer).
 
 If you'd like to remove the trial watermark and other [trial limitations](https://developer.mescius.com/document-solutions/dot-net-excel-api/docs/online/LicenseInformation.html), please email us.sales@mescius.com to request your 30-day evaluation key.
 
