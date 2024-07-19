@@ -54,6 +54,28 @@ This repository contains source project of Examples and Showcases of DsExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use DsExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 ---
+## 7.1.5
+## Fixed
+* The formula becomes dynamic array formula in the exported Excel file after processing the template.(DOCXLS-8816)
+* The custom formatter is lost in the exported SSJSON file.(DOCXLS-10560)           
+* The source data of the Pivot Table is not updated after data binding.(DOCXLS-10643)
+* Some constant text is lost in the exported Excel file when setting FillMode as overwrite.(DOCXLS-10647)
+* The applied range of conditional formatting is incorrect in the exported Excel file after processing the template.(DOCXLS-10648)
+* The IndentLevel is reset to 0 after setting horizontal alignment as distributed.(DOCXLS-10657)
+* Exception is thrown on exporting image file when pfb font exists.(DOCXLS-10714)
+* The formula becomes dynamic array formula in the exported Excel file after processing the template.(DOCXLS-10715)
+* The active sheet is changed in the exported Excel file after processing the template.(DOCXLS-10717)
+* Exception is thrown on loading invalid Excel file generate by third-party component.(DOCXLS-10719)
+* The print area is incorrect when it is relative reference.(DOCXLS-10720)
+* Exception is thrown on exporing to SJS file after copying worksheet to another workbook.(DOCXLS-10724)
+* The result of IRange.getFormula() changes from the origninal formula value when it contains absolute reference.(DOCXLS-10730)
+* The custom data labels in chart are lost in the exported HTML file.(DOCXLS-10734)
+* The row count and column count are incorrect in the exported Excel file after processing template when template contains comments.(DOCXLS-10738)
+* The default value is lost in the exported SJS file.(DOCXLS-10739)
+* Exception is thrown on saving particular Excel file to PDF file.(DOCXLS-10754)
+* Exporting to SJS file twice, results in the size of the generated file not being the same.(DOCXLS-10758)
+* Performance issue on exporting SJS and SSJSON files.(DOCXLS-10769)
+* The row height is changed in the exported SSJSON file compared to the original one.(DOCXLS-10809)
 ## 7.1.4
 ## Fixed
 * Merged cells are unmerged in the exported Excel file when template cell have G=R property.(DOCXLS-10484)
