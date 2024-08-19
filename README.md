@@ -54,6 +54,49 @@ This repository contains source project of Examples and Showcases of DsExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use DsExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 ---
+## 7.2.0
+## Added
+* Support Asynchronous IMAGE function.(DOCXLS-6740)
+* Support Label and Value Filter in PivotTable.(DOCXLS-7568)
+* Support Distributed Alignment in PDF Export.(DOCXLS-7705) 
+* Support Pixel-Based rendering in PDF and Image Export.(DOCXLS-8690)
+* Support UID attribute when loading and saving Excel file.(DOCXLS-8756)
+* Support filtering data from single/multiple data sources in Template Language.(DOCXLS-8835)
+* Support display of filter button in column header for SJS and SSJSON export.(DOCXLS-9036)
+* Support LINESPARKLINE/COLUMNSPARKLINE/WINLOSSSPARKLINE functions.(DOCXLS-9324)
+* Support Goal Seek functionality.(DOCXLS-9389)
+* Support customising Border Style in PDF Export.(DOCXLS-9624)
+* Support for FromSJSJson API to load single SJS JSON file.(DOCXLS-9928)
+## Fixed
+* The image size is not same as the PDF file exported by SpreadJS.(DOCXLS-897)
+* The exported XLSM file is corrupted when opening in MSExcel.(DOCXLS-5849)
+* When a specific xlsx file is loaded and saved, the saved file is corrupted.(DOCXLS-6040)
+* Wrapped text cannot be fully displayed in the exported PDF file.(DOCXLS-6762,DOCXLS-10267)
+* The pagination results in the exported PDF file are inconsistent with SpreadJS.(DOCXLS-7128,DOCXLS-7897,DOCXLS-8743,DOCXLS-8827,DOCXLS-10278,DOCXLS-10334)
+* The rotated circular shapes are distorted in the exported image files.(DOCXLS-8526)
+* The line breaks in the exported PDF file are inconsistent with the PDF file exported by SpreadJS.(DOCXLS-8664,DOCXLS-8898,DOCXLS-9359,DOCXLS-10161,DOCXLS-10385)
+* The size of the QR code in the exported PDF file is not same as SpreadJS.(DOCXLS-8801)
+* The borders of some cells are lost in the exported Excel file after loading the SJS file.(DOCXLS-9244)
+* The cell format is changed in the exported SJS file and Excel file after loading the original SJS file.(DOCXLS-9272,DOCXLS-9575,DOCXLS-9866,DOCXLS-10025,DOCXLS-10156)
+* The cell format is changed in the exported SJS file after inserting specific rows.(DOCXLS-9341)
+* The page margins in the exported PDF file are inconsistent with SpreadJS.(DOCXLS-9500)
+* The seal is stretched in the exported PDF file.(DOCXLS-9588)
+* The cell background image is inconsistent with SpreadJS in the exported PDF file.(DOCXLS-9611)
+* The filtering status of PivotTable in the exported Excel file is changed.(DOCXLS-9613)
+* The table border in the exported PDF file is thicker than the PDF exported by SpreadJS.(DOCXLS-9620)
+* Some whitespace characters are missing in the exported PDF file.(DOCXLS-9722,DOCXLS-10365,DOCXLS-10888)
+* The table style is changed in the exported SJS file.(DOCXLS-9876)
+* The border style is changed in the exported SJS file.(DOCXLS-9993)
+* Exception is thrown on refreshing the PivotTable.(DOCXLS-10239)
+* The font size is changed in the exported SJS file after loading the original SJS file.(DOCXLS-10447)
+* The conditional format is incorrect in the exported SJS file.(DOCXLS-10453)
+* Incorrect value returned from array formula when calculation engine is off.(DOCXLS-10709)
+* The table style in the exported PDF file is incorrect.(DOCXLS-10774)
+* Some cell values are not exported in the Excel file when license is not set.(DOCXLS-10805)
+* The result of the LOG function is incorrect.(DOCXLS-10822)
+* Exception is thrown on setting the orientation of PivotField to column field and row field.(DOCXLS-10828)
+* The result of the SEARCH function is incorrect.(DOCXLS-10859)
+
 ## 7.1.5
 ## Fixed
 * The formula becomes dynamic array formula in the exported Excel file after processing the template.(DOCXLS-8816)
