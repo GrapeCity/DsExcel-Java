@@ -54,6 +54,32 @@ This repository contains source project of Examples and Showcases of DsExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use DsExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 ---
+## 7.2.1
+## Fixed
+* The macro button is missing after processing template file.(DOCXLS-10883)
+* The XValues of chart are incorrect in the exported PDF file.(DOCXLS-10893)
+* The static cell did not expand with the adjacent cell.(DOCXLS-10902)
+* Performance issue on calling ToJson method.(DOCXLS-10903)
+* The value and reference range of defined name become "#REF!" after processing template.(DOCXLS-10908)
+* "_Report_0" is added to the end of the shape name after processing template.(DOCXLS-10931)
+* There is a null fallback FontFamily in the exported HTML file.(DOCXLS-10969)
+* Exception is thrown on setting formula of Calculated Fields in Switzerland culture locale.(DOCXLS-10976)
+* There is a memory leak when using the ResultSet data source.(DOCXLS-10986)
+* After setting TimeSpan to cell value, the number format changes.(DOCXLS-10990)
+* The formula in table is lost after binding data.(DOCXLS-10994)
+* Exception is thrown on copying sheet to another workbook when sheet contains column header.(DOCXLS-11005)
+* The hidden rows are revealed when calling ITable.ConvertToRange method.(DOCXLS-11014)
+* Exception is thrown on exporting to Excel file when workbook contains invalid threaded comment.(DOCXLS-11055)
+* The Japanese currency symbol ¥ is not recognized correctly.(DOCXLS-11057)
+* The result of getting the cell value is inconsistent.(DOCXLS-11059)
+* The formula is lost after data binding.(DOCXLS-11067)
+* The image is lost in the exported PDF file when image function contains special content.(DOCXLS-11068)
+* The row height is lost after processing template.(DOCXLS-11073)
+* Performance issue on adding lots of hyperlinks.(DOCXLS-11074)
+* The cell value cannot be set correctly after setting default value.(DOCXLS-11078)
+* Some resources are incorrect in the Deutsch(German) culture in the exported Excel file.(DOCXLS-11103)
+* The warning message is incorrect when copying sheet that some references do not exist.(DOCXLS-11104)
+* The column width is lost after processing template twice.(DOCXLS-11113)
 ## 7.2.0
 ## Added
 * Support Asynchronous IMAGE function.(DOCXLS-6740)
