@@ -54,6 +54,25 @@ This repository contains source project of Examples and Showcases of DsExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use DsExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 ---
+## 7.2.2
+## Fixed
+* There are many unexpected diagonal lines in the exported PDF file.(DOCXLS-10988)
+* Exception is thrown on exporting HTML file if some shape width is zero.(DOCXLS-11082)
+* The exported Excel file is corrupted when the source data of the PivotChart contains CalcError.(DOCXLS-11102)
+* The result of AVERAGEIF function is incorrect.(DOCXLS-11117)
+* Exception is thrown on opening an SJS file that contains invalid quality factor.(DOCXLS-11118)
+* The text that exceeds the boundaries of the shapes has not been cropped in the exported PDF file.(DOCXLS-11119)
+* After setting the value to a cell range, the row count of the sheet becomes 1048576.(DOCXLS-11122)
+* The sheet order is incorrect in the exported SJS file.(DOCXLS-11123)
+* Performance issue on calling ProcessTemplate method.(DOCXLS-11124)
+* Exception is thrown on opening an XLSX file that contains invalid DocPros data.(DOCXLS-11125)
+* Exception is thrown on setting the orientation of PivotField as ColumnField.(DOCXLS-11129)
+* Performance issue on deleting rows.(DOCXLS-11130)
+* The result of EXACT function is different from Excel.(DOCXLS-11133)
+* After copying the sheet, the cell displayed as #BUSY contains IMAGE function in the exported PDF file.(DOCXLS-11136)
+* The result is 0 when the cell refers to the IMAGE function in the exported PDF file.(DOCXLS-11137)
+* The text is overlapped in the exported PDF file when setting particular font.(DOCXLS-11155)
+* The value of the SUMPRODUCT function is incorrect.(DOCXLS-11158)
 ## 7.2.1
 ## Fixed
 * The macro button is missing after processing template file.(DOCXLS-10883)
