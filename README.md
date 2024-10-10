@@ -54,6 +54,23 @@ This repository contains source project of Examples and Showcases of DsExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use DsExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 ---
+## 7.2.3
+## Fixed
+* The alignment is incorrect in the exported Excel file when overwrite fillmode is applied to cross table in template.(DOCXLS-10421)
+* The invocation of the PrintManager consumes a lot of memory.(DOCXLS-10807)
+* The plot area is not in the center in the exported image file.(DOCXLS-11084)
+* Some resources are incorrect in the de-DE/de-CH/it-CH/fr-CH culture in the exported Excel file.(DOCXLS-11103)
+* Exception is thrown on exporting SJS file after copying formula from another workbook.(DOCXLS-11111)
+* Enhance the exception message when inserting column is invalid.(DOCXLS-11183)
+* Exception is thrown on exporting to SJS file.(DOCXLS-11196)
+* The conditional format is incorrect in the exported XLSX file after process template.(DOCXLS-11206)
+* The reference of formula is changed in the exported XLSX file after process template.(DOCXLS-11207)
+* The transparent of text in chart is lost in the exported PDF file.(DOCXLS-11215)
+* The min/max date of chart axis is incorrect in the exported PDF file.(DOCXLS-11217)
+* The result of CONCATENATE function is incorrect.(DOCXLS-11219)
+* Enhance the error message when there are invalid content in template cells.(DOCXLS-11232)
+* Some borders are missing in the exported PDF file.(DOCXLS-11262)
+* The color of hyperlink is incorrect in the exported SJS file.(DOCXLS-11266)
 ## 7.2.2
 ## Fixed
 * There are many unexpected diagonal lines in the exported PDF file.(DOCXLS-10988)
