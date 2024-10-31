@@ -54,6 +54,24 @@ This repository contains source project of Examples and Showcases of DsExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use DsExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 ---
+## 7.2.4
+## Fixed
+* OutOfMemoryException is thrown on exporting Excel file to SJS file.(DOCXLS-11029)
+* The font name in specific cells has changed after loading the SSJSON file.(DOCXLS-11190)
+* Some unused named styles are missing after loading the original SJS file.(DOCXLS-11218)
+* Some data labels are missing in the exported image file.(DOCXLS-11220)
+* Exception is thrown on opening an SJS file.(DOCXLS-11283)
+* The chart is corrupted in the SJS file exported by DsExcel.(DOCXLS-11319)
+* Emoji characters in sheet name gets corrupted in the exported SJS file.(DOCXLS-11336)
+* The fill color is incorrect after adding a new row to the table in the exported Excel file.(DOCXLS-11344)
+* The result of LET function is incorrect when parameter contains '#'.(DOCXLS-11364)
+* The result of MAX function is incorrect in Template Language.(DOCXLS-11367)
+* Exception is thrown on exporting PDF file when the legend position of chart is invalid.(DOCXLS-11373)
+* The result of VLOOKUP function is incorrect when the parameter contains table formula.(DOCXLS-11379)
+* The result of TAKE function is incorrect when the parameter contains negative value.(DOCXLS-11386)
+* The result of SWITCH function is incorrect when it is used with other dynamic array formulas.(DOCXLS-11398)
+* The result of MAXIFS function is incorrect when it is used in defined name.(DOCXLS-11401)
+* The result of COUNTIFS function is incorrect.(DOCXLS-11402)
 ## 7.2.3
 ## Fixed
 * The alignment is incorrect in the exported Excel file when overwrite fillmode is applied to cross table in template.(DOCXLS-10421)
