@@ -54,6 +54,24 @@ This repository contains source project of Examples and Showcases of DsExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use DsExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 ---
+## 7.2.5
+## Fixed
+* When copying array formulas and exporting them to Excel, the reference ranges change.(DOCXLS-11412)
+* The form fields are incorrect in the exported PDF file after processing template.(DOCXLS-11416)
+* Some conditional formats are lost in the exported Excel file.(DOCXLS-11419)
+* Exception is thrown on opening a specific Excel file with a password.(DOCXLS-11445)
+* The XMATCH function does not return correct value if lookup array contains empty cells.(DOCXLS-11448)
+* Exception is thrown on loading SJS file contains null author in comment.(DOCXLS-11469)
+* The autofit method does not work after setting wrap text to the cell.(DOCXLS-11478)
+* The slicers are lost in the exported Excel file after processing template.(DOCXLS-11479)
+* Spill error shows in array functions in the exported Excel file when calculation engine is off.(DOCXLS-11488)
+* The conditional formatting is incorrect in the exported Excel file after processing template.(DOCXLS-11491)
+* Exception is thrown on calling calculating method when custom formula returns CalcError.(DOCXLS-11498)
+* Exception is thrown on processing template when filter condition contains negative number.(DOCXLS-11504)
+* The hidden rows/columns are lost after calling IRange.copy() method.(DOCXLS-11506)
+* Exception is thrown on processing template when template file contains specific chart.(DOCXLS-11531)
+* Update the versions of some dependencies to eliminate security vulnerabilities.(DOCXLS-11562)
+* Exception is thrown on processing template if the filtered field is empty.(DOCXLS-11567)
 ## 7.2.4
 ## Fixed
 * OutOfMemoryException is thrown on exporting Excel file to SJS file.(DOCXLS-11029)
