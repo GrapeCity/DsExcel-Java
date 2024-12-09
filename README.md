@@ -54,6 +54,38 @@ This repository contains source project of Examples and Showcases of DsExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use DsExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 ---
+## 8.0.0 
+
+## Added
+* Import data from object collections and Data Tables.(DOCXLS-5469)
+* Support I/O of Pivot Table Timeline slicer.(DOCXLS-6695)
+* Add and manage Scenarios in What-If analysis.(DOCXLS-7905)
+* Support for Pattern Fill when rendering to PDF/Image.(DOCXLS-8780)
+* Support calculated page numbers in headers and footers.(DOCXLS-9370)
+* Set color using various string formats: hex, RGB, and color names.(DOCXLS-9478)
+* Support Image Sparkline formula.(DOCXLS-10009)
+* Support automatic cell merging.(DOCXLS-10109)
+* Support Cell Decoration styling.(DOCXLS-10566)
+* Support option to include or exclude binding data.(DOCXLS-10645)
+* Support Excel Table as data source for Pivot Tables.(DOCXLS-10763)
+* Support for allow edit in cell, Chart Color Scheme, and Date-Time Picker options in Lossless I/O for SpreadJS..(DOCXLS-10997)
+* Support new APIs to manage PivotTable.(DOCXLS-11101)
+
+## Fixed
+* The hidden data lables of chart are shown in the exported image file.(DOCXLS-6125,DOCXLS-11325)
+* The Timeline Slicer is lost in the exported PDF file.(DOCXLS-10291)
+* The rowcount is incorrect after calling IRange.Delete() method.(DOCXLS-10567)
+* The data lables of chart are lost in the exported HTML file.(DOCXLS-10736)
+* Some style is not expanded as expected after processing template.(DOCXLS-10897)
+* Performance issue in template processing.(DOCXLS-10906)
+* The fill color of data points in chart is incorrect in the exported Image file.(DOCXLS-11080)
+* The size of the exported SJS file is much larger than the source file.(DOCXLS-11105)
+* The layout of RadioButtonListCellType is different from SpreadJS.(DOCXLS-11191)
+* Some cells are not expanded as expected after processing template.(DOCXLS-11282)
+* The result of IWorksheet.RowCount is incorrect after setting it explicitly.(DOCXLS-11304).
+* Upgraded the versions of certain dependencies to eliminate security vulnerabilities(DOCXLS-11562).
+* Exception is thrown on processing particular template.(DOCXLS-11591)
+
 ## 7.2.5
 ## Fixed
 * When copying array formulas and exporting them to Excel, the reference ranges change.(DOCXLS-11412)
