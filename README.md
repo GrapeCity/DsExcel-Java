@@ -54,8 +54,32 @@ This repository contains source project of Examples and Showcases of DsExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use DsExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 ---
+## 8.0.1
+## Fixed
+* The cell value is incorrect when it is in the spilled range of dynamic array formula.(DOCXLS-11391)
+* The style in the hidden column is shown after processing template.(DOCXLS-11489)
+* The z-order of shapes changed after processing template.(DOCXLS-11535)
+* Exception is thrown on calling the processing template method when null exists in the data source.(DOCXLS-11588)
+* Background picture is not copied when calling IRange.Copy method.(DOCXLS-11612)
+* The result of XIRR formula is incorrect.(DOCXLS-11614)
+* Exception is thrown on getting value when cell uses PERCENTRANK.EXC formula.(DOCXLS-11624)
+* Some properties of chart data label lost after Excel I/O.(DOCXLS-11658)
+* The font of zysteel.ttf is not rendered correctly in the exported PDF file.(DOCXLS-11676)
+* The direction of arrow shape are not rendered correctly in the PDF file.(DOCXLS-11687)
+* The result of COUNTIFS formula is incorrect with "" and "<>" criteria.(DOCXLS-11689)
+* Exception is thrown on loading SSJSON file when activeRow and activeCol are null.(DOCXLS-11696)
+* Exception is thrown on loading an XLSX file.(DOCXLS-11697)
+* The effect of MediumDashed border is incorrect in the exported PDF file.(DOCXLS-11698)
+* The legend of chart is incorrect after processing template.(DOCXLS-11699)
+* The result of dynamic array formula is incorrect after processing template.(DOCXLS-11700)
+* The conditional format is not expanding as expected after processing template.(DOCXLS-11701)
+* Authorization error occurs when the device name is in CJK culture.(DOCXLS-11703)
+* The number format is incorrect in the exported XLSX file after calling IRange.Copy method.(DOCXLS-11706)
+* Some rich text is incorrect after Excel I/O.(DOCXLS-11708)
+* Exception is thrown on saving SJS file when the reference of filter is empty.(DOCXLS-11725)
+* Exception is thrown on saving JSON file when workbook contains specific custom object.(DOCXLS-11733)
+* The content of cell is incorrect if cell width is not enough in the exported PDF file.(DOCXLS-11741)
 ## 8.0.0 
-
 ## Added
 * Import data from object collections and Data Tables.(DOCXLS-5469)
 * Support I/O of Pivot Table Timeline slicer.(DOCXLS-6695)
@@ -70,7 +94,6 @@ This repository contains source project of Examples and Showcases of DsExcel to 
 * Support Excel Table as data source for Pivot Tables.(DOCXLS-10763)
 * Support for allow edit in cell, Chart Color Scheme, and Date-Time Picker options in Lossless I/O for SpreadJS..(DOCXLS-10997)
 * Support new APIs to manage PivotTable.(DOCXLS-11101)
-
 ## Fixed
 * The hidden data lables of chart are shown in the exported image file.(DOCXLS-6125,DOCXLS-11325)
 * The Timeline Slicer is lost in the exported PDF file.(DOCXLS-10291)
