@@ -54,6 +54,20 @@ This repository contains source project of Examples and Showcases of DsExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use DsExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 ---
+## 8.0.2
+## Fixed
+* The cell reference is not as expected in the expanded result after processing template.(DOCXLS-10967)
+* The size of Pie chart is smaller than Excel in the exported Image file.(DOCXLS-11272)
+* Performance issues on processing templates with a large expanded result range.(DOCXLS-11490)
+* The cell tag is lost in the exported Excel file after processing template.(DOCXLS-11590)
+* The row count is incorrect in the exported SJS file.(DOCXLS-11728)
+* Exception is thrown on copying cell across workbook if the source range contains conditional format.(DOCXLS-11735)
+* Exception is thrown on exporting to the PDF file when workbook uses Cantarell fonts.(DOCXLS-11739)
+* Hidden data labels of a chart are exported to the image if repeated category names are present(DOCXLS-11742)
+* Grouped Pivot Slicers get lost when Excel file is loaded and saved.(DOCXLS-11753)
+* Extra underline appears in the exported PDF file.(DOCXLS-11759)
+* Performance issue on calculating big Excel file with lots of SUMIF function.(DOCXLS-11770)
+* Exception is thrown on calling IFormatCondtions.Count when the conditional format is in a Pivot Table.(DOCXLS-11776)
 ## 8.0.1
 ## Fixed
 * The cell value is incorrect when it is in the spilled range of dynamic array formula.(DOCXLS-11391)
