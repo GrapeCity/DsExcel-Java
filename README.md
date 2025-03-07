@@ -54,22 +54,32 @@ This repository contains source project of Examples and Showcases of DsExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use DsExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 ---
+## 8.0.4
+## Fixed
+* An exception was thrown when loading a specific SSJSON file.(DOCXLS-11827)
+* The result was incorrect after calling the IRange.sort() method.(DOCXLS-11865)
+* The binding information for table columns was lost after processing the template.(DOCXLS-11882)
+* The formula in the exported workbook was incorrect after processing the template.(DOCXLS-11919)
+* The custom formatter was lost in the exported SJS file.(DOCXLS-11941)
+* The shape's border remained visible in the exported PDF and SJS files despite being set to invisible.(DOCXLS-11961)
+* The custom formatting of the table was lost in the exported Excel file.(DOCXLS-11962)
+* The TintAndShade setting did not take effect.(DOCXLS-11970)
 ## 8.0.3
 ## Fixed
-- The text display different comparing with Excel in the exported PDF file.(DOCXLS-11740)
-- Exception is thrown on processing Template.(DOCXLS-11799)
-- Unexpected cell borders appear in the exported PDF file.(DOCXLS-11834,DOCXLS-11835)
-- The scale of tick labels in vertical axis is incorrect in the exported PDF file.(DOCXLS-11837)
-- Exception should be thrown when data source in template is missing.(DOCXLS-11856)
-- There are Spill and NA Error when using COUNTIFS formula.(DOCXLS-11859,DOCXLS-11860)
-- The cell locked status has changed after exporting workbook to SSJSON file then import it.(DOCXLS-11866)
-- The exported Excel file gets corrupted if result of formula contains ampersand.(DOCXLS-11873,DOCXLS-11907)
-- The reference in the XLOOKUP function is not expected after processing Template.(DOCXLS-11874)
-- StackOverflowError when data containing specific date is used in pivot table.(DOCXLS-11884)
-- The result of INDEX function is incorrect.(DOCXLS-11904)
-- The expanded result is not as expected after processing Template.(DOCXLS-11914)
-- The behavior or autofilter is incorrect.(DOCXLS-11922)
-- The form controls in the exported Image/PDF file are incorrect.(DOCXLS-11934)
+* The text display different comparing with Excel in the exported PDF file.(DOCXLS-11740)
+* Exception is thrown on processing Template.(DOCXLS-11799)
+* Unexpected cell borders appear in the exported PDF file.(DOCXLS-11834,DOCXLS-11835)
+* The scale of tick labels in vertical axis is incorrect in the exported PDF file.(DOCXLS-11837)
+* Exception should be thrown when data source in template is missing.(DOCXLS-11856)
+* There are Spill and NA Error when using COUNTIFS formula.(DOCXLS-11859,DOCXLS-11860)
+* The cell locked status has changed after exporting workbook to SSJSON file then import it.(DOCXLS-11866)
+* The exported Excel file gets corrupted if result of formula contains ampersand.(DOCXLS-11873,DOCXLS-11907)
+* The reference in the XLOOKUP function is not expected after processing Template.(DOCXLS-11874)
+* StackOverflowError when data containing specific date is used in pivot table.(DOCXLS-11884)
+* The result of INDEX function is incorrect.(DOCXLS-11904)
+* The expanded result is not as expected after processing Template.(DOCXLS-11914)
+* The behavior or autofilter is incorrect.(DOCXLS-11922)
+* The form controls in the exported Image/PDF file are incorrect.(DOCXLS-11934)
 ## 8.0.2
 ## Fixed
 * The cell reference is not as expected in the expanded result after processing template.(DOCXLS-10967)
