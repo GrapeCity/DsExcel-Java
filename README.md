@@ -54,6 +54,26 @@ This repository contains source project of Examples and Showcases of DsExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use DsExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 ---
+## 8.0.5
+## Fixed
+* Exception is thrown on saving an SJS file after deleting a worksheet which is referenced by a linked picture.(DOCXLS-10752)
+* The diagonal border in the exported PDF file is incorrect.(DOCXLS-11792)
+* The Y axis is not shown after adding it using API.(DOCXLS-11964)
+* The result of CODE function is incorrect when the parameter contains CJK characters.(DOCXLS-11987)
+* The result of IWorksheet.getUsedRange() is incorrect when UsedRangeType contains Axis.(DOCXLS-12003)
+* The binding path of table is lost in the exported SJS file after processing template.(DOCXLS-12009)
+* The active sheet is incorrect in the exported SJS file.(DOCXLS-12033)
+* The font in shape is incorrect in the exported Excel file.(DOCXLS-12039)
+* Exception is thrown on loading a specific Excel file.(DOCXLS-12064)
+* The name reference changed in the exported Excel file when name refers to external workbook.(DOCXLS-12076)
+* The result of IRange.getText() is incorrect.(DOCXLS-12081)
+* Exception is thrown on loading particular SSJSON file.(DOCXLS-12085)
+* Exception is thrown on loading particular Excel file with extenal reference.(DOCXLS-12086)
+* The style name is incorrect when using the DsExcel API.(DOCXLS-12093)
+* The value is lost when setting IncludeFormula is set to false when opening an SJS file.(DOCXLS-12096)
+* There are extra cell border in the exported PDF file when the workbook contains both merge and automerge cells.(DOCXLS-12099)
+* Performance issue occurs on calculating workbook contains SORT function.(DOCXLS-12101)
+* Exception is thrown on calling Workbook.Calculate() method when the last parameter of NPV function is empty.(DOCXLS-12142)
 ## 8.0.4
 ## Fixed
 * An exception was thrown when loading a specific SSJSON file.(DOCXLS-11827)
