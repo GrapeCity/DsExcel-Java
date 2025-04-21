@@ -54,6 +54,18 @@ This repository contains source project of Examples and Showcases of DsExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use DsExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 ---
+## 8.1.0
+## Added
+* Added Clone method to duplicate the workbook instance.(DOCXLS-6685)
+* Support for adding cell addresses to exported tables in HTML.(DOCXLS-11173)
+* Performance Improvements for VLOOKUP and UNIQUE functions.(DOCXLS-11501)
+## Fixed
+* Exception is thrown on calling IWorksheet.setDataSource() method.(DOCXLS-4644)
+* The sorting result of the pivot table is incorrect in the exported PDF file.(DOCXLS-8864)
+* Performance issue on calculating the UNIQUE function.(DOCXLS-10644)
+* The custom object is lost in the exported Excel file.(DOCXLS-11387)
+* Performance issue on calculating the VLOOKUP function.(DOCXLS-11392)
+* The address of hyperlink gets changed after processing the template.(DOCXLS-12150)
 ## 8.0.5
 ## Fixed
 * Exception is thrown on saving an SJS file after deleting a worksheet which is referenced by a linked picture.(DOCXLS-10752)
