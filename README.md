@@ -54,6 +54,23 @@ This repository contains source project of Examples and Showcases of DsExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use DsExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 ---
+## 8.1.1
+## Fixed
+* The result of a dynamic array formula is incorrect when there is a default value in the worksheet.(DOCXLS-11985, DOCXLS-12145)
+* The exported Excel file is corrupted when the workbook contains a particular Pivot Chart.(DOCXLS-12097)
+* An exception is thrown when executing the getRefersTo method.(DOCXLS-12157)
+* The column positions are incorrect after the template is extended.(DOCXLS-12158)
+* The count of the runs of rich text increases after calling the IRange.characters() method.(DOCXLS-12185)
+* The result of the IFont.getUnderline() method is incorrect in rich text.(DOCXLS-12186)
+* An exception is thrown when exporting an Excel file containing a 3D reference.(DOCXLS-12193)
+* The font in the exported SSJSON file is corrupted.(DOCXLS-12202)
+* The items in the dropdown list in the exported SJS file are changed.(DOCXLS-12207)
+* A #VALUE! error occurs when using a dynamic array formula.(DOCXLS-12210)
+* Camera shapes appear blurry in the exported PDF file.(DOCXLS-12218)
+* An exception is thrown when calling the processTemplate() method.(DOCXLS-12239)
+* An exception occurs when exporting the 101st file, even though it is licensed.(DOCXLS-12272)
+* The cell format is lost in the exported Excel file.(DOCXLS-12273)
+* The used range in the exported Excel file is incorrect when the workbook contains a dynamic array formula.(DOCXLS-12285)
 ## 8.1.0
 ## Added
 * Added Clone method to duplicate the workbook instance.(DOCXLS-6685)
