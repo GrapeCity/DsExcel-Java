@@ -54,6 +54,14 @@ This repository contains source project of Examples and Showcases of DsExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use DsExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 ---
+## 8.1.3
+## Fixed
+* Grouping a range results in an incorrect outline.(DOCXLS-12484)
+* The result of setting the option to insert entire rows and columns is not as expected.(DOCXLS-12488)
+* An exception is thrown when exporting a PDF file that contains a specific chart.(DOCXLS-12491)
+* Fetching IconType throws an ArrayIndexOutOfBoundsException when the icon is IconType.NoCellIcon.(DOCXLS-12503)
+* Formula cells are not evaluated after calling Workbook.Calculate() method.(DOCXLS-12536)
+* Pivot table totals to an incorrect value.(DOCXLS-12545)
 ## 8.1.2
 ## Fixed
 * The applyFilter method does not take effect.(DOCXLS-12106)
