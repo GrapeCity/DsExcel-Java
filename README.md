@@ -54,6 +54,12 @@ This repository contains source project of Examples and Showcases of DsExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use DsExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 ---
+## 8.1.4
+## Fixed
+* After ignoring formulas, the calculation results of LAMBDA formulas are not exported properly.(DOCXLS-12558)
+* A NullPointerException is thrown when saving a Workbook to SJS, HTML, or PDF formats.(DOCXLS-12585)
+* After setting FitToPagesWide, the exported PDF file still has two pages.(DOCXLS-12588)
+* The calculated result is incorrect when ROW function is used in defined name.(DOCXLS-12626)
 ## 8.1.3
 ## Fixed
 * Grouping a range results in an incorrect outline.(DOCXLS-12484)
