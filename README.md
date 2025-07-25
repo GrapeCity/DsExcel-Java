@@ -54,6 +54,17 @@ This repository contains source project of Examples and Showcases of DsExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use DsExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 ---
+## 8.1.5
+## Fixed
+* When a specific file is loaded and borders are added to cells, the used range becomes incorrect.(DOCXLS-8994, DOCXLS-12767)
+* A workbook calculation exception occurs when a formula contains an external workbook reference.(DOCXLS-12129)
+* Unexpected file size increases when applying NumberFormat and HorizontalAlignment to entire rows or columns.(DOCXLS-12650)
+* The LET function returns a #REF! error.(DOCXLS-12697)
+* The chart does not meet expectations after data expansion.(DOCXLS-12703)
+* Issue with the HOUR formula.(DOCXLS-12706)
+* After setting multiple SubtotalTypeNone options in a pivot table, exporting Excel SubtotalTypeNone settings does not take effect.(DOCXLS-12721)
+* An InvalidFormulaException occurs when a LAMBDA parameter is named "rc" in a Name Manager formula.(DOCXLS-12763)
+* Lack of parallelism in the Calculation Engine for independent workbook instances.(DOCXLS-12776)
 ## 8.1.4
 ## Fixed
 * After ignoring formulas, the calculation results of LAMBDA formulas are not exported properly.(DOCXLS-12558)
