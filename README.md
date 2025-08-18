@@ -54,6 +54,33 @@ This repository contains source project of Examples and Showcases of DsExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use DsExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 ---
+## 8.2.0
+## Added
+* Added support for new Excel functions GROUPBY, PIVOTBY, and PERCENTOF.(DOCXLS-9486)
+* Introduced the Evaluate2 API to return spilled values from dynamic array formulas.(DOCXLS-11502)
+* Added the ability to get and set Alternative text for shapes.(DOCXLS-11891)
+* Enabled setting chart sheet zoom to "Fit to Selection".(DOCXLS-11930)
+* Custom functions can now accept error parameters.(DOCXLS-12010)
+* Added support for the new Excel formula TRIMRANGE.(DOCXLS-12136)
+* Enabled retrieval of sheet count and names for GanttSheets from SJS files.(DOCXLS-12206)
+* Expanded the ShapeType enum with new types.(DOCXLS-12226)
+* Improved the performance of template expansion when the data source is ITableDataSource and the ExpansionType is list mode.(DOCXLS-12230)
+* Support for Eta-Reduced Lambda.(DOCXLS-12446)
+
+## Fixed
+* Exporting to Excel takes unusually long when files contain multiple VLOOKUP functions.(DOCXLS-10630)
+* Font formatting changes unexpectedly after opening and saving files.(DOCXLS-11791)
+* Memory usage is excessively high when processing large-scale data with Workbook.processTemplate().(DOCXLS-11909)
+* Report rendering speed is slower than expected when processing large datasets.(DOCXLS-11950)
+* Performance differs significantly between Template and setDataSource methods when rendering large lists.(DOCXLS-12216)
+* Processing templates with a large number of rows takes longer than expected and may cause memory issues in multi-threaded scenarios.(DOCXLS-12244)
+* Font formatting is inconsistent when converting SJS files to XLSX, resulting in font changes.(DOCXLS-12504)
+* Executing the toImage function on Mac and Linux triggers console errors due to unsupported fonts or emoji rendering issues.(DOCXLS-12539)
+* Freeze pane location shifts after processing files containing collapsed groups, causing incorrect frozen areas.(DOCXLS-12784)
+* Sorting order for Japanese text in Pivot Tables does not follow locale-specific rules.(DOCXLS-12801)
+* Saving certain workbooks fails with System.ArgumentOutOfRangeException due to issues in chart handling.(DOCXLS-12810)
+* Table filter buttons appear inconsistently compared to older versions, indicating lost filter information in processed templates.(DOCXLS-12860)
+
 ## 8.1.5
 ## Fixed
 * When a specific file is loaded and borders are added to cells, the used range becomes incorrect.(DOCXLS-8994, DOCXLS-12767)
@@ -125,6 +152,7 @@ This repository contains source project of Examples and Showcases of DsExcel to 
 * The custom object is lost in the exported Excel file.(DOCXLS-11387)
 * Performance issue on calculating the VLOOKUP function.(DOCXLS-11392)
 * The address of hyperlink gets changed after processing the template.(DOCXLS-12150)
+
 ## 8.0.5
 ## Fixed
 * Exception is thrown on saving an SJS file after deleting a worksheet which is referenced by a linked picture.(DOCXLS-10752)
