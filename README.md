@@ -54,6 +54,23 @@ This repository contains source project of Examples and Showcases of DsExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use DsExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 ---
+## 8.2.1
+## Fixed
+* Chart axis label spacing is ignored when exporting to image, showing dense labels instead.(DOCXLS-11876)
+* Localized color tokens(e.g., [Red] in Chinese) cause number format errors or inconsistencies.(DOCXLS-12795)
+* Extra blank comment may appear in exported XLSX files(visible in WPS).(DOCXLS-12847)
+* Percentage format is lost after cell expansion.(DOCXLS-12875)
+* Setting a cell value can throw System.ArgumentException.(DOCXLS-12894)
+* Opening large .ssjson files with many styles is very slow.(DOCXLS-12923)
+* Some dynamic array formulas return incorrect results on first calculation, correct only after recalculating.(DOCXLS-12924)
+* Exporting certain workbooks to HTML can throw Invalid range errors(e.g., empty sheet with PrintArea).(DOCXLS-12931)
+* Chart axis bounds and intervals change when exporting to PDF.(DOCXLS-12942)
+* DsExcel calculation results differ from Excel and may need multiple recalculations.(DOCXLS-12944)
+* Page headers with "%%%" cause errors and prevent saving/printing.(DOCXLS-12949)
+* Dynamic array formulas starting with + and cross-sheet references return #VALUE!.(DOCXLS-12952)
+* Pivot cache and binding data remain in JSON after deleting PivotTable and source sheet.(DOCXLS-12953)
+* Saving under Japanese locale does not preserve certain date number formats.(DOCXLS-12955)
+* Saving SJS files with empty RichText entries in SharedStrings.json throws exceptions.(DOCXLS-12987)
 ## 8.2.0
 ## Added
 * Added support for new Excel functions GROUPBY, PIVOTBY, and PERCENTOF.(DOCXLS-9486)
