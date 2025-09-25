@@ -54,6 +54,20 @@ This repository contains source project of Examples and Showcases of DsExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use DsExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 ---
+## 8.2.2
+## Fixed
+* File Upload cell values are lost during copy/paste or export, causing missing file names.(DOCXLS-11384)
+* Setting a data source can overwrite cell content and remove formulas.(DOCXLS-12468)
+* First update of BackgroundPicture width may be ignored after changing FontSize.(DOCXLS-12614)
+* Freeze Pane position shifts when file contains collapsed groups.(DOCXLS-12784)
+* Workbook.Calculate() may return errors if the calculation engine starts Off.(DOCXLS-13053)
+* Full-width "＆" in Worksheet names change to half-width "&" in formulas after save/load.(DOCXLS-13073)
+* Upgrading can cause serious performance regression in Workbook calculation.(DOCXLS-13074)
+* Second Workbook calculation may produce incorrect results.(DOCXLS-13075)
+* PivotTable Slicers export incorrectly to PDF.(DOCXLS-13077)
+* Certain Excel templates may throw "Stack empty" exception.(DOCXLS-13080)
+* Inserting a row at the top can move Header Filter icons into the data row.(DOCXLS-13085)
+* Resaving Dynamic Array formulas may fill spill range with values and cause #SPILL!.(DOCXLS-13110,DOCXLS-13111)
 ## 8.2.1
 ## Fixed
 * Chart axis label spacing is ignored when exporting to image, showing dense labels instead.(DOCXLS-11876)
