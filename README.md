@@ -54,6 +54,14 @@ This repository contains source project of Examples and Showcases of DsExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use DsExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 ---
+## 8.2.3
+## Fixed
+* Conditional formatting in the sjs extLst node is not parsed, causing differences in cell text rendering compared to SpreadJS.(DOCXLS-13107)
+* Inserted shapes may be misaligned due to oversized anchor offsets exceeding column/row boundaries.(DOCXLS-13112)
+* Enabling WrapText increases row height unexpectedly from the second row when customHeight is true.(DOCXLS-13114)
+* Formula evaluation may produce incorrect numeric results under a German locale.(DOCXLS-13131)
+* Exporting a Range with quoted conditional formatting values causes an InvalidFormulaException during Image or PDF export.(DOCXLS-13133)
+* Shape hyperlinks are lost when exporting and reloading a Workbook as JSON.(DOCXLS-13152)
 ## 8.2.2
 ## Fixed
 * File Upload cell values are lost during copy/paste or export, causing missing file names.(DOCXLS-11384)
