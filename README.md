@@ -54,6 +54,21 @@ This repository contains source project of Examples and Showcases of DsExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use DsExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 ---
+## 8.2.4
+## Fixed
+* Destination Cells lose Data Validation when rows are copied.(DOCXLS-12951)
+* Embedded images in Picture-In-Cell disappear after Excel I/O.(DOCXLS-13165)
+* Exported Workbooks containing a Chart with a Secondary Axis cause an error when opened in Excel.(DOCXLS-13179)
+* HasArray and CurrentArray do not recognize Dynamic Array Formulas.(DOCXLS-13183)
+* Only the first Cell expanded from a JSONTable participates in calculation.(DOCXLS-13184)
+* Certain saved XLSM files are reported as corrupted by Excel.(DOCXLS-13192)
+* Formulas produced during Template expansion can be incorrect.(DOCXLS-13202)
+* IMSUM and IMPRODUCT return zero when referencing Cells that contain complex numbers.(DOCXLS-13205)
+* XLOOKUP can return #N/A when an Error-type if_not_found argument is supplied even though the lookup value exists.(DOCXLS-13206)
+* Exception is thrown on Template processing when the ds Data Source is a plain JSON object.(DOCXLS-13212)
+* Sorting a Range copied between Workbooks can fail with an exception.(DOCXLS-13215)
+* IFS returns incorrect results when its first argument is provided as an Array.(DOCXLS-13216)
+* Comments attached to expanded Cells are lost during Template expansion.(DOCXLS-13220)
 ## 8.2.3
 ## Fixed
 * Conditional formatting in the sjs extLst node is not parsed, causing differences in cell text rendering compared to SpreadJS.(DOCXLS-13107)
