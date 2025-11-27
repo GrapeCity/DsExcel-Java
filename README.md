@@ -54,6 +54,17 @@ This repository contains source project of Examples and Showcases of DsExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use DsExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 ---
+## 8.2.5
+## Fixed
+* Calling waitForCalculationToFinish can block for a long time during Workbook calculation.(DOCXLS-13207)
+* Workbook.Open can take an excessively long time to complete.(DOCXLS-13264)
+* Enabling CanShrinkToFitWrappedText when exporting to PDF can cause the save operation to fail.(DOCXLS-13265)
+* Formulas that combine LET, TAKE, BYROW, and LAMBDA can evaluate to #VALUE!.(DOCXLS-13270)
+* Formula evaluation under Japanese culture can produce incorrect values compared to Excel.(DOCXLS-13279)
+* A PivotTable created from a Data Model with no Rows or Columns selected can disappear or result in a corrupted XLSX after Excel I/O.(DOCXLS-13330)
+* Diagonal cells can be lost after processing a Template (ProcessTemplate).(DOCXLS-13341)
+* Range values can become #N/A errors after copying a Range between Workbooks.(DOCXLS-13380)
+* Image fill applied to a Comment shape can be ignored while the same image displays correctly on a Worksheet shape.(DOCXLS-13382)
 ## 8.2.4
 ## Fixed
 * Destination Cells lose Data Validation when rows are copied.(DOCXLS-12951)
