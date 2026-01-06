@@ -54,6 +54,28 @@ This repository contains source project of Examples and Showcases of DsExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use DsExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 ---
+## 9.0.0
+## Added
+* Support Lossless of Query Table.(DOCXLS-11502)
+* Added support for new Excel functions VALUETOTEXT and ARRAYTOTEXT.(DOCXLS-12696)
+* Support controlling SharedFormula export in XLSX export.(DOCXLS-12881)
+* Support AI functions.(DOCXLS-13155)
+* Support SJS/SSJSON IO of Threaded comments.(DOCXLS-13331)
+* Performance optimization.(DOCXLS-13478)
+
+## Fixed
+* Copying a Worksheet with many formulas is very slow.(DOCXLS-4633)
+* Opening and profiling a Workbook is noticeably slower.(DOCXLS-11077)
+* Saving a Workbook to PDF can trigger a console error.(DOCXLS-12187)
+* Formatting and AutoFit on very large reports causes severe slowdowns and high memory use.(DOCXLS-12607)
+* Copying formulas across Worksheets is significantly slower in newer versions.(DOCXLS-12672)
+* Range.Copy on very large ranges can be extremely slow.(DOCXLS-12709)
+* Enabling the calculation engine after sheet and named-range changes can throw a NullReferenceException.(DOCXLS-13383)
+* Opening certain Workbooks can fail on JDK 21+.(DOCXLS-13397)
+* XLOOKUP can return incorrect numeric results compared to Excel.(DOCXLS-13433)
+* Calling Range.getText() can throw an exception.(DOCXLS-13443)
+* LET formulas adding a scalar to very large arrays return values only in the first row and zeros elsewhere.(DOCXLS-13449)
+
 ## 8.2.5
 ## Fixed
 * Calling waitForCalculationToFinish can block for a long time during Workbook calculation.(DOCXLS-13207)
