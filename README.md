@@ -54,6 +54,22 @@ This repository contains source project of Examples and Showcases of DsExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use DsExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 ---
+## 9.0.1
+## Fixed
+* Sheet protection prevents resizing Rows and Columns.(DOCXLS-12000)
+* Cloud AutoShapes render incorrectly in exported PDF.(DOCXLS-13009)
+* Exporting Power Pivot data models corrupts XLSX files.(DOCXLS-13387)
+* API-set Comment background fills are not applied.(DOCXLS-13390)
+* RANK formula with missing reference throws exception instead of #VALUE!.(DOCXLS-13465)
+* Charts distort in exported PDF.(DOCXLS-13557)
+* Cell text disappears in exported PDF from SSJSON.(DOCXLS-13566)
+* InvalidCastException occurs when saving certain XLSX files.(DOCXLS-13615)
+* Line heights differ from SpreadJS in exported PDF.(DOCXLS-13644)
+* Console error occurs when saving SSJSON to XLSX.(DOCXLS-13710)
+* Cell numeric values read from XLSX are imprecise.(DOCXLS-13730)
+* Opening SpreadJS-resaved Workbooks throws exceptions.(DOCXLS-13732)
+* Pivot Chart field buttons reset to hidden after saving.(DOCXLS-13775)
+* CSV import merges multiple rows into one.(DOCXLS-13779)
 ## 9.0.0
 ## Added
 * Support Lossless of Query Table.(DOCXLS-11502)
