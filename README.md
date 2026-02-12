@@ -54,6 +54,11 @@ This repository contains source project of Examples and Showcases of DsExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use DsExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 ---
+## 9.0.2
+## Fixed
+* Calculation fails when reusing a deleted Worksheet name after copy-delete-rename.(DSX-13783)
+* LET + TEXTAFTER miscalculates mixed absolute/relative references.(DSX-13861)
+* SUMPRODUCT repeats values on subsequent copied sheets with custom functions.(DSX-13893)
 ## 9.0.1
 ## Fixed
 * Sheet protection prevents resizing Rows and Columns.(DOCXLS-12000)
