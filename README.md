@@ -54,6 +54,12 @@ This repository contains source project of Examples and Showcases of DsExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use DsExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 ---
+## 9.0.3
+## Fixed
+* HYPERLINK formula hyperlink fails to update after referenced cell change when exporting to HTML.(DSX-11361)
+* Text in Form Control checkboxes clips in exported images.(DSX-13895)
+* Formulas yield incorrect cell values after Workbook calculation, differing from Excel.(DSX-13901)
+* COUNTIFS ignores formula-based date criteria in criteria range.(DSX-13935)
 ## 9.0.2
 ## Fixed
 * Calculation fails when reusing a deleted Worksheet name after copy-delete-rename.(DSX-13783)
