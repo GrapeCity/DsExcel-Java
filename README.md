@@ -54,6 +54,17 @@ This repository contains source project of Examples and Showcases of DsExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use DsExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 ---
+## 9.0.4
+## Fixed
+* Missing border and fill styles on form controls after exporting a Workbook and reopening it in Excel.(DSX-13933)
+* Unexpected failure to open a Workbook containing a Map Chart linked to Geography data cells.(DSX-13979)
+* Incorrect COUNTIFS results with not-equal criteria when empty cells are counted in ranges affected by dynamic array formulas.(DSX-14003)
+* Incorrect NORM.S.DIST results for valid inputs, including zero values where Excel returns non-zero probabilities.(DSX-14009)
+* Unexpected exceptions or error results when calculating certain formulas.(DSX-14015, DSX-14016)
+* Missing center footer text from PageSetup.CenterFooter when both center and right footer sections are present.(DSX-14027)
+* Unexpected visible blank rows after applying an AutoFilter in SSJSON files with column header filter conditions.(DSX-14047)
+* Unexpected performance degradation during Workbook.ToJson() when a Worksheet contains data validation rules over very large ranges.(DSX-14081)
+* Unexpected infinite calculation loops when XLOOKUP formulas use binary search against ranges with no comparable values.(DSX-14085)
 ## 9.0.3
 ## Fixed
 * HYPERLINK formula hyperlink fails to update after referenced cell change when exporting to HTML.(DSX-11361)
