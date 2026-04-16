@@ -54,6 +54,11 @@ This repository contains source project of Examples and Showcases of DsExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use DsExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 ---
+## 9.0.5
+## Fixed
+* Unexpected exceptions when saving an SJS file after refreshing a PivotTable.(DSX-10851)
+* Failure to open an XLSX file in Excel after saving certain workbooks.(DSX-14087)
+* Incorrect spill cell values when calculating certain SORTBY formulas.(DSX-14093)
 ## 9.0.4
 ## Fixed
 * Missing border and fill styles on form controls after exporting a Workbook and reopening it in Excel.(DSX-13933)
