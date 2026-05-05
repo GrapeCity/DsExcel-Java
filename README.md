@@ -54,6 +54,31 @@ This repository contains source project of Examples and Showcases of DsExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use DsExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 ---
+## 9.1.0
+## Added
+* Support showing and hiding PivotTable Row and Column headers.(DSX-5826)
+* Support exporting bullets to PDF.(DSX-7625)
+* Support Waterfall Chart to image export.(DSX-11200)
+* Support Microsoft Excel Cell Checkboxes.(DSX-11322)
+* Enhance digital signature support.(DSX-11330)
+* Support NULL and empty values in template filters.(DSX-11462)
+* Support Regex in template filters.(DSX-11680)
+* Support in-cell pictures.(DSX-11693, DSX-11694)
+* Support expandable Cell types and drop-down fields in template cells.(DSX-11988)
+* Support date and time values in template filters.(DSX-11991)
+* Support PivotTable styles.(DSX-12794)
+* Support lossless I/O for SpreadJS v19.1 SJS and SSJSON file format.(DSX-13763)
+## Fixed
+* Signed Excel files may become invalid when saved with a PFX certificate.(DSX-9724)
+* Fixed Security vulnerabilities and bundled third-party dependencies.(DSX-10487, DSX-11562)
+* Images from template data sources may appear in the wrong order.(DSX-11062)
+* PivotTable styles are lost after refresh.(DSX-12201)
+* PivotTable Cell alignment is lost after sorting.(DSX-12625)
+* Unexpected memory growth during concurrent report generation.(DSX-13378)
+* Recalculating a Workbook after input updates may produce inconsistent results.(DSX-13786)
+* Failure to open certain SJS files due to a FormatException triggered by NaN values.(DSX-14198)
+* Unexpected insertion of the implicit intersection operator (@) into FORECAST.LINEAR formulas after opening and saving a Workbook.(DSX-14202)
+
 ## 9.0.5
 ## Fixed
 * Unexpected exceptions when saving an SJS file after refreshing a PivotTable.(DSX-10851)
