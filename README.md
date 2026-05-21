@@ -54,6 +54,11 @@ This repository contains source project of Examples and Showcases of DsExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use DsExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 ---
+## 9.1.1
+## Fixed
+* Unable to open Workbooks containing defined name formulas that use dynamic array functions and optional LAMBDA parameters.(DSX-14128)
+* Unexpected recalculation of some external-link formulas when opening a Workbook, causing cached values to be replaced with #NAME? or recalculated results.(DSX-14261)
+* Unable to parse CJK date formats in template language filter DATETIME expressions.(DSX-14316)
 ## 9.1.0
 ## Added
 * Support showing and hiding PivotTable Row and Column headers.(DSX-5826)
