@@ -35,14 +35,21 @@ You can optionally integrate DsExcel with the SpreadJS JavaScript spreadsheet as
 - [DsExcel Blogs](https://developer.mescius.com/blogs/categories/products/documents)
 - [Online Documentation](https://developer.mescius.com/document-solutions/java-excel-api/docs/online/overview.html)
 - [Offline Documentation (PDF)](https://developer.mescius.com/document-solutions/java-excel-api/docs/offlinehelp.pdf)
+- [Maven Repo](https://central.sonatype.com/artifact/com.mescius.documents/dsexcel)
 
-## Other Document Solutions API Solutions
+## Document Solutions Products
 
-- [Document Solutions for Excel, .NET](https://developer.mescius.com/document-solutions/dot-net-excel-api)
-- [Document Solutions for PDF](https://developer.mescius.com/document-solutions/dot-net-pdf-api)
-- [Document Solutions PDF Viewer](https://developer.mescius.com/document-solutions/javascript-pdf-viewer)
-- [Document Solutions for Word](https://developer.mescius.com/document-solutions/dot-net-word-api)
-- [Document Solutions for Imaging](https://developer.mescius.com/document-solutions/dot-net-imaging-api)
+- [Document Solutions for PDF .NET](https://developer.mescius.com/document-solutions/dot-net-pdf-api)
+- [Document Solutions for PDF JS](https://developer.mescius.com/document-solutions/javascript-pdf-api)
+- [Document Solutions for Word .NET](https://developer.mescius.com/document-solutions/dot-net-word-api)
+- [Document Solutions for Imaging .NET](https://developer.mescius.com/document-solutions/dot-net-imaging-api)
+- [Document Solutions for Excel .NET](https://developer.mescius.com/document-solutions/dot-net-excel-api)
+- [Document Solutions for Excel Java](https://developer.mescius.com/document-solutions/java-excel-api)
+
+## Document Solutions JavaScript Viewers
+- [JavaScript PDF Viewer](https://developer.mescius.com/document-solutions/javascript-pdf-viewer?utm_source=NuGet&utm_medium=documentsolutions&utm_campaign=DsExcelNET-Listing)
+- [JavaScript Data Viewer (XLSX, CSV, SJS) ](https://developer.mescius.com/document-solutions/javascript-data-viewer?utm_source=NuGet&utm_medium=documentsolutions&utm_campaign=DsExcelNET-Listing)
+- [JavaScript Image Viewer](https://developer.mescius.com/document-solutions/javascript-image-viewer?utm_source=NuGet&utm_medium=documentsolutions&utm_campaign=DsExcelNET-Listing)
 
 This repository contains source project of Examples and Showcases of DsExcel to help you learn and write your own applications. 
 
@@ -54,6 +61,12 @@ This repository contains source project of Examples and Showcases of DsExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use DsExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 ---
+## 9.1.2
+## Fixed
+* Failure to open Workbook JSON when a Cell contains array information and a shared Formula reference.(DSX-14258)
+* Security scanner warnings appeared for the Bouncy Castle dependency included with the product.(DSX-14328)
+* Incorrect AVERAGEIF calculation results when the criteria range contains both numeric values and blank Cells and the sum range is omitted.(DSX-14331)
+* Incorrect Formula results when a Named Range LAMBDA returns a Range through an IFS expression for use in COUNTIFS or MAXIFS.(DSX-14369)
 ## 9.1.1
 ## Fixed
 * Unable to open Workbooks containing defined name formulas that use dynamic array functions and optional LAMBDA parameters.(DSX-14128)
@@ -2369,9 +2382,3 @@ This repository contains source project of Examples and Showcases of DsExcel to 
 * DsExcel throws exception on loading ssjson file with null values.
 * Merged range in table couldn't be rendered to pdf.
 * The hidden rows are still rendered to pdf after loading ssjson file.
-
-
-# Other Resources
-* Product Home Site: [https://developer.mescius.com/document-solutions/java-excel-api](https://developer.mescius.com/document-solutions/java-excel-api)
-* Demo Site: [https://developer.mescius.com/document-solutions/java-excel-api/demos/](https://developer.mescius.com/document-solutions/java-excel-api/demos/)
-* Maven Repo Address: [https://search.maven.org/artifact/com.grapecity.documents/gcexcel/](https://search.maven.org/artifact/com.grapecity.documents/gcexcel/)
