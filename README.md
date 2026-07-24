@@ -61,6 +61,18 @@ This repository contains source project of Examples and Showcases of DsExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use DsExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 ---
+## 9.1.4
+## Fixed
+* Unexpected custom Formula evaluation in another Cell when retrieving the current Array Formula for a Range.(DSX-14505)
+* Unexpected Excel repair warnings and incorrect duotone Image colors when exporting SpreadJS files to XLSX.(DSX-14521)
+* Incorrect Conditional Formatting colors in XLSX files exported from SJS sources compared with equivalent SSJSON sources.(DSX-14524)
+* Incorrect English weekday names when retrieving Korean-formatted Cell text or exporting a Workbook to PDF.(DSX-14525)
+* Unexpectedly slow Worksheet renaming after repeatedly copying Worksheets in a growing Workbook.(DSX-14526)
+* Incorrect #REF! results for INDIRECT Formulas that use Japanese localized Table structured-reference specifiers.(DSX-14530)
+* Unexpected exceptions when a Workbook contains a question mark in a Table name.(DSX-14569)
+* Unexpected null values for empty results in a spilled Formula after opening a Workbook without recalculation.(DSX-14573)
+* Incorrect HasArray results for Cells containing regular Formulas or plain text.(DSX-14577)
+* Missing object details in the exception returned when opening certain Workbooks with conflicting external link data.(DSX-14589)
 ## 9.1.3
 ## Fixed
 * Incorrect handling of Charts inside nested Shape groups when opening a Workbook.(DSX-14372)
