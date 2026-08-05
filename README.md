@@ -61,6 +61,11 @@ This repository contains source project of Examples and Showcases of DsExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use DsExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 ---
+## 9.1.5
+## Fixed
+* Failure to populate template rows from a Table stored in an object's property.(DSX-14590)
+* Incorrect expansion of Image bounds when crop values are applied to a Shape.(DSX-14595)
+* Unable to open a Workbook containing duplicate Worksheet names in external link metadata.(DSX-14629)
 ## 9.1.4
 ## Fixed
 * Unexpected custom Formula evaluation in another Cell when retrieving the current Array Formula for a Range.(DSX-14505)
