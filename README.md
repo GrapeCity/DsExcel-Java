@@ -61,6 +61,28 @@ This repository contains source project of Examples and Showcases of DsExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use DsExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 ---
+## 9.2.0
+## Added
+* Added support for rendering Japanese Ruby text when exporting Workbooks to PDF.(DSX-5066)
+* Added support for preserving equation symbols when loading and saving XLSX Workbooks.(DSX-5251)
+* Added support for preserving grouped Excel form controls when opening Workbooks.(DSX-6246)
+* Added support for retaining PivotTable group information after refreshing PivotTables.(DSX-6940)
+* Enabled CustomXML data to be embedded in and read from Excel Workbooks.(DSX-11321)
+* Introduced a performance demonstration site for evaluating large-data Workbook scenarios.(DSX-12813)
+* Improved API documentation with usage examples and detailed parameter descriptions.(DSX-13506)
+* Added an opt-in CSV export option for escaping Formula-like values.(DSX-3780, DSX-13761)
+* Added support for rendering File Upload Cell types in exported PDFs.(DSX-13765)
+* Added support for rendering Pareto Charts when exporting Workbooks to PDF.(DSX-13791)
+* Added support for rendering Histogram Charts when exporting Workbooks to PDF.(DSX-13792)
+* Added compatibility for AI Function Formulas exchanged with SpreadJS through SJS files.(DSX-13859)
+* Added support for preserving hidden Named Ranges in Workbooks.(DSX-14231)
+* Added lossless support for new SpreadJS 19.2 features in SJS and SSJSON files.(DSX-14262)
+* Added configurable handling for invalid Table Formulas when opening Workbooks.(DSX-14338)
+## Fixed
+* Incorrect PivotTable group names in exported Excel files after a PivotTable refresh.(DSX-6648)
+* Incorrect results when calculating certain Formulas that Excel evaluates successfully.(DSX-14646)
+* DateTime values generated from a template do not follow the Cell Number Format defined in the template.(DSX-14648)
+
 ## 9.1.5
 ## Fixed
 * Failure to populate template rows from a Table stored in an object's property.(DSX-14590)
