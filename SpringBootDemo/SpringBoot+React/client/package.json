@@ -22,7 +22,7 @@
     "@types/react-select": "^2.0.4",
     "@types/webpack-env": "^1.13.0",
     "awesome-typescript-loader": "^5.2.1",
-    "bootstrap": "4.1.2",
+    "bootstrap": "4.3.1",
     "copy-webpack-plugin": "^4.5.2",
     "css-loader": "0.28.1",
     "event-source-polyfill": "0.0.9",
