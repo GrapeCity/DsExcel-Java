@@ -61,6 +61,19 @@ This repository contains source project of Examples and Showcases of DsExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use DsExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 ---
+## 9.2.1
+## Fixed
+* Unexpectedly long calculation time when updating a Cell value referenced by multiple dependent Formula cells across Worksheets.(DSX-14644)
+* Failure to complete Workbook calculation for certain Workbooks, causing the application to hang indefinitely.(DSX-14645)
+* Incorrect orientation of rotated Shapes after calling ProcessTemplate().(DSX-14680)
+* Unexpected overwriting of static Cell values when copying a Range with PasteType.Values in a Worksheet that contains a dynamic Array Formula.(DSX-14682)
+* Missing connector Shapes in the saved Workbook after calling ProcessTemplate() when the Shape is anchored outside the template Range.(DSX-14719)
+* Failure to read or change the z-order of background pictures, because ZOrderPosition always returns 0 and ZOrder has no effect.(DSX-14720)
+* Unexpected exception when deleting a Worksheet that other Worksheets reference through defined names.(DSX-14730)
+* Unexpected file errors in Excel after saving a Workbook in which Table column Formulas are replaced with values.(DSX-14731)
+* Incorrect PivotTable item labels because item source names ignore the Number Format applied to a field.(DSX-14735)
+* Incorrect Formula results when array arithmetic is applied to Ranges larger than 2048 rows inside SUMPRODUCT.(DSX-14767)
+* Unexpected #N/A errors and zero values when recalculating Excel 365 dynamic Array Formulas.(DSX-14768)
 ## 9.2.0
 ## Added
 * Added support for rendering Japanese Ruby text when exporting Workbooks to PDF.(DSX-5066)
