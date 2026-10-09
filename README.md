@@ -61,6 +61,11 @@ This repository contains source project of Examples and Showcases of DsExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use DsExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 ---
+## 9.2.2
+## Fixed
+* Failure to export a Worksheet to PNG or PDF when it contains a gradient-filled Shape with zero width or height.(DSX-14793)
+* Known security vulnerabilities in the Bouncy Castle and GlassFish JSON processing dependencies.(DSX-14794)
+* Unexpected exception when recalculating certain Workbooks.(DSX-14821)
 ## 9.2.1
 ## Fixed
 * Unexpectedly long calculation time when updating a Cell value referenced by multiple dependent Formula cells across Worksheets.(DSX-14644)
