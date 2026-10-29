@@ -61,6 +61,16 @@ This repository contains source project of Examples and Showcases of DsExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use DsExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 ---
+## 9.2.3
+## Fixed
+* Incorrect Column widths after AutoFit when buttons appear in PivotTables, Tables, or Filter columns.(DSX-14792)
+* Incorrect results from the TEXT Function when localized date and Number Format tokens are used for German, French, Italian, or Spanish locales.(DSX-14824)
+* Unexpected errors when saving Workbooks that contain deeply nested dynamic Array Formulas.(DSX-14838)
+* Corrupted XLSX output after importing SJS or SSJSON content that contains Shapes with inverted coordinates.(DSX-14839)
+* Crafted messages could cause excessive memory consumption or a denial-of-service condition through affected cryptography components.(DSX-14894)
+* Direction settings applied to existing Shapes were not retained after a Workbook was saved.(DSX-14915)
+* XLSX files became unnecessarily large when borders were applied to large Pivot Tables.(DSX-14966)
+* Cells with the 0.00% Number Format incorrectly returned General after a Workbook was imported from JSON.(DSX-14969)
 ## 9.2.2
 ## Fixed
 * Failure to export a Worksheet to PNG or PDF when it contains a gradient-filled Shape with zero width or height.(DSX-14793)
