@@ -61,6 +61,12 @@ This repository contains source project of Examples and Showcases of DsExcel to 
 | SpringBootDemo/SpringBoot+Angular2     | A source project that demonstrates how to use DsExcel with SpringBoot + Angular2 + Spread.Sheets|
 
 ---
+## 9.2.4
+## Fixed
+* Incorrect right-to-left ordering of Kuwaiti currency and numeric values in PDF exports from Worksheet Cells.(DSX-10008)
+* Missing not-blank Text Filter criteria from exported Excel Workbooks.(DSX-15067)
+* Incorrect dependent Formula results for non-anchor Cells in a spilled Range after an asynchronous custom Function returns.(DSX-15073)
+* Incorrect results from INDEX inside MAKEARRAY or MAP LAMBDA Formulas, where every output element can repeat the first result after recalculation.(DSX-15079)
 ## 9.2.3
 ## Fixed
 * Incorrect Column widths after AutoFit when buttons appear in PivotTables, Tables, or Filter columns.(DSX-14792)
